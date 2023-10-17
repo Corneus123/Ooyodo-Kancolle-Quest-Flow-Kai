@@ -5724,6 +5724,36 @@ const ALL_QUESTS_LIST = {
       ["E","Fairey Seafox Kai","1","or "]
     ]
   },
+  "B147": {
+    "Jp": "南西諸島海域合同哨戒",
+    "En": "Nansei Island Water Combined Patrol",
+    "content": "Assemble a fleet containing 2 \"USN ships\" and up to 4 XX, then S rank the boss nodes of 2-2, 2-3, and 2-4.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B135"],
+    "period": "once",
+    "needs": {
+	    "S": [],
+      "M": [
+        ["2-2",1],		 
+		    ["2-3",1],
+        ["2-4",1]
+      ]
+    },
+    "resources": {
+      "F": "400",
+      "A": "400",
+      "S": "0",
+      "B": "400"
+    },
+    "reward": [
+      ["C","Improvement Material","2","Choose one: "],
+	    ["I","Emergency Repair Material","2","or "],
+      ["C","Instant Repair Material","4","or "],
+	    ["E","Tenzan","3","Choose one: "],
+      ["E","OS2U","1","or "]
+    ]
+  },
 // Placeholder B147++ here
 
 
