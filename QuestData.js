@@ -269,7 +269,7 @@ const ICONS_LINK = {
   "autogyro": "files/webpage/game_icons/autogyro.png",
   "New Model Rocket Development Material": "files/webpage/game_icons/New_Model_Rocket_Development_Material.png"
 };
-// C =Development Material, Instant Construction, Instant Repair 
+// C =Development Material, Instant Construction, Instant Repair, Improvement Material
 // I = Furniture Box Medium , Large Furniture Box, Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 

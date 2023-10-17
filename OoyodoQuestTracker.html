@@ -205,29 +205,7 @@
     <div id="BBL"></div>
 
     <div id="background"></div>
-  <!-- About tab -->
-  <div class="main_tab" id="About">
-    <div id="about-box">
-      <p>Here's the about</p>
-    </div>
-    <p>This is the About section. Insert your text here.</p>
-  </div>
-  <script>
-    // JavaScript to show the "About" box
-    const aboutButton = document.querySelector('.HD_option_btn[value="About"]');
-    const aboutBox = document.getElementById('about-box');
-
-    aboutButton.addEventListener('click', () => {
-      aboutBox.style.display = 'block';
-    });
-
-    // Close the box when clicked outside
-    window.addEventListener('click', (event) => {
-      if (event.target === aboutBox) {
-        aboutBox.style.display = 'none';
-      }
-    });
-  </script>
+	
   <script src="/jquery-3.2.1.min.js"></script>
   <script src="/GoJs.js"></script>
   <script src="/tinycolor.js"></script>
