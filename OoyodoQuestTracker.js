@@ -66,6 +66,7 @@ document.querySelector(".HD_main_tab_btn[value='FC']").addEventListener("click",
 
 
 
+
   // function used at the loading of the page
   function initialisation() {
 
