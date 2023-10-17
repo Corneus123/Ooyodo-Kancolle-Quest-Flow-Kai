@@ -10552,7 +10552,8 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["F","Thin Futon",1]
     ]
-  };  
+  }
+};  
 Object.keys(ALL_QUESTS_LIST).forEach(quest => {
 ALL_QUESTS_LIST[quest].requires.forEach(req => {
   if (ALL_QUESTS_LIST[req].unlocks.indexOf(quest) === -1){
