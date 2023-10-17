@@ -42,20 +42,28 @@ $(function () {
   $("#FC_RM_new_quests").val(NEW_QUESTS);
   
   
-  // Function to show the "About" content
+// Function to show the "About" content and hide "Flowchart"
 function showAboutContent() {
-    var aboutContent = document.getElementById("AboutContent");
+    var aboutContent = document.getElementById("About");
+    var flowchartContent = document.getElementById("FC");
+
     aboutContent.style.display = "block";
+    flowchartContent.style.display = "none";
 }
 
-// Function to hide the "About" content
-function hideAboutContent() {
-    var aboutContent = document.getElementById("AboutContent");
+// Function to show the "Flowchart" and hide "About" content
+function showFlowchart() {
+    var aboutContent = document.getElementById("About");
+    var flowchartContent = document.getElementById("FC");
+
     aboutContent.style.display = "none";
+    flowchartContent.style.display = "block";
 }
 
-// Event listener for the "About" button
+// Event listeners for the "About" and "Flowchart" buttons
 document.querySelector(".HD_option_btn[value='About']").addEventListener("click", showAboutContent);
+document.querySelector(".HD_main_tab_btn[value='FC']").addEventListener("click", showFlowchart);
+
 
 
   // function used at the loading of the page
