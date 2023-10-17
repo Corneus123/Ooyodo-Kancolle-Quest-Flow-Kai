@@ -571,3 +571,12 @@ top:130px;
   }
 
 }
+
+
+/* Style the square in the "About" section */
+.about-square {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: #007bff; /* Adjust the background color as needed */
+  margin: 0 auto; /* Center the square horizontally */
+}
