@@ -191,7 +191,8 @@ const EQUIPMENT_TYPE = {
   "OS2U": "Seaplane",
   "F4F-3★+3": "Fighter",
   "TBD★+3": "Bomber",
-  "533mm Quintuple Torpedo Mount (Late Model)": "Torpedo"
+  "533mm Quintuple Torpedo Mount (Late Model)": "Torpedo",
+  "RUR-4A Weapon Alpha Kai": "Depth Charge"
 
 };
 
@@ -5786,6 +5787,36 @@ const ALL_QUESTS_LIST = {
       ["E","F4F-3★+3","2","Choose one: "],
       ["E","TBD★+3","2","or "],
       ["C","Development Material","6","or "]
+    ]
+  },
+  "B149": {
+    "Jp": "改装護衛駆逐艦「Fletcher Mk.II」作戦開始！",
+    "En": "Remodeled Escort Destroyer \"Fletcher Mk.II\" Commence Operation!",
+    "content": "Assemble a fleet containing Fletcher Mk.II as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-5, 7-1, 6-2, and 6-5 twice each.",
+    "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
+    "unlocks": [],
+    "requires": ["B98", "B148"],
+    "period": "once",
+    "needs": {
+      "S": ["Fletcher Mk.II"],
+      "M": [
+        ["1-5",2],
+        ["7-1",2],
+        ["6-2",2]
+        ["6-5",2]
+      ]
+    },
+    "resources": {
+      "F": "700",
+      "A": "700",
+      "S": "700",
+      "B": "700"
+    },
+    "reward": [
+      ["E","RUR-4A Weapon Alpha Kai","1"],
+      ["I","Improvement Material","4","Choose one: "],
+      ["I","Skilled Crew Member","1","or "],
+      ["I","Underway Replenishment","3","or "]
     ]
   },
 
