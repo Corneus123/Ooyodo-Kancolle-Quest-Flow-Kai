@@ -111,7 +111,7 @@ const EQUIPMENT_TYPE = {
   "TBF": "Bomber",
   "F6F-3N": "Night plane",
   "F6F-5N": "Night plane",
-  "BM-3D": "Night plane",
+  "TBM-3D": "Night plane",
   "Swordfish": "Bomber",
   "Type 1 Fighter Hayabusa Model II": "Fighter",
   "Shiden Model 11": "Land-based Fighter",
@@ -269,7 +269,8 @@ const ICONS_LINK = {
   "autogyro": "files/webpage/game_icons/autogyro.png",
   "New Model Rocket Development Material": "files/webpage/game_icons/New_Model_Rocket_Development_Material.png"
 };
-
+// C =Development Material, Instant Construction, Instant Repair 
+// I = Furniture Box Medium , Large Furniture Box, Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 
 // COMPOSITION QUEST A00
