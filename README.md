@@ -1,4 +1,5 @@
-Ooyodo quest flowchart is a tool for the Japanese game Kantai Collection that helps you too browse efficently through and manage the quests.
+Ooyodo quest Kai flowchart (previously Ooyodo's quest tracker) is a tool for the Japanese game Kantai Collection that helps you too browse efficently through and manage the quests.
+Previous version : https://kahr-noss.com/OoyodoQuestTracker.html
 
 # Functions:
 
@@ -32,16 +33,14 @@ You don't know where you are in your quest completion? Don't worry and ask Ooyod
 An interactive tutorial is available on the site. Little Ooyodo will guide you through the most important functions of the application.
 
 ## Up to date content: 
-The quests data will be updated with new quests as soon as their content is quasi-certified on community websites (mainly Japanese wiki).
+The quests data will be updated with new quests as soon as their content is quasi-certified on community websites (https://en.kancollewiki.net/).
 
 ## Cuteness overflow: 
 A little Ooyodo will be there to help you with your quest management.
 
 
 # Caution!
-The site is still in beta version, there might be some problems remaining. If you find anything strange let me know.
-* Browser: The application is developed to work on Chrome, it's not compatible with Internet explorer, and the results are not guaranteed on other browser.
-* Performances: The application can be quite slow (especially at the beginning where the whole flowchart is created) if used on not powerful computers. If people are unable to use it I can work on a lighter version by removing some of the secondary functions.
-* Content: You found some inconsistencies between the game and the application? It's possible, the data used are the one collected by the community and might not be 100% accurate. Some information differ from a site to another.
+The site is still in undergoing maintain after abandoned for several years, so please let us knows if there's any trouble, etc.
+* Performances: The application can be quite slow (especially at the beginning where the whole flowchart is created) it may take a while (or maybe if anyone have a better solution for lighter loading, let us know)
 * Utilization: If some functions are complicated or feel uninstictive to use, let me know.
-* Improvement: There is a thing you want to do and think it can be useful to improve this site, send me your ideas.
+* Improvement: There is a thing you want to do and think it can be useful to improve this site, send us your ideas.
