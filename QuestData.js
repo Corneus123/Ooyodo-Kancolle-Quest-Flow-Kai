@@ -6582,7 +6582,6 @@ const ALL_QUESTS_LIST = {
       ["C","Development Material",1]
     ]
   },
-
   "C5": {
     "Jp": "艦隊の練度向上に努めよ！",
     "En": "Strive to Increase the Level of the Fleet's Training",
