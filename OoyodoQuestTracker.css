@@ -1,6 +1,7 @@
 
 body {
   margin:0;
+  font: 15px "Arial", sans-serif;
 }
 
 button{
@@ -32,22 +33,30 @@ i{
   z-index:10;
 }
 
+
 .HD_main_tab_btn, .HD_option_btn{
-  height: 100%;
-  width: calc((55% - 70px) / 3);
-  max-width: 250px;
-  float: right;
+  height: 60px;
+  width: 250px;
+  position: absolute;
+  bottom: 0px;
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
-  font-size: 2.3vw;
+  font-size: 36px;
   text-align: center;
   cursor:pointer;
   color:#ffffff;
    background-size: 100% 100%;
   border: none;
-  background-image:url(files/webpage/hexagon_button_HD.png);
+  background-image:url(webpage/hexagon_button_HD.png);
 }
 
+
+
+
+#myDiagramDiv{
+  border: solid 1px black;
+   top: 60px;
+}
 
 /*    MENU CSS    */
 
@@ -74,7 +83,7 @@ i{
   color:#ffffff;
   background-size: 175px 40px;
   border: none;
-  background-image:url(files/webpage/hexagon_button_RM.png);
+  background-image:url(webpage/hexagon_button_RM.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -89,7 +98,7 @@ i{
   color:#ffffff;
   background-size: 175px 30px;
   border: none;
-  background-image:url(files/webpage/hexagon_button_RM_small.png);
+  background-image:url(webpage/hexagon_button_RM_small.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -112,7 +121,7 @@ button:focus {
 #Ooyodo{
   display: block;
   max-width:195px;
-  max-height:calc(100% - 60px - 420px);
+  max-height:calc(100% - 60px - 400px);
   width: auto;
   height: auto;
   position:absolute;
@@ -148,7 +157,37 @@ button:focus {
   background: linear-gradient(#3a3a3a , #303030);
 }
 
+#FT_showHide{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  left: 0PX;
+  top: -18px;
+  text-align: center;
+  z-index: 100;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
 #FC_FT_quest_list{
+position: absolute;
+top: 0px;
+left: 0px;
   width: 100px;
   float: left;
   height: 100%;
@@ -158,7 +197,7 @@ button:focus {
   overflow-y: auto;
 }
 
-.QL_questBox_complete_btn, .QL_questBox_goToChart_btn{
+.QL_questBox_set_as, .QL_questBox_goToChart_btn{
   width:93px;
   height:40px;
   float:right;
@@ -167,12 +206,12 @@ button:focus {
   color:#ffffff;
   background-size: 93px 40px;
   border: none;
-  background-image:url(files/webpage/questBox_button.png);
+  background-image:url(webpage/questBox_button.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
 
-#FC_FT_quest_info_complete_btn{
+#FC_FT_quest_info_set_as{
   width:100%;
   position: absolute;
   bottom:0px;
@@ -188,6 +227,7 @@ button:focus {
 #FC_FT_select_quest_list{
   width:100%;
   background-color: #3a3a3a;
+  top:0px;
 }
 
 .range_indicator{
@@ -198,7 +238,8 @@ button:focus {
 .cellDiv{
   position:absolute;
   border: 1px solid black;
-  overflow-y: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -265,12 +306,12 @@ button:focus {
   display: inline-block;
 }
 
-.link{
+.link, .questLink{
   cursor:pointer;
   color:#0645AD;
 }
 
-.link:hover{
+.link:hover, .questLink:hover{
   text-decoration: underline;
 }
 
@@ -283,10 +324,40 @@ button:focus {
   padding: 10px;
 }
 
+.bookmark_checkbox{
+  display:none;
+}
+.bookmark_checkbox + label{
+background-image:url(webpage/not_bookmarked.png);
+background-size: 25px;
+background-repeat: no-repeat;
+position: absolute;
+top: -3px;
+left: 5px;
+z-index: 20;
+height: 45px;
+width: 25px;
+cursor: pointer;
+}
+
+.bookmark_checkbox:checked + label{
+background-image:url(webpage/bookmarked.png);
+background-size: 25px;
+background-repeat: no-repeat;
+position: absolute;
+top: -3px;
+left: 5px;
+z-index: 20;
+height: 45px;
+width: 25px;
+cursor: pointer;
+}
+
+
 
 /*    TUTORIAL      */
 
-#tuto{
+#tuto, #NF_guide{
   z-index:50;
   position: fixed;
   background-color: #3a3a3a;
@@ -345,7 +416,7 @@ button:focus {
 
 .bubble {
   position:absolute;
-  bottom: 280px;
+  bottom: calc(100% - 60px - 370px);
   right:50px;
   width:250px;
   padding:15px;
@@ -458,4 +529,45 @@ button:focus {
 
 .ribbon:after{
   right:0;
+}
+
+
+
+/*            IF THE SCREEN IS TOO SMALL            */
+
+@media only screen and (max-width: 1400px) {
+  #HD{
+    height:120px;
+  }
+
+#HD_emptyBox{
+  width: calc(100% - 100px);
+}
+
+#QL_quest_boxes{
+    height: calc(100% - 140px);
+    top: 140px;
+}
+
+  .RM{
+    height: calc(100% - 120px);
+    top: 120px;
+  }
+
+  #myDiagramDiv{
+     top: 120px;
+  }
+
+  #Ooyodo{
+    max-height:calc(100% - 120px - 400px);
+  }
+
+  .bubble{
+      bottom: calc(100% - 120px - 370px);
+  }
+
+  #QL_display_mode{
+top:130px;
+  }
+
 }
