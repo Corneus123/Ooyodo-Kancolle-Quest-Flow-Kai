@@ -6557,8 +6557,7 @@ const ALL_QUESTS_LIST = {
       ["E","Type 94 Depth Charge Projector","2","or "],
       ["E","Drum Canister (Transport Use)","2","or "]
     ]
-  }
-},  
+  },  
 
 // Placeholder bq 12-13 here
    
