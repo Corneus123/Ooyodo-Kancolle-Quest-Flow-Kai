@@ -1,5 +1,5 @@
 Ooyodo quest Kai flowchart (previously Ooyodo's quest tracker) is a tool for the Japanese game Kantai Collection that helps you too browse efficently through and manage the quests.
-Previous version : kahr-noss.com/OoyodoQuestTracker.html
+Previous version : https://kahr-noss.com/OoyodoQuestTracker.html
 
 # Functions:
 
