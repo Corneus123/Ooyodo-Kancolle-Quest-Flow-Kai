@@ -187,9 +187,9 @@ const EQUIPMENT_TYPE = {
   "Swordfish (Seaplane Model)": "Seaplane",
   "Swordfish Mk.III Kai (Seaplane Model)": "Seaplane",
   "S9 Osprey": "Seaplane",
-  "Fairey Seafox Kai": "Seaplane"
-  "OS2U": "Seaplane"
-  "F4F-3★+3": "Fighter"
+  "Fairey Seafox Kai": "Seaplane",
+  "OS2U": "Seaplane",
+  "F4F-3★+3": "Fighter",
   "TBD★+3": "Bomber"
 
 };
