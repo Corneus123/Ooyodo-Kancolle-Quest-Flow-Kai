@@ -212,7 +212,7 @@ const ICONS_LINK = {
   "Mamiya": "files/webpage/game_icons/Mamiya.png",
   "Furniture box small": "files/webpage/game_icons/Furniture_box_small.png",
   "Furniture box medium": "files/webpage/game_icons/Furniture_box_medium.png",
-  "Large furniture box": "files/webpage/game_icons/Furniture_box_large.png",
+  "Furniture Box (Large)": "files/webpage/game_icons/Furniture_box_large.png",
   "Skilled Crew Member": "files/webpage/game_icons/Skilled_Crew_Member.png",
   "Irako": "files/webpage/game_icons/Irako.png",
   "Combat Ration": "files/webpage/game_icons/Combat_Ration.png",
@@ -277,7 +277,7 @@ const ICONS_LINK = {
   "New Model Rocket Development Material": "files/webpage/game_icons/New_Model_Rocket_Development_Material.png"
 };
 // C =Development Material, Instant Construction, Instant Repair, Improvement Material
-// I = Furniture Box Medium , Large Furniture Box, Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
+// I = Furniture Box Medium , Furniture Box (Large), Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 
 // COMPOSITION QUEST A00
@@ -1419,7 +1419,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Instant Repair",3],
-      ["I","Large furniture box",1]
+      ["I","Furniture Box (Large)",1]
     ]
   },
   "A56": {
@@ -2698,7 +2698,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Arare","Kagerou","Kasumi","Shiranui"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["C","Development Material",2]
     ]
   },
@@ -2742,7 +2742,7 @@ const ALL_QUESTS_LIST = {
       "M": ["4-4"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["C","Instant Repair",3]
     ]
   },
@@ -2896,7 +2896,7 @@ const ALL_QUESTS_LIST = {
       "M": ["2-2"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -2986,7 +2986,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Furutaka","Kako","Aoba","Kinugasa"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -3076,7 +3076,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Nachi","Hatsushimo","Kasumi","Ushio","Akebono"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["C","Improvement Material",2]
     ]
   },
@@ -3464,7 +3464,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Natori","Isuzu","Kinu"]
     },
     "reward": [
-      ["I","Large furniture box",1]
+      ["I","Furniture Box (Large)",1]
     ]
   },
   "B56": {
@@ -5227,14 +5227,14 @@ const ALL_QUESTS_LIST = {
   },
   "B130": {
     "Jp": "精鋭無比「第一艦隊」まかり通る！【拡張作戦】",
-    "En": "Unrivaled \"1st Squadron\", Coming Through! (Extra Operation)",
-    "content": "Sortie a fleet with Mutsu Kai Ni and Nagato Kai Ni as flagship and second ship and up to 4 additional ships to Worlds 2-5, 5-5 and 6-4. Obtain a S-rank at each boss node.",
+    "En": "Unrivaled \"First Squadron\" Coming Through! [Extra Operation]",
+    "content": "Assemble a fleet containing Nagato Kai Ni and Mutsu Kai Ni with either as Secretary and second ship, and up to 4 XX, then S rank the boss nodes of 2-5, 5-5, and 6-4.",
     "tips": "",
     "unlocks": [],
     "requires": ["B129"],
     "period": "once",
     "needs": {
-      "S": ["Mutsu Kai Ni","Nagato Kai Ni"],
+      "S": ["Nagato Kai Ni","Mutsu Kai Ni"],
       "M": [
         ["2-5",1],
         ["5-5",1],
@@ -5256,18 +5256,18 @@ const ALL_QUESTS_LIST = {
   }, 
   "B131": {
     "Jp": "航空戦艦戦隊、戦闘哨戒！",
-    "En": "Aviation Battleship Division, Scout and Engage!",
-    "content": "Sortie a fleet with 2 BBV and up to 4 additional ships to Worlds 1-4, 1-5, 2-3, and 7-2. Obtain a S-rank at the boss of 1-4, 1-5, and 2-3. Obtain a S-rank at the second boss of 7-2.",
+    "En": "Aviation Battleship Squadron, Commence Combat Patrol!",
+    "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then S rank the boss nodes of 1-4, 1-5, 2-3, and 7-2 (Part 2).",
     "tips": "",
-    "unlocks": ["B132"],
-    "requires": ["F84"],
+    "unlocks": [],
+    "requires": ["A18","Fd2"],
     "period": "once",
     "needs": {
       "M": [
         ["1-4",1],
         ["1-5",1],
         ["2-3",1],
-        ["7-2",1]
+        ["7-2 (Part 2)",1]
       ]
     },
     "resources": {
@@ -5284,16 +5284,16 @@ const ALL_QUESTS_LIST = {
   },
   "B132": {
     "Jp": "最精鋭「第四航空戦隊」、出撃せよ！",
-    "En": "Top-class \"CarDiv 4\", Sortie!\"",
-    "content": "Sortie a fleet with Ise Kai Ni, Hyuuga Kai Ni, and up to 4 additional ships to Worlds 1-6, 4-5, 5-5, and 6-5. Obtain a S-rank at each boss node once, and reach the anchor node N of 1-6 twice.",
+    "En": "Super Elite 4th Carrier Division, Weigh Anchor!",
+    "content": "Assemble a fleet containing Ise Kai Ni, Hyuuga Kai Ni, and up to 4 XX in the First Fleet, then S rank the boss nodes of 4-5, 5-5, and 6-5 once each, and reach node N on 1-6 twice.",
     "tips": "",
     "unlocks": [],
     "requires": ["B131","F85"],
     "period": "once",
     "needs": {
-      "S": ["Hyuuga Kai Ni","Ise Kai Ni"],
+      "S": ["Ise Kai Ni","Hyuuga Kai Ni"],
       "M": [
-        ["1-6",1],
+        ["1-6",2],
         ["4-5",1],
         ["5-5",1],
         ["6-5",1]
@@ -5313,20 +5313,21 @@ const ALL_QUESTS_LIST = {
   },
   "B133": {
     "Jp": "重改装高速戦艦「金剛改二丙」、南方突入！",
-    "En": "Heavily Refurbished Fast Fattleship \"Kongō K2C\", Head to the South!",
-    "content": "Sortie a fleet with Kongou Kai Ni C as flagship, 1 other Kongou-class member, 2 DD, and up to 2 additional ships to Worlds 5-1, 5-3, 5-4, and 5-5. Obtain a S-rank at each boss node twice.",
+    "En": "Heavily Remodeled Fast Battleship \"Kongou Kai Ni C\", Head To The South!",
+    "content": "Assemble a fleet containing Kongou Kai Ni C, 1 Kongou-class, 2DD, and up to 2 XX, then S rank the boss nodes of 5-1, 5-3, 5-4, and 5-5 twice each.",
     "tips": "",
     "unlocks": [],
-    "requires": ["B128"],
+    "requires": ["B128","Cd1"],
     "period": "once",
     "needs": {
+      "S": ["Kongou Kai Ni C"],
       "M": [
-        ["5-1",1],
-        ["5-3",1],
-        ["5-4",1],
-        ["5-5",1]
+        ["5-1",2],
+        ["5-3",2],
+        ["5-4",2],
+        ["5-5",2]
       ],
-      "S": ["Kongou Kai Ni C","Hiei","Haruna","Kirishima"]
+
     },
     "resources": {
       "F": "1944",
@@ -5335,7 +5336,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","35.6cm Twin Gun Mount Kai Ni",1,"or "],
+      ["E","35.6cm Twin Gun Mount Kai Ni","1"],
       ["I","Action Report","1","Choose one: "],
       ["I","New Model Gun Mount Improvement Material","2","or "],
       ["I","Medal","1","or "]
@@ -5344,17 +5345,17 @@ const ALL_QUESTS_LIST = {
   "B134": {
     "Jp": "艦隊司令部の強化 【実施段階】",
     "En": "Fleet Headquarters Improvements [Implementation Phase]",
-    "content": "Sortie a fleet with Ooyodo as flagship, either Akashi or a AV, and up to 4 additional ships to Worlds 2-3, 3-3, and 4-1. Obtain a S-rank at each boss node twice.",
+    "content": "Assemble a fleet containing Ooyodo as flagship, 1 AV/Akashi, and up to 4 XX, then S rank the boss nodes of 2-3, 3-3, and 4-1 twice each.",
     "tips": "",
     "unlocks": [],
     "requires": ["D29"],
     "period": "once",
     "needs": {
-      "S": ["Akashi","Ooyodo"],
+      "S": ["Ooyodo"],
       "M": [
-        ["2-3",1],
-        ["3-3",1],
-        ["4-1",1]
+        ["2-3",2],
+        ["3-3",2],
+        ["4-1",2]
       ]
     },
     "resources": {
@@ -5365,17 +5366,17 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Headquarters Personnel","1"],
-      ["I","Medal","1","Choose one: "],
+      ["I","Furniture Box (Large)","8","Choose one: "],
       ["I","Reinforcement Expansion","1","or "],
-      ["I","Large furniture box",8,"or "]
+      ["I","Medal","1","or "]
     ]
   },
   "B135": {
     "Jp": "近海哨戒を実施せよ！",
     "En": "Patrol the Coastal Waters!",
-    "content": "Sortie a fleet with 1 CL, 3 DD/DE, and up to 2 additional ships to Worlds 1-2, 1-3, 2-1, and 2-2. Obtain a S-rank at each boss node.",
+    "content": "Assemble a fleet containing 1 CL, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 2-1, and 2-2.",
     "tips": "",
-    "unlocks": ["B136","B138"],
+    "unlocks": [],
     "requires": ["B6"],
     "period": "once",
     "needs": {
@@ -5395,20 +5396,20 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["I","Action Report","1"],
       ["C","Development Material","3","Choose one: "],
-      ["C","Instant Repair","3","or "],
+      ["C","Instant Repair Material","3","or "],
       ["E","25mm Triple Autocannon Mount","2","or "]
     ]
   },
   "B136": {
     "Jp": "精鋭「二四駆逐隊」出撃せよ！",
     "En": "Peerless \"DesDiv 24\", Sortie!",
-    "content": "Sortie a fleet with Umikaze Kai Ni as flagship, 2 of Yamakaze, Kawakaze, and Suzukaze, and up to 3 additional ships to Worlds 2-3, 2-4, 5-1, and 5-3. Obtain a S-rank at each boss node.",
+    "content": "Assemble a fleet containing Umikaze Kai Ni as flagship, any 2 of: \"Kawakaze, Yamakaze, or Suzukaze\"; and up to 3 XX, then S rank the boss nodes of 2-3, 2-4, 5-1, and 5-3.",
     "tips": "",
     "unlocks": [],
-    "requires": ["B135"],
+    "requires": ["B41","B135"],
     "period": "once",
     "needs": {
-      "S": ["Kawakaze","Umikaze Kai Ni","Yamakaze","Suzukaze"],
+      "S": ["Umikaze Kai Ni"],
       "M": [
         ["2-3",1],
         ["2-4",1],
@@ -5431,18 +5432,18 @@ const ALL_QUESTS_LIST = {
   },
   "B137": {
     "Jp": "精強！「第一航空戦隊」出撃せよ！",
-    "En": "Powerful \"CarDiv 1\", Sortie!",
-    "content": "Sortie a fleet with Akagi Kai Ni or Akagi Kai Ni E as flagship, Kaga as second ship, and up to 4 additional ships to Worlds 4-5, 5-2, and 6-5. Obtain a S-rank at the boss node of 4-5 and 5-2 once. Obtain a S-rank at the boss node of 6-5 twice.",
+    "En": "Superior \"CarDiv 1\"! Sortie!",
+    "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
-    "unlocks": ["F88"],
-    "requires": ["C33"],
+    "unlocks": [],
+    "requires": ["B40","C33"],
     "period": "once",
     "needs": {
       "S": ["Akagi Kai Ni","Kaga"],
       "M": [
         ["4-5",1],
         ["5-2",1],
-        ["6-5",1]
+        ["6-5",2]
       ]
     },
     "resources": {
@@ -5460,11 +5461,11 @@ const ALL_QUESTS_LIST = {
   },
   "B138": {
     "Jp": "「羽黒」「神風」、出撃せよ！",
-    "En": "Haguro & Kamikaze, Sortie!",
-    "content": "Sortie a fleet with Haguro, Kamikaze, and either 1 additional CA(V) and 2 additional DD (for a total of 5 ships) or 4 additional DD to Worlds 2-1, 2-2, and 2-3. Obtain a S-rank at each boss node.",
+    "En": "\"Haguro\" and \"Kamikaze\", Sortie!",
+    "content": "Assemble a fleet containing Haguro, Kamikaze, and either \"4 DD\" or \"1 CA(V) and 2DD (5 ships)\", then S rank the boss nodes of 2-1, 2-2, and 2-3.",
     "tips": "",
     "unlocks": [],
-    "requires": ["B135"],
+    "requires": ["A15","B135"],
     "period": "once",
     "needs": {
       "S": ["Haguro","Kamikaze"],
@@ -5481,7 +5482,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["F","Haguro's Protection","1"],
+      ["F","Haguro's Protection Scroll","1"],
       ["I","New Model Aerial Armament Materials","1","Choose one: "],
       ["I","Reinforcement Expansion","1","or "],
       ["I","Furniture Fairy","1","or "]
@@ -5489,16 +5490,16 @@ const ALL_QUESTS_LIST = {
   },
   "B139": {
     "Jp": "陸戦用装備の艦載運用実戦研究",
-    "En": "Research of Ship-borne Land Based Equipment in Actual Combat",
-    "content": "Sortie a fleet with at least 1 LHA/AV and up to 5 additional ships to Worlds 4-5 and 6-4. Obtain a A-rank or higher at each boss node twice.",
+    "En": "Research Of Shipborne Land-Based Equipment In Actual Combat",
+    "content": "Assemble a fleet containing 1 AV/LHA and up to 5 XX, then A+ rank the boss nodes of 4-5 and 6-4 twice each.",
     "tips": "",
     "unlocks": [],
     "requires": ["B80","F89"],
     "period": "once",
     "needs": {
       "M": [
-        ["4-5",1],
-        ["6-4",1]
+        ["4-5",2],
+        ["6-4",2]
       ]
     },
     "resources": {
@@ -5508,8 +5509,9 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher",1,"or "],
       ["E","Type 2 12cm Mortar Kai","3","Choose one: "]
+      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher","1","or "],
+      
     ]
   },
   "B140": {
@@ -5517,14 +5519,14 @@ const ALL_QUESTS_LIST = {
     "En": "I Wonder If We Should Test Out \"Yuubari Kai Ni\"?",
     "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship and up to 5 XX, then S rank the boss nodes of 2-5, 3-3, 5-3, and 6-3.",
     "tips": "",
-    "unlocks": ["B141"],
+    "unlocks": [],
     "requires": ["B11","Fd1"],
     "period": "once",
     "needs": {
-	  "S": ["Yuubari Kai Ni"],
+      "S": ["Yuubari Kai Ni"],
       "M": [
         ["2-5",1],		 
-		["3-3",1],
+        ["3-3",1],
         ["5-3",1],
         ["6-3",1]
       ]
@@ -5536,9 +5538,9 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-	  ["E","14cm Twin Gun Mount Kai","1"],
+      ["E","14cm Twin Gun Mount Kai","1"],
       ["E","Type 2 Depth Charge","2","Choose one: "],
-      ["E","Daihatsu Landing Craft","1","or "],
+      ["E","Daihatsu Landing Craft","2","or "],
       ["I","Furniture Fairy","1","or "]
     ]
   },
@@ -5547,16 +5549,16 @@ const ALL_QUESTS_LIST = {
     "En": "New \"6th Torpedo Squadron\" Sortie! Let Me Know What You Think Afterward!",
     "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship, any 3 of: \"Mutsuki, Kisaragi, Yayoi, Uzuki, Kikuzuki, or Mochizuki\"; and up to 2 XX, then S rank the boss nodes of 1-5, 1-6, 2-2, 3-2, and 7-1.",
     "tips": "",
-    "unlocks": ["Bq13"],
+    "unlocks": [],
     "requires": ["B140"],
     "period": "once",
     "needs": {
-	  "S": ["Yuubari Kai Ni","Mutsuki","Kisaragi","Yayoi","Uzuki","Kikuzuki","Mochizuki"],
+      "S": ["Yuubari Kai Ni"],
       "M": [
-        ["1-5",1],		 
-		["1-6",1],
+        ["1-5",1],
+        ["1-6",1],
         ["2-2",1],
-		["3-2",1],
+        ["3-2",1],
         ["7-1",1]
       ]
     },
@@ -5567,7 +5569,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-	  ["I","Reinforcement Expansion","1"],
+      ["I","Reinforcement Expansion","1"],
       ["C","Development Material","12","Choose one: "],
       ["E","Type D Kouhyouteki Kai (Kouryuu Kai)","1","or "],
       ["C","Improvement Material","6","or "]
@@ -5582,12 +5584,12 @@ const ALL_QUESTS_LIST = {
     "requires": ["B65","Cd1"],
     "period": "once",
     "needs": {
-	  "S": ["Naganami","Kishinami","Asashimo","Okinami Kai Ni"],
+      "S": ["Naganami","Kishinami","Asashimo","Okinami Kai Ni"],
       "M": [
-        ["1-3",1],		 
-		["1-4",1],
+        ["1-3",1],
+        ["1-4",1],
         ["1-5",1],
-		["2-2",1],
+        ["2-2",1],
         ["2-3",1]
       ]
     },
@@ -5599,9 +5601,9 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","3","Choose one: "],
-      ["C","Instant Repair","6","or "],
+      ["C","Instant Repair Material","6","or "],
       ["I","Combat Ration (Special Onigiri)","2","or "],
-	  ["I","New Model Gun Mount Improvement Material","12","Choose one: "],
+      ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
       ["I","New Model Rocket Development Material","1","or "],
       ["F","Offshore Waves Hanging Shelf","1","or "]
     ]
@@ -5615,11 +5617,11 @@ const ALL_QUESTS_LIST = {
     "requires": ["B15","D21"],
     "period": "once",
     "needs": {
-	  "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"],
+      "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"],
       "M": [
-        ["3-5",1],		 
-		["5-2",1],
-        ["7-2",1],
+        ["3-5",1],
+        ["5-2",1],
+        ["7-2 (Part 2)",1],
         ["6-5",1]
       ]
     },
@@ -5631,9 +5633,9 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","2","Choose one: "],
-      ["C","Instant Repair","6","or "],
+      ["C","Instant Repair Material","6","or "],
       ["E","25mm Triple Autocannon Mount","2","or "],
-	  ["E","Prototype Toukai","1","Choose one: "],
+      ["E","Prototype Toukai","1","Choose one: "],
       ["E","Prototype Keiun (Carrier-based Reconnaissance Model)","1","or "]
     ]
   },
@@ -5646,12 +5648,12 @@ const ALL_QUESTS_LIST = {
     "requires": ["B133"],
     "period": "once",
     "needs": {
-	  "S": ["Hiei Kai Ni C"],
+      "S": ["Hiei Kai Ni C"],
       "M": [
-        ["5-1",1],		 
-		["5-2",1],
+        ["5-1",1],
+        ["5-2",1],
         ["5-3",1],
-		["5-4",1],
+        ["5-4",1],
         ["5-5",1]
       ]
     },
@@ -5664,8 +5666,8 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["I","New Model Gun Mount Improvement Material","2","Choose one: "],
       ["E","35.6cm Twin Gun Mount Kai Ni","1","or "],
-	  ["E","Type 0 Reconnaissance Seaplane Model 11B★+2","1","Choose one: "],
-	  ["E","New Kanhon Design Anti-torpedo Bulge (Large)★+2","1","or "],
+      ["E","Type 0 Reconnaissance Seaplane Model 11B★+2","1","Choose one: "],
+      ["E","New Kanhon Design Anti-torpedo Bulge (Large)★+2","1","or "],
       ["I","Action Report","1","or "]
     ]
   },  
@@ -5678,12 +5680,12 @@ const ALL_QUESTS_LIST = {
     "requires": ["B62","Bd5"],
     "period": "once",
     "needs": {
-	  "S": ["Gotland Andra"],
+      "S": ["Gotland Andra"],
       "M": [
-        ["2-4",1],		 
-		["4-2",1],
+        ["2-4",1],
+        ["4-2",1],
         ["4-4",1],
-		["4-5",1]
+        ["4-5",1]
       ]
     },
     "resources": {
@@ -5696,8 +5698,8 @@ const ALL_QUESTS_LIST = {
       ["E","Swordfish (Seaplane Model)","2","Choose one: "],
       ["E","S9 Osprey","2","or "],
       ["E","Swordfish Mk.III Kai (Seaplane Model)","1","or "],
-	  ["C","Improvement Material","4","Choose one: "],
-	  ["I","New Model Aerial Armament Materials","1","or "],
+      ["C","Improvement Material","4","Choose one: "],
+      ["I","New Model Aerial Armament Materials","1","or "],
       ["I","Reinforcement Expansion","1","or "]
     ]
   }, 
@@ -5863,7 +5865,7 @@ const ALL_QUESTS_LIST = {
         ["3-4",1],
         ["4-3",1],
         ["5-2",1],
-        ["7-2-2",1],
+        ["7-2 (Part 2)",1],
       ]
     },
     "resources": {
@@ -6266,7 +6268,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Myoukou","Nachi","Haguro"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["C","Development Material",5]
     ]
   },
@@ -6288,7 +6290,7 @@ const ALL_QUESTS_LIST = {
       "M": ["6-1"]
     },
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["I","Irako",1]
     ]
   },
@@ -6376,7 +6378,7 @@ const ALL_QUESTS_LIST = {
       "M": ["4-2"]
     },
     "reward": [
-      ["I","Large furniture box",2],
+      ["I","Furniture Box (Large)",2],
       ["C","Improvement Material",2]
     ]
   },
@@ -7630,7 +7632,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Improvement Material",2],
-      ["I","Large furniture box",1]
+      ["I","Furniture Box (Large)",1]
     ]
   },
   "D20": {
@@ -7904,7 +7906,7 @@ const ALL_QUESTS_LIST = {
     "period": "weekly",
     "needs": {},
     "reward": [
-      ["I","Large furniture box",1],
+      ["I","Furniture Box (Large)",1],
       ["C","Development Material",3]
     ]
   },
@@ -9651,7 +9653,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["C","Development Material","5","Choose one: "],
       ["I","Furniture box medium","3","or "],
-      ["I","Large furniture box",3,"Choose one: "],
+      ["I","Furniture Box (Large)",3,"Choose one: "],
       ["I","Furniture Fairy","1","or "]
     ]
   },
@@ -10638,7 +10640,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
-      ["I","Large furniture box",1]
+      ["I","Furniture Box (Large)",1]
     ]
   },
   "WB01": {
