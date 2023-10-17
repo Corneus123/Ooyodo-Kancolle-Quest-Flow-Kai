@@ -192,7 +192,8 @@ const EQUIPMENT_TYPE = {
   "F4F-3★+3": "Fighter",
   "TBD★+3": "Bomber",
   "533mm Quintuple Torpedo Mount (Late Model)": "Torpedo",
-  "RUR-4A Weapon Alpha Kai": "Depth Charge"
+  "RUR-4A Weapon Alpha Kai": "Depth Charge",
+  "Lightweight ASW Torpedo (Initial Test Model)": "Depth Charge"
 
 };
 
@@ -5814,9 +5815,38 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["E","RUR-4A Weapon Alpha Kai","1"],
-      ["I","Improvement Material","4","Choose one: "],
+      ["C","Improvement Material","4","Choose one: "],
       ["I","Skilled Crew Member","1","or "],
       ["I","Underway Replenishment","3","or "]
+    ]
+  },
+  "B150": {
+    "Jp": "同艦隊作戦任務【拡張作戦】",
+    "En": "Combined Fleet Operation Mission [Extra Operation]",
+    "content": "Assemble a fleet containing Fletcher Mk.II, any 3 USN/RN/RAN/RNN ships, and up to 2 XX, then S rank the boss nodes of 4-5, 5-5, and 6-4 twice each.",
+    "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
+    "unlocks": [],
+    "requires": ["B149"],
+    "period": "once",
+    "needs": {
+      "S": ["Fletcher Mk.II"],
+      "M": [
+        ["4-5",2],
+        ["5-5",2],
+        ["6-4",2]
+      ]
+    },
+    "resources": {
+      "F": "1000",
+      "A": "1000",
+      "S": "1000",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Medal","1"],
+      ["I","Prototype Flight Deck Catapult","1","Choose one: "],
+      ["E","Lightweight ASW Torpedo (Initial Test Model)","1","or "],
+      ["I","Remodel Blueprint","1","or "]
     ]
   },
 
