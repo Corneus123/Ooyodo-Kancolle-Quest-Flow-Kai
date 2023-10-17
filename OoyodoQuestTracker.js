@@ -40,6 +40,23 @@ $(function () {
   var bubbleTimeout;
   var bookmark = [];
   $("#FC_RM_new_quests").val(NEW_QUESTS);
+  
+  
+  // Function to show the "About" content
+function showAboutContent() {
+    var aboutContent = document.getElementById("AboutContent");
+    aboutContent.style.display = "block";
+}
+
+// Function to hide the "About" content
+function hideAboutContent() {
+    var aboutContent = document.getElementById("AboutContent");
+    aboutContent.style.display = "none";
+}
+
+// Event listener for the "About" button
+document.querySelector(".HD_option_btn[value='About']").addEventListener("click", showAboutContent);
+
 
   // function used at the loading of the page
   function initialisation() {
