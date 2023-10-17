@@ -18,7 +18,7 @@ $(function () {
     var tutorial = $(`<div id="tuto" hidden>
     <div id="closeBtn_tuto">X</div>
     <img id="Ooyodo_tuto" src="files/webpage/Ooyodo/welcome.png">
-    <div id="tuto_content"  style="display:inline-block;">
+    <div id="tuto_content"  style="display:inline-block; background-color: #f0f0f0; padding: 15px;">
     <p id="tuto_text" style="padding:15px; margin-left:200px;">
     Hello, welcome to the Ooyodo Quest Tracker admiral!
     I'll explain to you step by step how to use this application. Follow me!
