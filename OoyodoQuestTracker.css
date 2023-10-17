@@ -47,7 +47,7 @@ i{
   color:#ffffff;
    background-size: 100% 100%;
   border: none;
-  background-image:url(webpage/hexagon_button_HD.png);
+  background-image:url(files/webpage/hexagon_button_HD.png);
 }
 
 
@@ -83,7 +83,7 @@ i{
   color:#ffffff;
   background-size: 175px 40px;
   border: none;
-  background-image:url(webpage/hexagon_button_RM.png);
+  background-image:url(files/webpage/hexagon_button_RM.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -98,7 +98,7 @@ i{
   color:#ffffff;
   background-size: 175px 30px;
   border: none;
-  background-image:url(webpage/hexagon_button_RM_small.png);
+  background-image:url(files/webpage/hexagon_button_RM_small.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -206,7 +206,7 @@ left: 0px;
   color:#ffffff;
   background-size: 93px 40px;
   border: none;
-  background-image:url(webpage/questBox_button.png);
+  background-image:url(files/webpage/questBox_button.png);
   background-color:rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -328,7 +328,7 @@ left: 0px;
   display:none;
 }
 .bookmark_checkbox + label{
-background-image:url(webpage/not_bookmarked.png);
+background-image:url(files/webpage/not_bookmarked.png);
 background-size: 25px;
 background-repeat: no-repeat;
 position: absolute;
@@ -341,7 +341,7 @@ cursor: pointer;
 }
 
 .bookmark_checkbox:checked + label{
-background-image:url(webpage/bookmarked.png);
+background-image:url(files/webpage/bookmarked.png);
 background-size: 25px;
 background-repeat: no-repeat;
 position: absolute;
