@@ -188,6 +188,10 @@ const EQUIPMENT_TYPE = {
   "Swordfish Mk.III Kai (Seaplane Model)": "Seaplane",
   "S9 Osprey": "Seaplane",
   "Fairey Seafox Kai": "Seaplane"
+  "OS2U": "Seaplane"
+  "F4F-3★+3": "Fighter"
+  "TBD★+3": "Bomber"
+
 };
 
 const ICONS_LINK = {
@@ -5703,12 +5707,12 @@ const ALL_QUESTS_LIST = {
     "requires": ["B145"],
     "period": "once",
     "needs": {
-	  "S": ["Gotland Andra"],
+      "S": ["Gotland Andra"],
       "M": [
-        ["2-5",1],		 
-		["6-3",1],
+        ["2-5",1],
+        ["6-3",1],
         ["6-4",1],
-		["6-5",1]
+        ["6-5",1]
       ]
     },
     "resources": {
@@ -5719,8 +5723,8 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["F","Scandinavian Sofa","1"],
-	  ["I","New Model Aerial Armament Material","2","Choose one: "],
-	  ["I","New Model Aerial Armament Materials","1","or "],
+      ["I","New Model Aerial Armament Material","2","Choose one: "],
+      ["I","New Model Aerial Armament Materials","1","or "],
       ["E","Fairey Seafox Kai","1","or "]
     ]
   },
@@ -5752,6 +5756,35 @@ const ALL_QUESTS_LIST = {
       ["C","Instant Repair Material","4","or "],
       ["E","Tenzan","3","Choose one: "],
       ["E","OS2U","1","or "]
+    ]
+  },
+  "B148": {
+    "Jp": "合同艦隊旗艦、改装「Fletcher」、抜錨！",
+    "En": "Combined Fleet \"Flagship\", Remodeled Fletcher, Weigh Anchor!",
+    "content": "Assemble a fleet containing Fletcher Kai Mod.2 as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, and 3-5.",
+    "tips": "Fletcher Mk.II does not count as Fletcher Kai Mod.2 for this quest.",
+    "unlocks": [],
+    "requires": ["B30", "B147"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",1],
+        ["2-5",1],
+        ["3-5",1]
+      ]
+    },
+    "resources": {
+      "F": "600",
+      "A": "600",
+      "S": "600",
+      "B": "0"
+    },
+    "reward": [
+      ["E","533mm Quintuple Torpedo Mount (Late Model)","1"],
+      ["E","F4F-3★+3","2","Choose one: "],
+      ["E","TBD★+3","2","or "],
+      ["C","Development Material","6","or "]
     ]
   },
 
