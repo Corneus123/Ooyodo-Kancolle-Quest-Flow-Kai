@@ -190,7 +190,8 @@ const EQUIPMENT_TYPE = {
   "Fairey Seafox Kai": "Seaplane",
   "OS2U": "Seaplane",
   "F4F-3★+3": "Fighter",
-  "TBD★+3": "Bomber"
+  "TBD★+3": "Bomber",
+  "533mm Quintuple Torpedo Mount (Late Model)": "Torpedo"
 
 };
 
@@ -5767,7 +5768,7 @@ const ALL_QUESTS_LIST = {
     "requires": ["B30", "B147"],
     "period": "once",
     "needs": {
-      "S": [],
+      "S": ["Fletcher Kai Mod.2"],
       "M": [
         ["1-4",1],
         ["2-5",1],
