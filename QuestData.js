@@ -5733,10 +5733,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["B135"],
     "period": "once",
     "needs": {
-	    "S": [],
+      "S": [],
       "M": [
-        ["2-2",1],		 
-		    ["2-3",1],
+        ["2-2",1],
+        ["2-3",1],
         ["2-4",1]
       ]
     },
@@ -5748,9 +5748,9 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Improvement Material","2","Choose one: "],
-	    ["I","Emergency Repair Material","2","or "],
+      ["I","Emergency Repair Material","2","or "],
       ["C","Instant Repair Material","4","or "],
-	    ["E","Tenzan","3","Choose one: "],
+      ["E","Tenzan","3","Choose one: "],
       ["E","OS2U","1","or "]
     ]
   },
