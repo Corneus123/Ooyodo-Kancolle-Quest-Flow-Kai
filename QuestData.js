@@ -5849,7 +5849,36 @@ const ALL_QUESTS_LIST = {
       ["I","Remodel Blueprint","1","or "]
     ]
   },
-
+  "B151": {
+    "Jp": "合同艦隊機動部隊、出撃せよ！",
+    "En": "Combined Fleet Mobile Task Force, Sortie!",
+    "content": "Assemble a fleet containing 1 CV(B/L) from the USN/RN, and up to 5 XX, then S rank the boss nodes of 3-4, 4-3, 5-2, and 7-2 (Part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B147"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-4",1],
+        ["4-3",1],
+        ["5-2",1],
+        ["7-2-2",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "500",
+      "B": "1000"
+    },
+    "reward": [
+      ["C","Instant Repair Material","4","Choose one: "],
+      ["C","Development Material","5","or "],
+      ["E","SK Radar","1","Choose one: "],
+      ["I","New Model Aerial Armament Material","2","or "]
+    ]
+  },
  // Daily Sortie Quests Bd00
   "Bd1": {
     "Jp": "敵艦隊を撃破せよ！",
