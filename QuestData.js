@@ -5754,8 +5754,6 @@ const ALL_QUESTS_LIST = {
       ["E","OS2U","1","or "]
     ]
   },
-// Placeholder B147++ here
-
 
  // Daily Sortie Quests Bd00
   "Bd1": {
