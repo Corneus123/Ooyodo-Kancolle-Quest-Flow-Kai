@@ -545,7 +545,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A7"],
-    "unlocks": ["A15","G4"],
+    "unlocks": ["A15","G4","F64"],
     "period": "once",
     "needs": {
       "S": ["Sendai","Jintsuu","Naka"]
@@ -2376,7 +2376,7 @@ const ALL_QUESTS_LIST = {
       "B": "60"
     },
     "requires": ["B5"],
-    "unlocks": ["B7","B30","B67","B83","B135","Cs4"],
+    "unlocks": ["B7","B30","B67","B83","B135","Cs4","F73"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -5436,7 +5436,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
     "unlocks": [],
-    "requires": ["B40","C33"],
+    "requires": ["B40","C33","F88"],
     "period": "once",
     "needs": {
       "S": ["Akagi Kai Ni","Kaga"],
@@ -6814,26 +6814,6 @@ const ALL_QUESTS_LIST = {
       ["I","Combat provision",1]
     ]
   },
-  "C10": {
-    "Jp": "秋季大演習",
-    "En": "Large-scale Autumn Season Exercise",
-    "content": "Get 8 victories in Exercises within the same day",
-    "tips": "",
-    "resources": {
-      "F": "1000",
-      "A": "0",
-      "S": "300",
-      "B": "0"
-    },
-    "requires": ["Cd1"],
-    "unlocks": ["F40"],
-    "period": "once",
-    "needs": {},
-    "reward": [
-      ["I","Mamiya",1],
-      ["I","Present box",1]
-    ]
-  },
   "C11": {
     "Jp": "冬季大演習",
     "En": "Large-scale Winter Season Exercise",
@@ -7188,7 +7168,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["C1"],
-    "unlocks": ["Cd2","Cw1","B58","B77","C10","C11","F44","A76","B101","B104","B122","B125","F80","Bq9","F82","Bq11","B133","B142"],
+    "unlocks": ["Cd2","Cw1","B58","B77","Cs1","C11","F44","A76","B101","B104","B122","B125","F80","Bq9","F82","Bq11","B133","B142"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -7311,6 +7291,26 @@ const ALL_QUESTS_LIST = {
   },
  
  // Seasonal Exercises Quest Cs00
+  "Cs1": {
+    "Jp": "秋季大演習",
+    "En": "Large-scale Autumn Season Exercise",
+    "content": "Get 8 victories in Exercises within the same day",
+    "tips": "",
+    "resources": {
+      "F": "1000",
+      "A": "0",
+      "S": "300",
+      "B": "0"
+    },
+    "requires": ["Cd1"],
+    "unlocks": ["F40"],
+    "period": "once",
+    "needs": {},
+    "reward": [
+      ["I","Mamiya",1],
+      ["I","Present box",1]
+    ]
+  }, 
    "Cs4": {
     "Jp": "夏季大演習",
     "En": "Large-scale Summer Exercise",
@@ -8177,7 +8177,7 @@ const ALL_QUESTS_LIST = {
       "B": "80"
     },
     "requires": ["F3"],
-    "unlocks": ["F42","F48"],
+    "unlocks": ["F42","F48","F73"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -8308,7 +8308,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd4","B2"],
-    "unlocks": [],
+    "unlocks": ["F60"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -8722,7 +8722,7 @@ const ALL_QUESTS_LIST = {
       "S": "0",
       "B": "300"
     },
-    "requires": ["Fq2","C10"],
+    "requires": ["Fq2","Cs1"],
     "unlocks": [],
     "period": "once",
     "needs": {
