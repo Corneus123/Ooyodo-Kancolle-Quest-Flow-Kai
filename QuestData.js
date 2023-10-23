@@ -5509,9 +5509,8 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Type 2 12cm Mortar Kai","3","Choose one: "]
-      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher","1","or "],
-      
+      ["E","Type 2 12cm Mortar Kai","3","Choose one: "],
+      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher","1","or "]
     ]
   },
   "B140": {
@@ -5805,7 +5804,7 @@ const ALL_QUESTS_LIST = {
       "M": [
         ["1-5",2],
         ["7-1",2],
-        ["6-2",2]
+        ["6-2",2],
         ["6-5",2]
       ]
     },
