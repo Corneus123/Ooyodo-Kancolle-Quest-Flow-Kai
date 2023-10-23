@@ -566,7 +566,7 @@ const ALL_QUESTS_LIST = {
       "B": "100"
     },
     "requires": ["A14"],
-    "unlocks": ["A16"],
+    "unlocks": ["A16","B138"],
     "period": "once",
     "needs": {
       "S": ["Myoukou","Nachi","Ashigara","Haguro"]
@@ -631,7 +631,7 @@ const ALL_QUESTS_LIST = {
       "B": "200"
     },
     "requires": ["A17"],
-    "unlocks": [],
+    "unlocks": ["B131"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"]
@@ -1959,7 +1959,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Saratoga Mk.II"]
     },
     "reward": [
-      ["E","Fd2F-3",1,"Choose one: "],
+      ["E","F6F-3",1,"Choose one: "],
       ["E","F4U-1D",1,"or "],
       ["E","TBF",1,"Choose one: "],
       ["I","New Model Aerial Armament Materials",1,"or "]
@@ -2068,7 +2068,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B37"],
-    "unlocks": ["C16"],
+    "unlocks": ["C16","C17"],
     "period": "once",
     "needs": {
       "S": ["Wakaba Kai","Hatsuharu Kai Ni","Hatsushimo Kai Ni"]
@@ -2084,8 +2084,8 @@ const ALL_QUESTS_LIST = {
     "content": "Form a Fleet including Isokaze B Kai, Hamakaze B Kai, Urakaze Kai and Tanikaze Kai .",
     "tips": "",
     "period": "once",
-    "requires": ["Fq6","B61","A90"],
-    "unlocks": [],
+    "requires": ["Fq6","B61"],
+    "unlocks": ["A90"],
     "resources": {
       "F": "170",
       "A": "170",
@@ -2376,7 +2376,7 @@ const ALL_QUESTS_LIST = {
       "B": "60"
     },
     "requires": ["B5"],
-    "unlocks": ["B7","B30","B67"],
+    "unlocks": ["B7","B30","B67","B83","B135","Cs4"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2395,7 +2395,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B6"],
-    "unlocks": ["B8","D15"],
+    "unlocks": ["B8","D15","B93"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2433,7 +2433,7 @@ const ALL_QUESTS_LIST = {
       "B": "300"
     },
     "requires": ["B8"],
-    "unlocks": ["Fq1","B76"],
+    "unlocks": ["Fq1","B76","C33"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2471,7 +2471,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A20"],
-    "unlocks": [],
+    "unlocks": ["B140"],
     "period": "once",
     "needs": {
       "S": ["Choukai","Aoba","Kako","Furutaka","Tenryuu"]
@@ -2558,7 +2558,7 @@ const ALL_QUESTS_LIST = {
       "B": "700"
     },
     "requires": ["A23"],
-    "unlocks": ["A78","F80"],
+    "unlocks": ["A78","F80","B143"],
     "period": "once",
     "needs": {
       "M": ["3-1"],
@@ -2624,7 +2624,7 @@ const ALL_QUESTS_LIST = {
       "B": "300"
     },
     "requires": ["A26"],
-    "unlocks": [],
+    "unlocks": ["C22"],
     "period": "once",
     "needs": {
       "M": ["4-2"]
@@ -2736,7 +2736,7 @@ const ALL_QUESTS_LIST = {
       "B": "900"
     },
     "requires": ["D10"],
-    "unlocks": ["B114"],
+    "unlocks": ["B114","C22"],
     "period": "once",
     "needs": {
       "M": ["4-4"]
@@ -2890,7 +2890,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B6"],
-    "unlocks": ["Bm2","B111"],
+    "unlocks": ["Bm2","B111","B148"],
     "period": "once",
     "needs": {
       "M": ["2-2"]
@@ -3115,7 +3115,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["D15"],
-    "unlocks": ["D16"],
+    "unlocks": ["D16","B137"],
     "period": "once",
     "needs": {
       "M": ["2-3"],
@@ -3138,7 +3138,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["C5"],
-    "unlocks": ["B80","Bq7"],
+    "unlocks": ["B80","Bq7","B136"],
     "period": "once",
     "needs": {
       "M": ["5-1"],
@@ -3342,7 +3342,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A56"],
-    "unlocks": ["A64","F19","F20","D19","B95"],
+    "unlocks": ["A64","F19","F20","D19","B95","B97","B128"],
     "period": "once",
     "needs": {
       "M": ["5-2"],
@@ -3615,7 +3615,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Bw9","D19"],
-    "unlocks": ["B80","F43"],
+    "unlocks": ["B80","F43","B145"],
     "period": "once",
     "needs": {
       "M": ["6-3"]
@@ -3681,7 +3681,7 @@ const ALL_QUESTS_LIST = {
       "B": "200"
     },
     "requires": ["B20","B64"],
-    "unlocks": ["B66"],
+    "unlocks": ["B66","B142"],
     "period": "once",
     "needs": {
       "M": ["2-3"],
@@ -4194,7 +4194,7 @@ const ALL_QUESTS_LIST = {
       "B": "200"
     },
     "requires": ["B8","B87"],
-    "unlocks": ["F51","D21"],
+    "unlocks": ["F51","D21","B97"],
     "period": "once",
     "needs": {
       "M": ["3-3"]
@@ -4420,7 +4420,7 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "requires": ["Bd2"],
-    "unlocks": ["B99","B100"],
+    "unlocks": ["B99","B100","B149"],
     "period": "once",
     "needs": {
       "M": ["1-6","1-3","1-4","1-5"]
@@ -4596,7 +4596,7 @@ const ALL_QUESTS_LIST = {
       "M": ["5-5","6-2"]
     },
     "reward": [
-      ["E","Fd2F-3",1,"Choose one: "],
+      ["E","F6F-3",1,"Choose one: "],
       ["I","Skilled Crew Member",1,"or "],
       ["I","New Model Aerial Armament Materials",1,"or "],
       ["E","TBF",1,"Choose one: "],
@@ -5115,7 +5115,7 @@ const ALL_QUESTS_LIST = {
     "tips": "",
     "period": "once",
     "requires": ["A91","Bd1"],
-    "unlocks": [],
+    "unlocks": ["A93"],
     "resources": {
       "F": "500",
       "A": "500",
@@ -5259,7 +5259,7 @@ const ALL_QUESTS_LIST = {
     "En": "Aviation Battleship Squadron, Commence Combat Patrol!",
     "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then S rank the boss nodes of 1-4, 1-5, 2-3, and 7-2 (Part 2).",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B132"],
     "requires": ["A18","Fd2"],
     "period": "once",
     "needs": {
@@ -5316,7 +5316,7 @@ const ALL_QUESTS_LIST = {
     "En": "Heavily Remodeled Fast Battleship \"Kongou Kai Ni C\", Head To The South!",
     "content": "Assemble a fleet containing Kongou Kai Ni C, 1 Kongou-class, 2DD, and up to 2 XX, then S rank the boss nodes of 5-1, 5-3, 5-4, and 5-5 twice each.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B144"],
     "requires": ["B128","Cd1"],
     "period": "once",
     "needs": {
@@ -5376,7 +5376,7 @@ const ALL_QUESTS_LIST = {
     "En": "Patrol the Coastal Waters!",
     "content": "Assemble a fleet containing 1 CL, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 2-1, and 2-2.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B136","B138","B147"],
     "requires": ["B6"],
     "period": "once",
     "needs": {
@@ -5519,7 +5519,7 @@ const ALL_QUESTS_LIST = {
     "En": "I Wonder If We Should Test Out \"Yuubari Kai Ni\"?",
     "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship and up to 5 XX, then S rank the boss nodes of 2-5, 3-3, 5-3, and 6-3.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B141"],
     "requires": ["B11","Fd1"],
     "period": "once",
     "needs": {
@@ -5676,7 +5676,7 @@ const ALL_QUESTS_LIST = {
     "En": "Remodeled Aviation Light Cruiser \"Gotland Andra\", Sortie!",
     "content": "Assemble a fleet containing Gotland Andra as flagship, 1 DD, and up to 4 XX, then S rank the boss nodes of 2-4, 4-2, 4-4, and 4-5.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B146"],
     "requires": ["B62","Bd5"],
     "period": "once",
     "needs": {
@@ -5738,7 +5738,7 @@ const ALL_QUESTS_LIST = {
     "En": "Nansei Island Water Combined Patrol",
     "content": "Assemble a fleet containing 2 \"USN ships\" and up to 4 XX, then S rank the boss nodes of 2-2, 2-3, and 2-4.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B148","B151"],
     "requires": ["B135"],
     "period": "once",
     "needs": {
@@ -5768,7 +5768,7 @@ const ALL_QUESTS_LIST = {
     "En": "Combined Fleet \"Flagship\", Remodeled Fletcher, Weigh Anchor!",
     "content": "Assemble a fleet containing Fletcher Kai Mod.2 as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, and 3-5.",
     "tips": "Fletcher Mk.II does not count as Fletcher Kai Mod.2 for this quest.",
-    "unlocks": [],
+    "unlocks": ["B149"],
     "requires": ["B30", "B147"],
     "period": "once",
     "needs": {
@@ -5797,7 +5797,7 @@ const ALL_QUESTS_LIST = {
     "En": "Remodeled Escort Destroyer \"Fletcher Mk.II\" Commence Operation!",
     "content": "Assemble a fleet containing Fletcher Mk.II as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-5, 7-1, 6-2, and 6-5 twice each.",
     "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
-    "unlocks": [],
+    "unlocks": ["B150"],
     "requires": ["B98", "B148"],
     "period": "once",
     "needs": {
@@ -5894,7 +5894,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B4"],
-    "unlocks": ["Bd2","Bd4","Bd6","A54","A72","B60","A80","B126","Cq1","C37"],
+    "unlocks": ["Bd2","Bd4","Bd6","A54","A72","B60","A80","B126","Cq1","C37","B107"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -5971,7 +5971,7 @@ const ALL_QUESTS_LIST = {
       "B": "50"
     },
     "requires": ["Bd2"],
-    "unlocks": ["Bd7","Bw2","B91","C12","F83"],
+    "unlocks": ["Bd7","Bw2","B91","C12","F83","B145"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -6951,7 +6951,7 @@ const ALL_QUESTS_LIST = {
     "tips": "",
     "period": "once",
     "requires": ["A88","C14"],
-    "unlocks": ["C23"],
+    "unlocks": ["C23","C33"],
     "resources": {
       "F": "400",
       "A": "0",
@@ -7189,7 +7189,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["C1"],
-    "unlocks": ["Cd2","Cw1","B58","B77","C10","C11","F44","A76","B101","B104","B122","B125","F80","Bq9","F82","Bq11"],
+    "unlocks": ["Cd2","Cw1","B58","B77","C10","C11","F44","A76","B101","B104","B122","B125","F80","Bq9","F82","Bq11","B133","B142"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -7668,7 +7668,7 @@ const ALL_QUESTS_LIST = {
       "B": "100"
     },
     "requires": ["D20","B88"],
-    "unlocks": ["F47","F46"],
+    "unlocks": ["F47","F46","B143"],
     "period": "once",
     "needs": {
       "M": ["Exp. 30","Exp. 31"],
@@ -7943,7 +7943,7 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "requires": ["Dw2"],
-    "unlocks": [],
+    "unlocks": ["Bq5"],
     "period": "weekly",
     "needs": {
       "M": ["Exp. 37","Exp. 38"]
@@ -8217,7 +8217,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A5"],
-    "unlocks": [],
+    "unlocks": ["B107"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -9239,7 +9239,7 @@ const ALL_QUESTS_LIST = {
   "F61": {
     "Jp": "夜戦型艦上戦闘機の開発",
     "En": "Nighttime Carrier-based Fighter Development",
-    "content": "Prepare 30 Development Material, 6 Improvement Materials, 5000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron Fd2F-3 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar",
+    "content": "Prepare 30 Development Material, 6 Improvement Materials, 5000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-3 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar",
     "tips": "※Equipment must be unlocked.※Consumes all the resources and equipment. ",
     "resources": {
       "F": "0",
@@ -9260,13 +9260,13 @@ const ALL_QUESTS_LIST = {
         ["New Model Aerial Armament Materials",1]
       ],
       "E": [
-        ["Fd2F-3",1],
+        ["F6F-3",1],
         ["Type 13 Air Radar",2],
         ["Type 22 Surface Radar",2]
       ]
     },
     "reward": [
-      ["E","Fd2F-3N",1]
+      ["E","F6F-3N",1]
     ]
   },
   "F62": {
@@ -9307,7 +9307,7 @@ const ALL_QUESTS_LIST = {
   "F63": {
     "Jp": "夜戦型艦上戦闘機の性能強化",
     "En": "Performance Improvement of the Carrier-based Night Fighter",
-    "content": "Prepare 40 Development Material, 8 Improvement Materials, 6000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron Fd2F-5 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
+    "content": "Prepare 40 Development Material, 8 Improvement Materials, 6000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-5 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
     "tips": "※Equipment must be unlocked.※Consumes all the resources and equipment. ",
     "resources": {
       "F": "0",
@@ -9328,13 +9328,13 @@ const ALL_QUESTS_LIST = {
         ["New Model Aerial Armament Materials",1]
       ],
       "E": [
-        ["Fd2F-5",1],
+        ["F6F-5",1],
         ["Type 13 Air Radar",2],
         ["Type 22 Surface Radar",2]
       ]
     },
     "reward": [
-      ["E","Fd2F-5N",1]
+      ["E","F6F-5N",1]
     ]
   },
   "F64": {
@@ -9900,7 +9900,7 @@ const ALL_QUESTS_LIST = {
       "B": "40"
     },
     "requires": ["F2"],
-    "unlocks": ["Fd2","Fd71","Fq6","F84","F89"],
+    "unlocks": ["Fd2","Fd71","Fq6","F84","F89","B140"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -9920,7 +9920,7 @@ const ALL_QUESTS_LIST = {
       "B": "50"
     },
     "requires": ["Fd1"],
-    "unlocks": ["Fd3"],
+    "unlocks": ["Fd3","B131"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -10040,7 +10040,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd7"],
-    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8"],
+    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8","B128"],
     "period": "daily",
     "needs": {
       "E": [
