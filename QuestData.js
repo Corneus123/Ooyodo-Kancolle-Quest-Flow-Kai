@@ -5435,8 +5435,8 @@ const ALL_QUESTS_LIST = {
     "En": "Superior \"CarDiv 1\"! Sortie!",
     "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
-    "unlocks": [],
-    "requires": ["B40","C33","F88"],
+    "unlocks": ["F88"],
+    "requires": ["B40","C33"],
     "period": "once",
     "needs": {
       "S": ["Akagi Kai Ni","Kaga"],
@@ -7303,7 +7303,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Cd1"],
-    "unlocks": ["F40"],
+    "unlocks": ["F40","Cs4"],
     "period": "once",
     "needs": {},
     "reward": [
