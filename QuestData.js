@@ -6951,7 +6951,7 @@ const ALL_QUESTS_LIST = {
     "tips": "",
     "period": "once",
     "requires": ["A88","C14"],
-    "unlocks": ["C23","C33"],
+    "unlocks": ["C23","C33","C35"],
     "resources": {
       "F": "400",
       "A": "0",
@@ -7346,7 +7346,7 @@ const ALL_QUESTS_LIST = {
       "B": "30"
     },
     "requires": ["A5"],
-    "unlocks": ["Dw1","Dd1"],
+    "unlocks": ["Dw1","Dd1","B107"],
     "period": "once",
     "needs": {},
     "reward": [
