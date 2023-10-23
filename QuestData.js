@@ -10726,8 +10726,14 @@ ALL_QUESTS_LIST[quest].unlocks.forEach(unlk => {
 
 Object.keys(ALL_QUESTS_LIST).forEach(quest => {
   ALL_QUESTS_LIST[quest].requires.forEach(req => {
-    if (ALL_QUESTS_LIST[req] && ALL_QUESTS_LIST[req].unlocks.indexOf(quest) === -1) {
-      console.log(`The quest ${quest} is not in the unlock list of the quest ${req}`);
+    // Check if the requirement and its unlocks property exist and are arrays
+    if (ALL_QUESTS_LIST[req] && Array.isArray(ALL_QUESTS_LIST[req].unlocks)) {
+      if (ALL_QUESTS_LIST[req].unlocks.indexOf(quest) === -1) {
+        console.log(`The quest ${quest} is not in the unlock list of the quest ${req}`);
+      }
+    } else {
+      console.log(`Invalid data for requirement ${req}`);
+      // Handle the invalid data or provide default values if necessary
     }
   });
 });
