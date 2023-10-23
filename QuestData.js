@@ -10712,7 +10712,7 @@ const ALL_QUESTS_LIST = {
 Object.keys(ALL_QUESTS_LIST).forEach(quest => {
 ALL_QUESTS_LIST[quest].requires.forEach(req => {
   if (ALL_QUESTS_LIST[req].unlocks.indexOf(quest) === -1){
-    console.log(`la quete ${quest} n'est pas dans la liste d'unlocks de la quete ${req}`);
+    console.log(`The quest ${quest} is not in the unlock list of the quest ${req}`);
   }
 });
 });
@@ -10720,7 +10720,7 @@ ALL_QUESTS_LIST[quest].requires.forEach(req => {
 Object.keys(ALL_QUESTS_LIST).forEach(quest => {
 ALL_QUESTS_LIST[quest].unlocks.forEach(unlk => {
   if (ALL_QUESTS_LIST[unlk].requires.indexOf(quest) === -1){
-    console.log(`la quete ${quest} n'est pas dans la liste de requires de la quete ${unlk}`);
+    console.log(`THe quest ${quest} is not in the requrires list of the quest ${unlk}`);
   }
 });
 });
