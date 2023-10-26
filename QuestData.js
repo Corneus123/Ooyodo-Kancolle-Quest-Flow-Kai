@@ -193,7 +193,12 @@ const EQUIPMENT_TYPE = {
   "TBD★+3": "Bomber",
   "533mm Quintuple Torpedo Mount (Late Model)": "Torpedo",
   "RUR-4A Weapon Alpha Kai": "Depth Charge",
-  "Lightweight ASW Torpedo (Initial Test Model)": "Depth Charge"
+  "Prototype Shuusui": "Land-based Fighter",
+  "Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)": "Night plane",
+  "Type 1 Land-based Attack Aircraft Model 34": "Land-based attack aircraft",
+  "Ryuusei Kai (CarDiv 1/Skilled)★+2": "Bomber",
+  "Lightweight ASW Torpedo (Initial Test Model)": "Depth Charge",
+
 
 };
 
@@ -5918,7 +5923,7 @@ const ALL_QUESTS_LIST = {
     "requires": ["A77","B23","B49"],
     "period": "once",
     "needs": {
-      "S": [],
+      "S": ["Kaga Kai Ni"],
       "M": [
         ["3-4",1],
         ["4-4",1],
@@ -5933,43 +5938,46 @@ const ALL_QUESTS_LIST = {
       "B": "880"
     },
     "reward": [
-      ["I","Ryuusei Kai (CarDiv 1)","1"],
+      ["E","Ryuusei Kai (CarDiv 1)","1"],
       ["E","Prototype Shuusui","1","Choose one: "],
       ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
       ["E","Ka Type Observation Autogyro★+4","3","or "],
     ]
   },
-  "": {
-    "Jp": "",
-    "En": "",
-    "content": "",
-    "tips": "",
+
+  "B154": {
+    "Jp": "最精鋭「第一航空戦隊」、出撃！鎧袖一触！",
+    "En": "Peerless CarDiv 1, Sortie! Defeat Them With A Single Strike!",
+    "content": "Assemble a fleet containing Kaga Kai Ni/E/Go, Akagi Kai Ni/E, and up to 4 XX, then S rank the boss nodes of 5-5, 7-2 (Part 2), 6-2, and 6-5.",
+    "tips": "Please take Ryuusei Kai (CarDiv 1/Skilled) on 2nd option cause you can't craft it yet and also it is torpedo bomber that has AAR",
     "unlocks": [],
-    "requires": ["","",""],
+    "requires": ["B137","B153"],
     "period": "once",
     "needs": {
-      "S": [],
+      "S": ["Kaga Kai Ni", "Kaga Kai Ni E", "Kaga Kai Ni Go", "Akagi Kai Ni", "Akagi Kai Ni E", "Akagi Kai Ni Go"],
       "M": [
-        ["",1],
-        ["",1],
-        ["",1],
-        ["",1],
+        ["5-5",1],
+        ["7-2(Part 2)",1],
+        ["6-2",1],
+        ["6-5",1],
       ]
     },
     "resources": {
       "F": "0",
       "A": "0",
-      "S": "0",
-      "B": "0"
+      "S": "1830",
+      "B": "1840"
     },
     "reward": [
-      ["I","Ryuusei Kai (CarDiv 1)","1"],
-      ["E","Prototype Shuusui","1","Choose one: "],
-      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
-      ["E","Ka Type Observation Autogyro★+4","3","or "],
+      ["I","Prototype Flight Deck Catapult","1","Choose one: "],
+      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
+      ["I","Action Report","2","Choose one: "],
+      ["I","Remodel Blueprint","1","or "],
+      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "],
     ]
   },
-  
+
  // Daily Sortie Quests Bd00
   "Bd1": {
     "Jp": "敵艦隊を撃破せよ！",
