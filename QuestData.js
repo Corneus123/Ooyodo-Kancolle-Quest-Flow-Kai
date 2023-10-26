@@ -5400,7 +5400,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["I","Action Report","1"],
       ["C","Development Material","3","Choose one: "],
-      ["C","Instant Repair Material","3","or "],
+      ["C","Instant Repair","3","or "],
       ["E","25mm Triple Autocannon Mount","2","or "]
     ]
   },
@@ -5604,7 +5604,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","3","Choose one: "],
-      ["C","Instant Repair Material","6","or "],
+      ["C","Instant Repair","6","or "],
       ["I","Combat Ration (Special Onigiri)","2","or "],
       ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
       ["I","New Model Rocket Development Material","1","or "],
@@ -5636,7 +5636,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","2","Choose one: "],
-      ["C","Instant Repair Material","6","or "],
+      ["C","Instant Repair","6","or "],
       ["E","25mm Triple Autocannon Mount","2","or "],
       ["E","Prototype Toukai","1","Choose one: "],
       ["E","Prototype Keiun (Carrier-based Reconnaissance Model)","1","or "]
@@ -5761,7 +5761,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["C","Improvement Material","2","Choose one: "],
       ["I","Emergency Repair Material","2","or "],
-      ["C","Instant Repair Material","4","or "],
+      ["C","Instant Repair","4","or "],
       ["E","Tenzan","3","Choose one: "],
       ["E","OS2U","1","or "]
     ]
@@ -5878,7 +5878,7 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["C","Instant Repair Material","4","Choose one: "],
+      ["C","Instant Repair","4","Choose one: "],
       ["C","Development Material","5","or "],
       ["E","SK Radar","1","Choose one: "],
       ["I","New Model Aerial Armament Material","2","or "]
