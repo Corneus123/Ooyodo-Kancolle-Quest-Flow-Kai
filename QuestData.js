@@ -5880,6 +5880,96 @@ const ALL_QUESTS_LIST = {
       ["I","New Model Aerial Armament Material","2","or "]
     ]
   },
+  "B152": {
+    "Jp": "【航空母艦特別任務】航空戦隊、精鋭無比！",
+    "En": "[Special Aircraft Carrier Mission] Our Carrier Divisions, Peerless And Unmatched!",
+    "content": "Assemble a fleet containing 2 CV(B) and up to 4 XX, then S rank the boss nodes of 2-4, 2-5, and 4-3.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["A77","B23","B49"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-4",1],
+        ["2-5",1],
+        ["4-3",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "880",
+      "B": "880"
+    },
+    "reward": [
+      ["I","Medal","1"],
+      ["C","Development Material","88","Choose one: "],
+      ["I","Prototype Flight Deck Catapult","1","or "],
+      ["E","TBF★+4","1","or "],
+    ]
+  },
+  "B153": {
+    "Jp": "改加賀型航空母艦「加賀改二」、抜錨！",
+    "En": "Remodeled Kaga-class Aircraft Carrier Kaga Kai Ni, Set Sail!",
+    "content": "Assemble a fleet containing 2 CV(B) and up to 4 XX, then S rank the boss nodes of 2-4, 2-5, and 4-3.",
+    "tips": "Please grab the prototype shuusui for you who doesn't have any high altitude land-based fighter",
+    "unlocks": [],
+    "requires": ["A77","B23","B49"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-4",1],
+        ["4-4",1],
+        ["4-5",1],
+        ["5-2",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "880",
+      "B": "880"
+    },
+    "reward": [
+      ["I","Ryuusei Kai (CarDiv 1)","1"],
+      ["E","Prototype Shuusui","1","Choose one: "],
+      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
+      ["E","Ka Type Observation Autogyro★+4","3","or "],
+    ]
+  },
+  "": {
+    "Jp": "",
+    "En": "",
+    "content": "",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["","",""],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["",1],
+        ["",1],
+        ["",1],
+        ["",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Ryuusei Kai (CarDiv 1)","1"],
+      ["E","Prototype Shuusui","1","Choose one: "],
+      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
+      ["E","Ka Type Observation Autogyro★+4","3","or "],
+    ]
+  },
+  
  // Daily Sortie Quests Bd00
   "Bd1": {
     "Jp": "敵艦隊を撃破せよ！",
