@@ -1891,7 +1891,7 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "requires": ["A60","B14"],
-    "unlocks": ["B102"],
+    "unlocks": ["B102","B152"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"]
@@ -2399,7 +2399,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B6"],
-    "unlocks": ["B8","D15","B93"],
+    "unlocks": ["B8","D15","B93","Fy1"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2418,7 +2418,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B7"],
-    "unlocks": ["B9","B88"],
+    "unlocks": ["B9","B88","Fq9"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2740,7 +2740,7 @@ const ALL_QUESTS_LIST = {
       "B": "900"
     },
     "requires": ["D10"],
-    "unlocks": ["B114","C22"],
+    "unlocks": ["B114","C22","B152"],
     "period": "once",
     "needs": {
       "M": ["4-4"]
@@ -3324,7 +3324,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Bd8","B32"],
-    "unlocks": [],
+    "unlocks": ["B152"],
     "period": "once",
     "needs": {
       "M": ["3-5"]
@@ -5439,7 +5439,7 @@ const ALL_QUESTS_LIST = {
     "En": "Superior \"CarDiv 1\"! Sortie!",
     "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
-    "unlocks": ["F88"],
+    "unlocks": ["F88","B154"],
     "requires": ["B40","C33"],
     "period": "once",
     "needs": {
@@ -5889,7 +5889,7 @@ const ALL_QUESTS_LIST = {
     "En": "[Special Aircraft Carrier Mission] Our Carrier Divisions, Peerless And Unmatched!",
     "content": "Assemble a fleet containing 2 CV(B) and up to 4 XX, then S rank the boss nodes of 2-4, 2-5, and 4-3.",
     "tips": "",
-    "unlocks": [],
+    "unlocks": ["B153"],
     "requires": ["A77","B23","B49"],
     "period": "once",
     "needs": {
@@ -5918,8 +5918,8 @@ const ALL_QUESTS_LIST = {
     "En": "Remodeled Kaga-class Aircraft Carrier Kaga Kai Ni, Set Sail!",
     "content": "Assemble a fleet containing Kaga Kai Ni/E/Go as flagship, 1 CV(B), and up to 4 XX, then S rank the boss nodes of 3-4, 4-4, 4-5, and 5-2.",
     "tips": "Please grab the prototype shuusui for you who doesn't have any high altitude land-based fighter",
-    "unlocks": [],
-    "requires": ["A77","B23","B49"],
+    "unlocks": ["B154"],
+    "requires": ["B152"],
     "period": "once",
     "needs": {
       "S": ["Kaga Kai Ni"],
@@ -8312,7 +8312,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A5"],
-    "unlocks": ["B107"],
+    "unlocks": ["B107","Gy1","Gy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -8404,7 +8404,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd4","B2"],
-    "unlocks": ["F60"],
+    "unlocks": ["F60","Fy1"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -8423,7 +8423,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A45"],
-    "unlocks": ["Fd6","F54"],
+    "unlocks": ["Fd6","F54","Fy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -8795,7 +8795,7 @@ const ALL_QUESTS_LIST = {
       "B": "200"
     },
     "requires": ["F37","B77"],
-    "unlocks": ["Fq2","F43"],
+    "unlocks": ["Fq2","F43","Fy4","Fy8"],
     "period": "once",
     "needs": {
       "E": [
@@ -8871,7 +8871,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B62","F38"],
-    "unlocks": ["F45"],
+    "unlocks": ["F45","Fy7"],
     "period": "once",
     "needs": {
       "E": [
@@ -8901,7 +8901,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["F42","Cd1"],
-    "unlocks": [],
+    "unlocks": ["Fy3"],
     "period": "once",
     "needs": {
       "E": [
@@ -9064,7 +9064,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd6","B91"],
-    "unlocks": [],
+    "unlocks": ["Fy5"],
     "period": "once",
     "needs": {
       "E": [
@@ -10035,7 +10035,7 @@ const ALL_QUESTS_LIST = {
       "B": "100"
     },
     "requires": ["Fd2"],
-    "unlocks": ["Fd4","F51","F53","F58","Fd7"],
+    "unlocks": ["Fd4","F51","F53","F58","Fd7","Gy2","Fq9"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -10093,7 +10093,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd4","F17"],
-    "unlocks": ["Fw2","F50","F80"],
+    "unlocks": ["Fw2","F50","F80","Fy2"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -10135,7 +10135,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd7"],
-    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8","B128"],
+    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8","B128","Fy1"],
     "period": "daily",
     "needs": {
       "E": [
@@ -10578,7 +10578,7 @@ const ALL_QUESTS_LIST = {
     "content": "Scrap 6 \"14cm Single Gun Mounts\" and prepare 3 \"35.6cm Twin Gun Mounts\", 2 \"Type 96 Fighters\", and 6 000 furniture coins.",
     "tips": "",
     "period": "quarterly",
-    "requires": ["B8","F7"],
+    "requires": ["B8","Fd3"],
     "unlocks": [],
     "resources": {
       "F": "0",
@@ -10839,7 +10839,7 @@ const ALL_QUESTS_LIST = {
   "En": "[Exportation Of Steel] Increase The Strength Of Your Land Base!",
   "content": "Scrap 2 \"Fighters\" and 2 \"Torpedo Bombers\", and prepare 10 Development Materials and 24 000 steel.",
   "tips": "Resources and items are consumed upon completion.",
-  "period": "quarterly",
+  "period": "yearly",
   "requires": ["D42","F38"],
   "unlocks": [],
   "resources": {
@@ -10908,7 +10908,7 @@ const ALL_QUESTS_LIST = {
   "En": "Improved 3-Seat Reconnaissance Seaplane",
   "content": "Set Yura Kai Ni or Tone Kai Ni as Secretary, equipped with a ★Max-Improved Type 0 Reconnaissance Seaplane in her 1st slot, then, scrap 2 Type 97 Torpedo Bomber (931 Air Group) and prepare 2 New Model Aerial Armament Material, 2 Skilled Crew Member, 35 Development Materials, and 950 bauxite.",
   "tips": "Resources and items are consumed upon completion. The Type 0 Reconnaissance Seaplane will be converted into the reward.",
-  "period": "quarterly",
+  "period": "yearly",
   "requires": ["Gy2"],
   "unlocks": [],
   "resources": {
@@ -10950,7 +10950,7 @@ const ALL_QUESTS_LIST = {
       "B": "30"
     },
     "requires": [],
-    "unlocks": ["Gd1"],
+    "unlocks": ["Gd1","Gy1","Gy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -11008,7 +11008,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["G1"],
-    "unlocks": ["Gw1","Fq5","F80"],
+    "unlocks": ["Gw1","Fq5","F80","Gy4"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -11079,7 +11079,7 @@ const ALL_QUESTS_LIST = {
     "B": "100"
   },
   "requires": ["Fd3","Gy1"],
-  "unlocks": [""],
+  "unlocks": ["Fy10"],
   "period": "yearly",
   "needs": {    
     "R": [
@@ -11106,7 +11106,7 @@ const ALL_QUESTS_LIST = {
     "B": "0"
   },
   "requires": ["F11","G1"],
-  "unlocks": [""],
+  "unlocks": ["Gy4"],
   "period": "yearly",
   "needs": {    
     "R": [
