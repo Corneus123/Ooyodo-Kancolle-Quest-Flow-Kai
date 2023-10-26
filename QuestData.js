@@ -195,7 +195,7 @@ const EQUIPMENT_TYPE = {
   "RUR-4A Weapon Alpha Kai": "Depth Charge",
   "Prototype Shuusui": "Land-based Fighter",
   "Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)": "Night plane",
-  "Type 1 Land-based Attack Aircraft Model 22A★+2": "Land-based attack aircraft",
+  "Type 1 Land-based Attack Aircraft Model 22A★+4": "Land-based attack aircraft",
   "Type 1 Land-based Attack Aircraft Model 34★+2": "Land-based attack aircraft",
   "Ryuusei Kai (CarDiv 1/Skilled)★+2": "Bomber",
   "Ka Type Observation Autogyro★+3": "autogyro",
