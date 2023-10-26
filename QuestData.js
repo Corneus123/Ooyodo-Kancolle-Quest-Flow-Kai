@@ -10572,10 +10572,371 @@ const ALL_QUESTS_LIST = {
       ["E","Zuiun (631 Air Group)",1,"or "]
     ]
   },
-// Placeholder Fq9
+  "Fq9": {
+    "Jp": "工廠稼働！次期作戦準備！",
+    "En": "Improvement Arsenal! Preparing For The Next Operation!",
+    "content": "Scrap 6 \"14cm Single Gun Mounts\" and prepare 3 \"35.6cm Twin Gun Mounts\", 2 \"Type 96 Fighters\", and 6 000 furniture coins.",
+    "tips": "",
+    "period": "quarterly",
+    "requires": ["B8","F7"],
+    "unlocks": [],
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "600",
+      "B": "600"
+    },
+    "needs": {
+      "R": [
+        ["Furniture Coins",6000]
+      ],
+      "E": [
+        ["14cm Single Gun Mounts",6],
+        ["35.6cm Twin Gun Mounts",3],
+        ["Type 96 Fighters",3]
+      ]
+    },
+    "reward": [
+      ["E","Daihatsu Landing Craft",1,"Choose one: "],
+      ["E","Type 0 Fighter Model 21",2,"or "],
+      ["E","Type 96 Land-based Attack Aircraft",1,"or "],
+      ["E","Type 94 Depth Charge Projector",3,"Choose one: "],
+      ["E","12cm 30-tube Rocket Launcher",2,"or "],
+      ["E","Type 2 12cm Mortar Kai",2,"or "]
+    ]
+  },
+
+
 // Yearly Factory Quest Fy00
-// Placeholder Fy1-10
-  
+"Fy1": {
+  "Jp": "新型兵装開発整備の強化",
+  "En": "Improving Development And Maintenance Of New Armaments",
+  "content": "Scrap 6 \"Small Caliber Main Guns\", 5 \"Medium Caliber Main Guns\", and 4 \"Torpedoes\", and prepare 4 000 steel.",
+  "tips": "Resources are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["B7","F16","Fd8"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Steel",4000]
+    ],
+    "E": [
+      ["Small gun",6],
+      ["Medium gun",5],
+      ["Torpedoes",4]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",10],
+    ["C","Improvement Material",5,"Choose one: "],
+    ["I","New Model Armament Material",2,"or "]
+  ]
+},
+"Fy2": {
+  "Jp": "精鋭複葉機飛行隊の編成",
+  "En": "Formation Of A Splendid Biplane Squadron",
+  "content": "Set Ark Royal as Secretary, equipped with a ★Max-Improved Swordfish in her 1st slot, then, scrap 1 Swordfish, and 2 Fulmar, and prepare 1 Skilled Crew Member, 1 500 ammo and 1 500 bauxite.",
+  "tips": "Set Ark Royal as Secretary, equipped with a ★Max-Improved Swordfish in her 1st slot, the Swordfish will be converted into the reward. Resources and item are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["C20","Fd6"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "S": ["Ark Royal"],
+    "R": [
+      ["Ammo",1500],
+      ["Bauxite",1500]
+    ],
+    "I": [
+      ["Skilled Crew Member",1]
+    ],
+    "E": [
+      ["Swordfish",1],
+      ["Fulmar",2],
+      ["★Max Swordfish",1]
+    ]
+  },
+  "reward": [
+    ["E","Sworfish Mk.II (Skilled)",1,]
+  ]
+},
+"Fy3": {
+  "Jp": "工廠フル稼働！新兵装を開発せよ！",
+  "En": "Arsenal At Maximum Capacity! Develop New Armaments!",
+  "content": "Scrap 5 \"Small Caliber Main Guns\", 5 \"Medium Caliber Main Guns\", 5 \"Large Caliber Main Guns\", 5 \"Seaplane Recons\", and 5 \"Torpedo Bombers\", and prepare 1 500 steel, 1 500 fuel, and 1 500 bauxite.",
+  "tips": "	Resources are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F17","F44"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "880",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Steel",1500],
+      ["Fuel",1500],
+      ["Bauxite",1500]
+    ],
+    "E": [
+      ["Small gun",5],
+      ["Medium gun",5],
+      ["Large gun",5],
+      ["Seaplane recon",5],
+      ["Bomber",5]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",10,"Choose one: "],
+    ["I","New Model Gun Mount Improvement Material",1,"or "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",5,"Choose one: "],
+    ["I","New Model Armament Material",2,"or "]
+  ]
+},
+"Fy4": {
+  "Jp": "航空戦力の再編増強準備",
+  "En": "Preparations For The Reinforcement Of Our Air Force",
+  "content": "Scrap 4 \"Dive Bombers\" and 4 \"Torpedo Bombers\", and prepare 20 Development Materials and 1 600 bauxite.",
+  "tips": "Resources and items are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F38"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "400",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Bauxite",1600]
+    ],
+    "C": [
+      ["Development Materials",20]
+    ],
+    "E": [
+      ["Dive bombers",4],
+      ["Bombers",4]
+    ]
+  },
+  "reward": [
+    ["E","Type 96 Land-based Attack Aircraft",3,"Choose one: "],
+    ["E","Type 1 Land-based Attack Aircraft Model 22A",1,"or "],
+    ["I","New Model Aerial Armament Material",2,"or "],
+    ["I","Skilled Crew Member",1,"Choose one: "],
+    ["E","Improvement Material",4,"or "]
+  ]
+},
+"Fy5": {
+  "Jp": "潜水艦強化兵装の量産",
+  "En": "Mass Production Of Reinforced Submarine Armaments",
+  "content": "Scrap 3 61cm Triple (Oxygen) Torpedo Mounts and prepare 2 Type 93 Passive Sonars, 2 Type 13 Air Radar Kai, and 60 Development Materials.",
+  "tips": "Items and equipment are consumed upon completion. Behave like a conversion quest.",
+  "period": "yearly",
+  "requires": ["F50","F96"],
+  "unlocks": ["Fy6"],
+  "resources": {
+    "F": "0",
+    "A": "100",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "C": [
+      ["Development Material",60]
+    ],
+    "E": [
+      ["61cm Triple (Oxygen) Torpedo Mounts",3],
+      ["Type 93 Passive Sonar",2],
+      ["Type 13 Air Radar Kai",2]
+    ]
+  },
+  "reward": [
+    ["E","Late Model Bow Torpedo Mount (6 tubes)",1,],
+    ["C","Development Material",3,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Fy6": {
+  "Jp": "潜水艦電子兵装の量産",
+  "En": "Mass Production Of Submarine Radar Equipment",
+  "content": "Scrap 3 Type 13 Air Radar Kai and prepare 2 Type 93 Passive Sonars, 2 Type 22 Surface Radars, and 100 Development Materials.",
+  "tips": "Items and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["Fy5"],
+  "unlocks": [],
+  "resources": {
+    "F": "100",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "C": [
+      ["Development Material",100]
+    ],
+    "E": [
+      ["Type 13 Air Radar Kai",3],
+      ["Type 93 Passive Sonar",2],
+      ["Type 22 Surface Radar",2]
+    ]
+  },
+  "reward": [
+    ["E","Submarine Radar & Waterproof Telescope",1,],
+    ["C","Development Material",5,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Fy7": {
+  "Jp": "夏の格納庫整備＆航空基地整備",
+  "En": "Summer Hangar & Land Base Maintenance",
+  "content": "Scrap 3 Land-Based Attackers and prepare 4 Type 97 Torpedo Bomber, 4 Tenzan, and 2 800 ammo.",
+  "tips": "Resources and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F43","F97"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "400"
+  },
+  "needs": {
+    "R": [
+      ["Ammo",2800]
+    ],
+    "E": [
+      ["Land-based Attacker",3],
+      ["Type 97 Torpedo Bomber",4],
+      ["Tenzan",4]
+    ]
+  },
+  "reward": [
+    ["I","New Model Aerial Armament Material",2,"Choose one: "],
+    ["I","New Model Armament Material",1,"or "],
+    ["C","Development Material",10,"or "],
+    ["I","Skilled Crew Member",2,"Choose one: "],
+    ["I","Construction Corps",1,"or "],
+    ["C","Improvement Material",8,"or "]
+  ]
+},
+"Fy8": {
+  "Jp": "【鋼材輸出】基地航空兵力を増備せよ！",
+  "En": "[Exportation Of Steel] Increase The Strength Of Your Land Base!",
+  "content": "Scrap 2 \"Fighters\" and 2 \"Torpedo Bombers\", and prepare 10 Development Materials and 24 000 steel.",
+  "tips": "Resources and items are consumed upon completion.",
+  "period": "quarterly",
+  "requires": ["D42","F38"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "3000"
+  },
+  "needs": {
+    "R": [
+      ["Steel",24000]
+    ],
+    "C": [
+      ["Development Material",10]
+    ],
+    "E": [
+      ["Fighter",2],
+      ["Bomber",2]
+    ]
+  },
+  "reward": [
+    ["E","Type 96 Land-based Attack Aircraft",2,"Choose one: "],
+    ["E","Type 1 Land-based Attack Aircraft",1,"or "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",3,"Choose one: "],
+    ["I","New Model Armament Material",1,"or "]
+  ]
+},
+"Fy9": {
+  "Jp": "【機種整理統合】新型戦闘機の量産計画",
+  "En": "[Model Consolidation] Mass Production Plan For New Fighters",
+  "content": "Scrap 4 \"Fighters\", 4 \"Dive Bombers\", and 4 \"Torpedo Bombers\", and prepared 3 Type 0 Fighter Model 21, 3 Type 0 Fighter Model 52, and 1 800 bauxite.",
+  "tips": "Resources and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F97"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "240",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Bauxite",1800]
+    ],
+    "E": [
+      ["Fighter",4],
+      ["Dive Bomber",4],
+      ["Bomber",4],
+      ["Type 0 Fighter Model 21",3],
+      ["Type 0 Fighter Model 52",3]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",8,"Choose one: "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",3,"or "],
+    ["E","Shiden Model 11",3,"Choose one: "],
+    ["E","Shiden Model 21 Shiden Kai",2,"or "],
+    ["E","Prototype Reppuu Late Model",2,"or "]
+  ]
+},
+"Fy10": {
+  "Jp": "改良三座水上偵察機の増備",
+  "En": "Improved 3-Seat Reconnaissance Seaplane",
+  "content": "Set Yura Kai Ni or Tone Kai Ni as Secretary, equipped with a ★Max-Improved Type 0 Reconnaissance Seaplane in her 1st slot, then, scrap 2 Type 97 Torpedo Bomber (931 Air Group) and prepare 2 New Model Aerial Armament Material, 2 Skilled Crew Member, 35 Development Materials, and 950 bauxite.",
+  "tips": "Resources and items are consumed upon completion. The Type 0 Reconnaissance Seaplane will be converted into the reward.",
+  "period": "quarterly",
+  "requires": ["Gy2"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "S": ["Yura Kai Ni","Tone kai Ni"],
+    "R": [
+      ["Bauxite",950]
+    ],
+    "I": [
+      ["Skilled Crew Member",2],
+      ["New Model Aerial Armament Material",2]
+    ],
+    "E": [
+      ["★Max Type 0 Reconnaissance Seaplane",1],
+      ["Type 97 Torpedo Bomber (931 Air Group)",2]
+    ]
+  },
+  "reward": [
+    ["E","Type 0 Reconnaissance Seaplane Model 11B",1]
+  ]
+},
+
+
 // Modernization Quests G00
   "G1": {
     "Jp": "はじめての「近代化改修」！",
@@ -10677,8 +11038,117 @@ const ALL_QUESTS_LIST = {
     ]
   },
 
+
 // Yearly Modernization Quests Gy00
-// Placeholder Gy1-4
+"Gy1": {
+  "Jp": "「駆逐艦」の改修工事を実施せよ！",
+  "En": "Carry Out Modernization For \"Destroyers\"",
+  "content": "Modernization mission: Prepare 600 steel as well as 300 bauxite, then modernize any destroyers! Perform 2 successful modernization by using 3 destroyers each time!",
+  "tips": "",
+  "resources": {
+    "F": "300",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "requires": ["F11","G1"],
+  "unlocks": ["Gy2"],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",600],
+    ["Bauxite",300]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",1,"Choose one: "],
+    ["C","Development Material",2,"or "],
+    ["E","Combat Ration",2,"Choose one: "],
+    ["I","Food Supply Ship Irako",1,"or "]
+  ]
+},
+"Gy2": {
+  "Jp": "「駆逐艦」の改修工事を実施せよ！",
+  "En": "Carry Out Modernization For \"Destroyers\" (Part 2)",
+  "content": "Modernization mission: Prepare 600 steel as well as 300 bauxite, then modernize any destroyers! Perform 2 successful modernization by using 3 light cruisers each time!",
+  "tips": "",
+  "resources": {
+    "F": "200",
+    "A": "200",
+    "S": "300",
+    "B": "100"
+  },
+  "requires": ["Fd3","Gy1"],
+  "unlocks": [""],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",600],
+    ["Bauxite",300]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",2,"Choose one: "],
+    ["C","Development Material",3,"or "],
+    ["E","25mm Single Autocannon Mount",2,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Gy3": {
+  "Jp": "「軽巡」級の改修工事を実施せよ！",
+  "En": "Carry Out The \"Light Cruiser\" Modernization Operation!",
+  "content": "Light Cruiser Modernization Mission: Prepare 800 steel and 400 bauxite, then prepare any light cruiser to be modernized with 3 other light cruisers and complete this process twice.",
+  "tips": "",
+  "resources": {
+    "F": "500",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "requires": ["F11","G1"],
+  "unlocks": [""],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",800],
+    ["Bauxite",400]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",2,"Choose one: "],
+    ["C","Development Material",3,"or "],
+    ["E","25mm Single Autocannon Mount",2,"Choose one: "],
+    ["I","Food Supply Ship Irako",1,"or "]
+  ]
+},
+"Gy4": {
+  "Jp": "続：「軽巡」級の改修工事を実施せよ！",
+  "En": "Continuation: Carry Out the \"Light Cruiser\" Modernization Operation!",
+  "content": "Light Cruiser Modernization Mission: Prepare 900 steel and 900 ammo, then prepare any light cruiser to be modernized with 3 other heavy cruisers and complete this process twice.",
+  "tips": "",
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "500"
+  },
+  "requires": ["Gd1","Gy3"],
+  "unlocks": [""],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",900],
+    ["Ammo",900]
+  ]
+},
+  "reward": [
+    ["C","Development Material",4,"Choose one: "],
+    ["E","15.2cm Twin Gun Mount",1,"or "],
+    ["E","Type 22 Surface Radar",2,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+
 
 // Marriage Quest
   "WF01": {
