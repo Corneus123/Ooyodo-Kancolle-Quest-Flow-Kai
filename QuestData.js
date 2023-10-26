@@ -195,11 +195,10 @@ const EQUIPMENT_TYPE = {
   "RUR-4A Weapon Alpha Kai": "Depth Charge",
   "Prototype Shuusui": "Land-based Fighter",
   "Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)": "Night plane",
-  "Type 1 Land-based Attack Aircraft Model 34": "Land-based attack aircraft",
+  "Type 1 Land-based Attack Aircraft Model 22A★+2": "Land-based attack aircraft",
+  "Type 1 Land-based Attack Aircraft Model 34★+2": "Land-based attack aircraft",
   "Ryuusei Kai (CarDiv 1/Skilled)★+2": "Bomber",
-  "Lightweight ASW Torpedo (Initial Test Model)": "Depth Charge",
-
-
+  "Ka Type Observation Autogyro★+3": "autogyro",
 };
 
 const ICONS_LINK = {
@@ -5917,7 +5916,7 @@ const ALL_QUESTS_LIST = {
   "B153": {
     "Jp": "改加賀型航空母艦「加賀改二」、抜錨！",
     "En": "Remodeled Kaga-class Aircraft Carrier Kaga Kai Ni, Set Sail!",
-    "content": "Assemble a fleet containing 2 CV(B) and up to 4 XX, then S rank the boss nodes of 2-4, 2-5, and 4-3.",
+    "content": "Assemble a fleet containing Kaga Kai Ni/E/Go as flagship, 1 CV(B), and up to 4 XX, then S rank the boss nodes of 3-4, 4-4, 4-5, and 5-2.",
     "tips": "Please grab the prototype shuusui for you who doesn't have any high altitude land-based fighter",
     "unlocks": [],
     "requires": ["A77","B23","B49"],
@@ -5941,10 +5940,9 @@ const ALL_QUESTS_LIST = {
       ["E","Ryuusei Kai (CarDiv 1)","1"],
       ["E","Prototype Shuusui","1","Choose one: "],
       ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
-      ["E","Ka Type Observation Autogyro★+4","3","or "],
+      ["E","Ka Type Observation Autogyro★+3","3","or "],
     ]
   },
-
   "B154": {
     "Jp": "最精鋭「第一航空戦隊」、出撃！鎧袖一触！",
     "En": "Peerless CarDiv 1, Sortie! Defeat Them With A Single Strike!",
