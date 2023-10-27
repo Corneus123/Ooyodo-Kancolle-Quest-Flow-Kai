@@ -2270,8 +2270,8 @@ const ALL_QUESTS_LIST = {
 // SORTIE QUest before 100 B00
   "B1": {
     "Jp": "はじめての「出撃」！",
-    "En": "The First Sortie",
-    "content": "Sortie your main fleet",
+    "En": "Your First \"Sortie\"!",
+    "content": "Send a fleet on a Sortie.",
     "tips": "",
     "resources": {
       "F": "20",
@@ -2289,8 +2289,8 @@ const ALL_QUESTS_LIST = {
   },
   "B2": {
     "Jp": "鎮守府正面海域を護れ！",
-    "En": "Guard the Sea in Front of the Naval Base",
-    "content": "Sortie to World 1-1 and clear the stage",
+    "En": "Protect The Sea In Front Of Naval Base!",
+    "content": "B+ rank the boss node of 1-1.",
     "tips": "",
     "resources": {
       "F": "30",
@@ -2301,15 +2301,17 @@ const ALL_QUESTS_LIST = {
     "requires": ["B1"],
     "unlocks": ["E1","E2","B4","F16"],
     "period": "once",
-    "needs": {},
+    "needs": {
+      "M": ["1-1"]
+    },
     "reward": [
       ["C","Instant Repair",1]
     ]
   },
   "B3": {
     "Jp": "第2艦隊、出撃せよ！",
-    "En": "Sortie The 2nd Fleet",
-    "content": "Sortie your second fleet",
+    "En": "Deploy The 2nd Fleet!",
+    "content": "Send the Second Fleet on a Sortie.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2327,8 +2329,8 @@ const ALL_QUESTS_LIST = {
   },
   "B4": {
     "Jp": "南西諸島沖に出撃せよ！",
-    "En": "Sortie to World 1-2 and clear the stage",
-    "content": "Sortie to World 1-2, defeat the boss and clear the stage",
+    "En": "Deploy To The Sea Around Nansei Islands!",
+    "content": "Reach the boss node of 1-2.",
     "tips": "",
     "resources": {
       "F": "40",
@@ -2348,8 +2350,8 @@ const ALL_QUESTS_LIST = {
   },
   "B5": {
     "Jp": "接近する「敵前衛艦隊」を迎撃せよ！",
-    "En": "Intercept the Approaching Enemy Vanguard Fleet",
-    "content": "Sortie to World 1-2 AGAIN and clear the stage",
+    "En": "Confront The \"Enemy Vanguard Fleet\" Closing In!",
+    "content": "B+ rank the boss node of 1-2.",
     "tips": "",
     "resources": {
       "F": "50",
@@ -2370,8 +2372,8 @@ const ALL_QUESTS_LIST = {
   },
   "B6": {
     "Jp": "「水雷戦隊」で出撃せよ！",
-    "En": "Sortie a Torpedo Squadron",
-    "content": "Sortie a CL as flagship and 3 DD",
+    "En": "Deploy A \"Torpedo Squadron\"!",
+    "content": "Assemble a fleet containing 1 CL as flagship, 3 DD, and up to 2 XX, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "60",
@@ -2389,8 +2391,8 @@ const ALL_QUESTS_LIST = {
   },
   "B7": {
     "Jp": "「重巡洋艦」を出撃させよ！",
-    "En": "Sortie a Heavy Cruiser",
-    "content": "Sortie a fleet with a CA as flagship",
+    "En": "Deploy \"Heavy Cruiser\"!",
+    "content": "Assemble a fleet containing 1 CA as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "70",
@@ -2408,8 +2410,8 @@ const ALL_QUESTS_LIST = {
   },
   "B8": {
     "Jp": "「戦艦」を出撃させよ！",
-    "En": "Sortie a Battleship",
-    "content": "Sortie a fleet with a BB as flagship. BBV (BBVs) don't count",
+    "En": "Deploy \"Battleship\"!",
+    "content": "Assemble a fleet containing 1 (F)BB as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2418,7 +2420,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B7"],
-    "unlocks": ["B9","B88","Fq9"],
+    "unlocks": ["B9","B88"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -2427,8 +2429,8 @@ const ALL_QUESTS_LIST = {
   },
   "B9": {
     "Jp": "「空母機動部隊」出撃せよ！",
-    "En": "Sortie a Carrier Task Force",
-    "content": "Sortie a Light or Standard Carrier flagship and 5 CL, DD, or AV",
+    "En": "Deploy A \"Mobile Carrier Fleet\"!",
+    "content": "Assemble a fleet containing 1 CV(B/L) as flagship, and 5 DD/CL/AV, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "200",
@@ -2441,13 +2443,14 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
+      ["C","Instant Repair",1],
       ["C","Development Material",1]
     ]
   },
   "B10": {
     "Jp": "敵空母を撃沈せよ！",
-    "En": "Sink an Enemy Carrier",
-    "content": "Sink an enemy CV / CVL.",
+    "En": "Sink An Enemy Carrier!",
+    "content": "Sink an enemy CV(L).",
     "tips": "",
     "resources": {
       "F": "0",
