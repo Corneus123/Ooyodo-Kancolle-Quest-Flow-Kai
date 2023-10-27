@@ -214,8 +214,8 @@ const ICONS_LINK = {
   "Repair Team": "files/webpage/game_icons/Emergency_repair.png",
   "Repair Goddess": "files/webpage/game_icons/Emergency_repair.png",
   "Mamiya": "files/webpage/game_icons/Mamiya.png",
-  "Furniture box small": "files/webpage/game_icons/Furniture_box_small.png",
-  "Furniture box medium": "files/webpage/game_icons/Furniture_box_medium.png",
+  "Furniture Box (Small)": "files/webpage/game_icons/Furniture_box_small.png",
+  "Furniture Box (Medium)": "files/webpage/game_icons/Furniture_box_medium.png",
   "Furniture Box (Large)": "files/webpage/game_icons/Furniture_box_large.png",
   "Skilled Crew Member": "files/webpage/game_icons/Skilled_Crew_Member.png",
   "Irako": "files/webpage/game_icons/Irako.png",
@@ -281,7 +281,7 @@ const ICONS_LINK = {
   "New Model Rocket Development Material": "files/webpage/game_icons/New_Model_Rocket_Development_Material.png"
 };
 // C =Development Material, Instant Construction, Instant Repair, Improvement Material
-// I = Furniture Box Medium , Furniture Box (Large), Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
+// I = Furniture Box (Medium) , Furniture Box (Large), Furniture Box (Small), Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 
 // COMPOSITION QUEST A00
@@ -1401,7 +1401,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Instant Repair",2],
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Medium)",1]
     ]
   },
   "A55": {
@@ -2468,8 +2468,8 @@ const ALL_QUESTS_LIST = {
   },
   "B11": {
     "Jp": "「三川艦隊」出撃せよ！",
-    "En": "Sortie the Mikawa Fleet",
-    "content": "Sortie Choukai, Aoba, Kako, Furutaka and Tenryuu, with one additional fast ship to any map",
+    "En": "Deploy The \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kako, Furutaka, Tenryuu, and 1 FAST ship, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2489,8 +2489,8 @@ const ALL_QUESTS_LIST = {
   },
   "B12": {
     "Jp": "「第六駆逐隊」出撃せよ！",
-    "En": "Sortie the 6th Destroyer Division",
-    "content": "Sortie ONLY Akatsuki, Hibiki, Ikazuchi, and Inazuma to any map",
+    "En": "Deploy The \"6th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Akatsuki, Hibiki, Inazuma, and Ikazuchi, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "200",
@@ -2510,8 +2510,8 @@ const ALL_QUESTS_LIST = {
   },
   "B13": {
     "Jp": "「第四戦隊」出撃せよ！",
-    "En": "Sortie the 4th Cruiser Division",
-    "content": "Sortie Takao, Atago, Maya, Choukai and 2 additional ships to World 2-2 and defeat the boss",
+    "En": "Deploy The \"4th Squadron\"!",
+    "content": "Assemble a fleet containing Atago, Takao, Choukai, Maya, and 2 XX, then B+ rank the boss node of 2-2.",
     "tips": "",
     "resources": {
       "F": "150",
@@ -2524,16 +2524,16 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-2"],
-      "S": ["Takao","Atago","Maya","Choukai"]
+      "S": ["Atago","Takao","Choukai","Maya"]
     },
     "reward": [
-      ["C","Instant Repair",1]
+      ["C","Instant Repair",2]
     ]
   },
   "B14": {
     "Jp": "「西村艦隊」出撃せよ！",
-    "En": "Sortie the Nishimura Fleet",
-    "content": "Sortie Fusou, Yamashiro, Mogami, Shigure and 2 additional ships to World 2-3 and defeat the boss",
+    "En": "Deploy The \"Nishimura Fleet\"!",
+    "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, Shigure, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "400",
@@ -2549,14 +2549,14 @@ const ALL_QUESTS_LIST = {
       "S": ["Fusou","Yamashiro","Mogami","Shigure"]
     },
     "reward": [
-      ["I","Furniture box small",1],
-      ["C","Instant Repair",2]
+      ["C","Instant Repair",2],
+      ["I","Furniture Box (Small)",1]      
     ]
   },
   "B15": {
     "Jp": "「第五航空戦隊」出撃せよ！",
-    "En": "Sortie the 5th Carrier Division",
-    "content": "Sortie Shoukaku, Zuikaku, and 4 additional ships to World 3-1 and defeat the boss",
+    "En": "Deploy The \"5th Carrier Division\"!",
+    "content": "Assemble a fleet containing Shoukaku, Zuikaku, and 4 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
     "resources": {
       "F": "200",
@@ -2572,14 +2572,14 @@ const ALL_QUESTS_LIST = {
       "S": ["Shoukaku","Zuikaku"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
-      ["C","Instant Repair",2]
+      ["C","Instant Repair",2],
+      ["I","Furniture Box (Medium)",1]      
     ]
   },
   "B16": {
     "Jp": "新「三川艦隊」出撃せよ！",
-    "En": "Sortie the New Mikawa Fleet",
-    "content": "Sortie Choukai, Furutaka, Kako, Aoba, Kinugasa, and Tenryuu to World 2-3 and defeat the boss",
+    "En": "Deploy The New \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kinugasa, Kako, Furutaka, and Tenryuu, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2592,7 +2592,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Choukai","Furutaka","Kako","Aoba","Kinugasa","Tenryuu"]
+      "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"]
     },
     "reward": [
       ["I","Repair Team",1]
@@ -2600,9 +2600,9 @@ const ALL_QUESTS_LIST = {
   },
   "B17": {
     "Jp": "「潜水艦隊」出撃せよ！?",
-    "En": "Sortie a Submarine Fleet",
-    "content": "Sortie 2 SS and 4 additional ships to World 2-3 and defeat the boss",
-    "tips": "",
+    "En": "Deploy The \"Submarine Fleet\"!",
+    "content": "Assemble a fleet containing 2 SS(V) and 4 XX, then B+ rank the boss node of 2-3.",
+    "tips": "Has the same quest name as Bm2. Despite the quest description, other SS(V) like Maruyu and foreign SS(V) can be used.",
     "resources": {
       "F": "150",
       "A": "0",
@@ -2621,8 +2621,8 @@ const ALL_QUESTS_LIST = {
   },
   "B18": {
     "Jp": "「航空水上打撃艦隊」出撃せよ！",
-    "En": "Sortie an Aviation Surface Attack Fleet",
-    "content": "Sortie 2 CAV, 2 BBV, and 2 additional ships to World 4-2 and defeat the boss",
+    "En": "Deploy \"Aviation Surface Strike Fleet\"!",
+    "content": "Assemble a fleet containing 2 BBV, 2 CAV, and 2 XX, then B+ rank the boss node of 4-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2642,8 +2642,8 @@ const ALL_QUESTS_LIST = {
   },
   "B19": {
     "Jp": "「第六戦隊」出撃せよ！",
-    "En": "Sortie the 6th Cruiser Division",
-    "content": "Sortie Aoba, Furutaka, Kako, Kinugasa and 2 additional ships to World 2-3 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"6th Squadron\"!",
+    "content": "Assemble a fleet containing Furutaka, Kako, Aoba, Kinugasa, and 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2656,17 +2656,17 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Aoba","Furutaka","Kako","Kinugasa"]
+      "S": ["Furutaka","Kako","Aoba","Kinugasa"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Repair Team",1]
     ]
   },
   "B20": {
     "Jp": "「第八駆逐隊」出撃せよ！",
-    "En": "Sortie the 8th Destroyer Division",
-    "content": "Sortie Arashio, Asashio, Michishio, Ooshio and 2 additional ships to World 2-3 and defeat the boss",
+    "En": "Deploy The \"8th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Asashio, Michishio, Ooshio, Arashio, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2679,10 +2679,10 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Arashio","Asashio","Michishio","Ooshio"]
+      "S": ["Asashio","Michishio","Ooshio","Arashio"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["C","Development Material",1]
     ]
   },
@@ -3106,7 +3106,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Satsuki","Fumizuki","Nagatsuki"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Irako",1]
     ]
   },
@@ -3402,7 +3402,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Ashigara","Kuma","Nagara"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Present box",1]
     ]
   },
@@ -3942,7 +3942,7 @@ const ALL_QUESTS_LIST = {
       "M": ["1-3"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -4095,7 +4095,7 @@ const ALL_QUESTS_LIST = {
       "M": ["1-4"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -6275,7 +6275,7 @@ const ALL_QUESTS_LIST = {
       "M": ["3-3","3-4","3-5"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["C","Development Material",3],
       ["C","Improvement Material",3]
     ]
@@ -7448,7 +7448,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
-      ["I","Furniture box small",1]
+      ["I","Furniture Box (Small)",1]
     ]
   },
 
@@ -7534,7 +7534,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 31"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["S","Z1",1]
     ]
   },
@@ -7982,8 +7982,8 @@ const ALL_QUESTS_LIST = {
     "period": "daily",
     "needs": {},
     "reward": [
-      ["I","Furniture box small",1],
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Small)",1],
+      ["I","Furniture Box (Medium)",1]
     ]
   },  
   
@@ -8026,7 +8026,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 37","Exp. 38"]
     },
     "reward": [
-      ["I","Furniture box small",1]
+      ["I","Furniture Box (Small)",1]
     ]
   },
   "Dw3": {
@@ -8071,7 +8071,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 5"]
     },
     "reward": [
-      ["I","Furniture box medium",2]
+      ["I","Furniture Box (Medium)",2]
     ]
   },
   
@@ -8705,7 +8705,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Medium)",1]
     ]
   },
   "F33": {
@@ -9162,7 +9162,7 @@ const ALL_QUESTS_LIST = {
       ]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","New Model Gun Mount Improvement Material",1]
     ]
   },
@@ -9750,7 +9750,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Development Material","5","Choose one: "],
-      ["I","Furniture box medium","3","or "],
+      ["I","Furniture Box (Medium)","3","or "],
       ["I","Furniture Box (Large)",3,"Choose one: "],
       ["I","Furniture Fairy","1","or "]
     ]
