@@ -221,8 +221,8 @@ const ICONS_LINK = {
   "Repair Team": "files/webpage/game_icons/Emergency_repair.png",
   "Repair Goddess": "files/webpage/game_icons/Emergency_repair.png",
   "Mamiya": "files/webpage/game_icons/Mamiya.png",
-  "Furniture box small": "files/webpage/game_icons/Furniture_box_small.png",
-  "Furniture box medium": "files/webpage/game_icons/Furniture_box_medium.png",
+  "Furniture Box (Small)": "files/webpage/game_icons/Furniture_box_small.png",
+  "Furniture Box (Medium)": "files/webpage/game_icons/Furniture_box_medium.png",
   "Furniture Box (Large)": "files/webpage/game_icons/Furniture_box_large.png",
   "Skilled Crew Member": "files/webpage/game_icons/Skilled_Crew_Member.png",
   "Irako": "files/webpage/game_icons/Irako.png",
@@ -288,7 +288,7 @@ const ICONS_LINK = {
   "New Model Rocket Development Material": "files/webpage/game_icons/New_Model_Rocket_Development_Material.png"
 };
 // C =Development Material, Instant Construction, Instant Repair, Improvement Material
-// I = Furniture Box Medium , Furniture Box (Large), Furniture box small, Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
+// I = Furniture Box (Medium) , Furniture Box (Large), Furniture Box (Small), Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 
 // COMPOSITION QUEST A00
@@ -1408,7 +1408,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Instant Repair",2],
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Medium)",1]
     ]
   },
   "A55": {
@@ -1898,7 +1898,7 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "requires": ["A60","B14"],
-    "unlocks": ["B102"],
+    "unlocks": ["B102","B152"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"]
@@ -2277,77 +2277,91 @@ const ALL_QUESTS_LIST = {
 // SORTIE QUest before 100 B00
   "B1": {
     "Jp": "はじめての「出撃」！",
-    "En": "The First Sortie",
-    "content": "Sortie your main fleet",
+    "En": "Your First \"Sortie\"!",
+    "content": "Send a fleet on a Sortie.",
     "tips": "",
+    "requires": [],
+    "unlocks": ["B2"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "20",
       "A": "20",
       "S": "0",
       "B": "0"
     },
-    "requires": [],
-    "unlocks": ["B2"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1]
     ]
   },
   "B2": {
     "Jp": "鎮守府正面海域を護れ！",
-    "En": "Guard the Sea in Front of the Naval Base",
-    "content": "Sortie to World 1-1 and clear the stage",
+    "En": "Protect The Sea In Front Of Naval Base!",
+    "content": "B+ rank the boss node of 1-1.",
     "tips": "",
+    "requires": ["B1"],
+    "unlocks": ["E1","E2","B4","F16"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-1",1]
+      ]
+    },
     "resources": {
       "F": "30",
       "A": "30",
       "S": "30",
       "B": "0"
     },
-    "requires": ["B1"],
-    "unlocks": ["E1","E2","B4","F16"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1]
     ]
   },
   "B3": {
     "Jp": "第2艦隊、出撃せよ！",
-    "En": "Sortie The 2nd Fleet",
-    "content": "Sortie your second fleet",
+    "En": "Deploy The 2nd Fleet!",
+    "content": "Send the Second Fleet on a Sortie.",
     "tips": "",
+    "requires": ["A6"],
+    "unlocks": ["A11"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "200",
       "B": "200"
     },
-    "requires": ["A6"],
-    "unlocks": ["A11"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "B4": {
     "Jp": "南西諸島沖に出撃せよ！",
-    "En": "Sortie to World 1-2 and clear the stage",
-    "content": "Sortie to World 1-2, defeat the boss and clear the stage",
+    "En": "Deploy To The Sea Around Nansei Islands!",
+    "content": "Reach the boss node of 1-2.",
     "tips": "",
+    "requires": ["B2"],
+    "unlocks": ["Bd1","B5","F80"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1]
+      ]
+    },
     "resources": {
       "F": "40",
       "A": "40",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B2"],
-    "unlocks": ["Bd1","B5","F80"],
-    "period": "once",
-    "needs": {
-      "M": ["1-2"]
     },
     "reward": [
       ["C","Instant Repair",1]
@@ -2355,20 +2369,23 @@ const ALL_QUESTS_LIST = {
   },
   "B5": {
     "Jp": "接近する「敵前衛艦隊」を迎撃せよ！",
-    "En": "Intercept the Approaching Enemy Vanguard Fleet",
-    "content": "Sortie to World 1-2 AGAIN and clear the stage",
+    "En": "Confront The \"Enemy Vanguard Fleet\" Closing In!",
+    "content": "B+ rank the boss node of 1-2.",
     "tips": "",
+    "requires": ["B4"],
+    "unlocks": ["B6","B48"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1]
+      ]
+    },
     "resources": {
       "F": "50",
       "A": "0",
       "S": "50",
       "B": "0"
-    },
-    "requires": ["B4"],
-    "unlocks": ["B6","B48"],
-    "period": "once",
-    "needs": {
-      "M": ["1-2"]
     },
     "reward": [
       ["C","Development Material",1],
@@ -2377,103 +2394,119 @@ const ALL_QUESTS_LIST = {
   },
   "B6": {
     "Jp": "「水雷戦隊」で出撃せよ！",
-    "En": "Sortie a Torpedo Squadron",
-    "content": "Sortie a CL as flagship and 3 DD",
+    "En": "Deploy A \"Torpedo Squadron\"!",
+    "content": "Assemble a fleet containing 1 CL as flagship, 3 DD, and up to 2 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B5"],
+    "unlocks": ["B7","B30","B67","B83","B135","Cs4","F73"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "60",
       "A": "60",
       "S": "0",
       "B": "60"
     },
-    "requires": ["B5"],
-    "unlocks": ["B7","B30","B67","B83","B135","Cs4","F73"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["S","Tatsuta",1]
     ]
   },
   "B7": {
     "Jp": "「重巡洋艦」を出撃させよ！",
-    "En": "Sortie a Heavy Cruiser",
-    "content": "Sortie a fleet with a CA as flagship",
+    "En": "Deploy \"Heavy Cruiser\"!",
+    "content": "Assemble a fleet containing 1 CA as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B6"],
+    "unlocks": ["B8","D15","B93","Fy1"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "70",
       "A": "0",
       "S": "70",
       "B": "0"
     },
-    "requires": ["B6"],
-    "unlocks": ["B8","D15","B93"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "B8": {
     "Jp": "「戦艦」を出撃させよ！",
-    "En": "Sortie a Battleship",
-    "content": "Sortie a fleet with a BB as flagship. BBV (BBVs) don't count",
+    "En": "Deploy \"Battleship\"!",
+    "content": "Assemble a fleet containing 1 (F)BB as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B7"],
+    "unlocks": ["B9","B88"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "150",
       "S": "150",
       "B": "0"
     },
-    "requires": ["B7"],
-    "unlocks": ["B9","B88"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "B9": {
     "Jp": "「空母機動部隊」出撃せよ！",
-    "En": "Sortie a Carrier Task Force",
-    "content": "Sortie a Light or Standard Carrier flagship and 5 CL, DD, or AV",
+    "En": "Deploy A \"Mobile Carrier Fleet\"!",
+    "content": "Assemble a fleet containing 1 CV(B/L) as flagship, and 5 DD/CL/AV, then sortie on any map.",
     "tips": "",
+    "requires": ["B8"],
+    "unlocks": ["Fq1","B76","C33"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "200",
       "A": "0",
       "S": "0",
       "B": "300"
     },
-    "requires": ["B8"],
-    "unlocks": ["Fq1","B76","C33"],
-    "period": "once",
-    "needs": {},
     "reward": [
+      ["C","Instant Repair",1],
       ["C","Development Material",1]
     ]
   },
   "B10": {
     "Jp": "敵空母を撃沈せよ！",
-    "En": "Sink an Enemy Carrier",
-    "content": "Sink an enemy CV / CVL.",
+    "En": "Sink An Enemy Carrier!",
+    "content": "Sink an enemy CV(L).",
     "tips": "",
+    "requires": ["A11"],
+    "unlocks": ["Bq3"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "100"
     },
-    "requires": ["A11"],
-    "unlocks": ["Bq3"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["S","Akagi",1]
     ]
   },
   "B11": {
     "Jp": "「三川艦隊」出撃せよ！",
-    "En": "Sortie the Mikawa Fleet",
-    "content": "Sortie Choukai, Aoba, Kako, Furutaka and Tenryuu, with one additional fast ship to any map",
+    "En": "Deploy The \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kako, Furutaka, Tenryuu, and 1 FAST ship, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2493,8 +2526,8 @@ const ALL_QUESTS_LIST = {
   },
   "B12": {
     "Jp": "「第六駆逐隊」出撃せよ！",
-    "En": "Sortie the 6th Destroyer Division",
-    "content": "Sortie ONLY Akatsuki, Hibiki, Ikazuchi, and Inazuma to any map",
+    "En": "Deploy The \"6th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Akatsuki, Hibiki, Inazuma, and Ikazuchi, then sortie on any map.",
     "tips": "",
     "resources": {
       "F": "200",
@@ -2514,8 +2547,8 @@ const ALL_QUESTS_LIST = {
   },
   "B13": {
     "Jp": "「第四戦隊」出撃せよ！",
-    "En": "Sortie the 4th Cruiser Division",
-    "content": "Sortie Takao, Atago, Maya, Choukai and 2 additional ships to World 2-2 and defeat the boss",
+    "En": "Deploy The \"4th Squadron\"!",
+    "content": "Assemble a fleet containing Atago, Takao, Choukai, Maya, and 2 XX, then B+ rank the boss node of 2-2.",
     "tips": "",
     "resources": {
       "F": "150",
@@ -2528,16 +2561,16 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-2"],
-      "S": ["Takao","Atago","Maya","Choukai"]
+      "S": ["Atago","Takao","Choukai","Maya"]
     },
     "reward": [
-      ["C","Instant Repair",1]
+      ["C","Instant Repair",2]
     ]
   },
   "B14": {
     "Jp": "「西村艦隊」出撃せよ！",
-    "En": "Sortie the Nishimura Fleet",
-    "content": "Sortie Fusou, Yamashiro, Mogami, Shigure and 2 additional ships to World 2-3 and defeat the boss",
+    "En": "Deploy The \"Nishimura Fleet\"!",
+    "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, Shigure, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "400",
@@ -2553,14 +2586,14 @@ const ALL_QUESTS_LIST = {
       "S": ["Fusou","Yamashiro","Mogami","Shigure"]
     },
     "reward": [
-      ["I","Furniture box small",1],
-      ["C","Instant Repair",2]
+      ["C","Instant Repair",2],
+      ["I","Furniture Box (Small)",1]      
     ]
   },
   "B15": {
     "Jp": "「第五航空戦隊」出撃せよ！",
-    "En": "Sortie the 5th Carrier Division",
-    "content": "Sortie Shoukaku, Zuikaku, and 4 additional ships to World 3-1 and defeat the boss",
+    "En": "Deploy The \"5th Carrier Division\"!",
+    "content": "Assemble a fleet containing Shoukaku, Zuikaku, and 4 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
     "resources": {
       "F": "200",
@@ -2576,14 +2609,14 @@ const ALL_QUESTS_LIST = {
       "S": ["Shoukaku","Zuikaku"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
-      ["C","Instant Repair",2]
+      ["C","Instant Repair",2],
+      ["I","Furniture Box (Medium)",1]      
     ]
   },
   "B16": {
     "Jp": "新「三川艦隊」出撃せよ！",
-    "En": "Sortie the New Mikawa Fleet",
-    "content": "Sortie Choukai, Furutaka, Kako, Aoba, Kinugasa, and Tenryuu to World 2-3 and defeat the boss",
+    "En": "Deploy The New \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kinugasa, Kako, Furutaka, and Tenryuu, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2596,7 +2629,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Choukai","Furutaka","Kako","Aoba","Kinugasa","Tenryuu"]
+      "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"]
     },
     "reward": [
       ["I","Repair Team",1]
@@ -2604,9 +2637,9 @@ const ALL_QUESTS_LIST = {
   },
   "B17": {
     "Jp": "「潜水艦隊」出撃せよ！?",
-    "En": "Sortie a Submarine Fleet",
-    "content": "Sortie 2 SS and 4 additional ships to World 2-3 and defeat the boss",
-    "tips": "",
+    "En": "Deploy The \"Submarine Fleet\"!",
+    "content": "Assemble a fleet containing 2 SS(V) and 4 XX, then B+ rank the boss node of 2-3.",
+    "tips": "Has the same quest name as Bm2. Despite the quest description, other SS(V) like Maruyu and foreign SS(V) can be used.",
     "resources": {
       "F": "150",
       "A": "0",
@@ -2625,8 +2658,8 @@ const ALL_QUESTS_LIST = {
   },
   "B18": {
     "Jp": "「航空水上打撃艦隊」出撃せよ！",
-    "En": "Sortie an Aviation Surface Attack Fleet",
-    "content": "Sortie 2 CAV, 2 BBV, and 2 additional ships to World 4-2 and defeat the boss",
+    "En": "Deploy \"Aviation Surface Strike Fleet\"!",
+    "content": "Assemble a fleet containing 2 BBV, 2 CAV, and 2 XX, then B+ rank the boss node of 4-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2646,8 +2679,8 @@ const ALL_QUESTS_LIST = {
   },
   "B19": {
     "Jp": "「第六戦隊」出撃せよ！",
-    "En": "Sortie the 6th Cruiser Division",
-    "content": "Sortie Aoba, Furutaka, Kako, Kinugasa and 2 additional ships to World 2-3 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"6th Squadron\"!",
+    "content": "Assemble a fleet containing Furutaka, Kako, Aoba, Kinugasa, and 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2660,17 +2693,17 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Aoba","Furutaka","Kako","Kinugasa"]
+      "S": ["Furutaka","Kako","Aoba","Kinugasa"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Repair Team",1]
     ]
   },
   "B20": {
     "Jp": "「第八駆逐隊」出撃せよ！",
-    "En": "Sortie the 8th Destroyer Division",
-    "content": "Sortie Arashio, Asashio, Michishio, Ooshio and 2 additional ships to World 2-3 and defeat the boss",
+    "En": "Deploy The \"8th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Asashio, Michishio, Ooshio, Arashio, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2683,17 +2716,17 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["2-3"],
-      "S": ["Arashio","Asashio","Michishio","Ooshio"]
+      "S": ["Asashio","Michishio","Ooshio","Arashio"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["C","Development Material",1]
     ]
   },
   "B21": {
     "Jp": "「第十八駆逐隊」出撃せよ！",
-    "En": "Sortie the 18th Destroyer Division",
-    "content": "Sortie Arare, Kagerou, Kasumi, Shiranui and 2 additional ships to World 3-1 and defeat the boss",
+    "En": "Deploy The \"18th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Kasumi, Arare, Kagerou, Shiranui, and 2 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2706,7 +2739,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["3-1"],
-      "S": ["Arare","Kagerou","Kasumi","Shiranui"]
+      "S": ["Kasumi","Arare","Kagerou","Shiranui"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
@@ -2715,8 +2748,8 @@ const ALL_QUESTS_LIST = {
   },
   "B22": {
     "Jp": "「第三十駆逐隊(第一次)」出撃せよ！",
-    "En": "Sortie the 30th Destroyer Division (First Generation)",
-    "content": "Sortie Mutsuki, Kisaragi, Mochizuki, Yayoi and 2 additional DD (or 1 CL flagship and  1 DD) to World 3-2 and obtain a C-Rank or better at the boss",
+    "En": "Deploy The \"30th Destroyer Division (1st Gen.)\"!",
+    "content": "Assemble a fleet containing Mutsuki, Kisaragi, Yayoi, Mochizuki, and 2 XX, then C+ rank the boss node of 3-2.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2729,7 +2762,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["3-2"],
-      "S": ["Mutsuki","Kisaragi","Mochizuki","Yayoi"]
+      "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -2737,8 +2770,8 @@ const ALL_QUESTS_LIST = {
   },
   "B23": {
     "Jp": "「航空戦艦」抜錨せよ！",
-    "En": "Sortie an Aviation Battleship",
-    "content": "Sortie a fleet with at least 2 BBV to World 4-4 and defeat the boss",
+    "En": "\"Aviation Battleship\" Weigh Anchor!",
+    "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then B+ rank the boss node of 4-4.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2747,20 +2780,20 @@ const ALL_QUESTS_LIST = {
       "B": "900"
     },
     "requires": ["D10"],
-    "unlocks": ["B114","C22"],
+    "unlocks": ["B114","C22","B152"],
     "period": "once",
     "needs": {
       "M": ["4-4"]
     },
     "reward": [
-      ["I","Furniture Box (Large)",1],
-      ["C","Instant Repair",3]
+      ["C","Instant Repair",3],
+      ["I","Furniture Box (Large)",1]      
     ]
   },
   "B24": {
     "Jp": "「第三十駆逐隊」対潜哨戒！",
-    "En": "The 30th Destroyer Division Anti-Submarine Patrol",
-    "content": "Sortie Mutsuki, Mochizuki, Uzuki and Yayoi to World 1-5 and obtain a C-Rank or better at the boss",
+    "En": "\"30th Destroyer Division\" Anti-Submarine Patrol!",
+    "content": "Assemble a fleet containing Mutsuki, Uzuki, Yayoi, and Mochizuki, then C+ rank the boss node of 1-5.",
     "tips": "",
     "resources": {
       "F": "330",
@@ -2773,7 +2806,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["1-5"],
-      "S": ["Mutsuki","Mochizuki","Uzuki","Yayoi"]
+      "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -2781,8 +2814,8 @@ const ALL_QUESTS_LIST = {
   },
   "B25": {
     "Jp": "新編「第二航空戦隊」出撃せよ！",
-    "En": "Sortie the New 2nd Carrier Division",
-    "content": "Sortie Hiryuu Kai Ni as flagship, Souryuu (Kai or Kai-2 is ok), and 2 DD (you may add additional ships) to World 5-2 and obtain an S-Rank at the boss",
+    "En": "Deploy The Newly-Formed \"2nd Carrier Division\"!",
+    "content": "Assemble a fleet containing Hiryuu Kai Ni as flagship, Souryuu, 2 DD, and up to 2 XX, then S rank the boss node of 5-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2803,8 +2836,8 @@ const ALL_QUESTS_LIST = {
   },
   "B26": {
     "Jp": "精鋭「第二航空戦隊」抜錨せよ！",
-    "En": "Sortie the Elite 2nd Carrier Division",
-    "content": "Sortie Souryuu Kai Ni as flagship, Hiryuu Kai Ni, 2 DD and 2 additional ship to World 4-3 and obtain an S-Rank at the boss",
+    "En": "Elite \"2nd Carrier Division\" Weigh Anchor!",
+    "content": "Assemble a fleet containing Souryuu Kai Ni as flagship, Hiryuu Kai Ni, 2 DD, and up to 2 XX, then S rank the boss node of 4-3.",
     "tips": "",
     "resources": {
       "F": "500",
@@ -2825,8 +2858,8 @@ const ALL_QUESTS_LIST = {
   },
   "B27": {
     "Jp": "戦艦「榛名」出撃せよ！",
-    "En": "Sortie the Battleship: \"Haruna\"",
-    "content": "Sortie Haruna Kai Ni and 5 additional ships to World 5-1 and obtain an S-Rank at the boss",
+    "En": "Deploy Battleship \"Haruna\"!",
+    "content": "Assemble a fleet containing Haruna Kai Ni and up to 5 XX, then S rank the boss node of 5-1.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2847,8 +2880,8 @@ const ALL_QUESTS_LIST = {
   },
   "B28": {
     "Jp": "「第六〇一航空隊」出撃せよ！",
-    "En": "Sortie the 601st Naval Air Group",
-    "content": "Sortie Unryuu Kai and 5 additional ships to World 5-2 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"601st Air Group\"!",
+    "content": "Assemble a fleet containing Unryuu Kai and up to 5 XX, then S rank the boss node of 5-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2869,8 +2902,8 @@ const ALL_QUESTS_LIST = {
   },
   "B29": {
     "Jp": "「軽空母」戦隊、出撃せよ！",
-    "En": "Sortie a Light Carrier Squadron",
-    "content": "Sortie 1-2 CVL, 1 CL, and 3-4 DD to World 2-1 and obtain an S-Rank at the boss",
+    "En": "\"Light Carrier\" Squadron, Deploy!",
+    "content": "Assemble a fleet containing 1 CVL, 1CVL/DD, 3 DD, and 1 CL, then S rank the boss node of 2-1.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2891,8 +2924,8 @@ const ALL_QUESTS_LIST = {
   },
   "B30": {
     "Jp": "「水雷戦隊」バシー島沖緊急展開",
-    "En": "The Torpedo Squadron Bashi Island Emergency Deployment",
-    "content": "Sortie 1-2 CL, which one of must be the flagship, and 4-5 DD to World 2-2 and obtain an S-Rank at the boss",
+    "En": "\"Torpedo Squadron\" Emergency Deployment To Sea Around Bashi Island",
+    "content": "Assemble a fleet containing 1 CL as flagship, 1 CL/DD, and 4 DD, then S rank the boss node of 2-2.",
     "tips": "",
     "resources": {
       "F": "300",
@@ -2913,8 +2946,8 @@ const ALL_QUESTS_LIST = {
   },
   "B31": {
     "Jp": "「第二戦隊」抜錨！",
-    "En": "Sortie the 2nd Squadron",
-    "content": "Sortie Fusou, Mutsu, Nagato, Yamashiro and 2 additional ships to World 4-2 and obtain two S-Rank victories at the boss",
+    "En": "\"2nd Squadron\" Weigh Anchor!",
+    "content": "Assemble a fleet containing Nagato, Mutsu, Fusou, Yamashiro, and 2 XX, then S rank the boss node of 4-2 twice.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2926,8 +2959,10 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["A43","A75"],
     "period": "once",
     "needs": {
-      "M": ["4-2"],
-      "S": ["Fusou","Mutsu","Nagato","Yamashiro"]
+      "M": [
+        ["4-2",2]
+      ],
+      "S": ["Nagato","Mutsu","Fusou","Yamashiro"]
     },
     "reward": [
       ["E","Type 1 AP Shell",1]
@@ -3110,7 +3145,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Satsuki","Fumizuki","Nagatsuki"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Irako",1]
     ]
   },
@@ -3331,7 +3366,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Bd8","B32"],
-    "unlocks": [],
+    "unlocks": ["B152"],
     "period": "once",
     "needs": {
       "M": ["3-5"]
@@ -3406,7 +3441,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Ashigara","Kuma","Nagara"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Present box",1]
     ]
   },
@@ -3946,7 +3981,7 @@ const ALL_QUESTS_LIST = {
       "M": ["1-3"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -4099,7 +4134,7 @@ const ALL_QUESTS_LIST = {
       "M": ["1-4"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","Furniture Fairy",1]
     ]
   },
@@ -5407,7 +5442,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["I","Action Report","1"],
       ["C","Development Material","3","Choose one: "],
-      ["C","Instant Repair Material","3","or "],
+      ["C","Instant Repair","3","or "],
       ["E","25mm Triple Autocannon Mount","2","or "]
     ]
   },
@@ -5446,7 +5481,7 @@ const ALL_QUESTS_LIST = {
     "En": "Superior \"CarDiv 1\"! Sortie!",
     "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
-    "unlocks": ["F88"],
+    "unlocks": ["F88","B154"],
     "requires": ["B40","C33"],
     "period": "once",
     "needs": {
@@ -5611,7 +5646,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","3","Choose one: "],
-      ["C","Instant Repair Material","6","or "],
+      ["C","Instant Repair","6","or "],
       ["I","Combat Ration (Special Onigiri)","2","or "],
       ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
       ["I","New Model Rocket Development Material","1","or "],
@@ -5643,7 +5678,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Underway Replenishment","2","Choose one: "],
-      ["C","Instant Repair Material","6","or "],
+      ["C","Instant Repair","6","or "],
       ["E","25mm Triple Autocannon Mount","2","or "],
       ["E","Prototype Toukai","1","Choose one: "],
       ["E","Prototype Keiun (Carrier-based Reconnaissance Model)","1","or "]
@@ -5714,7 +5749,7 @@ const ALL_QUESTS_LIST = {
     ]
   }, 
   "B146": {
-    "Jp": "「Gotland」戦隊、進撃せよ！",
+    "Jp": "「Gotland」戦隊、進撃せよ!",
     "En": "\"Gotland\" Squadron, Advance!",
     "content": "Assemble a fleet containing Gotland Andra as flagship, 1 DD, and up to 4 XX, then S rank the boss nodes of 2-5, 6-3, 6-4, and 6-5.",
     "tips": "",
@@ -5768,7 +5803,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["C","Improvement Material","2","Choose one: "],
       ["I","Emergency Repair Material","2","or "],
-      ["C","Instant Repair Material","4","or "],
+      ["C","Instant Repair","4","or "],
       ["E","Tenzan","3","Choose one: "],
       ["E","OS2U","1","or "]
     ]
@@ -5866,8 +5901,8 @@ const ALL_QUESTS_LIST = {
     "En": "Combined Fleet Mobile Task Force, Sortie!",
     "content": "Assemble a fleet containing 1 CV(B/L) from the USN/RN, and up to 5 XX, then S rank the boss nodes of 3-4, 4-3, 5-2, and 7-2 (Part 2).",
     "tips": "",
-    "unlocks": [],
     "requires": ["B147"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": [],
@@ -5875,7 +5910,7 @@ const ALL_QUESTS_LIST = {
         ["3-4",1],
         ["4-3",1],
         ["5-2",1],
-        ["7-2 (Part 2)",1],
+        ["7-2 (Part 2)",1]
       ]
     },
     "resources": {
@@ -5885,7 +5920,7 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["C","Instant Repair Material",4,"Choose one: "],
+      ["C","Instant Repair",4,"Choose one: "],
       ["C","Development Material",5,"or "],
       ["E","SK Radar",1,"Choose one: "],
       ["I","New Model Aerial Armament Material",2,"or "]
@@ -5896,15 +5931,15 @@ const ALL_QUESTS_LIST = {
     "En": "[Special Aircraft Carrier Mission] Our Carrier Divisions, Peerless And Unmatched!",
     "content": "Assemble a fleet containing 2 CV(B) and up to 4 XX, then S rank the boss nodes of 2-4, 2-5, and 4-3.",
     "tips": "",
-    "unlocks": [],
     "requires": ["A77","B23","B49"],
+    "unlocks": ["B153"],
     "period": "once",
     "needs": {
       "S": [],
       "M": [
         ["2-4",1],
         ["2-5",1],
-        ["4-3",1],
+        ["4-3",1]
       ]
     },
     "resources": {
@@ -5917,16 +5952,16 @@ const ALL_QUESTS_LIST = {
       ["I","Medal",1],
       ["C","Development Material",88,"Choose one: "],
       ["I","Prototype Flight Deck Catapult",1,"or "],
-      ["E","TBF★+4",1,"or "],
+      ["E","TBF★+4",1,"or "]
     ]
   },
   "B153": {
     "Jp": "改加賀型航空母艦「加賀改二」、抜錨！",
     "En": "Remodeled Kaga-class Aircraft Carrier Kaga Kai Ni, Set Sail!",
     "content": "Assemble a fleet containing Kaga Kai Ni/E/Go as flagship, 1 CV(B), and up to 4 XX, then S rank the boss nodes of 3-4, 4-4, 4-5, and 5-2.",
-    "tips": "Please grab the prototype shuusui for you who doesn't have any high altitude land-based fighter",
-    "unlocks": [],
-    "requires": ["A77","B23","B49"],
+    "tips": "",
+    "requires": ["B152"],
+    "unlocks": ["B154"],
     "period": "once",
     "needs": {
       "S": ["Kaga Kai Ni"],
@@ -5934,7 +5969,7 @@ const ALL_QUESTS_LIST = {
         ["3-4",1],
         ["4-4",1],
         ["4-5",1],
-        ["5-2",1],
+        ["5-2",1]
       ]
     },
     "resources": {
@@ -5947,24 +5982,24 @@ const ALL_QUESTS_LIST = {
       ["E","Ryuusei Kai (CarDiv 1)",1],
       ["E","Prototype Shuusui",1,"Choose one: "],
       ["E","Type 1 Land-based Attack Aircraft Model 22A★+4",1,"or "],
-      ["E","Ka Type Observation Autogyro★+3",3,"or "],
+      ["E","Ka Type Observation Autogyro★+3",3,"or "]
     ]
   },
   "B154": {
     "Jp": "最精鋭「第一航空戦隊」、出撃！鎧袖一触！",
     "En": "Peerless CarDiv 1, Sortie! Defeat Them With A Single Strike!",
     "content": "Assemble a fleet containing Kaga Kai Ni/E/Go, Akagi Kai Ni/E, and up to 4 XX, then S rank the boss nodes of 5-5, 7-2 (Part 2), 6-2, and 6-5.",
-    "tips": "Please take Ryuusei Kai (CarDiv 1/Skilled) on 2nd option cause you can't craft it yet and also it is torpedo bomber that has AAR",
-    "unlocks": [],
+    "tips": "",
     "requires": ["B137","B153"],
+    "unlocks": [],
     "period": "once",
     "needs": {
-      "S": ["Kaga Kai Ni", "Kaga Kai Ni E", "Kaga Kai Ni Go", "Akagi Kai Ni", "Akagi Kai Ni E", "Akagi Kai Ni Go"],
+      "S": ["Kaga Kai Ni","Akagi Kai Ni"],
       "M": [
         ["5-5",1],
         ["7-2(Part 2)",1],
         ["6-2",1],
-        ["6-5",1],
+        ["6-5",1]
       ]
     },
     "resources": {
@@ -6526,14 +6561,84 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Prototype Flight Deck Catapult","1","Choose one: "],
-      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
-      ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
-      ["I","Action Report","2","Choose one: "],
-      ["I","Remodel Blueprint","1","or "],
-      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "],
+      ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
+      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 34★+2",1,"or "],
+      ["I","Action Report",2,"Choose one: "],
+      ["I","Remodel Blueprint",1,"or "],
+      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
     ]
   },
+  "B155": {
+    "Jp": "重巡「羽黒」、出撃！ペナン沖海戦",
+    "En": "Heavy Cruiser \"Haguro\", Sortie! Battle Of The Malacca Strait",
+    "content": "Assemble a fleet containing Haguro as flagship, and up to 4 XX, then S rank the boss node of 7-3 (Part 1) four times.",
+    "tips": "",
+    "requires": ["A15","B13"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Haguro"],
+      "M": [
+        ["7-3 (Part 1)",4]        
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "2020",
+      "S": "1945",
+      "B": "0"
+    },
+    "reward": [
+      ["E","20.3cm (No.3) Twin Gun Mount★+6",1],
+      ["I","Action Report",1,"Choose one: "],
+      ["I","New Model Armament Material",1,"or "]      
+    ]
+  },
+
+
+
+
+
+
+
+
+  //use this for template (Block all of it and then ctrl + /, to remove the comment, dont forget to ctrl +/ again)
+  // "": {
+  //   "Jp": "",
+  //   "En": "",
+  //   "content": "",
+  //   "tips": "",
+  //   "unlocks": [],
+  //   "requires": [],
+  //   "period": "once",
+  //   "needs": {
+  //     "S": [],
+  //     "M": [
+  //       ["",1],
+  //       ["",1],
+  //       ["",1],
+  //       ["",1],
+  //     ]
+  //   },
+  //   "resources": {
+  //     "F": "0",
+  //     "A": "0",
+  //     "S": "0",
+  //     "B": "0"
+  //   },
+  //   "reward": [
+  //     ["I","Prototype Flight Deck Catapult","1","Choose one: "],
+  //     ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
+  //     ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
+  //     ["I","Action Report","2","Choose one: "],
+  //     ["I","Remodel Blueprint","1","or "],
+  //     ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "],
+  //   ]
+  // },
+
+
+
 
 
 
@@ -6875,7 +6980,7 @@ const ALL_QUESTS_LIST = {
       "M": ["3-3","3-4","3-5"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["C","Development Material",3],
       ["C","Improvement Material",3]
     ]
@@ -8048,7 +8153,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
-      ["I","Furniture box small",1]
+      ["I","Furniture Box (Small)",1]
     ]
   },
 
@@ -8134,7 +8239,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 31"]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["S","Z1",1]
     ]
   },
@@ -8582,8 +8687,8 @@ const ALL_QUESTS_LIST = {
     "period": "daily",
     "needs": {},
     "reward": [
-      ["I","Furniture box small",1],
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Small)",1],
+      ["I","Furniture Box (Medium)",1]
     ]
   },  
   
@@ -8626,7 +8731,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 37","Exp. 38"]
     },
     "reward": [
-      ["I","Furniture box small",1]
+      ["I","Furniture Box (Small)",1]
     ]
   },
   "Dw3": {
@@ -8671,7 +8776,7 @@ const ALL_QUESTS_LIST = {
       "M": ["Exp. 5"]
     },
     "reward": [
-      ["I","Furniture box medium",2]
+      ["I","Furniture Box (Medium)",2]
     ]
   },
   
@@ -8915,7 +9020,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A5"],
-    "unlocks": ["B107"],
+    "unlocks": ["B107","Gy1","Gy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -9007,7 +9112,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd4","B2"],
-    "unlocks": ["F60"],
+    "unlocks": ["F60","Fy1"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -9026,7 +9131,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["A45"],
-    "unlocks": ["Fd6","F54"],
+    "unlocks": ["Fd6","F54","Fy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -9305,7 +9410,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {},
     "reward": [
-      ["I","Furniture box medium",1]
+      ["I","Furniture Box (Medium)",1]
     ]
   },
   "F33": {
@@ -9398,7 +9503,7 @@ const ALL_QUESTS_LIST = {
       "B": "200"
     },
     "requires": ["F37","B77"],
-    "unlocks": ["Fq2","F43"],
+    "unlocks": ["Fq2","F43","Fy4","Fy8"],
     "period": "once",
     "needs": {
       "E": [
@@ -9474,7 +9579,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["B62","F38"],
-    "unlocks": ["F45"],
+    "unlocks": ["F45","Fy7"],
     "period": "once",
     "needs": {
       "E": [
@@ -9504,7 +9609,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["F42","Cd1"],
-    "unlocks": [],
+    "unlocks": ["Fy3"],
     "period": "once",
     "needs": {
       "E": [
@@ -9667,7 +9772,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd6","B91"],
-    "unlocks": [],
+    "unlocks": ["Fy5"],
     "period": "once",
     "needs": {
       "E": [
@@ -9762,7 +9867,7 @@ const ALL_QUESTS_LIST = {
       ]
     },
     "reward": [
-      ["I","Furniture box medium",1],
+      ["I","Furniture Box (Medium)",1],
       ["I","New Model Gun Mount Improvement Material",1]
     ]
   },
@@ -10350,7 +10455,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Development Material","5","Choose one: "],
-      ["I","Furniture box medium","3","or "],
+      ["I","Furniture Box (Medium)","3","or "],
       ["I","Furniture Box (Large)",3,"Choose one: "],
       ["I","Furniture Fairy","1","or "]
     ]
@@ -10638,7 +10743,7 @@ const ALL_QUESTS_LIST = {
       "B": "100"
     },
     "requires": ["Fd2"],
-    "unlocks": ["Fd4","F51","F53","F58","Fd7"],
+    "unlocks": ["Fd4","F51","F53","F58","Fd7","Gy2","Fq9"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -10696,7 +10801,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd4","F17"],
-    "unlocks": ["Fw2","F50","F80"],
+    "unlocks": ["Fw2","F50","F80","Fy2"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -10738,7 +10843,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["Fd7"],
-    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8","B128"],
+    "unlocks": ["Fq4","Fw3","Fw4","B124","Fq8","B128","Fy1"],
     "period": "daily",
     "needs": {
       "E": [
@@ -11175,10 +11280,371 @@ const ALL_QUESTS_LIST = {
       ["E","Zuiun (631 Air Group)",1,"or "]
     ]
   },
-// Placeholder Fq9
+  "Fq9": {
+    "Jp": "工廠稼働！次期作戦準備！",
+    "En": "Improvement Arsenal! Preparing For The Next Operation!",
+    "content": "Scrap 6 \"14cm Single Gun Mounts\" and prepare 3 \"35.6cm Twin Gun Mounts\", 2 \"Type 96 Fighters\", and 6 000 furniture coins.",
+    "tips": "",
+    "period": "quarterly",
+    "requires": ["B8","Fd3"],
+    "unlocks": [],
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "600",
+      "B": "600"
+    },
+    "needs": {
+      "R": [
+        ["Furniture Coins",6000]
+      ],
+      "E": [
+        ["14cm Single Gun Mounts",6],
+        ["35.6cm Twin Gun Mounts",3],
+        ["Type 96 Fighters",3]
+      ]
+    },
+    "reward": [
+      ["E","Daihatsu Landing Craft",1,"Choose one: "],
+      ["E","Type 0 Fighter Model 21",2,"or "],
+      ["E","Type 96 Land-based Attack Aircraft",1,"or "],
+      ["E","Type 94 Depth Charge Projector",3,"Choose one: "],
+      ["E","12cm 30-tube Rocket Launcher",2,"or "],
+      ["E","Type 2 12cm Mortar Kai",2,"or "]
+    ]
+  },
+
+
 // Yearly Factory Quest Fy00
-// Placeholder Fy1-10
-  
+"Fy1": {
+  "Jp": "新型兵装開発整備の強化",
+  "En": "Improving Development And Maintenance Of New Armaments",
+  "content": "Scrap 6 \"Small Caliber Main Guns\", 5 \"Medium Caliber Main Guns\", and 4 \"Torpedoes\", and prepare 4 000 steel.",
+  "tips": "Resources are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["B7","F16","Fd8"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Steel",4000]
+    ],
+    "E": [
+      ["Small gun",6],
+      ["Medium gun",5],
+      ["Torpedoes",4]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",10],
+    ["C","Improvement Material",5,"Choose one: "],
+    ["I","New Model Armament Material",2,"or "]
+  ]
+},
+"Fy2": {
+  "Jp": "精鋭複葉機飛行隊の編成",
+  "En": "Formation Of A Splendid Biplane Squadron",
+  "content": "Set Ark Royal as Secretary, equipped with a ★Max-Improved Swordfish in her 1st slot, then, scrap 1 Swordfish, and 2 Fulmar, and prepare 1 Skilled Crew Member, 1 500 ammo and 1 500 bauxite.",
+  "tips": "Set Ark Royal as Secretary, equipped with a ★Max-Improved Swordfish in her 1st slot, the Swordfish will be converted into the reward. Resources and item are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["C20","Fd6"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "S": ["Ark Royal"],
+    "R": [
+      ["Ammo",1500],
+      ["Bauxite",1500]
+    ],
+    "I": [
+      ["Skilled Crew Member",1]
+    ],
+    "E": [
+      ["Swordfish",1],
+      ["Fulmar",2],
+      ["★Max Swordfish",1]
+    ]
+  },
+  "reward": [
+    ["E","Sworfish Mk.II (Skilled)",1,]
+  ]
+},
+"Fy3": {
+  "Jp": "工廠フル稼働！新兵装を開発せよ！",
+  "En": "Arsenal At Maximum Capacity! Develop New Armaments!",
+  "content": "Scrap 5 \"Small Caliber Main Guns\", 5 \"Medium Caliber Main Guns\", 5 \"Large Caliber Main Guns\", 5 \"Seaplane Recons\", and 5 \"Torpedo Bombers\", and prepare 1 500 steel, 1 500 fuel, and 1 500 bauxite.",
+  "tips": "	Resources are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F17","F44"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "880",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Steel",1500],
+      ["Fuel",1500],
+      ["Bauxite",1500]
+    ],
+    "E": [
+      ["Small gun",5],
+      ["Medium gun",5],
+      ["Large gun",5],
+      ["Seaplane recon",5],
+      ["Bomber",5]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",10,"Choose one: "],
+    ["I","New Model Gun Mount Improvement Material",1,"or "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",5,"Choose one: "],
+    ["I","New Model Armament Material",2,"or "]
+  ]
+},
+"Fy4": {
+  "Jp": "航空戦力の再編増強準備",
+  "En": "Preparations For The Reinforcement Of Our Air Force",
+  "content": "Scrap 4 \"Dive Bombers\" and 4 \"Torpedo Bombers\", and prepare 20 Development Materials and 1 600 bauxite.",
+  "tips": "Resources and items are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F38"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "400",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Bauxite",1600]
+    ],
+    "C": [
+      ["Development Materials",20]
+    ],
+    "E": [
+      ["Dive bombers",4],
+      ["Bombers",4]
+    ]
+  },
+  "reward": [
+    ["E","Type 96 Land-based Attack Aircraft",3,"Choose one: "],
+    ["E","Type 1 Land-based Attack Aircraft Model 22A",1,"or "],
+    ["I","New Model Aerial Armament Material",2,"or "],
+    ["I","Skilled Crew Member",1,"Choose one: "],
+    ["E","Improvement Material",4,"or "]
+  ]
+},
+"Fy5": {
+  "Jp": "潜水艦強化兵装の量産",
+  "En": "Mass Production Of Reinforced Submarine Armaments",
+  "content": "Scrap 3 61cm Triple (Oxygen) Torpedo Mounts and prepare 2 Type 93 Passive Sonars, 2 Type 13 Air Radar Kai, and 60 Development Materials.",
+  "tips": "Items and equipment are consumed upon completion. Behave like a conversion quest.",
+  "period": "yearly",
+  "requires": ["F50","F96"],
+  "unlocks": ["Fy6"],
+  "resources": {
+    "F": "0",
+    "A": "100",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "C": [
+      ["Development Material",60]
+    ],
+    "E": [
+      ["61cm Triple (Oxygen) Torpedo Mounts",3],
+      ["Type 93 Passive Sonar",2],
+      ["Type 13 Air Radar Kai",2]
+    ]
+  },
+  "reward": [
+    ["E","Late Model Bow Torpedo Mount (6 tubes)",1,],
+    ["C","Development Material",3,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Fy6": {
+  "Jp": "潜水艦電子兵装の量産",
+  "En": "Mass Production Of Submarine Radar Equipment",
+  "content": "Scrap 3 Type 13 Air Radar Kai and prepare 2 Type 93 Passive Sonars, 2 Type 22 Surface Radars, and 100 Development Materials.",
+  "tips": "Items and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["Fy5"],
+  "unlocks": [],
+  "resources": {
+    "F": "100",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "C": [
+      ["Development Material",100]
+    ],
+    "E": [
+      ["Type 13 Air Radar Kai",3],
+      ["Type 93 Passive Sonar",2],
+      ["Type 22 Surface Radar",2]
+    ]
+  },
+  "reward": [
+    ["E","Submarine Radar & Waterproof Telescope",1,],
+    ["C","Development Material",5,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Fy7": {
+  "Jp": "夏の格納庫整備＆航空基地整備",
+  "En": "Summer Hangar & Land Base Maintenance",
+  "content": "Scrap 3 Land-Based Attackers and prepare 4 Type 97 Torpedo Bomber, 4 Tenzan, and 2 800 ammo.",
+  "tips": "Resources and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F43","F97"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "400"
+  },
+  "needs": {
+    "R": [
+      ["Ammo",2800]
+    ],
+    "E": [
+      ["Land-based Attacker",3],
+      ["Type 97 Torpedo Bomber",4],
+      ["Tenzan",4]
+    ]
+  },
+  "reward": [
+    ["I","New Model Aerial Armament Material",2,"Choose one: "],
+    ["I","New Model Armament Material",1,"or "],
+    ["C","Development Material",10,"or "],
+    ["I","Skilled Crew Member",2,"Choose one: "],
+    ["I","Construction Corps",1,"or "],
+    ["C","Improvement Material",8,"or "]
+  ]
+},
+"Fy8": {
+  "Jp": "【鋼材輸出】基地航空兵力を増備せよ！",
+  "En": "[Exportation Of Steel] Increase The Strength Of Your Land Base!",
+  "content": "Scrap 2 \"Fighters\" and 2 \"Torpedo Bombers\", and prepare 10 Development Materials and 24 000 steel.",
+  "tips": "Resources and items are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["D42","F38"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "3000"
+  },
+  "needs": {
+    "R": [
+      ["Steel",24000]
+    ],
+    "C": [
+      ["Development Material",10]
+    ],
+    "E": [
+      ["Fighter",2],
+      ["Bomber",2]
+    ]
+  },
+  "reward": [
+    ["E","Type 96 Land-based Attack Aircraft",2,"Choose one: "],
+    ["E","Type 1 Land-based Attack Aircraft",1,"or "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",3,"Choose one: "],
+    ["I","New Model Armament Material",1,"or "]
+  ]
+},
+"Fy9": {
+  "Jp": "【機種整理統合】新型戦闘機の量産計画",
+  "En": "[Model Consolidation] Mass Production Plan For New Fighters",
+  "content": "Scrap 4 \"Fighters\", 4 \"Dive Bombers\", and 4 \"Torpedo Bombers\", and prepared 3 Type 0 Fighter Model 21, 3 Type 0 Fighter Model 52, and 1 800 bauxite.",
+  "tips": "Resources and equipment are consumed upon completion.",
+  "period": "yearly",
+  "requires": ["F97"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "240",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "R": [
+      ["Bauxite",1800]
+    ],
+    "E": [
+      ["Fighter",4],
+      ["Dive Bomber",4],
+      ["Bomber",4],
+      ["Type 0 Fighter Model 21",3],
+      ["Type 0 Fighter Model 52",3]
+    ]
+  },
+  "reward": [
+    ["C","Development Material",8,"Choose one: "],
+    ["I","New Model Aerial Armament Material",1,"or "],
+    ["C","Improvement Material",3,"or "],
+    ["E","Shiden Model 11",3,"Choose one: "],
+    ["E","Shiden Model 21 Shiden Kai",2,"or "],
+    ["E","Prototype Reppuu Late Model",2,"or "]
+  ]
+},
+"Fy10": {
+  "Jp": "改良三座水上偵察機の増備",
+  "En": "Improved 3-Seat Reconnaissance Seaplane",
+  "content": "Set Yura Kai Ni or Tone Kai Ni as Secretary, equipped with a ★Max-Improved Type 0 Reconnaissance Seaplane in her 1st slot, then, scrap 2 Type 97 Torpedo Bomber (931 Air Group) and prepare 2 New Model Aerial Armament Material, 2 Skilled Crew Member, 35 Development Materials, and 950 bauxite.",
+  "tips": "Resources and items are consumed upon completion. The Type 0 Reconnaissance Seaplane will be converted into the reward.",
+  "period": "yearly",
+  "requires": ["Gy2"],
+  "unlocks": [],
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "needs": {
+    "S": ["Yura Kai Ni","Tone kai Ni"],
+    "R": [
+      ["Bauxite",950]
+    ],
+    "I": [
+      ["Skilled Crew Member",2],
+      ["New Model Aerial Armament Material",2]
+    ],
+    "E": [
+      ["★Max Type 0 Reconnaissance Seaplane",1],
+      ["Type 97 Torpedo Bomber (931 Air Group)",2]
+    ]
+  },
+  "reward": [
+    ["E","Type 0 Reconnaissance Seaplane Model 11B",1]
+  ]
+},
+
+
 // Modernization Quests G00
   "G1": {
     "Jp": "はじめての「近代化改修」！",
@@ -11192,7 +11658,7 @@ const ALL_QUESTS_LIST = {
       "B": "30"
     },
     "requires": [],
-    "unlocks": ["Gd1"],
+    "unlocks": ["Gd1","Gy1","Gy3"],
     "period": "once",
     "needs": {},
     "reward": [
@@ -11250,7 +11716,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "requires": ["G1"],
-    "unlocks": ["Gw1","Fq5","F80"],
+    "unlocks": ["Gw1","Fq5","F80","Gy4"],
     "period": "daily",
     "needs": {},
     "reward": [
@@ -11280,8 +11746,117 @@ const ALL_QUESTS_LIST = {
     ]
   },
 
+
 // Yearly Modernization Quests Gy00
-// Placeholder Gy1-4
+"Gy1": {
+  "Jp": "「駆逐艦」の改修工事を実施せよ！",
+  "En": "Carry Out Modernization For \"Destroyers\"",
+  "content": "Modernization mission: Prepare 600 steel as well as 300 bauxite, then modernize any destroyers! Perform 2 successful modernization by using 3 destroyers each time!",
+  "tips": "",
+  "resources": {
+    "F": "300",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "requires": ["F11","G1"],
+  "unlocks": ["Gy2"],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",600],
+    ["Bauxite",300]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",1,"Choose one: "],
+    ["C","Development Material",2,"or "],
+    ["E","Combat Ration",2,"Choose one: "],
+    ["I","Food Supply Ship Irako",1,"or "]
+  ]
+},
+"Gy2": {
+  "Jp": "「駆逐艦」の改修工事を実施せよ！",
+  "En": "Carry Out Modernization For \"Destroyers\" (Part 2)",
+  "content": "Modernization mission: Prepare 600 steel as well as 300 bauxite, then modernize any destroyers! Perform 2 successful modernization by using 3 light cruisers each time!",
+  "tips": "",
+  "resources": {
+    "F": "200",
+    "A": "200",
+    "S": "300",
+    "B": "100"
+  },
+  "requires": ["Fd3","Gy1"],
+  "unlocks": ["Fy10"],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",600],
+    ["Bauxite",300]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",2,"Choose one: "],
+    ["C","Development Material",3,"or "],
+    ["E","25mm Single Autocannon Mount",2,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+"Gy3": {
+  "Jp": "「軽巡」級の改修工事を実施せよ！",
+  "En": "Carry Out The \"Light Cruiser\" Modernization Operation!",
+  "content": "Light Cruiser Modernization Mission: Prepare 800 steel and 400 bauxite, then prepare any light cruiser to be modernized with 3 other light cruisers and complete this process twice.",
+  "tips": "",
+  "resources": {
+    "F": "500",
+    "A": "0",
+    "S": "0",
+    "B": "0"
+  },
+  "requires": ["F11","G1"],
+  "unlocks": ["Gy4"],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",800],
+    ["Bauxite",400]
+  ]
+},
+  "reward": [
+    ["C","Instant Repair",2,"Choose one: "],
+    ["C","Development Material",3,"or "],
+    ["E","25mm Single Autocannon Mount",2,"Choose one: "],
+    ["I","Food Supply Ship Irako",1,"or "]
+  ]
+},
+"Gy4": {
+  "Jp": "続：「軽巡」級の改修工事を実施せよ！",
+  "En": "Continuation: Carry Out the \"Light Cruiser\" Modernization Operation!",
+  "content": "Light Cruiser Modernization Mission: Prepare 900 steel and 900 ammo, then prepare any light cruiser to be modernized with 3 other heavy cruisers and complete this process twice.",
+  "tips": "",
+  "resources": {
+    "F": "0",
+    "A": "0",
+    "S": "0",
+    "B": "500"
+  },
+  "requires": ["Gd1","Gy3"],
+  "unlocks": [""],
+  "period": "yearly",
+  "needs": {    
+    "R": [
+    ["Steel",900],
+    ["Ammo",900]
+  ]
+},
+  "reward": [
+    ["C","Development Material",4,"Choose one: "],
+    ["E","15.2cm Twin Gun Mount",1,"or "],
+    ["E","Type 22 Surface Radar",2,"Choose one: "],
+    ["C","Improvement Material",2,"or "]
+  ]
+},
+
 
 // Marriage Quest
   "WF01": {

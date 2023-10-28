@@ -26,19 +26,16 @@ Scandinavian Sofa
 
 Need to add Changelogs, and fork to the github
 
-B147++
-Gy1
-Gy2
-Gy3
-Gy4
-Fq9
-Fy1-10
+B154++
 
+Fq9
 
 D39++
 Cq2 - 4
 Cs1-5
 F91++
+C20 ?
+Checking C00, some different code
 
 bq12-13
 Cq2-4
@@ -49,3 +46,8 @@ Dy1-8
 Bm done
 Bw done
 Bd done
+Gy1 done
+Gy2 done
+Gy3 done
+Gy4 done
+Fy1-10 Done
