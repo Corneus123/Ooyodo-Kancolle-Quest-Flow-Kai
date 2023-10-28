@@ -2273,16 +2273,19 @@ const ALL_QUESTS_LIST = {
     "En": "Your First \"Sortie\"!",
     "content": "Send a fleet on a Sortie.",
     "tips": "",
+    "requires": [],
+    "unlocks": ["B2"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "20",
       "A": "20",
       "S": "0",
       "B": "0"
     },
-    "requires": [],
-    "unlocks": ["B2"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1]
     ]
@@ -2292,17 +2295,20 @@ const ALL_QUESTS_LIST = {
     "En": "Protect The Sea In Front Of Naval Base!",
     "content": "B+ rank the boss node of 1-1.",
     "tips": "",
+    "requires": ["B1"],
+    "unlocks": ["E1","E2","B4","F16"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-1",1]
+      ]
+    },
     "resources": {
       "F": "30",
       "A": "30",
       "S": "30",
       "B": "0"
-    },
-    "requires": ["B1"],
-    "unlocks": ["E1","E2","B4","F16"],
-    "period": "once",
-    "needs": {
-      "M": ["1-1"]
     },
     "reward": [
       ["C","Instant Repair",1]
@@ -2313,16 +2319,19 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The 2nd Fleet!",
     "content": "Send the Second Fleet on a Sortie.",
     "tips": "",
+    "requires": ["A6"],
+    "unlocks": ["A11"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "200",
       "B": "200"
     },
-    "requires": ["A6"],
-    "unlocks": ["A11"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
@@ -2332,17 +2341,20 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy To The Sea Around Nansei Islands!",
     "content": "Reach the boss node of 1-2.",
     "tips": "",
+    "requires": ["B2"],
+    "unlocks": ["Bd1","B5","F80"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1]
+      ]
+    },
     "resources": {
       "F": "40",
       "A": "40",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B2"],
-    "unlocks": ["Bd1","B5","F80"],
-    "period": "once",
-    "needs": {
-      "M": ["1-2"]
     },
     "reward": [
       ["C","Instant Repair",1]
@@ -2353,17 +2365,20 @@ const ALL_QUESTS_LIST = {
     "En": "Confront The \"Enemy Vanguard Fleet\" Closing In!",
     "content": "B+ rank the boss node of 1-2.",
     "tips": "",
+    "requires": ["B4"],
+    "unlocks": ["B6","B48"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1]
+      ]
+    },
     "resources": {
       "F": "50",
       "A": "0",
       "S": "50",
       "B": "0"
-    },
-    "requires": ["B4"],
-    "unlocks": ["B6","B48"],
-    "period": "once",
-    "needs": {
-      "M": ["1-2"]
     },
     "reward": [
       ["C","Development Material",1],
@@ -2375,16 +2390,19 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy A \"Torpedo Squadron\"!",
     "content": "Assemble a fleet containing 1 CL as flagship, 3 DD, and up to 2 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B5"],
+    "unlocks": ["B7","B30","B67","B83","B135","Cs4","F73"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "60",
       "A": "60",
       "S": "0",
       "B": "60"
     },
-    "requires": ["B5"],
-    "unlocks": ["B7","B30","B67","B83","B135","Cs4","F73"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["S","Tatsuta",1]
     ]
@@ -2394,16 +2412,19 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy \"Heavy Cruiser\"!",
     "content": "Assemble a fleet containing 1 CA as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B6"],
+    "unlocks": ["B8","D15","B93","Fy1"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "70",
       "A": "0",
       "S": "70",
       "B": "0"
     },
-    "requires": ["B6"],
-    "unlocks": ["B8","D15","B93","Fy1"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
@@ -2413,16 +2434,19 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy \"Battleship\"!",
     "content": "Assemble a fleet containing 1 (F)BB as flagship and up to 5 XX, then sortie on any map.",
     "tips": "",
+    "requires": ["B7"],
+    "unlocks": ["B9","B88"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "150",
       "S": "150",
       "B": "0"
     },
-    "requires": ["B7"],
-    "unlocks": ["B9","B88"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
@@ -2432,16 +2456,19 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy A \"Mobile Carrier Fleet\"!",
     "content": "Assemble a fleet containing 1 CV(B/L) as flagship, and 5 DD/CL/AV, then sortie on any map.",
     "tips": "",
+    "requires": ["B8"],
+    "unlocks": ["Fq1","B76","C33"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "200",
       "A": "0",
       "S": "0",
       "B": "300"
     },
-    "requires": ["B8"],
-    "unlocks": ["Fq1","B76","C33"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1],
       ["C","Development Material",1]
@@ -2452,16 +2479,19 @@ const ALL_QUESTS_LIST = {
     "En": "Sink An Enemy Carrier!",
     "content": "Sink an enemy CV(L).",
     "tips": "",
+    "requires": ["A11"],
+    "unlocks": ["Bq3"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "100"
     },
-    "requires": ["A11"],
-    "unlocks": ["Bq3"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["S","Akagi",1]
     ]
@@ -2909,8 +2939,8 @@ const ALL_QUESTS_LIST = {
   },
   "B31": {
     "Jp": "「第二戦隊」抜錨！",
-    "En": "Sortie the 2nd Squadron",
-    "content": "Sortie Fusou, Mutsu, Nagato, Yamashiro and 2 additional ships to World 4-2 and obtain two S-Rank victories at the boss",
+    "En": "\"2nd Squadron\" Weigh Anchor!",
+    "content": "Assemble a fleet containing Nagato, Mutsu, Fusou, Yamashiro, and 2 XX, then S rank the boss node of 4-2 twice.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2922,8 +2952,10 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["A43","A75"],
     "period": "once",
     "needs": {
-      "M": ["4-2"],
-      "S": ["Fusou","Mutsu","Nagato","Yamashiro"]
+      "M": [
+        ["4-2",2]
+      ],
+      "S": ["Nagato","Mutsu","Fusou","Yamashiro"]
     },
     "reward": [
       ["E","Type 1 AP Shell",1]
