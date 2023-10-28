@@ -199,6 +199,13 @@ const EQUIPMENT_TYPE = {
   "Type 1 Land-based Attack Aircraft Model 34★+2": "Land-based attack aircraft",
   "Ryuusei Kai (CarDiv 1/Skilled)★+2": "Bomber",
   "Ka Type Observation Autogyro★+3": "autogyro",
+  "20.3cm (No.3) Twin Gun Mount★+6" : "Medium gun",
+  "Late Model Bow Torpedo Mount (6 tubes)★+2" : "Torpedo",
+  "Bomb-carrying Type 1 Fighter Hayabusa Model III Kai (65th Squadron)" : "Land-based attack aircraft",
+  "Type C Kouhyouteki" : "Torpedo",
+  "15.2cm Twin Gun Mount Kai Ni" : "Medium gun",
+  "12.7cm Twin High-angle Gun Mount Kai 2" : "High-angle gun"
+  
 };
 
 const ICONS_LINK = {
@@ -5767,7 +5774,7 @@ const ALL_QUESTS_LIST = {
     ]
   },
   "B148": {
-    "Jp": "合同艦隊旗艦、改装「Fletcher」、抜錨！",
+    "Jp": "合同艦隊旗艦、改装「Fletcher」、抜錨!",
     "En": "Combined Fleet \"Flagship\", Remodeled Fletcher, Weigh Anchor!",
     "content": "Assemble a fleet containing Fletcher Kai Mod.2 as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, and 3-5.",
     "tips": "Fletcher Mk.II does not count as Fletcher Kai Mod.2 for this quest.",
@@ -5796,7 +5803,7 @@ const ALL_QUESTS_LIST = {
     ]
   },
   "B149": {
-    "Jp": "改装護衛駆逐艦「Fletcher Mk.II」作戦開始！",
+    "Jp": "改装護衛駆逐艦「Fletcher Mk.II」作戦開始!",
     "En": "Remodeled Escort Destroyer \"Fletcher Mk.II\" Commence Operation!",
     "content": "Assemble a fleet containing Fletcher Mk.II as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-5, 7-1, 6-2, and 6-5 twice each.",
     "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
@@ -5848,10 +5855,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Medal","1"],
-      ["I","Prototype Flight Deck Catapult","1","Choose one: "],
-      ["E","Lightweight ASW Torpedo (Initial Test Model)","1","or "],
-      ["I","Remodel Blueprint","1","or "]
+      ["I","Medal",1],
+      ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
+      ["E","Lightweight ASW Torpedo (Initial Test Model)",1,"or "],
+      ["I","Remodel Blueprint",1,"or "]
     ]
   },
   "B151": {
@@ -5878,10 +5885,10 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["C","Instant Repair Material","4","Choose one: "],
-      ["C","Development Material","5","or "],
-      ["E","SK Radar","1","Choose one: "],
-      ["I","New Model Aerial Armament Material","2","or "]
+      ["C","Instant Repair Material",4,"Choose one: "],
+      ["C","Development Material",5,"or "],
+      ["E","SK Radar",1,"Choose one: "],
+      ["I","New Model Aerial Armament Material",2,"or "]
     ]
   },
   "B152": {
@@ -5907,10 +5914,10 @@ const ALL_QUESTS_LIST = {
       "B": "880"
     },
     "reward": [
-      ["I","Medal","1"],
-      ["C","Development Material","88","Choose one: "],
-      ["I","Prototype Flight Deck Catapult","1","or "],
-      ["E","TBF★+4","1","or "],
+      ["I","Medal",1],
+      ["C","Development Material",88,"Choose one: "],
+      ["I","Prototype Flight Deck Catapult",1,"or "],
+      ["E","TBF★+4",1,"or "],
     ]
   },
   "B153": {
@@ -5937,10 +5944,10 @@ const ALL_QUESTS_LIST = {
       "B": "880"
     },
     "reward": [
-      ["E","Ryuusei Kai (CarDiv 1)","1"],
-      ["E","Prototype Shuusui","1","Choose one: "],
-      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4","1","or "],
-      ["E","Ka Type Observation Autogyro★+3","3","or "],
+      ["E","Ryuusei Kai (CarDiv 1)",1],
+      ["E","Prototype Shuusui",1,"Choose one: "],
+      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4",1,"or "],
+      ["E","Ka Type Observation Autogyro★+3",3,"or "],
     ]
   },
   "B154": {
@@ -5967,6 +5974,558 @@ const ALL_QUESTS_LIST = {
       "B": "1840"
     },
     "reward": [
+      ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
+      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
+      ["I","Action Report",2,"Choose one: "],
+      ["I","Remodel Blueprint",1,"or "],
+      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "],
+    ]
+  },
+  "B155": {
+    "Jp": "重巡「羽黒」、出撃！ペナン沖海戦",
+    "En": "Heavy Cruiser Haguro, Sortie! Battle Of The Malacca Strait",
+    "content": "Assemble a fleet containing Haguro as flagship, and up to 4 XX, then S rank the boss node of 7-3 (Part 1) four times.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["A15","B13"],
+    "period": "once",
+    "needs": {
+      "S": ["Haguro"],
+      "M": [
+        ["7-3(Part 1)",4],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "2020",
+      "S": "1945",
+      "B": "0"
+    },
+    "reward": [
+      ["E","20.3cm (No.3) Twin Gun Mount★+6",1,],
+      ["I","Action Report",1,"Choose one: "],
+      ["I","New Model Armament Material",1,"or "],
+    ]
+  },
+  "B156": {
+    "Jp": "静かな海を護る「鯨」、動き出す！",
+    "En": "And Thus The Whale Stirs To Protect The Calm Sea!",
+    "content": "Assemble a fleet containing any 1 of: Taigei or the Jingei-class as flagship, 2 SS(V), and 3 XX, then S rank the boss nodes of 1-2, 1-3, 2-1, and 2-3.",
+    "tips": "Ryuuhou forms do not count as Taigei for this quest.",
+    "unlocks": [],
+    "requires": ["B17","B135"],
+    "period": "once",
+    "needs": {
+      "S": ["Taigei","Jingei","Chougei"],
+      "M": [
+        ["1-2",1],
+        ["1-3",1],
+        ["2-1",1],
+        ["2-3",1],
+      ]
+    },
+    "resources": {
+      "F": "513",
+      "A": "513",
+      "S": "513",
+      "B": "0"
+    },
+    "reward": [
+      ["F","Whale Hanging Scroll",1,],
+      ["I","Action Report",1,"Choose one: "],
+      ["I","Late Model Bow Torpedo Mount (6 tubes)★+2",1,"or "],
+      ["E","Action Report",1,"or "],
+    ]
+  },
+  "B157": {
+    "Jp": "主力オブ主力、縦横無尽ッ！",
+    "En": "Main Force Of The Main Force, Go Wild!",
+    "content": "Assemble a fleet containing Yuugumo Kai Ni, Makigumo Kai Ni, Kazagumo Kai Ni, Akigumo Kai Ni, and up to 2 XX, then S rank the boss nodes of 1-4, 2-2, 3-2, 4-1, and 7-3 (Part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["A93","B155"],
+    "period": "once",
+    "needs": {
+      "S": ["Yuugumo Kai Ni","Makigumo Kai Ni","Kazagumo Kai Ni","Akigumo Kai Ni"],
+      "M": [
+        ["1-4",1],
+        ["2-2",1],
+        ["3-2",1],
+        ["4-1",1],
+        ["7-3 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "800",
+      "A": "800",
+      "S": "400",
+      "B": "400"
+    },
+    "reward": [
+      ["I","61cm Quadruple (Oxygen) Torpedo Mount Late Model★+5",1],
+      ["C","Development Material",10,"Choose one: "],
+      ["I","Action Report",1,"or "],
+      ["C","Improvement Material",1,"or "],
+    ]
+  },
+  "B158": {
+    "Jp": "精鋭「二七駆」、回避運動は気をつけて！",
+    "En": "Elite DesDiv 27, Be Careful During Evasive Maneuvers!",
+    "content": "Assemble a fleet containing Shiratsuyu Kai Ni, Shigure Kai Ni+, and up to 4 XX, then S rank the boss nodes of 1-5, 2-5, 7-1, 5-5, and 6-3.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B121","Bd3"],
+    "period": "once",
+    "needs": {
+      "S": ["Shiratsuyu Kai Ni","Shigure Kai Ni+"],
+      "M": [
+        ["1-5",1],
+        ["2-5",1],
+        ["7-1",1],
+        ["5-5",1],
+        ["6-3",1],
+      ]
+    },
+    "resources": {
+      "F": "1270",
+      "A": "270",
+      "S": "270",
+      "B": "270"
+    },
+    "reward": [
+      ["F","Time for Baked Potatoes and Reading Table",1],
+      ["E","Underway Replenishment",2,"Choose one: "],
+      ["E","Emergency Repair Goddess",1,"or "],
+      ["E","Canned Saury",1,"or "],
+    ]
+  },
+  "B159": {
+    "Jp": "【艦隊司令部強化】艦隊旗艦、出撃せよ！",
+    "En": "[Fleet Headquarters Reinforcement] Fleet Flagship, Sortie!",
+    "content": "Assemble a fleet containing Ooyodo/Tan Yang as flagship, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-3, 1-4, 2-1, and 2-2 twice each.",
+    "tips": "Yukikaze Kai Ni does not count as Dan Yang for this quest.",
+    "unlocks": [],
+    "requires": ["D23"],
+    "period": "once",
+    "needs": {
+      "S": ["Tan Yang","Ooyodo"],
+      "M": [
+        ["1-3",2],
+        ["1-4",2],
+        ["2-1",2],
+        ["2-2",2],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "1200",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Headquarters Personnel",1],
+      ["E","Emergency Repair Goddess",1,"Choose one: "],
+      ["I","New Model Armament Material",1,"or "],
+      ["E","Underway Replenishment",2,"or "],
+    ]
+  },
+  "B160": {
+    "Jp": "奇跡の駆逐艦「雪風」、再び出撃す！",
+    "En": "Miraculous Destroyer Yukikaze, Sorties Once Again!",
+    "content": "Assemble a fleet containing Tan Yang/Yukikaze Kai Ni as flagship and up to 5 XX, then S rank the boss nodes of 2-3, 2-4, 2-5, 3-3, and 7-3 (Part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B115","B123"],
+    "period": "once",
+    "needs": {
+      "S": ["Tan Yang+"],
+      "M": [
+        ["2-3",1],
+        ["2-4",1],
+        ["2-5",1],
+        ["3-3",1],
+        ["7-3 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "1971",
+      "A": "0",
+      "S": "1939",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Medal",1,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "],
+      ["E","Locally Modified 12.7cm Twin High-angle Gun Mount★+4",1,"Choose one: "],
+      ["E","Locally Modified 10cm Twin High-angle Gun Mount★+4",1,"or "],
+      ["I","New Model Armament Material",1,"or "],
+    ]
+  },
+  "B161": {
+    "Jp": "最精強！「呉の雪風」「佐世保の時雨」",
+    "En": "Unmatched! Yukikaze Of Kure & Shigure Of Sasebo",
+    "content": "Assemble a fleet containing Shigure Kai Ni+, Yukikaze Kai Ni, and up to 4 XX, then S rank the boss nodes of 4-5, 5-3, 5-5, 6-4, and 6-5.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B159","B160"],
+    "period": "once",
+    "needs": {
+      "S": ["Shigure Kai Ni", "Yukikaze Kai Ni"],
+      "M": [
+        ["4-5",1],
+        ["5-3",1],
+        ["5-5",1],
+        ["6-4",1],
+        ["6-5",1],
+      ]
+    },
+    "resources": {
+      "F": "1945",
+      "A": "2020",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Action Report",1,"Choose one: "],
+      ["C","Improvement Material",6,"or "],
+      ["E","5inch Single Gun Mount Mk.30 Kai",2,"Choose one: "],
+      ["E","Type 22 Surface Radar Kai 4 (Calibrated Late Model)★+4",1,"or "],
+      ["E","61cm Quadruple (Oxygen) Torpedo Mount Late Model★+4",1,"or "],
+    ]
+  },
+  "B162": {
+    "Jp": "北の海から愛をこめて",
+    "En": "From The Northern Seas With Love",
+    "content": "A+ rank the boss nodes of 3-1, 3-2, 3-3, 3-4, and 3-5.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["A15","B5"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-1",1],
+        ["3-2",1],
+        ["3-3",1],
+        ["3-4",1],
+        ["3-5",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "1200",
+      "S": "0",
+      "B": "1200"
+    },
+    "reward": [
+      ["F","特注の二〇式鎮守府暖炉",1],
+      ["C","Instant Repair Material",5,"Choose one: "],
+      ["I","Furniture Fairy",1,"or "],
+    ]
+  },
+  "B163": {
+    "Jp": "球磨型軽巡一番艦、出撃だクマ!",
+    "En": "Kuma-class Light Cruiser Name Ship, Beary Eager To Sortie!",
+    "content": "Assemble a fleet containing Kuma Kai Ni/D as flagship and up to 5XX, then S rank the boss nodes of 2-2, 3-2, 7-3 (Part 2), and reach node N on 1-6.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B124","B125"],
+    "period": "once",
+    "needs": {
+      "S": ["Kuma Kai Ni"],
+      "M": [
+        ["1-6-N",1],
+        ["2-2",1],
+        ["2-3",1],
+        ["3-2",1],
+        ["7-3 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "550",
+      "A": "550",
+      "S": "550",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Reinforcement Expansion",1],
+      ["E","25mm Triple Autocannon Mount",2,"Choose one: "],
+      ["E","Daihatsu Landing Craft",1,"or "],
+      ["C","Improvement Material",1,"or "],
+    ]
+  },
+  "B164": {
+    "Jp": "改装最新鋭軽巡「能代改二」、出撃せよ！",
+    "En": "Remodeled State Of The Art Light Cruiser Noshiro Kai Ni, Sortie!",
+    "content": "Assemble a fleet containing Noshiro Kai Ni, 3 DD, and up to 2 XX, then S rank the boss nodes of 2-4, 3-2, 5-3, 7-1, and 7-2 (Part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B65"],
+    "period": "once",
+    "needs": {
+      "S": ["Noshiro Kai Ni"],
+      "M": [
+        ["2-4",1],
+        ["3-2",1],
+        ["5-3",1],
+        ["7-1",1],
+        ["7-2 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "1026",
+      "A": "0",
+      "S": "1944",
+      "B": "0"
+    },
+    "reward": [
+      ["E","15.2cm Twin Gun Mount Kai Ni",1],
+      ["E","15.2cm Twin Gun Mount",2,"Choose one: "],
+      ["E","8cm High-angle Gun","2","or "],
+      ["E","25mm Triple Autocannon Mount","2","or "],
+    ]
+  },
+  "B165": {
+    "Jp": "精鋭「第七駆逐隊」、出撃せよ！",
+    "En": "Elite DesDiv 7, Sortie!",
+    "content": "Assemble a fleet containing Akebono Kai Ni, Ushio Kai Ni, and up to 4 XX, then S rank the boss nodes of 2-3, 3-2, 4-4, and 5-4.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B124","B135","Cy4"],
+    "period": "once",
+    "needs": {
+      "S": ["Akebono Kai Ni","Ushio Kai Ni"],
+      "M": [
+        ["2-3",1],
+        ["3-2",1],
+        ["4-4",1],
+        ["5-4",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "1944",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["E","12.7cm Twin High-angle Gun Mount Kai 2",1,"Choose one: "],
+      ["I","Reinforcement Expansion",2,"Choose one: "],
+      ["E","Bomb-carrying Type 1 Fighter Hayabusa Model III Kai (65th Squadron)",1,"or "],
+    ]
+  },
+  "B166": {
+    "Jp": "改装航空巡洋艦「最上」、抜錨せよ！",
+    "En": "Remodeled Aviation Cruiser Mogami, Weigh Anchor!",
+    "content": "Assemble a fleet containing Mogami Kai Ni/Toku as flagship and up to 5 XX, then S rank the boss nodes of 2-2, 2-4, 4-5, and 5-1.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B14","Bd2"],
+    "period": "once",
+    "needs": {
+      "S": ["Mogami Kai Ni"],
+      "M": [
+        ["2-2",1],
+        ["2-4",1],
+        ["4-5",1],
+        ["5-1",1],
+      ]
+    },
+    "resources": {
+      "F": "880",
+      "A": "880",
+      "S": "0",
+      "B": "880"
+    },
+    "reward": [
+      ["I","Medal",1,"Choose one: "],
+      ["C","Development Material",8,"or "],
+      ["E","Zuiun Model 12",2,"or "],
+      ["I","Furniture Fairy",1,"Choose one: "],
+      ["I","Food Supply Ship Mamiya",1,"or "],
+      ["I","Skilled Crew Member",1,"or "],
+    ]
+  },
+  "B167": {
+    "Jp": "西村艦隊、精鋭先行掃討隊、前進せよ！",
+    "En": "Elite Vanguard Squadron, Nishimura Fleet, Forward!",
+    "content": "Assemble a fleet containing Mogami Kai Ni/Toku as flagship, any 2 of: Michishio, Shigure, Asagumo, or Yamagumo; and up to 3 XX, then S rank the boss nodes of 2-3, 6-4, 7-2 (Part 2), and 7-3 (part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B166"],
+    "period": "once",
+    "needs": {
+      "S": ["Mogami Kai Ni","Shigure","Asagumo","Yamagumo"],
+      "M": [
+        ["2-3",1],
+        ["6-4",1],
+        ["7-2 (Part 2)",1],
+        ["7-3 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "2021",
+      "A": "0",
+      "S": "1944",
+      "B": "0"
+    },
+    "reward": [
+      ["E","8cm High-angle Gun Kai + Additional Machine Guns",1,"Choose one: "],
+      ["I","Action Report",1,"or "],
+      ["E","Emergency Repair Goddess",2,"or "],
+      ["I","Medal",1,"Choose one: "],
+      ["E","Type C Kouhyouteki",2,"or "],
+      ["E","Kyoufuu Kai",1,"or "],
+    ]
+  },
+  "B168": {
+    "Jp": "二水戦旗艦、この「矢矧」が預かります！",
+    "En": "Yahagi, Assuming Command Of DesRon 2 !",
+    "content": "Assemble a fleet containing Yahagi Kai Ni/B as flagship, 2 DD, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, 5-3, and 5-5.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B75","B103"],
+    "period": "once",
+    "needs": {
+      "S": ["Yahagi Kai Ni"],
+      "M": [
+        ["1-4",1],
+        ["2-5",1],
+        ["5-3",1],
+        ["5-5",1],
+      ]
+    },
+    "resources": {
+      "F": "1945",
+      "A": "2021",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["F","Yahagi's Wall Hanging Scroll",1],
+      ["E","15.2cm Twin Gun Mount Kai Ni★+2",1],
+    ]
+  },
+  "B169": {
+    "Jp": "新しき翼。改装航空母艦「龍鳳」、出撃せよ！",
+    "En": "New Wings, Remodeled Light Carrier Ryuuhou, Sortie!",
+    "content": "Assemble a fleet containing Ryuuhou Kai Ni/E as Secretary, Shigure Kai Ni+, and up to 4 XX, then S rank the boss nodes of 2-2, 2-3, 2-4, 2-5, and 7-2 (Part 2).",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B47","D19"],
+    "period": "once",
+    "needs": {
+      "S": ["Ryuuhou Kai Ni","Shigure Kai Ni"],
+      "M": [
+        ["2-2",1],
+        ["2-3",1],
+        ["2-4",1],
+        ["2-5",1],
+        ["7-2 (Part 2)",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "1946",
+      "B": "2021"
+    },
+    "reward": [
+      ["C","Instant Repair Material",8,"Choose one: "],
+      ["E","Tenzan Model 12A",1,"or "],
+      ["E","Emergency Repair Goddess",1,"or "],
+      ["E","8cm High-angle Gun Kai + Additional Machine Guns★+2",1,"Choose one: "],
+      ["E","Type 0 Fighter Model 63 (Fighter-bomber)",2,"or "],
+      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",1,"or "],
+    ]
+  },
+  "B170": {
+    "Jp": "改装特務空母「Gambier Bay Mk.II」抜錨!",
+    "En": "Remodeled Utility Carrier Gambier Bay Mk.II Weigh Anchor!",
+    "content": "Assemble a fleet containing Gambier Bay Mk.II as Secretary, 1 Fletcher-class, and up to 4 XX, then S rank the boss nodes of 2-4, 3-5 twice each, and A+ rank the boss node of 6-4 twice.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["B151","B159"],
+    "period": "once",
+    "needs": {
+      "S": ["Gambier Bay Mk.II"],
+      "M": [
+        ["2-4",2],
+        ["3-5",2],
+        ["6-4",2],
+      ]
+    },
+    "resources": {
+      "F": "730",
+      "A": "730",
+      "S": "730",
+      "B": "730"
+    },
+    "reward": [
+      ["I","TBF★+4",2,"Choose one: "],
+      ["C","Improvement Material",7,"or "],
+      ["I","Action Report",1,"or "],
+      ["I","Ranking Points",800,"Choose one: "],
+      ["E","FR-1 Fireball",1,"or "],
+    ]
+  },
+  "B171": {
+    "Jp": "【作戦準備】第二段階任務(対地/対空整備)",
+    "En": "[Operation Preparation] Second Stage Mission (Surface/Anti-Air Maintenance)",
+    "content": "Assemble a fleet containing 3 DD and up to 3 XX, then S rank the boss nodes of 1-3, 1-4, 2-1, and 2-2.",
+    "tips": "",
+    "unlocks": [],
+    "requires": ["D42"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-3",1],
+        ["1-4",1],
+        ["2-1",1],
+        ["2-2",1],
+      ]
+    },
+    "resources": {
+      "F": "750",
+      "A": "750",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["E","Type 3 Shell",2,"Choose one: "],
+      ["E","12cm 30-tube Rocket Launcher",3,"or "],
+      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher",2,"or "],
+      ["E","Daihatsu Landing Craft",2,"Choose one: "],
+      ["E","25mm Triple Autocannon Mount",2,"or "],
+      ["E","Emergency Repair Goddess",1,"or "],
+    ]
+  },
+  "": {
+    "Jp": "",
+    "En": "",
+    "content": "",
+    "tips": "",
+    "unlocks": [],
+    "requires": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["",1],
+        ["",1],
+        ["",1],
+        ["",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
       ["I","Prototype Flight Deck Catapult","1","Choose one: "],
       ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
       ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
@@ -5975,6 +6534,50 @@ const ALL_QUESTS_LIST = {
       ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "],
     ]
   },
+
+
+
+
+
+
+
+
+  //use this for template (Block all of it and then ctrl + /, to remove the comment, dont forget to ctrl +/ again)
+  "": {
+    "Jp": "",
+    "En": "",
+    "content": "",
+    "tips": "",
+    "unlocks": [],
+    "requires": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["",1],
+        ["",1],
+        ["",1],
+        ["",1],
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "0"
+    },
+    "reward": [
+      ["I","Prototype Flight Deck Catapult","1","Choose one: "],
+      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
+      ["I","Action Report","2","Choose one: "],
+      ["I","Remodel Blueprint","1","or "],
+      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "],
+    ]
+  },
+
+
+
 
  // Daily Sortie Quests Bd00
   "Bd1": {
