@@ -6569,32 +6569,6 @@ const ALL_QUESTS_LIST = {
       ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
     ]
   },
-  "B155": {
-    "Jp": "重巡「羽黒」、出撃！ペナン沖海戦",
-    "En": "Heavy Cruiser \"Haguro\", Sortie! Battle Of The Malacca Strait",
-    "content": "Assemble a fleet containing Haguro as flagship, and up to 4 XX, then S rank the boss node of 7-3 (Part 1) four times.",
-    "tips": "",
-    "requires": ["A15","B13"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Haguro"],
-      "M": [
-        ["7-3 (Part 1)",4]        
-      ]
-    },
-    "resources": {
-      "F": "0",
-      "A": "2020",
-      "S": "1945",
-      "B": "0"
-    },
-    "reward": [
-      ["E","20.3cm (No.3) Twin Gun Mount★+6",1],
-      ["I","Action Report",1,"Choose one: "],
-      ["I","New Model Armament Material",1,"or "]      
-    ]
-  },
 
 
 
