@@ -6537,36 +6537,34 @@ const ALL_QUESTS_LIST = {
       ["E","Emergency Repair Goddess",1,"or "],
     ]
   },
-  "": {
-    "Jp": "",
-    "En": "",
-    "content": "",
+  "B172": {
+    "Jp": "「山風改二」、抜錨せよ！",
+    "En": "\"Yamakaze Kai Ni\", Weigh Anchor!",
+    "content": "Assemble a fleet containing Yamakaze Kai Ni/D as flagship, 3 DD, up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 1-4, and 1-5.",
     "tips": "",
     "unlocks": [],
-    "requires": [],
+    "requires": ["B135"],
     "period": "once",
     "needs": {
-      "S": [],
+      "S": ["Yamakase Kai Ni"],
       "M": [
-        ["",1],
-        ["",1],
-        ["",1],
-        ["",1],
+        ["1-2",1],
+        ["1-3",1],
+        ["1-4",1],
+        ["1-5",1],
       ]
     },
     "resources": {
-      "F": "0",
-      "A": "0",
-      "S": "0",
+      "F": "500",
+      "A": "500",
+      "S": "500",
       "B": "0"
     },
     "reward": [
-      ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
-      ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
-      ["E","Type 1 Land-based Attack Aircraft Model 34★+2",1,"or "],
-      ["I","Action Report",2,"Choose one: "],
-      ["I","Remodel Blueprint",1,"or "],
-      ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
+      ["E","Type 3 Active Sonar Kai",1,"Choose one: "],
+      ["C","Development Material",8,"Choose one: "],
+      ["C","Instant Repair",6,"or "],
+      ["I","Reinforcement Expansion",1,"or "]
     ]
   },
 
