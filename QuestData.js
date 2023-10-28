@@ -204,8 +204,9 @@ const EQUIPMENT_TYPE = {
   "Bomb-carrying Type 1 Fighter Hayabusa Model III Kai (65th Squadron)" : "Land-based attack aircraft",
   "Type C Kouhyouteki" : "Torpedo",
   "15.2cm Twin Gun Mount Kai Ni" : "Medium gun",
-  "12.7cm Twin High-angle Gun Mount Kai 2" : "High-angle gun"
-  
+  "12.7cm Twin High-angle Gun Mount Kai 2" : "High-angle gun",
+  "Tenzan Model 12A" : "Bomber",
+  "8cm High-angle Gun Kai + Additional Machine Guns★+2" : "High-angle gun"
 };
 
 const ICONS_LINK = {
@@ -6255,7 +6256,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["F","特注の二〇式鎮守府暖炉",1],
-      ["C","Instant Repair Material",5,"Choose one: "],
+      ["C","Instant Repair",5,"Choose one: "],
       ["I","Furniture Fairy",1,"or "],
     ]
   },
@@ -6467,7 +6468,7 @@ const ALL_QUESTS_LIST = {
       "B": "2021"
     },
     "reward": [
-      ["C","Instant Repair Material",8,"Choose one: "],
+      ["C","Instant Repair",8,"Choose one: "],
       ["E","Tenzan Model 12A",1,"or "],
       ["E","Emergency Repair Goddess",1,"or "],
       ["E","8cm High-angle Gun Kai + Additional Machine Guns★+2",1,"Choose one: "],
