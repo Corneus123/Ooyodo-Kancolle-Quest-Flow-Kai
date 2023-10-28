@@ -2688,8 +2688,8 @@ const ALL_QUESTS_LIST = {
   },
   "B21": {
     "Jp": "「第十八駆逐隊」出撃せよ！",
-    "En": "Sortie the 18th Destroyer Division",
-    "content": "Sortie Arare, Kagerou, Kasumi, Shiranui and 2 additional ships to World 3-1 and defeat the boss",
+    "En": "Deploy The \"18th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Kasumi, Arare, Kagerou, Shiranui, and 2 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2702,7 +2702,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["3-1"],
-      "S": ["Arare","Kagerou","Kasumi","Shiranui"]
+      "S": ["Kasumi","Arare","Kagerou","Shiranui"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
@@ -2711,8 +2711,8 @@ const ALL_QUESTS_LIST = {
   },
   "B22": {
     "Jp": "「第三十駆逐隊(第一次)」出撃せよ！",
-    "En": "Sortie the 30th Destroyer Division (First Generation)",
-    "content": "Sortie Mutsuki, Kisaragi, Mochizuki, Yayoi and 2 additional DD (or 1 CL flagship and  1 DD) to World 3-2 and obtain a C-Rank or better at the boss",
+    "En": "Deploy The \"30th Destroyer Division (1st Gen.)\"!",
+    "content": "Assemble a fleet containing Mutsuki, Kisaragi, Yayoi, Mochizuki, and 2 XX, then C+ rank the boss node of 3-2.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2725,7 +2725,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["3-2"],
-      "S": ["Mutsuki","Kisaragi","Mochizuki","Yayoi"]
+      "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -2733,8 +2733,8 @@ const ALL_QUESTS_LIST = {
   },
   "B23": {
     "Jp": "「航空戦艦」抜錨せよ！",
-    "En": "Sortie an Aviation Battleship",
-    "content": "Sortie a fleet with at least 2 BBV to World 4-4 and defeat the boss",
+    "En": "\"Aviation Battleship\" Weigh Anchor!",
+    "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then B+ rank the boss node of 4-4.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2749,14 +2749,14 @@ const ALL_QUESTS_LIST = {
       "M": ["4-4"]
     },
     "reward": [
-      ["I","Furniture Box (Large)",1],
-      ["C","Instant Repair",3]
+      ["C","Instant Repair",3],
+      ["I","Furniture Box (Large)",1]      
     ]
   },
   "B24": {
     "Jp": "「第三十駆逐隊」対潜哨戒！",
-    "En": "The 30th Destroyer Division Anti-Submarine Patrol",
-    "content": "Sortie Mutsuki, Mochizuki, Uzuki and Yayoi to World 1-5 and obtain a C-Rank or better at the boss",
+    "En": "\"30th Destroyer Division\" Anti-Submarine Patrol!",
+    "content": "Assemble a fleet containing Mutsuki, Uzuki, Yayoi, and Mochizuki, then C+ rank the boss node of 1-5.",
     "tips": "",
     "resources": {
       "F": "330",
@@ -2769,7 +2769,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "M": ["1-5"],
-      "S": ["Mutsuki","Mochizuki","Uzuki","Yayoi"]
+      "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -2777,8 +2777,8 @@ const ALL_QUESTS_LIST = {
   },
   "B25": {
     "Jp": "新編「第二航空戦隊」出撃せよ！",
-    "En": "Sortie the New 2nd Carrier Division",
-    "content": "Sortie Hiryuu Kai Ni as flagship, Souryuu (Kai or Kai-2 is ok), and 2 DD (you may add additional ships) to World 5-2 and obtain an S-Rank at the boss",
+    "En": "Deploy The Newly-Formed \"2nd Carrier Division\"!",
+    "content": "Assemble a fleet containing Hiryuu Kai Ni as flagship, Souryuu, 2 DD, and up to 2 XX, then S rank the boss node of 5-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2799,8 +2799,8 @@ const ALL_QUESTS_LIST = {
   },
   "B26": {
     "Jp": "精鋭「第二航空戦隊」抜錨せよ！",
-    "En": "Sortie the Elite 2nd Carrier Division",
-    "content": "Sortie Souryuu Kai Ni as flagship, Hiryuu Kai Ni, 2 DD and 2 additional ship to World 4-3 and obtain an S-Rank at the boss",
+    "En": "Elite \"2nd Carrier Division\" Weigh Anchor!",
+    "content": "Assemble a fleet containing Souryuu Kai Ni as flagship, Hiryuu Kai Ni, 2 DD, and up to 2 XX, then S rank the boss node of 4-3.",
     "tips": "",
     "resources": {
       "F": "500",
@@ -2821,8 +2821,8 @@ const ALL_QUESTS_LIST = {
   },
   "B27": {
     "Jp": "戦艦「榛名」出撃せよ！",
-    "En": "Sortie the Battleship: \"Haruna\"",
-    "content": "Sortie Haruna Kai Ni and 5 additional ships to World 5-1 and obtain an S-Rank at the boss",
+    "En": "Deploy Battleship \"Haruna\"!",
+    "content": "Assemble a fleet containing Haruna Kai Ni and up to 5 XX, then S rank the boss node of 5-1.",
     "tips": "",
     "resources": {
       "F": "100",
@@ -2843,8 +2843,8 @@ const ALL_QUESTS_LIST = {
   },
   "B28": {
     "Jp": "「第六〇一航空隊」出撃せよ！",
-    "En": "Sortie the 601st Naval Air Group",
-    "content": "Sortie Unryuu Kai and 5 additional ships to World 5-2 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"601st Air Group\"!",
+    "content": "Assemble a fleet containing Unryuu Kai and up to 5 XX, then S rank the boss node of 5-2.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2865,8 +2865,8 @@ const ALL_QUESTS_LIST = {
   },
   "B29": {
     "Jp": "「軽空母」戦隊、出撃せよ！",
-    "En": "Sortie a Light Carrier Squadron",
-    "content": "Sortie 1-2 CVL, 1 CL, and 3-4 DD to World 2-1 and obtain an S-Rank at the boss",
+    "En": "\"Light Carrier\" Squadron, Deploy!",
+    "content": "Assemble a fleet containing 1 CVL, 1CVL/DD, 3 DD, and 1 CL, then S rank the boss node of 2-1.",
     "tips": "",
     "resources": {
       "F": "0",
@@ -2887,8 +2887,8 @@ const ALL_QUESTS_LIST = {
   },
   "B30": {
     "Jp": "「水雷戦隊」バシー島沖緊急展開",
-    "En": "The Torpedo Squadron Bashi Island Emergency Deployment",
-    "content": "Sortie 1-2 CL, which one of must be the flagship, and 4-5 DD to World 2-2 and obtain an S-Rank at the boss",
+    "En": "\"Torpedo Squadron\" Emergency Deployment To Sea Around Bashi Island",
+    "content": "Assemble a fleet containing 1 CL as flagship, 1 CL/DD, and 4 DD, then S rank the boss node of 2-2.",
     "tips": "",
     "resources": {
       "F": "300",
