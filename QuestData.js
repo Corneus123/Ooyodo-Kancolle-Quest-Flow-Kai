@@ -2510,17 +2510,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"Mikawa Fleet\"!",
     "content": "Assemble a fleet containing Choukai, Aoba, Kako, Furutaka, Tenryuu, and 1 FAST ship, then sortie on any map.",
     "tips": "",
+    "requires": ["A20"],
+    "unlocks": ["B140"],
+    "period": "once",
+    "needs": {
+      "S": ["Choukai","Aoba","Kako","Furutaka","Tenryuu"],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "200",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A20"],
-    "unlocks": ["B140"],
-    "period": "once",
-    "needs": {
-      "S": ["Choukai","Aoba","Kako","Furutaka","Tenryuu"]
     },
     "reward": [
       ["I","Repair Team",1]
@@ -2531,17 +2532,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"6th Destroyer Division\"!",
     "content": "Assemble a fleet containing only Akatsuki, Hibiki, Inazuma, and Ikazuchi, then sortie on any map.",
     "tips": "",
+    "requires": ["A10","Bw3"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"],
+      "M": []
+    },
     "resources": {
       "F": "200",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A10","Bw3"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"]
     },
     "reward": [
       ["C","Instant Repair",1]
@@ -2552,18 +2554,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"4th Squadron\"!",
     "content": "Assemble a fleet containing Atago, Takao, Choukai, Maya, and 2 XX, then B+ rank the boss node of 2-2.",
     "tips": "",
+    "requires": ["A21"],
+    "unlocks": ["B122"],
+    "period": "once",
+    "needs": {
+      "S": ["Atago","Takao","Choukai","Maya"],
+      "M": ["2-2"]
+    },
     "resources": {
       "F": "150",
       "A": "100",
       "S": "150",
       "B": "100"
-    },
-    "requires": ["A21"],
-    "unlocks": ["B122"],
-    "period": "once",
-    "needs": {
-      "M": ["2-2"],
-      "S": ["Atago","Takao","Choukai","Maya"]
     },
     "reward": [
       ["C","Instant Repair",2]
@@ -2574,18 +2576,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"Nishimura Fleet\"!",
     "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, Shigure, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A22"],
+    "unlocks": ["A44","A53","A77"],
+    "period": "once",
+    "needs": {
+      "S": ["Fusou","Yamashiro","Mogami","Shigure"],
+      "M": ["2-3"]
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["A22"],
-    "unlocks": ["A44","A53","A77"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Fusou","Yamashiro","Mogami","Shigure"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -2597,18 +2599,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"5th Carrier Division\"!",
     "content": "Assemble a fleet containing Shoukaku, Zuikaku, and 4 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
+    "requires": ["A23"],
+    "unlocks": ["A78","F80","B143"],
+    "period": "once",
+    "needs": {
+      "S": ["Shoukaku","Zuikaku"],
+      "M": ["3-1"]
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "0",
       "B": "700"
-    },
-    "requires": ["A23"],
-    "unlocks": ["A78","F80","B143"],
-    "period": "once",
-    "needs": {
-      "M": ["3-1"],
-      "S": ["Shoukaku","Zuikaku"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -2620,18 +2622,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The New \"Mikawa Fleet\"!",
     "content": "Assemble a fleet containing Choukai, Aoba, Kinugasa, Kako, Furutaka, and Tenryuu, then B+ rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A24"],
+    "unlocks": ["A50","A52"],
+    "period": "once",
+    "needs": {
+      "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"],
+      "M": ["2-3"]
+    },
     "resources": {
       "F": "100",
       "A": "150",
       "S": "100",
       "B": "150"
-    },
-    "requires": ["A24"],
-    "unlocks": ["A50","A52"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"]
     },
     "reward": [
       ["I","Repair Team",1]
@@ -2642,17 +2644,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"Submarine Fleet\"!",
     "content": "Assemble a fleet containing 2 SS(V) and 4 XX, then B+ rank the boss node of 2-3.",
     "tips": "Has the same quest name as Bm2. Despite the quest description, other SS(V) like Maruyu and foreign SS(V) can be used.",
+    "requires": ["A25"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": ["2-3"]
+    },
     "resources": {
       "F": "150",
       "A": "0",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["A25"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -2663,17 +2666,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy \"Aviation Surface Strike Fleet\"!",
     "content": "Assemble a fleet containing 2 BBV, 2 CAV, and 2 XX, then B+ rank the boss node of 4-2.",
     "tips": "",
+    "requires": ["A26"],
+    "unlocks": ["C22"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": ["4-2"]
+    },
     "resources": {
       "F": "0",
       "A": "150",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["A26"],
-    "unlocks": ["C22"],
-    "period": "once",
-    "needs": {
-      "M": ["4-2"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -2684,18 +2688,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"6th Squadron\"!",
     "content": "Assemble a fleet containing Furutaka, Kako, Aoba, Kinugasa, and 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A28"],
+    "unlocks": ["B34","Bq1","B89"],
+    "period": "once",
+    "needs": {
+      "S": ["Furutaka","Kako","Aoba","Kinugasa"],
+      "M": ["2-3"]
+    },
     "resources": {
       "F": "0",
       "A": "150",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["A28"],
-    "unlocks": ["B34","Bq1","B89"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Furutaka","Kako","Aoba","Kinugasa"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -2707,18 +2711,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"8th Destroyer Division\"!",
     "content": "Assemble a fleet containing Asashio, Michishio, Ooshio, Arashio, and 2 XX, then B+ rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A31"],
+    "unlocks": ["A32","A70","B65","Bm6","D10","B108","A83"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio","Michishio","Ooshio","Arashio"],
+      "M": ["2-3"]
+    },
     "resources": {
       "F": "0",
       "A": "100",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["A31"],
-    "unlocks": ["A32","A70","B65","Bm6","D10","B108","A83"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Asashio","Michishio","Ooshio","Arashio"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -2730,18 +2734,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"18th Destroyer Division\"!",
     "content": "Assemble a fleet containing Kasumi, Arare, Kagerou, Shiranui, and 2 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
+    "requires": ["A32"],
+    "unlocks": ["Bm5","A54","A72"],
+    "period": "once",
+    "needs": {
+      "S": ["Kasumi","Arare","Kagerou","Shiranui"],
+      "M": ["3-1"]
+    },
     "resources": {
       "F": "0",
       "A": "100",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["A32"],
-    "unlocks": ["Bm5","A54","A72"],
-    "period": "once",
-    "needs": {
-      "M": ["3-1"],
-      "S": ["Kasumi","Arare","Kagerou","Shiranui"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
@@ -2753,18 +2757,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"30th Destroyer Division (1st Gen.)\"!",
     "content": "Assemble a fleet containing Mutsuki, Kisaragi, Yayoi, Mochizuki, and 2 XX, then C+ rank the boss node of 3-2.",
     "tips": "",
+    "requires": ["A33"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"],
+      "M": ["3-2"]
+    },
     "resources": {
       "F": "100",
       "A": "100",
       "S": "100",
       "B": "500"
-    },
-    "requires": ["A33"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["3-2"],
-      "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -2775,17 +2779,18 @@ const ALL_QUESTS_LIST = {
     "En": "\"Aviation Battleship\" Weigh Anchor!",
     "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then B+ rank the boss node of 4-4.",
     "tips": "",
+    "requires": ["D10"],
+    "unlocks": ["B114","C22","B152"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": ["4-4"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "300",
       "B": "900"
-    },
-    "requires": ["D10"],
-    "unlocks": ["B114","C22","B152"],
-    "period": "once",
-    "needs": {
-      "M": ["4-4"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -2797,18 +2802,18 @@ const ALL_QUESTS_LIST = {
     "En": "\"30th Destroyer Division\" Anti-Submarine Patrol!",
     "content": "Assemble a fleet containing Mutsuki, Uzuki, Yayoi, and Mochizuki, then C+ rank the boss node of 1-5.",
     "tips": "",
+    "requires": ["A34"],
+    "unlocks": ["A35","B27"],
+    "period": "once",
+    "needs": {
+      "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"],
+      "M": ["1-5"]
+    },
     "resources": {
       "F": "330",
       "A": "330",
       "S": "330",
       "B": "0"
-    },
-    "requires": ["A34"],
-    "unlocks": ["A35","B27"],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"],
-      "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -2819,18 +2824,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The Newly-Formed \"2nd Carrier Division\"!",
     "content": "Assemble a fleet containing Hiryuu Kai Ni as flagship, Souryuu, 2 DD, and up to 2 XX, then S rank the boss node of 5-2.",
     "tips": "",
+    "requires": ["A36"],
+    "unlocks": ["A39","F13","F14"],
+    "period": "once",
+    "needs": {
+      "S": ["Hiryuu Kai Ni","Souryuu"],
+      "M": ["5-2"]
+    },
     "resources": {
       "F": "0",
       "A": "500",
       "S": "0",
       "B": "500"
-    },
-    "requires": ["A36"],
-    "unlocks": ["A39","F13","F14"],
-    "period": "once",
-    "needs": {
-      "M": ["5-2"],
-      "S": ["Hiryuu Kai Ni","Souryuu"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -2841,18 +2846,18 @@ const ALL_QUESTS_LIST = {
     "En": "Elite \"2nd Carrier Division\" Weigh Anchor!",
     "content": "Assemble a fleet containing Souryuu Kai Ni as flagship, Hiryuu Kai Ni, 2 DD, and up to 2 XX, then S rank the boss node of 4-3.",
     "tips": "",
+    "requires": ["A39"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Souryuu Kai Ni","Hiryuu Kai Ni"],
+      "M": ["4-3"]
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["A39"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["4-3"],
-      "S": ["Souryuu Kai Ni","Hiryuu Kai Ni"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -2863,18 +2868,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy Battleship \"Haruna\"!",
     "content": "Assemble a fleet containing Haruna Kai Ni and up to 5 XX, then S rank the boss node of 5-1.",
     "tips": "",
+    "requires": ["B24"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Haruna Kai Ni"],
+      "M": ["5-1"]
+    },
     "resources": {
       "F": "100",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B24"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-1"],
-      "S": ["Haruna Kai Ni"]
     },
     "reward": [
       ["E","Prototype 35.6cm Triple Gun Mount",1]
@@ -2885,18 +2890,18 @@ const ALL_QUESTS_LIST = {
     "En": "Deploy The \"601st Air Group\"!",
     "content": "Assemble a fleet containing Unryuu Kai and up to 5 XX, then S rank the boss node of 5-2.",
     "tips": "",
+    "requires": ["A41"],
+    "unlocks": ["F15"],
+    "period": "once",
+    "needs": {
+      "S": ["Unryuu Kai"],
+      "M": ["5-2"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["A41"],
-    "unlocks": ["F15"],
-    "period": "once",
-    "needs": {
-      "M": ["5-2"],
-      "S": ["Unryuu Kai"]
     },
     "reward": [
       ["E","Skilled Carrier-based Aircraft Maintenance Personnel",1]
@@ -2907,17 +2912,18 @@ const ALL_QUESTS_LIST = {
     "En": "\"Light Carrier\" Squadron, Deploy!",
     "content": "Assemble a fleet containing 1 CVL, 1CVL/DD, 3 DD, and 1 CL, then S rank the boss node of 2-1.",
     "tips": "",
+    "requires": ["A5"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": ["2-1"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["A5"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-1"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -2929,17 +2935,18 @@ const ALL_QUESTS_LIST = {
     "En": "\"Torpedo Squadron\" Emergency Deployment To Sea Around Bashi Island",
     "content": "Assemble a fleet containing 1 CL as flagship, 1 CL/DD, and 4 DD, then S rank the boss node of 2-2.",
     "tips": "",
+    "requires": ["B6"],
+    "unlocks": ["Bm2","B111","B148"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": ["2-2"]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B6"],
-    "unlocks": ["Bm2","B111","B148"],
-    "period": "once",
-    "needs": {
-      "M": ["2-2"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
