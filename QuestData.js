@@ -3238,21 +3238,23 @@ const ALL_QUESTS_LIST = {
   },
   "B41": {
     "Jp": "新編「三川艦隊」ソロモン方面へ！",
-    "En": "Sortie the New Mikawa Fleet to the Solomon Waters",
-    "content": "Sortie Choukai Kai Ni as flagship and any combination of Furutaka, Kako, Aoba, Kinugasa, Yuubari, or Tenryuu to World 5-1 and obtain an S-Rank at the boss (One of them will have to be left out)",
+    "En": "Newly-Formed \"Mikawa Fleet\" To The Solomon Region!",
+    "content": "Assemble a fleet containing Choukai Kai Ni as Secretary, and any 5 of: \"Furutaka, Kako, Aoba, Kinugasa, Yuubari, or Tenryuu\"; then S rank the boss node of 5-1.",
     "tips": "",
+    "requires": ["C5"],
+    "unlocks": ["B80","Bq7","B136"],
+    "period": "once",
+    "needs": {
+      "S": ["Choukai Kai Ni","Furutaka","Kako","Aoba","Kinugasa","Yuubari","Tenryuu"]
+      "M": [
+        ["5-1",1]
+      ],      
+    },
     "resources": {
       "F": "480",
       "A": "480",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["C5"],
-    "unlocks": ["B80","Bq7","B136"],
-    "period": "once",
-    "needs": {
-      "M": ["5-1"],
-      "S": ["Choukai Kai Ni","Furutaka","Kako","Aoba","Kinugasa","Yuubari","Tenryuu"]
     },
     "reward": [
       ["C","Development Material",3],
@@ -3261,21 +3263,23 @@ const ALL_QUESTS_LIST = {
   },
   "B42": {
     "Jp": "「第六駆逐隊」対潜哨戒なのです！",
-    "En": "The 6th Destroyer Division Anti-Submarine Patrol nanodesu",
-    "content": "Sortie Akatsuki, Hibiki (Верный is ok), Ikazuchi, and Inazuma to World 1-5 and obtain a C-Rank or better at the boss",
+    "En": "\"6th Destroyer Division\" Anti-Submarine Patrol!",
+    "content": "Assemble a fleet containing Akatsuki, Hibiki, Ikazuchi, and Inazuma, then C+ rank the boss node of 1-5.",
     "tips": "",
+    "requires": ["A10"],
+    "unlocks": ["A51","B45"],
+    "period": "once",
+    "needs": {
+      "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"],
+      "M": [
+        ["1-5",1]
+      ]      
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "200",
       "B": "0"
-    },
-    "requires": ["A10"],
-    "unlocks": ["A51","B45"],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"],
-      "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"]
     },
     "reward": [
       ["C","Development Material",3],
@@ -3284,21 +3288,23 @@ const ALL_QUESTS_LIST = {
   },
   "B43": {
     "Jp": "抜錨！「第十八戦隊」",
-    "En": "Set Sail! The 18th Squadron",
-    "content": "Sortie Tenryuu, Tatsuta, and at least two other ships to World 2-3 and obtain an S-Rank at the boss",
+    "En": "Weigh Anchor! \"18th Squadron\"",
+    "content": "Assemble a fleet containing Tenryuu, Tatsuta, and at least 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A51"],
+    "unlocks": ["A89"],
+    "period": "once",
+    "needs": {
+      "S": ["Tenryuu","Tatsuta"],
+      "M": [
+        ["2-3",1]
+      ]      
+    },
     "resources": {
       "F": "350",
       "A": "0",
       "S": "0",
       "B": "250"
-    },
-    "requires": ["A51"],
-    "unlocks": ["A89"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Tenryuu","Tatsuta"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -3307,21 +3313,23 @@ const ALL_QUESTS_LIST = {
   },
   "B44": {
     "Jp": "海上突入部隊、進発せよ！",
-    "En": "Deploy the Marine Rush Fleet",
-    "content": "Sortie Hiei, Kirishima, Nagara, Akatsuki, Ikazuchi, and Inazuma to World 5-1 and obtain an S-Rank at the boss",
+    "En": "Maritime Assault Fleet, Advance!",
+    "content": "Assemble a fleet containing Hiei, Kirishima, Nagara, Akatsuki, Ikazuchi, and Inazuma, then S rank the boss node of 5-1.",
     "tips": "",
+    "requires": ["A52","Bw9"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Hiei","Kirishima","Nagara","Akatsuki","Ikazuchi","Inazuma"],
+      "M": [
+        ["5-1",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["A52","Bw9"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-1"],
-      "S": ["Hiei","Kirishima","Nagara","Akatsuki","Ikazuchi","Inazuma"]
     },
     "reward": [
       ["C","Development Material",5],
@@ -3330,21 +3338,23 @@ const ALL_QUESTS_LIST = {
   },
   "B45": {
     "Jp": "「第六駆逐隊」対潜哨戒を徹底なのです！",
-    "En": "A Thorough 6th Destroyer Division Anti-Submarine Patrol nanodesu",
-    "content": "Sortie Akatsuki Kai Ni, Hibiki (Верный is ok), Ikazuchi, and Inazuma to World 1-5 and obtain an A-Rank or better at the boss",
+    "En": "\"6th Destroyer Division\" Thorough Anti-Submarine Patrol!",
+    "content": "Assemble a fleet containing Akatsuki Kai Ni, Hibiki, Ikazuchi, and Inazuma, then A+ rank the boss node of 1-5.",
     "tips": "",
+    "requires": ["A53","B42"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Akatsuki Kai Ni","Hibiki","Ikazuchi","Inazuma"],
+      "M": [
+        ["1-5",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A53","B42"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"],
-      "S": ["Akatsuki Kai Ni","Hibiki","Ikazuchi","Inazuma"]
     },
     "reward": [
       ["C","Improvement Material",2],
@@ -3353,21 +3363,23 @@ const ALL_QUESTS_LIST = {
   },
   "B46": {
     "Jp": "「第一水雷戦隊」ケ号作戦、突入せよ！",
-    "En": "Rush the 1st Torpedo Squadron to OpeRation KE",
-    "content": "Sortie Abukuma as flagship with Hibiki (Верный is ok), Hatsushimo, Wakaba, Samidare and Shimakaze to World 3-2 and obtain a victory (B-Rank or better) at the boss",
+    "En": "Deploy The \"First Torpedo Squadron\" For The K-Go!",
+    "content": "Assemble a fleet containing Abukuma as flagship, Hibiki, Hatsushimo, Wakaba, Samidare, and Shimakaze, then B+ rank the boss node of 3-2",
     "tips": "",
+    "requires": ["A54"],
+    "unlocks": ["C7","F33"],
+    "period": "once",
+    "needs": {
+      "S": ["Abukuma","Hibiki","Hatsushimo","Wakaba","Samidare","Shimakaze"],
+      "M": [
+        ["3-2",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["A54"],
-    "unlocks": ["C7","F33"],
-    "period": "once",
-    "needs": {
-      "M": ["3-2"],
-      "S": ["Abukuma","Hibiki","Hatsushimo","Wakaba","Samidare","Shimakaze"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -3376,21 +3388,23 @@ const ALL_QUESTS_LIST = {
   },
   "B47": {
     "Jp": "「第一水雷戦隊」北方ケ号作戦、再突入！",
-    "En": "Rush the 1st Torpedo Squadron to OpeRation KE Again",
-    "content": "Sortie Abukuma Kai Ni as flagship with Hibiki (Верный is ok), Yuugumo, Naganami, Akigumo and Shimakaze to World 3-2 and obtain an S-Rank at the boss",
+    "En": "\"First Torpedo Squadron\", Advance Again To The Northern K-Go Operation!",
+    "content": "Assemble a fleet containing Abukuma Kai Ni as flagship, Hibiki, Yuugumo, Naganami, Akigumo, and Shimakaze, then S rank the boss node of 3-2",
     "tips": "",
+    "requires": ["A55"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Abukuma Kai Ni","Hibiki","Yuugumo","Naganami","Akigumo","Shimakaze"],
+      "M": [
+        ["3-2",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "500"
-    },
-    "requires": ["A55","C7"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["3-2"],
-      "S": ["Abukuma Kai Ni","Hibiki","Yuugumo","Naganami","Akigumo","Shimakaze"]
     },
     "reward": [
       ["C","Development Material",4],
@@ -3399,20 +3413,23 @@ const ALL_QUESTS_LIST = {
   },
   "B48": {
     "Jp": "鎮守府正面の対潜哨戒を強化せよ！",
-    "En": "Strengthen the Anti-Submarine Patrol in Front of the Naval Base!",
-    "content": "Sortie to World 1-5 and obtain four A-Ranks (or better) at the boss.",
+    "En": "Strengthen The Anti-Submarine Patrol In Front Of The Naval Base!",
+    "content": "A+ rank the boss node of 1-5 four times.",
     "tips": "",
+    "requires": ["B5","Bd2"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-5",4]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bd2","B5"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"]
     },
     "reward": [
       ["I","Furniture Fairy",1]
@@ -3420,20 +3437,23 @@ const ALL_QUESTS_LIST = {
   },
   "B49": {
     "Jp": "「空母機動部隊」北方海域に進出せよ！",
-    "En": "\"Carrier Task Force\", advance to the Northern Sea!",
-    "content": "Sortie a fleet with an CV as flagship to World 3-5 and obtain an S-Rank at the boss",
+    "En": "\"Mobile Carrier Fleet\" Entering The Northern Sea Region!",
+    "content": "Assemble a fleet containing 1 CV(B) as flagship and up to 5 XX, then S rank the boss node of 3-5.",
     "tips": "",
+    "requires": ["Bd8","B32"],
+    "unlocks": ["B152"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-5",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["Bd8","B32"],
-    "unlocks": ["B152"],
-    "period": "once",
-    "needs": {
-      "M": ["3-5"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -3442,21 +3462,23 @@ const ALL_QUESTS_LIST = {
   },
   "B50": {
     "Jp": "「第五航空戦隊」珊瑚諸島沖に出撃せよ！",
-    "En": "Sortie the 5th Carrier Division to the Southern Sea Coral Islands",
-    "content": "Sortie Shoukaku, Zuikaku, Oboro, Akigumo and up to 2 additional ships to World 5-2 and obtain an S-Rank at the boss",
+    "En": "Sortie The \"5th CarDiv\" To The South!",
+    "content": "Assemble a fleet containing Shoukaku, Zuikaku, Oboro, Akigumo, and up to 2 XX, then S rank the boss node of 5-2.",
     "tips": "",
+    "requires": ["A56"],
+    "unlocks": ["A64","F19","F20","D19","B95","B97","B128"],
+    "period": "once",
+    "needs": {
+      "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"],
+      "M": [
+        ["5-2",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "500",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A56"],
-    "unlocks": ["A64","F19","F20","D19","B95","B97","B128"],
-    "period": "once",
-    "needs": {
-      "M": ["5-2"],
-      "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"]
     },
     "reward": [
       ["C","Instant Repair",3],
