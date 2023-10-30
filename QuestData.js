@@ -2559,7 +2559,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Atago","Takao","Choukai","Maya"],
-      "M": ["2-2"]
+      "M": [
+        ["2-2",1]
+      ]
     },
     "resources": {
       "F": "150",
@@ -2581,7 +2583,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Fusou","Yamashiro","Mogami","Shigure"],
-      "M": ["2-3"]
+      "M": [
+        ["2-3",1]
+      ]
     },
     "resources": {
       "F": "400",
@@ -2604,7 +2608,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Shoukaku","Zuikaku"],
-      "M": ["3-1"]
+      "M": [
+        ["3-1",1]
+      ]
     },
     "resources": {
       "F": "200",
@@ -2627,7 +2633,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"],
-      "M": ["2-3"]
+      "M": [
+        ["2-3",1]
+      ]
     },
     "resources": {
       "F": "100",
@@ -2649,7 +2657,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": [],
-      "M": ["2-3"]
+      "M": [
+        ["2-3",1]
+      ]
     },
     "resources": {
       "F": "150",
@@ -2671,7 +2681,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": [],
-      "M": ["4-2"]
+      "M": [
+        ["4-2",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2693,7 +2705,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Furutaka","Kako","Aoba","Kinugasa"],
-      "M": ["2-3"]
+      "M": [
+        ["2-3",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2716,7 +2730,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Asashio","Michishio","Ooshio","Arashio"],
-      "M": ["2-3"]
+      "M": [
+        ["2-3",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2739,7 +2755,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Kasumi","Arare","Kagerou","Shiranui"],
-      "M": ["3-1"]
+      "M": [
+        ["3-1",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2762,7 +2780,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"],
-      "M": ["3-2"]
+      "M": [
+        ["3-2",1]
+      ]
     },
     "resources": {
       "F": "100",
@@ -2784,7 +2804,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": [],
-      "M": ["4-4"]
+      "M": [
+        ["4-4",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2807,7 +2829,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"],
-      "M": ["1-5"]
+      "M": [
+        ["1-5",1]
+      ]
     },
     "resources": {
       "F": "330",
@@ -2829,7 +2853,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Hiryuu Kai Ni","Souryuu"],
-      "M": ["5-2"]
+      "M": [
+        ["5-2",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2851,7 +2877,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Souryuu Kai Ni","Hiryuu Kai Ni"],
-      "M": ["4-3"]
+      "M": [
+        ["4-3",1]
+      ]
     },
     "resources": {
       "F": "500",
@@ -2873,7 +2901,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Haruna Kai Ni"],
-      "M": ["5-1"]
+      "M": [
+        ["5-1",1]
+      ]
     },
     "resources": {
       "F": "100",
@@ -2895,7 +2925,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": ["Unryuu Kai"],
-      "M": ["5-2"]
+      "M": [
+        ["5-2",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2917,7 +2949,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": [],
-      "M": ["2-1"]
+      "M": [
+        ["2-1",1]
+      ]
     },
     "resources": {
       "F": "0",
@@ -2940,7 +2974,9 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "S": [],
-      "M": ["2-2"]
+      "M": [
+        ["2-2",1]
+      ]
     },
     "resources": {
       "F": "300",
@@ -2958,20 +2994,20 @@ const ALL_QUESTS_LIST = {
     "En": "\"2nd Squadron\" Weigh Anchor!",
     "content": "Assemble a fleet containing Nagato, Mutsu, Fusou, Yamashiro, and 2 XX, then S rank the boss node of 4-2 twice.",
     "tips": "",
+    "requires": ["A42"],
+    "unlocks": ["A43","A75"],
+    "period": "once",
+    "needs": {
+      "S": ["Nagato","Mutsu","Fusou","Yamashiro"],
+      "M": [
+        ["4-2",2]
+      ],      
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A42"],
-    "unlocks": ["A43","A75"],
-    "period": "once",
-    "needs": {
-      "M": [
-        ["4-2",2]
-      ],
-      "S": ["Nagato","Mutsu","Fusou","Yamashiro"]
     },
     "reward": [
       ["E","Type 1 AP Shell",1]
@@ -2979,20 +3015,23 @@ const ALL_QUESTS_LIST = {
   },
   "B32": {
     "Jp": "「戦艦部隊」北方海域に突入せよ！",
-    "En": "Rush the Battleship Force to the Northern Sea",
-    "content": "Sortie 2 BB (BBV do not count), 1 CVL, and 3 additional ships to World 3-5 and obtain an S-Rank at the boss",
-    "tips": "",
+    "En": "\"Battleship Squadron\" Charge Into The Northern Sea Region!",
+    "content": "Assemble a fleet containing 2 (F)BB, 1 CVL, and 3 XX, then S rank the boss node of 3-5.",
+    "tips": "	XX cannot be a BBV or CV(B/L).",
+    "requires": ["Bm4"],
+    "unlocks": ["B49"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-5",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "500",
       "S": "0",
       "B": "250"
-    },
-    "requires": ["Bm4"],
-    "unlocks": ["B49"],
-    "period": "once",
-    "needs": {
-      "M": ["3-5"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -3001,21 +3040,23 @@ const ALL_QUESTS_LIST = {
   },
   "B33": {
     "Jp": "「西村艦隊」南方海域へ進出せよ！",
-    "En": "Advance the Nishimura Fleet to the Southern Sea",
-    "content": "Sortie Fusou, Yamashiro, Mogami, Shigure, Michishio and 1 additional ship to World 5-1, and obtain an S-Rank at the boss",
+    "En": "Advance The \"Nishimura Fleet\" To The Southern Sea Region!",
+    "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, Shigure, Michishio, and 1 XX, then S rank the boss node of 5-1.",
     "tips": "",
+    "requires": ["A44"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Fusou","Yamashiro","Mogami","Shigure","Michishio"],
+      "M": [
+        ["5-1",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "500",
       "B": "300"
-    },
-    "requires": ["A44"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-1"],
-      "S": ["Fusou","Yamashiro","Mogami","Shigure","Michishio"]
     },
     "reward": [
       ["C","Improvement Material",5],
@@ -3024,21 +3065,23 @@ const ALL_QUESTS_LIST = {
   },
   "B34": {
     "Jp": "「第六戦隊」南西海域へ出撃せよ！",
-    "En": "Sortie the 6th Squadron to the Southwestern Sea",
-    "content": "Sortie Furutaka, Kako, Aoba, Kinugasa and 2 additional ships to World 2-5 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"6th Squadron\" To The Southwest Sea Region!",
+    "content": "Assemble a fleet containing Furutaka, Kako, Aoba, Kinugasa, and 2 XX, then S rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["B19"],
+    "unlocks": ["A57","A84"],
+    "period": "once",
+    "needs": {
+      "S": ["Furutaka","Kako","Aoba","Kinugasa"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["B19"],
-    "unlocks": ["A57","A84"],
-    "period": "once",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Furutaka","Kako","Aoba","Kinugasa"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
@@ -3047,21 +3090,23 @@ const ALL_QUESTS_LIST = {
   },
   "B35": {
     "Jp": "「第十一駆逐隊」 出撃せよ！",
-    "En": "Sortie the 11th Destroyer Division",
-    "content": "Sortie Fubuki, Shirayuki, Hatsuyuki, Murakumo, and 2 additional ships to World 2-3 and defeat the boss",
+    "En": "Deploy The \"11th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Fubuki, Shirayuki, Hatsuyuki, Murakumo, and 2XX, then B+ rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A47"],
+    "unlocks": ["A48"],
+    "period": "once",
+    "needs": {
+      "S": ["Fubuki","Shirayuki","Hatsuyuki","Murakumo"],
+      "M": [
+        ["2-3",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["A47"],
-    "unlocks": ["A48"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Fubuki","Shirayuki","Hatsuyuki","Murakumo"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -3069,21 +3114,23 @@ const ALL_QUESTS_LIST = {
   },
   "B36": {
     "Jp": "「第十一駆逐隊」対潜哨戒!",
-    "En": "The 11th Destroyer Division Anti-Submarine Patrol",
-    "content": "Sortie Fubuki, Shirayuki, Hatsuyuki, and Murakumo to World 1-5 and obtain at least a C or above Rank at the boss",
+    "En": "\"11th Destroyer Division\" Anti-Submarine Patrol!",
+    "content": "Assemble a fleet containing Fubuki, Shirayuki, Hatsuyuki, and Murakumo, then C+ rank the boss node of 1-5.",
     "tips": "",
+    "requires": ["A47"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Fubuki","Shirayuki","Hatsuyuki","Murakumo"],
+      "M": [
+        ["1-5",1]
+      ]      
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["A47"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"],
-      "S": ["Fubuki","Shirayuki","Hatsuyuki","Murakumo"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -3092,21 +3139,23 @@ const ALL_QUESTS_LIST = {
   },
   "B37": {
     "Jp": "「第二一駆逐隊」出撃せよ！",
-    "En": "Sortie the 21st Destroyer Division",
-    "content": "Sortie Hatsuharu, Nenohi, Wakaba, Hatsushimo, and 2 additional ships to World 3-1 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"21st Destroyer Division!\"",
+    "content": "Assemble a fleet containing Hatsuharu, Nenohi, Wakaba, Hatsushimo, and 2 XX, then S rank the boss node of 3-1.",
     "tips": "",
+    "requires": ["A48"],
+    "unlocks": ["B38","A85"],
+    "period": "once",
+    "needs": {
+      "S": ["Hatsuharu","Nenohi","Wakaba","Hatsushimo"],
+      "M": [
+        ["3-1",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["A48"],
-    "unlocks": ["B38","A85"],
-    "period": "once",
-    "needs": {
-      "M": ["3-1"],
-      "S": ["Hatsuharu","Nenohi","Wakaba","Hatsushimo"]
     },
     "reward": [
       ["I","Present box",1]
@@ -3114,44 +3163,48 @@ const ALL_QUESTS_LIST = {
   },
   "B38": {
     "Jp": "「那智戦隊」抜錨せよ！",
-    "En": "Sortie the Nachi Squadron",
-    "content": "Sortie Nachi as flagship, Hatsushimo, Kasumi, Ushio, Akebono, and 1 other ship to World 2-2 and obtain an S-Rank at the boss",
+    "En": "Weigh Anchor, \"Nachi Squadron\"!",
+    "content": "Assemble a fleet containing Nachi as flagship, Hatsushimo, Kasumi, Ushio, Akebono, and 1 XX, then S rank the boss node of 2-2.",
     "tips": "",
+    "requires": ["B37","Bm1"],
+    "unlocks": ["A49"],
+    "period": "once",
+    "needs": {
+      "S": ["Nachi","Hatsushimo","Kasumi","Ushio","Akebono"],
+      "M": [
+        ["2-2",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "300",
       "S": "0",
       "B": "0"
     },
-    "requires": ["B37","Bm1"],
-    "unlocks": ["A49"],
-    "period": "once",
-    "needs": {
-      "M": ["2-2"],
-      "S": ["Nachi","Hatsushimo","Kasumi","Ushio","Akebono"]
-    },
     "reward": [
-      ["I","Furniture Box (Large)",1],
-      ["C","Improvement Material",2]
+      ["C","Improvement Material",2],
+      ["I","Furniture Box (Large)",1]      
     ]
   },
   "B39": {
     "Jp": "「第二二駆逐隊」出撃せよ！",
-    "En": "Sortie the 22nd Destroyer Division",
-    "content": "Sortie Satsuki, Fumizuki, Nagatsuki, 1 other DD, and 2 other additional ships to World 1-4 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"22nd Destroyer Division!\"",
+    "content": "Assemble a fleet containing Satsuki, Fumizuki, Nagatsuki, 1 DD, and up to 2 XX, then S rank the boss node of 1-4.",
     "tips": "",
+    "requires": ["A49"],
+    "unlocks": ["A79"],
+    "period": "once",
+    "needs": {
+      "S": ["Satsuki","Fumizuki","Nagatsuki"],
+      "M": [
+        ["1-4",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["A49"],
-    "unlocks": ["A79"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"],
-      "S": ["Satsuki","Fumizuki","Nagatsuki"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -3160,21 +3213,23 @@ const ALL_QUESTS_LIST = {
   },
   "B40": {
     "Jp": "「改装防空重巡」出撃せよ！",
-    "En": "Sortie the Remodeled Anti-Air Heavy Cruiser",
-    "content": "Sortie Maya (Kai or Kai-2), 1 CL, and 2 DD (you may add additional ships) to World 2-3 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"Remodeled Anti-Air Heavy Cruiser\"!",
+    "content": "Assemble a fleet containing Maya Kai+, 1 CL, 2 DD, and up to 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["D15"],
+    "unlocks": ["D16","B137"],
+    "period": "once",
+    "needs": {
+      "S": ["Maya Kai"],
+      "M": [
+        ["2-3",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "0",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["D15"],
-    "unlocks": ["D16","B137"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Maya Kai"]
     },
     "reward": [
       ["E","25mm Triple Autocannon Mount",1],
