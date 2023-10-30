@@ -3245,7 +3245,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["B80","Bq7","B136"],
     "period": "once",
     "needs": {
-      "S": ["Choukai Kai Ni","Furutaka","Kako","Aoba","Kinugasa","Yuubari","Tenryuu"]
+      "S": ["Choukai Kai Ni","Furutaka","Kako","Aoba","Kinugasa","Yuubari","Tenryuu"],
       "M": [
         ["5-1",1]
       ],      
