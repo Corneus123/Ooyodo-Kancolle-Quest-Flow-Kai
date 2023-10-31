@@ -3487,21 +3487,23 @@ const ALL_QUESTS_LIST = {
   },
   "B51": {
     "Jp": "新編「第二一戦隊」北方へ出撃せよ！",
-    "En": "Sortie the New 21st Squadron to the North",
-    "content": "Sortie Nachi Kai Ni, Ashigara Kai Ni, Tama, Kiso and up to 2 additional ships to World 3-1 and obtain an S-Rank at the boss",
+    "En": "Sortie The \"New 21st Cruiser Division\"!",
+    "content": "Assemble a fleet containing Nachi Kai Ni, Ashigara Kai Ni, Tama, Kiso and up to 2 XX, then S rank the boss node of 3-1.",
     "tips": "",
+    "requires": ["A57"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Nachi Kai Ni","Ashigara Kai Ni","Tama","Kiso"],
+      "M": [
+        ["3-1",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A57"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["3-1"],
-      "S": ["Nachi Kai Ni","Ashigara Kai Ni","Tama","Kiso"]
     },
     "reward": [
       ["I","Combat provision",1],
@@ -3510,21 +3512,23 @@ const ALL_QUESTS_LIST = {
   },
   "B52": {
     "Jp": "「第十六戦隊(第一次)」出撃せよ！",
-    "En": "Sortie the 16th Squadron (First Generation)",
-    "content": "Sortie Ashigara as flagship, Kuma, Nagara and up to 3 additional ships to World 2-2 and obtain an S-Rank at the boss",
+    "En": "Sortie The \"16th Squadron (1st Gen.)\"!",
+    "content": "Assemble a fleet containing Ashigara as flagship, Kuma, Nagara, and up to 3 XX, then S rank the boss node of 2-2.",
     "tips": "",
+    "requires": ["A58"],
+    "unlocks": ["A63","A75"],
+    "period": "once",
+    "needs": {
+      "S": ["Ashigara","Kuma","Nagara"],
+      "M": [
+        ["2-2",1]
+      ]      
+    },
     "resources": {
       "F": "200",
       "A": "0",
       "S": "200",
       "B": "0"
-    },
-    "requires": ["A58"],
-    "unlocks": ["A63","A75"],
-    "period": "once",
-    "needs": {
-      "M": ["2-2"],
-      "S": ["Ashigara","Kuma","Nagara"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -3533,44 +3537,48 @@ const ALL_QUESTS_LIST = {
   },
   "B53": {
     "Jp": "「第三航空戦隊」南西諸島防衛線に出撃！",
-    "En": "3rd Carrier Division: defend the Nansei Islands",
-    "content": "Sortie Zuikaku Kai as flagship, Zuihou, Chitose Carrier and Chiyoda Carrier (both as CVL) (you can add 2 more ships) to World 1-4 and score an S-rank victory at the boss",
+    "En": "Sortie The \"3rd Carrier Division\" To Protect The Nansei Islands!",
+    "content": "Assemble a fleet containing Zuikaku Kai+ as flagship, Zuihou, Chitose Kou+, Chiyoda Kou+, and up to 2 XX, then S rank the boss node of 1-4.",
     "tips": "",
+    "requires": ["A59"],
+    "unlocks": ["A60","A68","F26"],
+    "period": "once",
+    "needs": {
+      "S": ["Zuikaku Kai","Zuihou","Chitose Kou","Chiyoda Kou"],
+      "M": [
+        ["1-4",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "300",
       "B": "0"
     },
-    "requires": ["A59"],
-    "unlocks": ["A60","A68","F26"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"],
-      "S": ["Zuikaku Kai","Zuihou","Chitose Carrier","Chiyoda Carrier"]
-    },
     "reward": [
-      ["C","Instant Repair",2],
-      ["I","Irako",1]
+      ["I","Irako",1],
+      ["C","Instant Repair",2]      
     ]
   },
   "B54": {
     "Jp": "「小沢艦隊」出撃せよ！",
-    "En": "Sortie the Ozawa's fleet",
-    "content": "Sortie Zuikaku Kai(Kai Ni is OK) as flagship, Zuihou Kai, Chitose Carrier, Chiyoda Carrier, Ise Kai and Hyuuga Kai to World 2-4 and score an S-rank victory at the boss",
+    "En": "Sortie The \"Ozawa Fleet\"!",
+    "content": "Assemble a fleet containing Zuikaku Kai+ as flagship, Zuihou Kai+, Chitose Kou+, Chiyoda Kou+, Ise Kai+, and Hyuuga Kai+, then S rank the boss node of 2-4.",
     "tips": "",
+    "requires": ["A61"],
+    "unlocks": ["F23","F27","Fm3"],
+    "period": "once",
+    "needs": {
+      "S": ["Zuikaku Kai","Zuihou Kai","Chitose Kou","Chiyoda Kou","Ise Kai","Hyuuga Kai"],
+      "M": [
+        ["2-4",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "0",
       "S": "300",
       "B": "300"
-    },
-    "requires": ["A61"],
-    "unlocks": ["F23","F27","Fm3"],
-    "period": "once",
-    "needs": {
-      "M": ["2-4"],
-      "S": ["Zuikaku Kai","Zuihou Kai","Chitose Carrier","Chiyoda Carrier","Ise Kai","Hyuuga Kai"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -3579,42 +3587,48 @@ const ALL_QUESTS_LIST = {
   },
   "B55": {
     "Jp": "「第十六戦隊(第二次)」出撃せよ！",
-    "En": "Sortie the 16th Squadron (Second Generation)",
-    "content": "Sortie Natori as flagship, Isuzu, Kinu and up to 3 additional ships to World 2-3 and score an S-rank victory at the boss",
+    "En": "\"16th Squadron (2nd Gen.)\" Sortie!",
+    "content": "Assemble a fleet containing Natori as flagship, Isuzu, and Kinu, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A63"],
+    "unlocks": ["A64","A73","A66"],
+    "period": "once",
+    "needs": {
+      "S": ["Natori","Isuzu","Kinu"],
+      "M": [
+        ["2-3",1]
+      ]      
+    },
     "resources": {
       "F": "320",
       "A": "0",
       "S": "320",
       "B": "0"
     },
-    "requires": ["A63"],
-    "unlocks": ["A64","A73","A66"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Natori","Isuzu","Kinu"]
-    },
     "reward": [
-      ["I","Furniture Box (Large)",1]
+      ["I","Furniture Box (Large)",1],
+      ["I","Mamiya",1]
     ]
   },
   "B56": {
     "Jp": "新編成航空戦隊、北方へ進出せよ！",
-    "En": "Sortie the New Carrier Division to the North",
-    "content": "Sortie 2 CV / CVL, 2 BBV / CAV and 2 DD to World 3-3 and score an S-rank victory at the boss",
+    "En": "New Carrier Division, Advance To The North!",
+    "content": "Assemble a fleet containing 2 CV(B), 2 BBV/CAV, and 2 DD, then S rank the boss node of 3-3.",
     "tips": "",
+    "requires": ["A64"],
+    "unlocks": ["A65","F37"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-3",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["A64"],
-    "unlocks": ["A65","F37"],
-    "period": "once",
-    "needs": {
-      "M": ["3-3"]
     },
     "reward": [
       ["C","Improvement Material",2],
@@ -3623,21 +3637,23 @@ const ALL_QUESTS_LIST = {
   },
   "B57": {
     "Jp": "「礼号作戦」実施せよ！",
-    "En": "Carry Out OpeRation Rei-go",
-    "content": "Sortie Kasumi as flagship, Ashigara, Ooyodo, Asashimo, Kiyoshimo and up to one additional ship to World 2-5 and score an S-rank victory at the boss",
+    "En": "Carry Out \"Operation Rei-go\"",
+    "content": "Assemble a fleet containing Kasumi as flagship, Ashigara, Ooyodo, Asashimo, Kiyoshimo, and 1 XX, then S rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["A65","Bm5"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Kasumi","Ashigara","Ooyodo","Asashimo","Kiyoshimo"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "700",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A65","Bm5"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Kasumi","Ashigara","Ooyodo","Asashimo","Kiyoshimo"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -3646,21 +3662,23 @@ const ALL_QUESTS_LIST = {
   },
   "B58": {
     "Jp": "旗艦「霞」北方海域を哨戒せよ！",
-    "En": "Send the Flagship Kasumi to Patrol the Northern Sea",
-    "content": "Sortie a fleet with Kasumi Kai Ni as flagship, 3 DD and up to 2 additional ships to World 3-1 and score a victory at the boss node.",
+    "En": "Flagship \"Kasumi\" Patrol The Northern Sea!",
+    "content": "Assemble a fleet containing Kasumi Kai Ni/B as flagship, 3 DD, and 2 XX, then B+ rank the boss node of 3-1.",
     "tips": "",
+    "requires": ["A32","A46","Cd1"],
+    "unlocks": ["B59","A87"],
+    "period": "once",
+    "needs": {
+      "S": ["Kasumi Kai Ni"],
+      "M": [
+        ["3-1",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "0",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["A32","Cd1"],
-    "unlocks": ["B59","A87"],
-    "period": "once",
-    "needs": {
-      "M": ["3-1"],
-      "S": ["Kasumi Kai Ni"]
     },
     "reward": [
       ["E","Type 13 Air Radar Kai",1],
@@ -3669,48 +3687,52 @@ const ALL_QUESTS_LIST = {
   },
   "B59": {
     "Jp": "旗艦「霞」出撃！敵艦隊を撃滅せよ！",
-    "En": "Flagship Kasumi, Sortieing! Destroy the Enemy Fleet",
-    "content": "Sortie a fleet with Kasumi Kai Ni as flagship, 2 DD and up to 3 additional ships to World 2-5 and score an S rank victory at the boss node.",
+    "En": "Deploy Flagship \"Kasumi\"! Eliminate The Enemy Fleet!",
+    "content": "Assemble a fleet containing Kasumi Kai Ni/B as flagship, 2 DD, and 3 XX, then B+ rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["B58","Dd1"],
+    "unlocks": ["B66"],
+    "period": "once",
+    "needs": {
+      "S": ["Kasumi Kai Ni"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "500",
       "S": "0",
       "B": "0"
     },
-    "requires": ["B58","Dd1"],
-    "unlocks": ["B66"],
-    "period": "once",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Kasumi Kai Ni"]
-    },
     "reward": [
-      ["C","Improvement Material",3],
-      ["E","25mm Triple Autocannon Mount (Concentrated Deployment)",1]
+      ["E","25mm Triple Autocannon Mount (Concentrated Deployment)",1],
+      ["C","Improvement Material",3]      
     ]
   },
   "B60": {
     "Jp": "「第三十一戦隊」出撃せよ！",
-    "En": "Sortie the 31st Division",
-    "content": "Sortie Isuzu Kai Ni as flagship, Satsuki Kai Ni, Uzuki Kai and up to 3 additional ships to World 1-6 and reach the end node",
+    "En": "Deploy The \"31st Squadron (1st gen.)\"!",
+    "content": "Assemble a fleet containing Isuzu Kai Ni as flagship, Satsuki Kai Ni, Uzuki Kai, and up to 3 XX, then reach node N on 1-6.",
     "tips": "",
+    "requires": ["A66","Bd1"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"],
+      "M": [
+        ["1-6",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "600",
       "B": "0"
     },
-    "requires": ["A66","Bd1"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-6"],
-      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"]
-    },
     "reward": [
       ["C","Improvement Material",3],
-      ["I","Hishimochi",1]
+      ["I","Present Box",1]
     ]
   },
   "B61": {
