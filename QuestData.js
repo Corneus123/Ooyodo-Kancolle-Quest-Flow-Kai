@@ -3737,21 +3737,23 @@ const ALL_QUESTS_LIST = {
   },
   "B61": {
     "Jp": "「第二七駆逐隊」出撃せよ！",
-    "En": "Sortie the 27th Destroyer Division",
-    "content": "Sortie Shiratsuyu Kai as flagship, Shigure, Harusame and Samidare and up to 2 additional ships to World 2-3 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"27th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Shiratsuyu Kai+ as flagship, Shigure, Harusame, Samidare, and up to 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A67"],
+    "unlocks": ["A86"],
+    "period": "once",
+    "needs": {
+      "S": ["Shiratsuyu Kai","Shigure","Harusame","Samidare"],
+      "M": [
+        ["2-3",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["A67"],
-    "unlocks": ["A86"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Shiratsuyu Kai","Shigure","Harusame","Samidare"]
     },
     "reward": [
       ["F","\"Spring is number 1\" scroll",1]
@@ -3759,20 +3761,23 @@ const ALL_QUESTS_LIST = {
   },
   "B62": {
     "Jp": "強襲上陸作戦用戦力を増強せよ！",
-    "En": "Bolster the Capability for Amphibious Assault OpeRations!",
-    "content": "Sortie to World 6-3 and obtain an B-Rank or better at the boss",
+    "En": "Strengthen Your Land-Base Assault Fleet!",
+    "content": "B+ rank the boss node of 6-3.",
     "tips": "",
+    "requires": ["Bw9","D19"],
+    "unlocks": ["B80","F43","B145"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["6-3",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "600",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bw9","D19"],
-    "unlocks": ["B80","F43","B145"],
-    "period": "once",
-    "needs": {
-      "M": ["6-3"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -3781,20 +3786,23 @@ const ALL_QUESTS_LIST = {
   },
   "B63": {
     "Jp": "製油所地帯を防衛せよ！",
-    "En": "Defend the Oil Refinery Zone!",
-    "content": "Sortie a torpedo squadron (1 CL 5 DD) to World 1-3 and obtain three S-Ranks at the boss",
+    "En": "Protect The Oil Refinery!",
+    "content": "Assemble a fleet containing 1 CL and 5 DD, then B+ rank the boss node of 1-3 three times.",
     "tips": "",
+    "requires": ["Bd2"],
+    "unlocks": ["B64","Dq1"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-3",3]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bd2"],
-    "unlocks": ["B64","Dq1"],
-    "period": "once",
-    "needs": {
-      "M": ["1-3"]
     },
     "reward": [
       ["I","Combat Ration",1],
@@ -3803,20 +3811,23 @@ const ALL_QUESTS_LIST = {
   },
   "B64": {
     "Jp": "南西諸島防衛線を強化せよ！",
-    "En": "Reinforce the Nansei Islands Defence Line!",
-    "content": "Sortie to World 1-4 and obtain five S-Ranks at the boss",
+    "En": "Strengthen The Nansai Island Defense Line!",
+    "content": "S rank the boss node of 1-4 five times.",
     "tips": "",
+    "requires": ["B63","F31"],
+    "unlocks": ["B65"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",5]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["B63","F31"],
-    "unlocks": ["B65"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"]
     },
     "reward": [
       ["I","Combat Ration",1],
@@ -3825,21 +3836,23 @@ const ALL_QUESTS_LIST = {
   },
   "B65": {
     "Jp": "オリョール海の制海権を確保せよ！",
-    "En": "Secure Control of the Orel Sea!",
-    "content": "Sortie a fleet with Ooshio (model doesn't matter) as flagship to World 2-3 and obtain six S-Ranks at the boss",
+    "En": "Obtain Supremacy At the Orel Sea！",
+    "content": "Assemble a fleet containing Ooshio as flagship, then S rank the boss node of 2-3 6 times.",
     "tips": "",
+    "requires": ["B20","B64"],
+    "unlocks": ["B66","B142"],
+    "period": "once",
+    "needs": {
+      "S": ["Ooshio"],
+      "M": [
+        ["2-3",6]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["B20","B64"],
-    "unlocks": ["B66","B142"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"],
-      "S": ["Ooshio"]
     },
     "reward": [
       ["I","Medal",1],
@@ -3847,66 +3860,74 @@ const ALL_QUESTS_LIST = {
     ]
   },
   "B66": {
-    "Jp": "旗艦「大潮」出撃せよ！",
-    "En": "Sortie the flagship \"Ooshio\"!",
-    "content": "Sortie a fleet with Ooshio Kai Ni as flagship to World 3-5 and obtain an S-Rank at the boss",
+    "Jp": "旗艦「大潮」出撃せよ！！",
+    "En": "Flagship \"Ooshio\", Sortie!!",
+    "content": "Assemble a fleet containing Ooshio Kai Ni as flagship, then S rank the boss node of 3-5.",
     "tips": "",
+    "requires": ["B59","B65"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Ooshio Kai Ni"],
+      "M": [
+        ["3-5",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "500",
       "S": "0",
       "B": "0"
     },
-    "requires": ["B59","B65"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["3-5"],
-      "S": ["Ooshio Kai Ni"]
-    },
     "reward": [
-      ["I","Combat Ration",1],
-      ["C","Improvement Material",3]
+      ["C","Improvement Material",3],
+      ["I","Combat Ration",1]      
     ]
   },
   "B67": {
-    "Jp": "艦隊、三周年！",
-    "En": "Fleet, Third Anniversary!",
-    "content": "Sortie a fleet to World 2-2 and World 2-3 and obtain an S-Rank at both bosses.",
+    "Jp": "艦隊、三周年！！",
+    "En": "Fleet, Third Anniversary!!",
+    "content": "S rank the boss nodes of 2-2 and 2-3.",
     "tips": "",
+    "requires": ["A5","B6","B10"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-2",1],
+        ["2-3",1]
+      ]
+    },
     "resources": {
       "F": "1000",
       "A": "1000",
       "S": "1000",
       "B": "0"
     },
-    "requires": ["B6","A5"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-2","2-3"]
-    },
     "reward": [
-      ["F","3rd Anniversary wallscroll",1]
+      ["F","Third Anniversary Scroll",1]
     ]
   },
   "B68": {
     "Jp": "強行高速輸送部隊、出撃せよ！",
-    "En": "Forced High-speed Transport Fleet, sortie!",
-    "content": "Sortie a fleet with Sendai Kai Ni (she doesn't have to be the flagship), Kawakaze Kai Ni, Shigure Kai Ni, two other DD and up to one wildcard to World 4-1 and obtain at least an A-Rank at the boss.",
+    "En": "High-speed Transport Fleet, Sortie!",
+    "content": "Assemble a fleet containing Sendai Kai Ni, Shigure Kai Ni+, Kawakaze Kai Ni, 2 DD, and up to 1 XX, then A+ rank the boss node of 4-1.",
     "tips": "",
+    "requires": ["A68"],
+    "unlocks": ["B69"],
+    "period": "once",
+    "needs": {
+      "S": ["Sendai Kai Ni","Shigure Kai Ni","Kawakaze Kai Ni"],
+      "M": [
+        ["4-1",1]
+      ]      
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["A68"],
-    "unlocks": ["B69"],
-    "period": "once",
-    "needs": {
-      "M": ["4-1"],
-      "S": ["Sendai Kai Ni","Kawakaze Kai Ni","Shigure Kai Ni"]
     },
     "reward": [
       ["C","Improvement Material",2],
@@ -3915,47 +3936,52 @@ const ALL_QUESTS_LIST = {
   },
   "B69": {
     "Jp": "「第一航空戦隊」西へ！",
-    "En": "\"1st Carrier Division\", into the West!",
-    "content": "Sortie a fleet with Akagi as flagship, Kaga and up to four wildcards to World 4-5 and obtain an S-Rank at the boss.",
+    "En": "\"First Carrier Division\", To The West!",
+    "content": "Assemble a fleet containing Akagi as flagship, Kaga, and up to 4 XX, then S rank the boss node of 4-5.",
     "tips": "",
+    "requires": ["B68","F33"],
+    "unlocks": ["B91"],
+    "period": "once",
+    "needs": {
+      "S": ["Akagi","Kaga"],
+      "M": [
+        ["4-5",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "800",
       "S": "0",
       "B": "800"
     },
-    "requires": ["B68","F33"],
-    "unlocks": ["B91"],
-    "period": "once",
-    "needs": {
-      "M": ["4-5"],
-      "S": ["Akagi","Kaga"]
-    },
     "reward": [
-      ["C","Improvement Material",3],
-      ["I","Skilled Crew Member",1]
+      ["I","Skilled Crew Member",1],
+      ["C","Improvement Material",3]      
     ]
   },
   "B70": {
     "Jp": "新編艦隊、南西諸島防衛線へ急行せよ！",
-    "En": "Set Sail Towards the Nansei Islands Defence Line",
-    "content": "Sortie a fleet with a CL/CLT/CT flagship, 4 DD, and up to 1 additional ship to World 1-4 and obtain at least an A-rank at the boss.",
+    "En": "Reformed Fleet, Set Sail To The Nansei Island Defense Line!",
+    "content": "Assemble a fleet containing 1CL(T)/CT, 4 DD, and up to 1 XX, then A+ rank the boss node of 1-4.",
     "tips": "",
+    "requires": ["A69"],
+    "unlocks": ["B71","B75"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "0"
     },
-    "requires": ["A69"],
-    "unlocks": ["B71","B75"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"]
-    },
     "reward": [
-      ["I","Mamiya",1],
-      ["C","Instant Repair",3]
+      ["C","Instant Repair",3],
+      ["I","Mamiya",1]      
     ]
   },
   "B71": {
