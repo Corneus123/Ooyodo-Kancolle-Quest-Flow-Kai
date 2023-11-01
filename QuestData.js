@@ -7184,7 +7184,7 @@ const ALL_QUESTS_LIST = {
       ["C","Instant Repair",1]
     ]
   },
-   
+
 // Weekly Sortie Quests Bw00  
   "Bw1": {
     "Jp": "あ号作戦",
@@ -7418,7 +7418,7 @@ const ALL_QUESTS_LIST = {
       ["C","Improvement Material",3]
     ]
   }, 
- 
+
 // Monthly Sortie Quests Bm00
   "Bm1": {
     "Jp": "「第五戦隊」出撃せよ！",
@@ -7627,6 +7627,7 @@ const ALL_QUESTS_LIST = {
       ["I","Irako",1,"or "]
     ]
   }, 
+
  // Quarterly Sortie Quests Bq00  
   "Bq1": {
     "Jp": "沖ノ島海域迎撃戦",
@@ -8001,6 +8002,74 @@ const ALL_QUESTS_LIST = {
       ["I","New Model Gun Mount Improvement Material",1,"or "]
     ]
   },
+
+// Yearly Sortie Quests By00
+"By1": {
+  "Jp": "精鋭「十九駆」、躍り出る！",
+  "En": "Elite \"DesDiv 19\", In the Spotlight!",
+  "content": "Assemble a fleet containing Ayanami Kai Ni, Shikinami Kai Ni, and up to 4 XX, then S rank the boss nodes of 2-5, 3-4, 4-5, and 5-3.",
+  "tips": "Reset February",
+  "requires": ["B44"],
+  "unlocks": [],
+  "period": "yearly",
+  "needs": {
+    "S": ["Ayanami Kai Ni","Shikinami Kai Ni"],
+    "M": [
+      ["2-5",1],
+      ["3-4",1],
+      ["4-5",1],
+      ["5-3",1]
+    ]      
+  },
+  "resources": {
+    "F": "1900",
+    "A": "0",
+    "S": "1900",
+    "B": "0"
+  },
+  "reward": [
+    ["I","Furniture Fairy",1,"Choose one: "],
+    ["I","Mamiya",1,"or "],
+    ["I","Furniture Box (Medium)",10,"or "],
+    ["C","Instant Repair",8,"Choose one: "],
+    ["C","Development Material",10,"or "],
+    ["C","Improvement Material",4,"or "]
+  ]
+},
+
+  // use this for template (Block all of it and then ctrl + /, to remove the comment, dont forget to ctrl +/ again)
+  // "": {
+  //   "Jp": "",
+  //   "En": "",
+  //   "content": "",
+  //   "tips": "",
+  //   "requires": [],
+  //   "unlocks": [],
+  //   "period": "once",
+  //   "needs": {
+  //     "S": [],
+  //     "M": [
+  //       ["",1],
+  //       ["",1],
+  //       ["",1],
+  //       ["",1]
+  //     ]
+  //   },
+  //   "resources": {
+  //     "F": "0",
+  //     "A": "0",
+  //     "S": "0",
+  //     "B": "0"
+  //   },
+  //   "reward": [
+  //     ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
+  //     ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
+  //     ["E","Type 1 Land-based Attack Aircraft Model 34★+2",1,"or "],
+  //     ["I","Action Report",1,"Choose one: "],
+  //     ["I","Remodel Blueprint",1,"or "],
+  //     ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
+  //   ]
+  // },
 
 // Excercise Quests C00 
   "C1": {
