@@ -14,7 +14,6 @@ const EQUIPMENT_TYPE = {
   "Type 93 Passive Sonar": "Sonar",
   "Type 4 Passive Sonar": "Sonar",
   "Type 3 Active Sonar": "Sonar",
-  "Type 3 Sonar": "Sonar",
   "Type124 ASDIC": "Sonar",
   "Type 3 Shell": "T3 Shell",
   "25mm Triple Autocannon Mount": "Anti-air gun",
@@ -242,7 +241,7 @@ const ICONS_LINK = {
   "Ne Type Engine": "files/webpage/game_icons/Ne_Type_Engine.png",
   "Prototype Flight Deck Catapult": "files/webpage/game_icons/Prototype_Deck_Catapult.png",
   "Marriage Ring and Documents": "files/webpage/game_icons/Marriage_Papers.png",
-  "New Model Aerial Armament Materials": "files/webpage/game_icons/New_Model_Aerial_Armament_Materials.png",
+  "New Model Aerial Armament Material": "files/webpage/game_icons/New_Model_Aerial_Armament_Materials.png",
   "Action Report": "files/webpage/game_icons/Action_Report.png",
   "Rice": "files/webpage/game_icons/Rice.png",
   "Umeboshi": "files/webpage/game_icons/Umeboshi.png",
@@ -290,7 +289,7 @@ const ICONS_LINK = {
   "New Model Armament Material": "https://yksk.kancollewiki.net/w/images/3/32/Item_Card_New_Model_Armament_Material.png"
 };
 // C =Development Material, Instant Construction, Instant Repair, Improvement Material
-// I = Furniture Box (Medium) , Furniture Box (Large), Furniture Box (Small), Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Materials, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
+// I = Furniture Box (Medium) , Furniture Box (Large), Furniture Box (Small), Skilled Crew Member, Repair Team, Irako, Combat Ration, New Model Aerial Armament Material, Furniture Fairy, New Model Gun Mount Improvement Material, Combat Ration (Special Onigiri), Repair Goddess, Reinforcement Expansion, Medal
 const ALL_QUESTS_LIST = {
 
 // COMPOSITION QUEST A00
@@ -1975,7 +1974,7 @@ const ALL_QUESTS_LIST = {
       ["E","F6F-3",1,"Choose one: "],
       ["E","F4U-1D",1,"or "],
       ["E","TBF",1,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "]
+      ["I","New Model Aerial Armament Material",1,"or "]
     ]
   },
   "A81": {
@@ -3134,7 +3133,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Development Material",2],
-      ["E","Type 3 Sonar",1]
+      ["E","Type 3 Active Sonar",1]
     ]
   },
   "B37": {
@@ -3721,7 +3720,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"],
       "M": [
-        ["1-6",1]
+        ["1-6-N",1]
       ]      
     },
     "resources": {
@@ -3995,7 +3994,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "S": [],
       "M": [
-        ["1-6",1]
+        ["1-6-N",1]
       ]
     },
     "resources": {
@@ -4020,7 +4019,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"],
       "M": [
-        ["1-6",2]
+        ["1-6-N",2]
       ]      
     },
     "resources": {
@@ -4045,7 +4044,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "S": ["Asashio Kai Ni","Ooshio","Arashio","Michishio"],
       "M": [
-        ["1-6",1]
+        ["1-6-N",1]
       ]      
     },
     "resources": {
@@ -4486,20 +4485,23 @@ const ALL_QUESTS_LIST = {
   },
   "B91": {
     "Jp": "潜水艦隊、中部海域の哨戒を実施せよ！",
-    "En": "Submarine Fleet, patrol the Central Waters!",
-    "content": "Sortie a Fleet consisting of 4 SS(V) with an SS(V) as flagship and 2 additional ships.Sortie to World 6-1 and score a victory at the boss node.",
+    "En": "Submarine Fleet, Patrol The Central Waters!",
+    "content": "Assemble a fleet containing 1 SS(V) as Secretary, 3 SS(V), and up to 2 XX, then B+ rank the boss node of 6-1.",
     "tips": "",
+    "requires": ["B69","Bd5"],
+    "unlocks": ["B92","Bq2","B94","F49","F50","Bq4"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["6-1",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["B69","Bd5"],
-    "unlocks": ["B92","Bq2","B94","F49","F50","Bq4"],
-    "period": "once",
-    "needs": {
-      "M": ["6-1"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -4508,21 +4510,23 @@ const ALL_QUESTS_LIST = {
   },
   "B92": {
     "Jp": "重装甲巡洋艦、鉄底海峡に突入せよ！",
-    "En": "Heavy Armored Cruiser, Embark into the Iron Bottom Sound!",
-    "content": "Sortie Zara due as Flagship with 5 additional ships.Sortie to World 5-3 and score an A-rank or higher victory at the boss node.",
+    "En": "Heavy Armored Cruiser, Embark Into The Iron Bottom Sound!",
+    "content": "Assemble a fleet containing Zara Due as Secretary and up to 5 XX, then A+ rank the boss node of 5-3.",
     "tips": "",
+    "requires": ["B91"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Zara due"],
+      "M": [
+        ["5-3",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "700",
       "B": "0"
-    },
-    "requires": ["B91"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-3"],
-      "S": ["Zara due"]
     },
     "reward": [
       ["E","New Kanhon Design Anti-torpedo Bulge (Medium)",1]
@@ -4530,42 +4534,52 @@ const ALL_QUESTS_LIST = {
   },
   "B93": {
     "Jp": "南西諸島方面の敵艦隊を撃破せよ！",
-    "En": "Defeat the Enemy Fleet at the Nansei Islands!",
-    "content": "Sortie a Fleet with a CL as flagship and 5 additional ships.Sortie to World 1-4, 2-2, 2-3 and score S rank victories at the boss nodes.",
+    "En": "Defeat The Enemy Fleet At The Nansei Islands!",
+    "content": "Assemble a fleet containing 1 CL as flagship and 5 XX, then S rank the boss nodes of 1-4, 2-2, and 2-3.",
     "tips": "",
+    "requires": ["B7"],
+    "unlocks": ["B94"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",1],
+        ["2-2",1],
+        ["2-3",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "0",
       "S": "300",
       "B": "300"
     },
-    "requires": ["B7"],
-    "unlocks": ["B94"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4","2-3","2-2"]
-    },
     "reward": [
-      ["I","Irako",1],
-      ["I","Mamiya",1]
+      ["I","Mamiya",1],
+      ["I","Irako",1]
     ]
   },
   "B94": {
     "Jp": "洋上航空戦力を拡充せよ！",
-    "En": "Expand the Offshore Aviation Forces!",
-    "content": "Sortie a Fleet with an AV/CV/CVL/CVB as Flagship and 5 additional ships.Sortie to World 3-5, 4-4, 6-2 and score S-rank victories at the boss nodes.",
+    "En": "Expand The Offshore Aviation Forces!",
+    "content": "Assemble a fleet containing 1 CV(B/L)/AV as flagship and 5 XX, then S rank the boss nodes of 3-5, 4-4, and 6-2.",
     "tips": "",
+    "requires": ["B91","B93"],
+    "unlocks": ["F52"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-5",1],
+        ["4-4",1],
+        ["6-2",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "500",
       "S": "0",
       "B": "1000"
-    },
-    "requires": ["B93","B91"],
-    "unlocks": ["F52"],
-    "period": "once",
-    "needs": {
-      "M": ["3-5","4-4","6-2"]
     },
     "reward": [
       ["C","Development Material",5],
@@ -4574,21 +4588,24 @@ const ALL_QUESTS_LIST = {
   },
   "B95": {
     "Jp": "改装航空巡洋艦、出撃！",
-    "En": "Remodeled Aviation Cruiser, Sortie!",
-    "content": "Sortie a Fleet with Suzuya Kai Ni as the flagship.Sortie to World 5-1, 5-3 and obtain A rank or higher victories at the boss nodes.",
-    "tips": "※The CVL version cannot complete the quest. Must be CAV.",
+    "En": "Remodeled Aviation Cruiser, Head Out!",
+    "content": "Assemble a fleet containing Suzuya Kai Ni as flagship and up to 5 XX, then A+ rank the boss nodes of 5-1 and 5-3.",
+    "tips": "	Suzuya Kou Kai Ni does not count as Suzuya Kai Ni for this quest.",
+    "requires": ["B50","B87"],
+    "unlocks": ["B96","A76"],
+    "period": "once",
+    "needs": {
+      "S": ["Suzuya Kai Ni"],
+      "M": [
+        ["5-1",1],
+        ["5-3",1]
+      ]      
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "700"
-    },
-    "requires": ["B87","B50"],
-    "unlocks": ["B96","A76"],
-    "period": "once",
-    "needs": {
-      "M": ["5-1","5-3"],
-      "S": ["Suzuya Kai Ni"]
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4598,43 +4615,52 @@ const ALL_QUESTS_LIST = {
   },
   "B96": {
     "Jp": "改装攻撃型軽空母、前線展開せよ！",
-    "En": "Remodeled Attack Light Aircraft Carrier, Deploy to the Frontlines!",
-    "content": "Sortie a Fleet with Suzuya Carrier Kai Ni as the flagship. Sortie to World 6-2, 6-5 and obtain S-rank victories at the Boss nodes.",
-    "tips": "※The CAV version cannot complete the quest. Must be CVL.",
+    "En": "Deploy The Remodeled Light Attack Carrier To The Front!",
+    "content": "Assemble a fleet containing Suzuya Kou Kai Ni as flagship and up to 5 XX, then S rank the boss nodes of 6-2 and 6-5.",
+    "tips": "Suzuya Kai Ni does not count as Suzuya Kou Kai Ni for this quest.",
+    "requires": ["B95"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Suzuya Kou Kai Ni"],
+      "M": [
+        ["6-2",1],
+        ["6-5",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "1000",
       "S": "0",
       "B": "1000"
     },
-    "requires": ["B95"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["6-2","6-5"],
-      "S": ["Suzuya Carrier Kai Ni"]
-    },
     "reward": [
-      ["E"," Type 0 Fighter Model 63 (Fighter-bomber)",1],
-      ["E","8cm High-angle Gun Kai + Extra Machine Guns",1]
+      ["E","8cm High-angle Gun Kai + Additional Machine Guns",1],
+      ["E","Type 0 Fighter Model 63 (Fighter-bomber)",1]
     ]
   },
   "B97": {
     "Jp": "鎮守府海域警戒を厳とせよ！",
-    "En": "Patrol the Naval Base Ocean Areas Vigilantly!",
-    "content": "Sortie a fleet with a Cruiser as the flagship, with at least 2 DD. Sortie to World 1-2, 1-3, 1-4, 1-5 and obtain S-rank victories at the Boss nodes.",
+    "En": "Vigilantly Patrol The Sea Area Near The Naval Base!",
+    "content": "Assemble a fleet containing 1 CL/CA(V) as flagship, 2 DD, and up to 3 XX, then A+ rank the boss nodes of 1-2, 1-3, 1-4, and 1-5.",
     "tips": "",
+    "requires": ["B50","B88"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1],
+        ["1-3",1],
+        ["1-4",1],
+        ["1-5",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["B50","B88"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-2","1-3","1-4","1-5"]
     },
     "reward": [
       ["I","Irako",2],
@@ -4643,20 +4669,26 @@ const ALL_QUESTS_LIST = {
   },
   "B98": {
     "Jp": "海上護衛体制の強化に努めよ！",
-    "En": "Focus the Strengthening of the Maritime Escort !",
-    "content": "Sortie a fleet with at least 3 DD or Coastal Defense Ships to world 1-3, 1-4, 1-5, S rank the boss nodes. Sortie to world 1-6 and reqch node N.",
+    "En": "Reinforce The Coastal Guard!",
+    "content": "Assemble a fleet containing 3 DD/DE and up to 3 XX, then S rank the boss nodes of 1-3, 1-4, and 1-5, and reach the node N on 1-6.",
     "tips": "",
+    "requires": ["B8","Bd2"],
+    "unlocks": ["B99","B100","B149"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-3",1],
+        ["1-4",1],
+        ["1-5",1],
+        ["1-6-N",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "400"
-    },
-    "requires": ["Bd2"],
-    "unlocks": ["B99","B100","B149"],
-    "period": "once",
-    "needs": {
-      "M": ["1-6","1-3","1-4","1-5"]
     },
     "reward": [
       ["C","Development Material",4],
@@ -4665,21 +4697,24 @@ const ALL_QUESTS_LIST = {
   },
   "B99": {
     "Jp": "新編「第一戦隊」、抜錨せよ！",
-    "En": "Sortie the New First Squadron!",
-    "content": "Sortie a fleet with Nagato Kai Ni as flagship, Mutsu Kai as second ship and up to 4 additional ships to world 4-5 and 5-5. S rank the boss nodes.",
+    "En": "New \"First Squadron\", Weigh Anchor!",
+    "content": "Assemble a fleet containing Nagato Kai Ni as flagship, Mutsu Kai+ as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-5.",
     "tips": "",
+    "requires": ["A75","B98"],
+    "unlocks": ["A92"],
+    "period": "once",
+    "needs": {
+      "S": ["Nagato Kai Ni","Mutsu Kai"],
+      "M": [
+        ["4-5",1],
+        ["5-5",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "880",
       "S": "880",
       "B": "0"
-    },
-    "requires": ["A75","B98"],
-    "unlocks": ["A92"],
-    "period": "once",
-    "needs": {
-      "M": ["4-5","5-5"],
-      "S": ["Nagato Kai Ni","Mutsu Kai"]
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4688,20 +4723,26 @@ const ALL_QUESTS_LIST = {
   },
   "B100": {
     "Jp": "増強海上護衛総隊、抜錨せよ！",
-    "En": "Enhanced Maritime Escort Fleet, Sortie!",
-    "content": "Sortie a fleet with 1 CL, 2 DD or Coastal Defense Ships, 1 CAV or CVL, up to 2 additional ships to world 2-2, 2-3, 2-4, 2-5 and obtain A rank victories at the boss nodes.",
+    "En": "To All Surface Escort Fleet reinforcements, Set Sail!",
+    "content": "Assemble a fleet containing 1 CVL/CAV, 1 CL, 2 DD/DE, and 2 XX in the First Fleet, then A+ rank the boss nodes of 2-2, 2-3, 2-4, and 2-5.",
     "tips": "",
+    "requires": ["B98","Bw5"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-2",1],
+        ["2-3",1],
+        ["2-4",1],
+        ["2-5",1]
+      ]
+    },
     "resources": {
       "F": "700",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bw5","B98"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-2","2-3","2-4","2-5"]
     },
     "reward": [
       ["I","Medal",1,"Choose one: "],
@@ -4709,52 +4750,55 @@ const ALL_QUESTS_LIST = {
     ]
   },
   
-  
-  
-  
 // Sortie Quest 101 and beyond B101
   "B101": {
     "Jp": "新編「第七戦隊」、出撃せよ！",
-    "En": "New Seventh Squadron, Sortie!",
-    "content": "Sortie a fleet with Kumano Kai Ni/Kumano Carrier Kai Ni as flagship, Suzuya Kai Ni/Suzuya Carrier Kai Ni as second ship, Mogami Kai, Mikuma Kai, up to 2 additional ships to world 4-5, 6-2 and obtain S rank victories at the boss nodes.",
+    "En": "New \"Seventh Squadron\", Sortie!",
+    "content": "Assemble a fleet containing Kumano Kai Ni/Kou Kai Ni as flagship, Suzuya Kai Ni/Kou Kai Ni as second ship, Mogami Kai+, Mikuma Kai+, and 2 XX, then S rank the boss nodes of 4-5 and 6-2.",
     "tips": "",
+    "requires": ["A76","Cd1"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Kumano Kai Ni","Suzuya Kai Ni","Mogami Kai","Mikuma Kai"],
+      "M": [
+        ["4-5",1],
+        ["6-2",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "1000",
       "B": "500"
     },
-    "requires": ["A76","Cd1"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Kumano Kai Ni","Suzuya Kai Ni","Mogami Kai","Mikuma Kai"],
-      "M": ["4-5","6-2"]
-    },
     "reward": [
       ["C","Improvement Material",4],
-      ["I","Medal",1],
-      ["I","New Model Gun Mount Improvement Material",1],
-      ["E","Type 0 Fighter Model 63 (Fighter-bomber)",1]
+      ["I","Medal",1,"Choose one: "],
+      ["I","New Model Gun Mount Improvement Material",1,"or "],
+      ["E","Type 0 Fighter Model 63 (Fighter-bomber)",1,"or "]
     ]
   },
   "B102": {
     "Jp": "精鋭「第四航空戦隊」、抜錨せよ！",
-    "En": "Elite \"Fourth Carrier Division\", set sail!",
-    "content": "Sortie Ise and Hyuuga both above level 50 as flagship and 2nd ship along with 1CL + 2 DD and 1 additional ship to World 2-5, 3-5 and obatain at least A rank victory at the boss node.",
+    "En": "Elite \"Fourth Carrier Division\", Weigh Anchor!",
+    "content": "Assemble a fleet containing both Lv50+ Ise and Hyuuga, with either as flagship and second ship, 1 CL, 2 DD, and 1 XX, then A+ rank the boss nodes of 2-5 and 3-5.",
     "tips": "",
-    "resources": {
-      "F": "500",
-      "A": "0",
-      "S": "500",
-      "B": "0"
-    },
     "requires": ["A77"],
     "unlocks": ["F58"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"],
-      "M": ["2-5","3-5"]
+      "M": [
+        ["2-5",1],
+        ["3-5",1]
+      ]
+    },
+    "resources": {
+      "F": "500",
+      "A": "0",
+      "S": "500",
+      "B": "0"
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4764,144 +4808,163 @@ const ALL_QUESTS_LIST = {
   },
   "B103": {
     "Jp": "旗艦「由良」、抜錨！",
-    "En": "Flagship Yura, set sail!",
-    "content": "Sortie Yura Kai Ni as flagship, with at least 2 of the following ships: Murasame, Yuudachi, Harusame, Samidare, Akizuki, up to 3 additional ships to World 2-3, 5-1 and obtain A rank or above victory at the boss node.",
+    "En": "Flagship \"Yura\", Weigh Anchor!",
+    "content": "Assemble a fleet containing Yura Kai Ni as Secretary, any 2 of: \"Yuudachi, Murasame, Harusame, Samidare, or Akizuki\"; and 3 XX, then S rank the boss nodes of 2-3 and 5-1.",
     "tips": "",
+    "requires": ["A78"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Yura Kai Ni"],
+      "M": [
+        ["2-3",1],
+        ["5-1",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "0",
       "B": "400"
     },
-    "requires": ["A78"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Yura Kai Ni","Murasame","Yuudachi","Harusame","Samidare","Akizuki"],
-      "M": ["2-3","5-1"]
-    },
     "reward": [
       ["I","Skilled Crew Member",1],
-      ["I","Reinforcement Expansion",1,"Choose one: "],
-      ["E","Daihatsu Landing Craft",1,"or "]
+      ["E","Daihatsu Landing Craft",1,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "]
     ]
   },
   "B104": {
     "Jp": "精鋭「第二二駆逐隊」出撃せよ!",
-    "En": "Sortie the Elite 22th Destroyer Squadron!",
-    "content": "Sortie a torpedo squadron consists of Fumizuki Kai Ni, Satsuki Kai Ni, Minazuki Kai and Nagatsuki Kai to world 3-2 and obtain an S-rank victory at the boss node.",
+    "En": "Elite \"22nd Division\", Sortie!",
+    "content": "Assemble a fleet containing Fumizuki Kai Ni, Satsuki Kai Ni, Nagatsuki Kai+, Minazuki Kai+, and up to 2 XX, then S rank the boss node of 3-2.",
     "tips": "",
+    "requires": ["A79","Cd1"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Fumizuki Kai Ni","Satsuki Kai Ni","Nagatsuki Kai","Minazuki Kai"],
+      "M": [
+        ["3-2",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "700",
       "S": "0",
       "B": "100"
     },
-    "requires": ["A79","Cd1"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Fumizuki Kai Ni","Satsuki Kai Ni","Minazuki Kai","Nagatsuki Kai"],
-      "M": ["3-2"]
-    },
     "reward": [
-      ["I","Reinforcement Expansion",1,"Choose one: "],
-      ["E","Daihatsu Landing Craft",1,"or "],
+      ["I","Irako",2],
+      ["E","Daihatsu Landing Craft",1,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "],
       ["I","New Model Gun Mount Improvement Material",1,"or "]
     ]
   },
   "B105": {
     "Jp": "精強大型航空母艦、抜錨！",
-    "En": "Large Powerful Aircraft Carrier, Setting Sail!",
-    "content": "Sortie Saratoga Mk.II or Saratoga Mk.II Mod.2 as flagship, 1 CL, 2 DD with 2 additional ships to world 5-5, 6-2 and obtain S-rank victories at the boss nodes.",
+    "En": "Reinforced Large Aircraft Carrier, Weigh Anchor!",
+    "content": "Assemble a fleet containing Saratoga Mk.II/Mod.2 as Secretary, 1 CL, 2 DD, and 2 XX, then S rank the boss nodes of 5-5 and 6-2.",
     "tips": "",
+    "requires": ["A80","Bd2"],
+    "unlocks": ["B106"],
+    "period": "once",
+    "needs": {
+      "S": ["Saratoga Mk.II"],
+      "M": [
+        ["5-5",1],
+        ["6-2",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "700",
       "B": "700"
     },
-    "requires": ["A80","Bd2"],
-    "unlocks": ["B106"],
-    "period": "once",
-    "needs": {
-      "S": ["Saratoga Mk.II"],
-      "M": ["5-5","6-2"]
-    },
     "reward": [
       ["E","F6F-3",1,"Choose one: "],
       ["I","Skilled Crew Member",1,"or "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
+      ["I","New Model Aerial Armament Material",1,"or "],
       ["E","TBF",1,"Choose one: "],
       ["E","Night Operation Aviation Personnel",1,"or "]
     ]
   },
   "B106": {
     "Jp": "夜間作戦空母、前線に出撃せよ！",
-    "En": "Night Carrier, to the Front Lines!",
-    "content": "Sortie Saratoga Mk.II as flagship to world 6-5 and obtain S-rank at the boss node.",
-    "tips": "",
+    "En": "Night Operation Carrier, Sortie To The Front Lines!",
+    "content": "Assemble a fleet containing Saratoga Mk.II as Secretary, 5 XX, then S rank the boss node of 6-5.",
+    "tips": "Saratoga Mk.II Mod.2 does not count as Saratoga Mk.II for this quest.",
+    "requires": ["B91","B105"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Saratoga Mk.II"],
+      "M": [
+        ["6-5",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "1000"
     },
-    "requires": ["B105"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Saratoga Mk.II"],
-      "M": ["6-5"]
-    },
     "reward": [
       ["E","TBF",1,"Choose one: "],
+      ["I","New Model Aerial Armament Material",1,"or "],
       ["E","Night Operation Aviation Personnel + Skilled Deckhands",1,"or "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
       ["I","Reinforcement Expansion",1,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
-      ["I","Skilled Crew Member",1,"or "]
+      ["I","Skilled Crew Member",1,"or "],
+      ["I","New Model Aerial Armament Material",1,"or "]
     ]
   },
   "B107": {
     "Jp": "補給線の安全を確保せよ！",
-    "En": "Secure the Safety of the Transportation Route!",
-    "content": "Sortie a fleet with CL as flagship, 2 or more DD / DE. You may bring up to 3 additional ships. Sortie to World 1-3, 1-4, 1-5 and obtain at least A-rank victories at the boss node.",
+    "En": "Safely Secure The Supply Line!",
+    "content": "Assemble a fleet containing 1 CL as flagship, 2 DD/DE, and up to 3 XX, then A+ rank the boss nodes of 1-3, 1-4, and 1-5.",
     "tips": "",
+    "requires": ["D1","F11"],
+    "unlocks": ["D25"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-3",1],
+        ["1-4",1],
+        ["1-5",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
     },
-    "requires": ["D1","F11"],
-    "unlocks": ["D25"],
-    "period": "once",
-    "needs": {
-      "M": ["1-3","1-4","1-5"]
-    },
     "reward": [
-      ["I","Irako",1],
-      ["I","Underway Replenishment",1]
+      ["I","Underway Replenishment",1],
+      ["I","Irako",1]      
     ]
   },
   "B108": {
     "Jp": "「第八駆逐隊」、南西へ！",
-    "En": "8th Destroyer Division, to the Southwestern Area!",
-    "content": "Sortie a fleet with Asashio, Ooshio, Arashio, Michishio, up to 2 additional ships to world 1-2, 2-2 and obtain S-rank victories at the boss nodes.",
+    "En": "\"8th Destroyer Division\", To The South West!",
+    "content": "Assemble a fleet containing Asashio, Arashio, Ooshio, Michishio and up to 2 XX, then S rank the boss nodes of 1-2 and 2-2.",
     "tips": "",
+    "requires": ["A31","B88"],
+    "unlocks": ["A81","D27"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio","Arashio","Ooshio","Michishio"],
+      "M": [
+        ["1-2",1],
+        ["2-2",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "250",
       "S": "250",
       "B": "250"
-    },
-    "requires": ["B20"],
-    "unlocks": ["A81","D27"],
-    "period": "once",
-    "needs": {
-      "S": ["Asashio","Ooshio","Arashio","Michishio"],
-      "M": ["1-2","2-2"]
     },
     "reward": [
       ["C","Development Material",3],
@@ -4910,21 +4973,24 @@ const ALL_QUESTS_LIST = {
   },
   "B109": {
     "Jp": "最精鋭「第八駆逐隊」、全力出撃！",
-    "En": "New Elite 8th Destroyer Division, Sortie Out!",
-    "content": "Sortie a fleet including Michishio Kai Ni, Asashio Kai Ni/Asashio Kai Ni D, Ooshio Kai Ni, Arashio Kai Ni, up to 2 additional ships to 3-2, 5-4 and obtain S-rank(?) victories at the boss nodes.",
-    "tips": "Plays line on completion.",
+    "En": "Most Elite \"8th Destroyer Division\", All Out Sortie!",
+    "content": "Assemble a fleet containing Asashio Kai Ni/D, Arashio Kai Ni, Ooshio Kai Ni, Michishio Kai Ni, and up to 2 XX, then S rank the boss nodes of 3-2 and 5-4.",
+    "tips": "Special lines play upon completion.",
+    "requires": ["A81","D27"],
+    "unlocks": ["A88"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni","Arashio Kai Ni","Ooshio Kai Ni","Michishio Kai Ni"],
+      "M": [
+        ["3-2",1],
+        ["5-4",1]
+      ]
+    },
     "resources": {
       "F": "800",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["D27","A81"],
-    "unlocks": ["A88"],
-    "period": "once",
-    "needs": {
-      "S": ["Michishio Kai Ni","Asashio Kai Ni","Ooshio Kai Ni","Arashio Kai Ni"],
-      "M": ["3-2","5-4"]
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4935,49 +5001,55 @@ const ALL_QUESTS_LIST = {
   },
   "B110": {
     "Jp": "北方海域戦闘哨戒を実施せよ！",
-    "En": "Provide combat patrols in the northern sea!",
-    "content": "Sortie a fleet with 1 CL, 1 AV, 1 CVL, 3 additional ships to world 3-5 and obtain 2 S-rank victories at the boss node.",
+    "En": "Provide combat patrols To The Arctic Waters!",
+    "content": "Assemble a fleet containing 1 CVL, 1CL, 1 AV, and up to 3 XX, then S rank the boss node of 3-5 twice.",
     "tips": "",
+    "requires": ["A81","B107","Bq5"],
+    "unlocks": ["F83"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-5",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "1000",
       "S": "0",
       "B": "700"
     },
-    "requires": ["Bq5"],
-    "unlocks": ["F83"],
-    "period": "once",
-    "needs": {
-      "M": ["3-5"]
-    },
     "reward": [
       ["I","Present box",1],
-      ["E","Shiden Kai 2",1,"Choose one: "],
+      ["E","Shiden Kai 2",2,"Choose one: "],
       ["C","Improvement Material",4,"or "],
-      ["I","New Model Aerial Armament Materials",1,"or "]
+      ["I","New Model Aerial Armament Material",1,"or "]
     ]
   },
   "B111": {
     "Jp": "松輸送作戦、開始せよ！",
-    "En": "Start the Matsu Transport Operation!",
-    "content": "Sortie a Fleet with Tatsuta Kai or Tatsuta Kai Ni as Flagship, with at least 3 or more DD/DEs to World 1-4, 1-6 and clear the boss node with at least an A rank or reach the goal twice on both maps.",
+    "En": "Commence The Matsu Transport Operation!",
+    "content": "Assemble a fleet containing Tatsuta Kai+ as flagship, 3 DD/DE, and up to 2 XX, then S rank the boss node of 1-4 twice, and reach node N on 1-6 twice.",
     "tips": "",
+    "requires": ["B30","Fd7"],
+    "unlocks": ["B113"],
+    "period": "once",
+    "needs": {
+      "S": ["Tatsuta Kai"],
+      "M": [
+        ["1-4",2],
+        ["1-6-N",2]
+      ]      
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "200",
       "B": "0"
     },
-    "requires": ["Fd7","B30"],
-    "unlocks": ["B113"],
-    "period": "once",
-    "needs": {
-      "M": ["1-4","1-6"],
-      "S": ["Tatsuta Kai"]
-    },
     "reward": [
       ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
+      ["I","New Model Aerial Armament Material",1,"or "],
       ["I","Furniture Fairy",1,"Choose one: "],
       ["E","Daihatsu Landing Craft",1,"or "],
       ["I","Action Report",1,"or "]
@@ -4985,26 +5057,30 @@ const ALL_QUESTS_LIST = {
   },
   "B112": {
     "Jp": "精鋭「四水戦」、南方海域に展開せよ！",
-    "En": "Elite 4th Torpedo Squadron, Sortie to the Southern Ocean Area!",
-    "content": "Sortie a Fleet with Murasame Kai Ni as Flagship along with at least 3 of the following ships: Yura Kai Ni, Yuudachi Kai Ni, Harusame Kai, Samidare Kai, Akizuki Kai, two additional ships of your choice to World 5-1, 5-3, 5-4 and obtain at least A-rank victories at the boss nodes.",
+    "En": "Elite \"4th Torpedo Squadron\", Expand Into The Southern Waters!",
+    "content": "Assemble a fleet containing Murasame Kai Ni as flagship, any 3 of: \"Yura Kai Ni, Yuudachi Kai Ni, Harusame Kai+, Samidare Kai+, or Akizuki Kai+\"; and up to 2 XX, then A+ rank the boss nodes of 5-1, 5-3, and 5-4.",
     "tips": "Plays line on completion.",
+    "requires": ["A84","B103"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Murasame Kai Ni"],
+      "M": [
+        ["5-1",1],
+        ["5-3",1],
+        ["5-4",1]
+      ]      
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "0",
       "B": "400"
     },
-    "requires": ["A84"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-1","5-2","5-4"],
-      "S": ["Murasame Kai Ni","Yura Kai Ni","Yuudachi Kai Ni","Harusame Kai","Samidare Kai","Akizuki Kai"]
-    },
     "reward": [
       ["E","12.7cm Twin Gun Mount Model C Kai 2",1,"Choose one: "],
       ["E","Type 22 Surface Radar",2,"or "],
-      ["E","12.7cm Twin Gun Mount Model B Kai 2",1,"or "],
+      ["E","12.7cm Twin Gun Mount Model B Kai 2",2,"or "],
       ["I","Underway Replenishment",2,"Choose one: "],
       ["E","Drum Canister",3,"or "],
       ["C","Improvement Material",4,"or "]
@@ -5012,24 +5088,28 @@ const ALL_QUESTS_LIST = {
   },
   "B113": {
     "Jp": "松輸送作戦、継続実施せよ！",
-    "En": "Continue the Matsu-Transport Operation Further!",
-    "content": "Sortie a Fleet with a CL/DD as Flagship, with at least 3 or more DD/DE to World 1-4, 1-6 and clear the boss node with at least an A rank or reach the goal three times on both maps.",
+    "En": "Continue The Matsu Transport Operation!",
+    "content": "Assemble a fleet containing 1 CL(T)/CT/DD as flagship, 3 DD/DE, and up to 2 XX, then A+ rank the boss node of 1-4 three times, and reach node N on 1-6 three times.",
     "tips": "",
+    "requires": ["B111"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",3],
+        ["1-6-N",3]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "300"
     },
-    "requires": ["B111"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-4","1-6"]
-    },
     "reward": [
       ["E","Daihatsu Landing Craft",1,"Choose one: "],
-      ["C","Improvement Material",4,"or "],
+      ["C","Improvement Material",3,"or "],
       ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
       ["E","12cm 30-tube Rocket Launcher",2,"or "],
       ["I","Furniture Fairy",1,"or "]
@@ -5037,21 +5117,26 @@ const ALL_QUESTS_LIST = {
   },
   "B114": {
     "Jp": "新編「四航戦」、全力出撃！",
-    "En": "New 4th Aviation Fleet, Sortie Out!",
-    "content": "Sortie a fleet including Ise Kai, Hyuuga Kai, Ooyodo Kai, one DD and up to two additional ships to 1-6, 2-5, 3-5, 4-5 and clear the boss node with at least an A rank or reach the goal node on each map.",
+    "En": "Reformed \"CarDiv 4\", Sortie At Full Might!",
+    "content": "Assemble a fleet containing Ise Kai+, Hyuuga Kai+, Ooyodo Kai+, 1DD and up to 2 XX, then A+ rank the boss nodes of 2-5, 3-5, and 4-5, and reach node N on 1-6.",
     "tips": "",
+    "requires": ["A60","B23"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Ise Kai","Hyuuga Kai","Ooyodo Kai"],
+      "M": [
+        ["1-6-N",1],
+        ["2-5",1],
+        ["3-5",1],
+        ["4-5",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "400",
       "B": "400"
-    },
-    "requires": ["B23"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Ise Kai","Hyuuga Kai","Ooyodo Kai"],
-      "M": ["1-6","2-5","3-5","4-5"]
     },
     "reward": [
       ["E","12cm 30-tube Rocket Launcher Kai Ni",1],
@@ -5061,20 +5146,26 @@ const ALL_QUESTS_LIST = {
   },
   "B115": {
     "Jp": "精鋭駆逐隊、獅子奮迅！",
-    "En": "Elite Destroyer Squadron, Go Furious!",
-    "content": "Sortie a fleet including at least 4 Destroyers and up to two additional ships to 1-6, 2-3, 3-2, 4-2 and clear the boss node with at least an S(?) rank or reach the goal node on each map.",
+    "En": "Elite Destroyer Division, Wreak Havoc!",
+    "content": "Assemble a fleet containing 4 DD and up to 2 XX, then A+ rank the boss nodes of 2-3, 3-2, and 4-2, and reach node N on 1-6.",
     "tips": "",
-    "period": "once",
-    "requires": ["C17","Fq6"],
+    "requires": ["C18","Fq6"],
     "unlocks": ["B121","B117"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-6-N",1],
+        ["2-3",1],
+        ["3-2",1],
+        ["4-2",1]
+      ]
+    },
     "resources": {
       "F": "480",
       "A": "480",
       "S": "0",
       "B": "0"
-    },
-    "needs": {
-      "M": ["1-6","2-3","3-2","4-2"]
     },
     "reward": [
       ["I","Furniture Fairy",1,"Choose one: "],
@@ -5085,21 +5176,23 @@ const ALL_QUESTS_LIST = {
   },  
   "B116": {
     "Jp": "「十八駆」、北方海域キス島へ！",
-    "En": "\"DesDiv 18\", To Kis Island In the Northern Sea!",
-    "content": "Sortie a Fleet including Arare Kai Ni, Kasumi Kai Ni/Kasumi Kai Ni B, Kagerou Kai, Shiranui Kai and up to two additional ships to world 3-2 and clear the boss node with at least an S rank twice.",
+    "En": "Destroy \"DesDiv 18\", Onward To The Northern Waters' Kis Island!",
+    "content": "Assemble a fleet containing Arare Kai Ni, Kasumi Kai Ni/B, Kagerou Kai, Shiranui Kai, and up to 2 XX, and S rank the boss node of 3-2 twice.",
     "tips": "",
-    "period": "once",
     "requires": ["A87","Bd8"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Arare Kai Ni","Kasumi Kai Ni","Kagerou Kai","Shiranui Kai"],
+      "M": [
+        ["3-2",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "480",
       "B": "480"
-    },
-    "needs": {
-      "S": ["Arare Kai Ni","Kagerou Kai","Kasumi Kai Ni","Shiranui Kai"],
-      "M": ["3-2"]
     },
     "reward": [
       ["E","Daihatsu Landing Craft",1,"Choose one: "],
@@ -5109,21 +5202,25 @@ const ALL_QUESTS_LIST = {
   },
   "B117": {
     "Jp": "最精鋭甲型駆逐艦、突入！敵中突破！",
-    "En": "Elite Type-A Destroyers, Charging Through Enemy Territory!",
-    "content": "Sortie a fleet with Kagerou Kai Ni or Shiranui Kai Ni or Kuroshio Kai Ni as flagship together with two level 75 or above Kagerou/Yuugumo class destroyers to world 3-2, 4-2, 5-3 and obtain S-rank victories at the Boss Nodes of each Map Twice each.",
+    "En": "Elite Type-A Destroyers! Charging Through Enemy Territory!",
+    "content": "Assemble a fleet containing any 1 of: \"Kagerou Kai Ni, Shiranui Kai Ni, or Kuroshio Kai Ni\" as flagship, any 2 Lv75+ from the: \"Kagerou-class or Yuugumo-class\", and up to 3 XX, then S rank the boss nodes of 3-2, 4-2, and 5-3, twice each.",
     "tips": "",
-    "period": "once",
-    "requires": ["C17","B115"],
+    "requires": ["B115","C21","F3"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-2",2],
+        ["4-2",2],
+        ["5-3",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "1000",
       "S": "0",
       "B": "500"
-    },
-    "needs": {
-      "S": ["Kagerou Kai Ni","Shiranui Kai Ni","Kuroshio Kai Ni"],
-      "M": ["3-2","4-2","5-3"]
     },
     "reward": [
       ["I","Furniture Fairy",1,"Choose one: "],
@@ -5136,25 +5233,29 @@ const ALL_QUESTS_LIST = {
   },
   "B118": {
     "Jp": "戦闘航空母艦、出撃せよ！",
-    "En": "Battle Carrier, Sortie! (?))",
-    "content": "Sortie a Fleet with Ise Kai Ni as Flagship to world 3-5, 4-5, 6-4 and obtain S-rank victories at the boss nodes.",
-    "tips": "",
-    "period": "once",
+    "En": "Battle Carrier, Sortie!",
+    "content": "Assemble a fleet containing Ise Kai Ni as flagship and up to 5 XX, then S rank the boss nodes of 3-5, 4-5, and 6-4.",
+    "tips": "Special lines play upon completion.",
     "requires": ["C22"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Ise Kai Ni"],
+      "M": [
+        ["3-5",1],
+        ["4-5",1],
+        ["6-4",1]
+      ]
+    },
     "resources": {
       "F": "1000",
       "A": "0",
       "S": "634",
       "B": "634"
     },
-    "needs": {
-      "S": ["Ise Kai Ni"],
-      "M": ["3-5","4-5","6-4"]
-    },
     "reward": [
       ["I","Skilled Crew Member",1,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
+      ["I","New Model Aerial Armament Material",1,"or "],
       ["C","Improvement Material",4,"or "],
       ["E","Zuiun (634 Air Group)",1,"Choose one: "],
       ["E","Suisei Model 22 (634 Air Group)",1,"or "],
@@ -5163,21 +5264,23 @@ const ALL_QUESTS_LIST = {
   },
   "B119": {
     "Jp": "「伊勢改二」、敵機動部隊を迎擊せよ！",
-    "En": "Ise Kai Ni, Intercept the Enemy Task Force!",
-    "content": "Sortie a Fleet with Ise Kai Ni as Flagship together with at least two Destroyers to world 6-5 and obtain 3 S-rank victories at the boss node",
+    "En": "\"Ise Kai Ni\", Intercept the Enemy Task Force!",
+    "content": "Assemble a fleet containing Ise Kai Ni as flagship, 2 DD, and up to 3 XX, then S rank the boss node of 6-5 three times.",
     "tips": "",
-    "period": "once",
     "requires": ["C22"],
     "unlocks": ["F75"],
+    "period": "once",
+    "needs": {
+      "S": ["Ise Kai Ni"],
+      "M": [
+        ["6-5",3]
+      ]
+    },
     "resources": {
       "F": "634",
       "A": "0",
       "S": "1000",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Ise Kai Ni"],
-      "M": ["6-5"]
     },
     "reward": [
       ["E","Type 96 Fighter",3,"Choose one: "],
@@ -5190,21 +5293,26 @@ const ALL_QUESTS_LIST = {
   },  
   "B120": {
     "Jp": "精鋭「第十八戦隊」、展開せよ！",
-    "En": "Expand the Elite 18th Cruiser Division!",
-    "content": "Sortie a fleet including Tenryuu Kai Ni, Tatsuta Kai Ni, and two destroyers to world 1-2, 1-4, 1-5, 1-6 and obtain one S-rank victory at the boss nodes or reach the goal node once.",
+    "En": "Expand the \"Elite 18th Cruiser Division\"!",
+    "content": "Assemble a fleet containing Tenryuu Kai Ni, Tatsuta Kai Ni, 2 DD, and up to 2 XX, then S rank the boss nodes of 1-2, 1-4, 1-5, and reach node N on 1-6.",
     "tips": "",
-    "period": "once",
     "requires": ["A89"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Tenryuu Kai Ni","Tatsuta Kai Ni"],
+      "M": [
+        ["1-2",1],
+        ["1-4",1],
+        ["1-5",1],
+        ["1-6-N",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "1000",
       "S": "0",
       "B": "800"
-    },
-    "needs": {
-      "S": ["Tatsuta Kai Ni","Tenryuu Kai Ni"],
-      "M": ["1-2","1-4","1-5","1-6"]
     },
     "reward": [
       ["C","Instant Repair",5,"Choose one: "],
@@ -5215,21 +5323,26 @@ const ALL_QUESTS_LIST = {
   },
   "B121": {
     "Jp": "精鋭「二七駆」第一小隊、出撃せよ！",
-    "En": "First platoon of the Elite 27th Destroyer Division, Sortie!",
-    "content": "Sortie a fleet including Shiratsuyu Kai Ni and Shigure Kai Ni to world 2-3, 4-1, 5-5, 6-5 and obtain a S-rank victory at each boss node.",
+    "En": "First Platoon Of The Elite \"27th Destroyer Division\", Sortie!",
+    "content": "Assemble a fleet containing Shiratsuyu Kai Ni, Shigure Kai Ni+, and up to 4 XX, then S rank the boss nodes of 2-3, 4-1, 5-5, and 6-5.",
     "tips": "",
-    "period": "once",
-    "requires": ["B115"],
+    "requires": ["B115","Bm3","Dd1"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Shiratsuyu Kai Ni","Shigure Kai Ni"],
+      "M": [
+        ["2-3",1],
+        ["4-1",1],
+        ["5-5",1],
+        ["6-5",1]
+      ]
+    },
     "resources": {
       "F": "1000",
       "A": "0",
       "S": "1000",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Shigure Kai Ni","Shiratsuyu Kai Ni"],
-      "M": ["2-3","4-1","5-5","6-5"]
     },
     "reward": [
       ["E","12.7cm Twin Gun Mount Model B Kai 4 (Wartime Modification) + Anti-Aircraft Fire Director",1],
@@ -5240,23 +5353,29 @@ const ALL_QUESTS_LIST = {
   },  
   "B122": {
     "Jp": "精鋭「四戦隊」第二小隊、抜錨せよ！",
-    "En": "Elite \"CruDiv 4\", 2nd Platoon, Set Sail!",
-    "content": "Sortie a Fleet with Choukai Kai Ni, Maya Kai Ni and 4 additional ships to world 1-4, 2-3, 3-3, 4-5 and obtain S-rank? victories at the boss nodes.",
+    "En": "Elite \"4th Cruiser Division\" 2nd Platoon, Weigh Anchor!",
+    "content": "Assemble a fleet containing Maya Kai Ni, Choukai Kai Ni, and up to 4 XX, then S rank the boss nodes of 1-4, 2-3, 3-3, and 4-5.",
     "tips": "",
-    "period": "once",
     "requires": ["B13","Cd1"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Maya Kai Ni","Choukai Kai Ni"],
+      "M": [
+        ["1-4",1],
+        ["2-3",1],
+        ["3-3",1],
+        ["4-5",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "0",
       "B": "400"
     },
-    "needs": {
-      "S": ["Choukai Kai Ni","Maya Kai Ni"],
-      "M": ["1-4","2-3","3-3","4-5"]
-    },
     "reward": [
+      ["F","'Maya's Shield' Wall Scroll",1],
       ["E","12.7cm Twin High-angle Gun Mount (Late Model)",2,"Choose one: "],
       ["C","Instant Repair",8,"or "],
       ["I","Medal",1,"or "]
@@ -5264,21 +5383,26 @@ const ALL_QUESTS_LIST = {
   },  
   "B123": {
     "Jp": "精強「十七駆」、北へ、南へ！",
-    "En": "Elite 17th Destroyer Division, to the North, and the West!",
-    "content": "Sortie a fleet including Isokaze B Kai, Hamakaze B Kai, Urakaze D Kai, Tanikaze D Kai, and two additional ships to worlds 1-5, 3-2, 7-1, 5-1 and obtain an A-rank at each boss node.",
+    "En": "Powerful \"DesDiv 17\", To The North, To The South!",
+    "content": "Assemble a fleet containing Isokaze B Kai+, Hamakaze B Kai+, Urakaze D Kai+, Tanikaze D Kai+, and up to 2 XX, then S rank the boss nodes of 1-5, 3-2, 7-1, and 5-1.",
     "tips": "",
-    "period": "once",
-    "requires": ["A90"],
+    "requires": ["A90","B108","F3"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Isokaze B Kai","Hamakaze B Kai","Urakaze D Kai","Tanikaze D Kai"],
+      "M": [
+        ["1-5",1],
+        ["3-2",1],
+        ["7-1",1],
+        ["5-1",1]        
+      ]
+    },
     "resources": {
       "F": "1000",
       "A": "1000",
       "S": "0",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Isokaze B Kai","Hamakaze B Kai","Urakaze D Kai","Tanikaze D Kai"],
-      "M": ["1-5","3-2","5-1","7-1"]
     },
     "reward": [
       ["E","Type 3 Active Sonar",1,"Choose one: "],
@@ -5291,21 +5415,26 @@ const ALL_QUESTS_LIST = {
   },
   "B124": {
     "Jp": "「第七駆逐隊」、南西諸島を駆ける！",
-    "En": "7th Destroyer Division, sail to the Southwestern Waters!",
-    "content": "Sortie a fleet including two of Akebono, Ushio, Sazanami, and Oboro along with 4 additional ships to worlds 2-1, 2-2, 2-3, 2-4 and obtain a S-rank at each boss node.",
+    "En": "\"DesDiv 7\", Advance To The Nansei Islands!",
+    "content": "Assemble a fleet containing any 2 of: \"Oboro, Ushio, Akebono, or Sazanami\"; and up to 4 XX, then S rank the boss nodes of 2-1, 2-2, 2-3, and 2-4.",
     "tips": "",
-    "period": "once",
-    "requires": ["Fd8"],
+    "requires": ["B20","B42"],
     "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-1",1],
+        ["2-2",1],
+        ["2-3",1],
+        ["2-4",1]
+      ]
+    },
     "resources": {
       "F": "700",
       "A": "700",
       "S": "700",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Akebono","Oboro","Ushio","Sazanami"],
-      "M": ["2-1","2-2","2-3","2-4"]
     },
     "reward": [
       ["I","Furniture Fairy",1,"Choose one: "],
@@ -5318,24 +5447,31 @@ const ALL_QUESTS_LIST = {
   },  
   "B125": {
     "Jp": "近海の警戒監視と哨戒活動を強化せよ！",
-    "En": "Improve Guard Surveillance and Patrol Activities in the Coastal Waters!",
-    "content": "Sortie a fleet including a CL flagship, 2 DD or DE, and 3 additional ships to Worlds 1-2, 1-3, 1-4, 2-1, 2-2 and obtain a S-rank at each boss node.",
+    "En": "Reinforce Surveillance And Patrols Of The Coastal Sea!",
+    "content": "Assemble a fleet containing 1 CL as flagship, 2 DD/DE, and up to 3 XX, then S rank the boss nodes of 1-2, 1-3, 1-4, 2-1, and 2-2.",
     "tips": "",
-    "period": "once",
-    "requires": ["Cd1"],
+    "requires": ["B6","Cd1"],
     "unlocks": ["Bq8"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-2",1],
+        ["1-3",1],
+        ["1-4",1],
+        ["2-1",1],
+        ["2-2",1]
+      ]
+    },
     "resources": {
       "F": "800",
       "A": "800",
       "S": "0",
       "B": "0"
     },
-    "needs": {
-      "M": ["1-2","1-3","1-4","2-1","2-2"]
-    },
     "reward": [
-      ["I","Medal",1,"Choose one: "],
-      ["I","Reinforcement Expansion",1,"or "],
+      ["I","Reinforcement Expansion",1,"Choose one: "],
+      ["I","Medal",1,"or "],
       ["I","New Model Gun Mount Improvement Material",2,"Choose one: "],
       ["E","Searchlight",2,"or "],
       ["I","Action Report",1,"or "]
@@ -5343,44 +5479,49 @@ const ALL_QUESTS_LIST = {
   },
   "B126": {
     "Jp": "主力オブ主力、拔錨開始！",
-    "En": "Mainstay of Mainstay, initiate sortie!",
-    "content": "Sortie a fleet including Yuugumo Kai Ni and Makigumo Kai Ni along with 4 additional ships to Worlds 5-3, 5-4, 5-5 and obtain a S-rank at each boss node.",
+    "En": "Main Force Of The Main Force, Set Sail!",
+    "content": "Assemble a fleet containing Makigumo Kai Ni, Yuugumo Kai Ni, and up to 4 XX, then S rank the boss nodes of 5-3, 5-4, and 5-5.",
     "tips": "",
-    "period": "once",
     "requires": ["A91","Bd1"],
     "unlocks": ["A93"],
+    "period": "once",
+    "needs": {
+      "S": ["Makigumo Kai Ni","Yuugumo Kai Ni"],
+      "M": [
+        ["5-3",1],
+        ["5-4",1],
+        ["5-5",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "500",
       "S": "500",
       "B": "1000"
     },
-    "needs": {
-      "S": ["Yuugumo Kai Ni","Makigumo Kai Ni"],
-      "M": ["5-3","5-4","5-5"]
-    },
     "reward": [
-      ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "],
-      ["E","Daihatsu Landing Craft",1,"or "],
       ["I","Skilled Crew Member",1,"Choose one: "],
-      ["C","Improvement Material",4,"or "]
+      ["C","Improvement Material",4,"or "],
+      ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
+      ["I","New Model Aerial Armament Material",1,"or "],
+      ["E","Daihatsu Landing Craft",1,"or "]      
     ]
   },  
   "B127": {
     "Jp": "冬季北方海域作戦",
-    "En": "Winter Northern Seas Operation",
-    "content": "Sortie a fleet with a CL as flagship and up to 5 additional ships to Worlds 3-1, 3-3, 3-4, and 3-5. Obtain a S-rank at each boss node twice.",
+    "En": "Winter Northern Waters Operation",
+    "content": "Assemble a fleet containing 1 CL as flagship and up to 5 XX, then S rank the boss nodes of 3-1, 3-3, 3-4, and 3-5 twice each.",
     "tips": "",
+    "requires": ["Bq9","C9"],
     "unlocks": [],
-    "requires": ["Bq9"],
     "period": "once",
     "needs": {
+      "S": [],
       "M": [
-        ["3-1",1],
-        ["3-3",1],
-        ["3-4",1],
-        ["3-5",1]
+        ["3-1",2],
+        ["3-3",2],
+        ["3-4",2],
+        ["3-5",2]
       ]
     },
     "resources": {
@@ -5390,21 +5531,21 @@ const ALL_QUESTS_LIST = {
       "B": "800"
     },
     "reward": [
-      ["E","Type 0 Fighter Model 21","3","Choose one: "],
-      ["E","Type 0 Fighter Model 32","2","or "],
-      ["I","Furniture Fairy","1","or "],
-      ["C","Improvement Material","4","Choose one: "],
-      ["E","Type 22 Surface Radar","3","or "],
-      ["I","New Model Aerial Armament Materials","2","or "]
+      ["E","Type 0 Fighter Model 21",3,"Choose one: "],
+      ["E","Type 0 Fighter Model 32",2,"or "],
+      ["I","Furniture Fairy",1,"or "],
+      ["C","Improvement Material",4,"Choose one: "],
+      ["E","Type 22 Surface Radar",3,"or "],
+      ["I","New Model Aerial Armament Material",2,"or "]
     ]
   }, 
   "B128": {
     "Jp": "「比叡」の出撃",
-    "En": "Hiei's Sortie",
-    "content": "Sortie a fleet with Hiei as flagship to Worlds 5-3 and 5-4. Obtain a S-rank at each boss node.",
+    "En": "\"Hiei's\" Sortie",
+    "content": "Assemble a fleet containing Hiei as flagship and up to 5 XX, then S rank the boss nodes of 5-3 and 5-4.",
     "tips": "",
-    "unlocks": ["B133"],
     "requires": ["B50","Fd8"],
+    "unlocks": ["B133"],
     "period": "once",
     "needs": {
       "S": ["Hiei"],
@@ -5420,22 +5561,22 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["F","Hiei Wallscroll","1"],
-      ["I","Action Report","1","Choose one: "],
-      ["E","Type 96 150cm Searchlight","1","or "],
-      ["I","Medal","1","or "]
+      ["F","Hiei's Scroll",1],
+      ["I","Action Report",1,"Choose one: "],
+      ["E","Type 96 150cm Searchlight",1,"or "],
+      ["I","Medal",1,"or "]
     ]
   },   
   "B129": {
     "Jp": "精鋭無比「第一艦隊」まかり通る！",
-    "En": "Unrivaled \"1st Squadron\", Coming Through!",
-    "content": "Sortie a fleet with Mutsu Kai Ni and Nagato Kai Ni as flagship and second ship and up to 4 additional ships to Worlds 2-2, 3-5, 4-5 and 5-1. Obtain a S-rank at each boss node.",
+    "En": "Unrivaled \"First Squadron\" Coming Through!",
+    "content": "Assemble a fleet containing Nagato Kai Ni and Mutsu Kai Ni with either as Secretary and second ship, and up to 4 XX, then S rank the boss nodes of 2-2, 3-5, 4-5, and 5-1.",
     "tips": "",
-    "unlocks": ["B130"],
     "requires": ["A92"],
+    "unlocks": ["B130"],
     "period": "once",
     "needs": {
-      "S": ["Mutsu Kai Ni","Nagato Kai Ni"],
+      "S": ["Nagato Kai Ni","Mutsu Kai Ni"],
       "M": [
         ["2-2",1],
         ["3-5",1],
@@ -5450,12 +5591,12 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Type 91 AP Shell",2,"Choose one: "],
-      ["E","41cm Twin Gun Mount","4","or "],
-      ["E","Type 3 Shell","2","or "],
-      ["E","Prototype 46cm Twin Gun Mount",1,"Choose one: "],
-      ["E","Prototype Nanzan",1,"or "],
-      ["I","Action Report","1","or "]
+      ["E","41cm Twin Gun Mount",4,"Choose one: "],
+      ["E","Type 91 Armor Piercing Shell",2,"or "],
+      ["E","Type 3 Shell",2,"or "],
+      ["I","Action Report",1,"Choose one: "],
+      ["E","Prototype 46cm Twin Gun Mount",1,"or "],
+      ["E","Prototype Nanzan",1,"or "]
     ]
   },
   "B130": {
@@ -5463,8 +5604,8 @@ const ALL_QUESTS_LIST = {
     "En": "Unrivaled \"First Squadron\" Coming Through! [Extra Operation]",
     "content": "Assemble a fleet containing Nagato Kai Ni and Mutsu Kai Ni with either as Secretary and second ship, and up to 4 XX, then S rank the boss nodes of 2-5, 5-5, and 6-4.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B129"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Nagato Kai Ni","Mutsu Kai Ni"],
@@ -5481,10 +5622,10 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["E","41cm Twin Gun Mount Kai Ni","1"],
-      ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
-      ["C","Improvement Material","5","or "],
-      ["E","Prototype 46cm Twin Gun Mount","1","or "]
+      ["E","41cm Twin Gun Mount Kai Ni",1],
+      ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
+      ["C","Improvement Material",5,"or "],
+      ["E","Prototype 46cm Twin Gun Mount",1,"or "]
     ]
   }, 
   "B131": {
@@ -5492,10 +5633,11 @@ const ALL_QUESTS_LIST = {
     "En": "Aviation Battleship Squadron, Commence Combat Patrol!",
     "content": "Assemble a fleet containing 2 BBV and up to 4 XX, then S rank the boss nodes of 1-4, 1-5, 2-3, and 7-2 (Part 2).",
     "tips": "",
-    "unlocks": ["B132"],
     "requires": ["A18","Fd2"],
+    "unlocks": ["B132"],    
     "period": "once",
     "needs": {
+      "S": [],
       "M": [
         ["1-4",1],
         ["1-5",1],
@@ -5510,9 +5652,9 @@ const ALL_QUESTS_LIST = {
       "B": "600"
     },
     "reward": [
-      ["I","Medal","1"],
-      ["I","Action Report","1","Choose one: "],
-      ["I","Medal","2","or "]
+      ["I","Medal",1],
+      ["I","Action Report",1,"Choose one: "],
+      ["I","Medal",2,"or "]
     ]
   },
   "B132": {
@@ -5520,13 +5662,13 @@ const ALL_QUESTS_LIST = {
     "En": "Super Elite 4th Carrier Division, Weigh Anchor!",
     "content": "Assemble a fleet containing Ise Kai Ni, Hyuuga Kai Ni, and up to 4 XX in the First Fleet, then S rank the boss nodes of 4-5, 5-5, and 6-5 once each, and reach node N on 1-6 twice.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B131","F85"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Ise Kai Ni","Hyuuga Kai Ni"],
       "M": [
-        ["1-6",2],
+        ["1-6-N",2],
         ["4-5",1],
         ["5-5",1],
         ["6-5",1]
@@ -5539,9 +5681,9 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Zuiun Kai Ni (634 Air Group)","1"],
-      ["E","S-51J","1","Choose one: "],
-      ["I","Medal","2","or "]
+      ["E","Zuiun Kai Ni (634 Air Group)",1],
+      ["E","S-51J",1,"Choose one: "],
+      ["I","Medal",2,"or "]
     ]
   },
   "B133": {
@@ -5549,8 +5691,8 @@ const ALL_QUESTS_LIST = {
     "En": "Heavily Remodeled Fast Battleship \"Kongou Kai Ni C\", Head To The South!",
     "content": "Assemble a fleet containing Kongou Kai Ni C, 1 Kongou-class, 2DD, and up to 2 XX, then S rank the boss nodes of 5-1, 5-3, 5-4, and 5-5 twice each.",
     "tips": "",
-    "unlocks": ["B144"],
     "requires": ["B128","Cd1"],
+    "unlocks": ["B144"],
     "period": "once",
     "needs": {
       "S": ["Kongou Kai Ni C"],
@@ -5560,7 +5702,6 @@ const ALL_QUESTS_LIST = {
         ["5-4",2],
         ["5-5",2]
       ],
-
     },
     "resources": {
       "F": "1944",
@@ -5569,10 +5710,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","35.6cm Twin Gun Mount Kai Ni","1"],
-      ["I","Action Report","1","Choose one: "],
-      ["I","New Model Gun Mount Improvement Material","2","or "],
-      ["I","Medal","1","or "]
+      ["E","35.6cm Twin Gun Mount Kai Ni",1],
+      ["I","Action Report",1,"Choose one: "],
+      ["I","New Model Gun Mount Improvement Material",2,"or "],
+      ["I","Medal",1,"or "]
     ]
   },
   "B134": {
@@ -5580,8 +5721,8 @@ const ALL_QUESTS_LIST = {
     "En": "Fleet Headquarters Improvements [Implementation Phase]",
     "content": "Assemble a fleet containing Ooyodo as flagship, 1 AV/Akashi, and up to 4 XX, then S rank the boss nodes of 2-3, 3-3, and 4-1 twice each.",
     "tips": "",
-    "unlocks": [],
     "requires": ["D29"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Ooyodo"],
@@ -5598,10 +5739,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Headquarters Personnel","1"],
-      ["I","Furniture Box (Large)","8","Choose one: "],
-      ["I","Reinforcement Expansion","1","or "],
-      ["I","Medal","1","or "]
+      ["I","Headquarters Personnel",1],
+      ["I","Furniture Box (Large)",8,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "],
+      ["I","Medal",1,"or "]
     ]
   },
   "B135": {
@@ -5609,10 +5750,11 @@ const ALL_QUESTS_LIST = {
     "En": "Patrol the Coastal Waters!",
     "content": "Assemble a fleet containing 1 CL, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 2-1, and 2-2.",
     "tips": "",
-    "unlocks": ["B136","B138","B147"],
     "requires": ["B6"],
+    "unlocks": ["B136","B138","B147"],
     "period": "once",
     "needs": {
+      "S": [],
       "M": [
         ["1-2",1],
         ["1-3",1],
@@ -5627,10 +5769,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Action Report","1"],
-      ["C","Development Material","3","Choose one: "],
-      ["C","Instant Repair","3","or "],
-      ["E","25mm Triple Autocannon Mount","2","or "]
+      ["I","Action Report",1],
+      ["C","Development Material",3,"Choose one: "],
+      ["C","Instant Repair",3,"or "],
+      ["E","25mm Triple Autocannon Mount",2,"or "]
     ]
   },
   "B136": {
@@ -5638,8 +5780,8 @@ const ALL_QUESTS_LIST = {
     "En": "Peerless \"DesDiv 24\", Sortie!",
     "content": "Assemble a fleet containing Umikaze Kai Ni as flagship, any 2 of: \"Kawakaze, Yamakaze, or Suzukaze\"; and up to 3 XX, then S rank the boss nodes of 2-3, 2-4, 5-1, and 5-3.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B41","B135"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Umikaze Kai Ni"],
@@ -5657,10 +5799,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","12.7cm Twin Gun Mount Model C Kai 2","1"],
-      ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
-      ["E","Type 13 Air Radar","3","or "],
-      ["I","Furniture Fairy","1","or "]
+      ["E","12.7cm Twin Gun Mount Model C Kai 2",1],
+      ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
+      ["E","Type 13 Air Radar",3,"or "],
+      ["I","Furniture Fairy",1,"or "]
     ]
   },
   "B137": {
@@ -5668,8 +5810,8 @@ const ALL_QUESTS_LIST = {
     "En": "Superior \"CarDiv 1\"! Sortie!",
     "content": "Assemble a fleet containing Akagi Kai Ni/E as flagship, Kaga as second ship, and 4 XX, then S rank the boss nodes of 4-5 and 5-2 once, and S rank the boss node of 6-5 twice.",
     "tips": "",
-    "unlocks": ["F88","B154"],
     "requires": ["B40","C33"],
+    "unlocks": ["F88","B154"],
     "period": "once",
     "needs": {
       "S": ["Akagi Kai Ni","Kaga"],
@@ -5686,10 +5828,10 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["E","Ryuusei Kai (CarDiv 1)","1"],
-      ["C","Improvement Material","5","Choose one: "],
-      ["I","New Model Aerial Armament Materials","1","or "],
-      ["I","Skilled Crew Member","1","or "]
+      ["E","Ryuusei Kai (CarDiv 1)",1],
+      ["C","Improvement Material",5,"Choose one: "],
+      ["I","New Model Aerial Armament Material",1,"or "],
+      ["I","Skilled Crew Member",1,"or "]
     ]
   },
   "B138": {
@@ -5697,8 +5839,8 @@ const ALL_QUESTS_LIST = {
     "En": "\"Haguro\" and \"Kamikaze\", Sortie!",
     "content": "Assemble a fleet containing Haguro, Kamikaze, and either \"4 DD\" or \"1 CA(V) and 2DD (5 ships)\", then S rank the boss nodes of 2-1, 2-2, and 2-3.",
     "tips": "",
-    "unlocks": [],
     "requires": ["A15","B135"],
+    "unlocks": [],    
     "period": "once",
     "needs": {
       "S": ["Haguro","Kamikaze"],
@@ -5715,10 +5857,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["F","Haguro's Protection Scroll","1"],
-      ["I","New Model Aerial Armament Materials","1","Choose one: "],
-      ["I","Reinforcement Expansion","1","or "],
-      ["I","Furniture Fairy","1","or "]
+      ["F","Haguro's Protection Scroll",1],
+      ["I","New Model Aerial Armament Material",1,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "],
+      ["I","Furniture Fairy",1,"or "]
     ]
   },
   "B139": {
@@ -5726,10 +5868,11 @@ const ALL_QUESTS_LIST = {
     "En": "Research Of Shipborne Land-Based Equipment In Actual Combat",
     "content": "Assemble a fleet containing 1 AV/LHA and up to 5 XX, then A+ rank the boss nodes of 4-5 and 6-4 twice each.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B80","F89"],
+    "unlocks": [],
     "period": "once",
     "needs": {
+      "S": [],
       "M": [
         ["4-5",2],
         ["6-4",2]
@@ -5742,8 +5885,8 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Type 2 12cm Mortar Kai","3","Choose one: "],
-      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher","1","or "]
+      ["E","Type 2 12cm Mortar Kai",3,"Choose one: "],
+      ["E","Shipborne Model Type 4 20cm Anti-ground Rocket Launcher",1,"or "]
     ]
   },
   "B140": {
@@ -5751,8 +5894,8 @@ const ALL_QUESTS_LIST = {
     "En": "I Wonder If We Should Test Out \"Yuubari Kai Ni\"?",
     "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship and up to 5 XX, then S rank the boss nodes of 2-5, 3-3, 5-3, and 6-3.",
     "tips": "",
-    "unlocks": ["B141"],
     "requires": ["B11","Fd1"],
+    "unlocks": ["B141"],
     "period": "once",
     "needs": {
       "S": ["Yuubari Kai Ni"],
@@ -5770,10 +5913,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","14cm Twin Gun Mount Kai","1"],
-      ["E","Type 2 Depth Charge","2","Choose one: "],
-      ["E","Daihatsu Landing Craft","2","or "],
-      ["I","Furniture Fairy","1","or "]
+      ["E","14cm Twin Gun Mount Kai",1],
+      ["E","Type 2 Depth Charge",2,"Choose one: "],
+      ["E","Daihatsu Landing Craft",2,"or "],
+      ["I","Furniture Fairy",1,"or "]
     ]
   },
   "B141": {
@@ -5781,14 +5924,14 @@ const ALL_QUESTS_LIST = {
     "En": "New \"6th Torpedo Squadron\" Sortie! Let Me Know What You Think Afterward!",
     "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship, any 3 of: \"Mutsuki, Kisaragi, Yayoi, Uzuki, Kikuzuki, or Mochizuki\"; and up to 2 XX, then S rank the boss nodes of 1-5, 1-6, 2-2, 3-2, and 7-1.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B140"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Yuubari Kai Ni"],
       "M": [
         ["1-5",1],
-        ["1-6",1],
+        ["1-6-N",1],
         ["2-2",1],
         ["3-2",1],
         ["7-1",1]
@@ -5801,10 +5944,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Reinforcement Expansion","1"],
-      ["C","Development Material","12","Choose one: "],
-      ["E","Type D Kouhyouteki Kai (Kouryuu Kai)","1","or "],
-      ["C","Improvement Material","6","or "]
+      ["I","Reinforcement Expansion",1],
+      ["C","Development Material",12,"Choose one: "],
+      ["E","Type D Kouhyouteki Kai (Kouryuu Kai)",1,"or "],
+      ["C","Improvement Material",6,"or "]
     ]
   },
   "B142": {
@@ -5812,8 +5955,8 @@ const ALL_QUESTS_LIST = {
     "En": "Reorganized \"DesDiv 31\", Weigh Anchor!",
     "content": "Assemble a fleet containing Naganami, Kishinami, Asashimo, Okinami Kai Ni, and up to 2 XX, then S rank the boss nodes of 1-3, 1-4, 1-5, 2-2, and 2-3.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B65","Cd1"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Naganami","Kishinami","Asashimo","Okinami Kai Ni"],
@@ -5832,12 +5975,12 @@ const ALL_QUESTS_LIST = {
       "B": "500"
     },
     "reward": [
-      ["I","Underway Replenishment","3","Choose one: "],
-      ["C","Instant Repair","6","or "],
-      ["I","Combat Ration (Special Onigiri)","2","or "],
-      ["I","New Model Gun Mount Improvement Material","1","Choose one: "],
-      ["I","New Model Rocket Development Material","1","or "],
-      ["F","Offshore Waves Hanging Shelf","1","or "]
+      ["I","Underway Replenishment",3,"Choose one: "],
+      ["C","Instant Repair",6,"or "],
+      ["I","Combat Ration (Special Onigiri)",2,"or "],
+      ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
+      ["I","New Model Rocket Development Material",1,"or "],
+      ["F","Offshore Waves Hanging Shelf",1,"or "]
     ]
   },
   "B143": {
@@ -5845,8 +5988,8 @@ const ALL_QUESTS_LIST = {
     "En": "\"5th Carrier Division\", Go Wild!",
     "content": "Assemble a fleet containing Shoukaku, Zuikaku, Oboro, Akigumo, and up to 2 XX, then S rank the boss nodes of 3-5, 5-2, 7-2 (Part 2), and 6-5.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B15","D21"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"],
@@ -5864,11 +6007,11 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["I","Underway Replenishment","2","Choose one: "],
-      ["C","Instant Repair","6","or "],
-      ["E","25mm Triple Autocannon Mount","2","or "],
-      ["E","Prototype Toukai","1","Choose one: "],
-      ["E","Prototype Keiun (Carrier-based Reconnaissance Model)","1","or "]
+      ["I","Underway Replenishment",2,"Choose one: "],
+      ["C","Instant Repair",6,"or "],
+      ["E","25mm Triple Autocannon Mount",2,"or "],
+      ["E","Prototype Toukai",1,"Choose one: "],
+      ["E","Prototype Keiun (Carrier-based Reconnaissance Model)",1,"or "]
     ]
   },
   "B144": {
@@ -5876,8 +6019,8 @@ const ALL_QUESTS_LIST = {
     "En": "\"Hiei Kai Ni C\" Arrives! 3rd Battleship Squadron, To The South!",
     "content": "Assemble a fleet containing Hiei Kai Ni C, 1 Kongou-class, 1 CL, 1 DD, and up to 2 XX, then S rank the boss nodes of 5-1, 5-2, 5-3, 5-4, and 5-5.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B133"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Hiei Kai Ni C"],
@@ -5896,11 +6039,11 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","New Model Gun Mount Improvement Material","2","Choose one: "],
-      ["E","35.6cm Twin Gun Mount Kai Ni","1","or "],
-      ["E","Type 0 Reconnaissance Seaplane Model 11B★+2","1","Choose one: "],
-      ["E","New Kanhon Design Anti-torpedo Bulge (Large)★+2","1","or "],
-      ["I","Action Report","1","or "]
+      ["I","New Model Gun Mount Improvement Material",2,"Choose one: "],
+      ["E","35.6cm Twin Gun Mount Kai Ni",1,"or "],
+      ["E","Type 0 Reconnaissance Seaplane Model 11B★+2",1,"Choose one: "],
+      ["E","New Kanhon Design Anti-torpedo Bulge (Large)★+2",1,"or "],
+      ["I","Action Report",1,"or "]
     ]
   },  
   "B145": {
@@ -5908,8 +6051,8 @@ const ALL_QUESTS_LIST = {
     "En": "Remodeled Aviation Light Cruiser \"Gotland Andra\", Sortie!",
     "content": "Assemble a fleet containing Gotland Andra as flagship, 1 DD, and up to 4 XX, then S rank the boss nodes of 2-4, 4-2, 4-4, and 4-5.",
     "tips": "",
-    "unlocks": ["B146"],
     "requires": ["B62","Bd5"],
+    "unlocks": ["B146"],
     "period": "once",
     "needs": {
       "S": ["Gotland Andra"],
@@ -5927,12 +6070,12 @@ const ALL_QUESTS_LIST = {
       "B": "1000"
     },
     "reward": [
-      ["E","Swordfish (Seaplane Model)","2","Choose one: "],
-      ["E","S9 Osprey","2","or "],
-      ["E","Swordfish Mk.III Kai (Seaplane Model)","1","or "],
-      ["C","Improvement Material","4","Choose one: "],
-      ["I","New Model Aerial Armament Materials","1","or "],
-      ["I","Reinforcement Expansion","1","or "]
+      ["E","Swordfish (Seaplane Model)",2,"Choose one: "],
+      ["E","S9 Osprey",2,"or "],
+      ["E","Swordfish Mk.III Kai (Seaplane Model)",1,"or "],
+      ["C","Improvement Material",4,"Choose one: "],
+      ["I","New Model Aerial Armament Material",1,"or "],
+      ["I","Reinforcement Expansion",1,"or "]
     ]
   }, 
   "B146": {
@@ -5940,8 +6083,8 @@ const ALL_QUESTS_LIST = {
     "En": "\"Gotland\" Squadron, Advance!",
     "content": "Assemble a fleet containing Gotland Andra as flagship, 1 DD, and up to 4 XX, then S rank the boss nodes of 2-5, 6-3, 6-4, and 6-5.",
     "tips": "",
-    "unlocks": [],
     "requires": ["B145"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Gotland Andra"],
@@ -5959,10 +6102,9 @@ const ALL_QUESTS_LIST = {
       "B": "2020"
     },
     "reward": [
-      ["F","Scandinavian Sofa","1"],
-      ["I","New Model Aerial Armament Material","2","Choose one: "],
-      ["I","New Model Aerial Armament Materials","1","or "],
-      ["E","Fairey Seafox Kai","1","or "]
+      ["F","Scandinavian Sofa",1],
+      ["I","New Model Aerial Armament Material",2,"Choose one: "],
+      ["E","Fairey Seafox Kai",1,"or "]
     ]
   },
   "B147": {
@@ -5970,8 +6112,8 @@ const ALL_QUESTS_LIST = {
     "En": "Nansei Island Water Combined Patrol",
     "content": "Assemble a fleet containing 2 \"USN ships\" and up to 4 XX, then S rank the boss nodes of 2-2, 2-3, and 2-4.",
     "tips": "",
-    "unlocks": ["B148","B151"],
     "requires": ["B135"],
+    "unlocks": ["B148","B151"],
     "period": "once",
     "needs": {
       "S": [],
@@ -5988,11 +6130,11 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "reward": [
-      ["C","Improvement Material","2","Choose one: "],
-      ["I","Emergency Repair Material","2","or "],
-      ["C","Instant Repair","4","or "],
-      ["E","Tenzan","3","Choose one: "],
-      ["E","OS2U","1","or "]
+      ["C","Improvement Material",2,"Choose one: "],
+      ["I","Emergency Repair Material",2,"or "],
+      ["C","Instant Repair",4,"or "],
+      ["E","Tenzan",3,"Choose one: "],
+      ["E","OS2U",1,"or "]
     ]
   },
   "B148": {
@@ -6000,8 +6142,8 @@ const ALL_QUESTS_LIST = {
     "En": "Combined Fleet \"Flagship\", Remodeled Fletcher, Weigh Anchor!",
     "content": "Assemble a fleet containing Fletcher Kai Mod.2 as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, and 3-5.",
     "tips": "Fletcher Mk.II does not count as Fletcher Kai Mod.2 for this quest.",
-    "unlocks": ["B149"],
     "requires": ["B30", "B147"],
+    "unlocks": ["B149"],
     "period": "once",
     "needs": {
       "S": ["Fletcher Kai Mod.2"],
@@ -6018,10 +6160,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","533mm Quintuple Torpedo Mount (Late Model)","1"],
-      ["E","F4F-3★+3","2","Choose one: "],
-      ["E","TBD★+3","2","or "],
-      ["C","Development Material","6","or "]
+      ["E","533mm Quintuple Torpedo Mount (Late Model)",1],
+      ["E","F4F-3★+3",2,"Choose one: "],
+      ["E","TBD★+3",2,"or "],
+      ["C","Development Material",6,"or "]
     ]
   },
   "B149": {
@@ -6029,8 +6171,8 @@ const ALL_QUESTS_LIST = {
     "En": "Remodeled Escort Destroyer \"Fletcher Mk.II\" Commence Operation!",
     "content": "Assemble a fleet containing Fletcher Mk.II as flagship, any 2 USN/RN/RAN/RNN ships, and up to 3 XX, then S rank the boss nodes of 1-5, 7-1, 6-2, and 6-5 twice each.",
     "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
-    "unlocks": ["B150"],
     "requires": ["B98", "B148"],
+    "unlocks": ["B150"],
     "period": "once",
     "needs": {
       "S": ["Fletcher Mk.II"],
@@ -6048,10 +6190,10 @@ const ALL_QUESTS_LIST = {
       "B": "700"
     },
     "reward": [
-      ["E","RUR-4A Weapon Alpha Kai","1"],
-      ["C","Improvement Material","4","Choose one: "],
-      ["I","Skilled Crew Member","1","or "],
-      ["I","Underway Replenishment","3","or "]
+      ["E","RUR-4A Weapon Alpha Kai",1],
+      ["C","Improvement Material",4,"Choose one: "],
+      ["I","Skilled Crew Member",1,"or "],
+      ["I","Underway Replenishment",3,"or "]
     ]
   },
   "B150": {
@@ -6059,8 +6201,8 @@ const ALL_QUESTS_LIST = {
     "En": "Combined Fleet Operation Mission [Extra Operation]",
     "content": "Assemble a fleet containing Fletcher Mk.II, any 3 USN/RN/RAN/RNN ships, and up to 2 XX, then S rank the boss nodes of 4-5, 5-5, and 6-4 twice each.",
     "tips": "Fletcher Kai Mod.2 does not count as Fletcher Mk.II for this quest.",
-    "unlocks": [],
     "requires": ["B149"],
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Fletcher Mk.II"],
@@ -6168,7 +6310,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["E","Ryuusei Kai (CarDiv 1)",1],
       ["E","Prototype Shuusui",1,"Choose one: "],
-      ["E","Type 1 Land-based Attack Aircraft Model 22A★+4",1,"or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 22A★+2",1,"or "],
       ["E","Ka Type Observation Autogyro★+3",3,"or "]
     ]
   },
@@ -6198,7 +6340,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
       ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
-      ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
+      ["E","Type 1 Land-based Attack Aircraft Model 34★+2",1,"or "],
       ["I","Action Report",2,"Choose one: "],
       ["I","Remodel Blueprint",1,"or "],
       ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
@@ -6210,7 +6352,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Haguro as flagship, and up to 4 XX, then S rank the boss node of 7-3 (Part 1) four times.",
     "tips": "",
     "requires": ["A15","B13"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Haguro"],
@@ -6236,10 +6378,10 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing any 1 of: Taigei or the Jingei-class as flagship, 2 SS(V), and 3 XX, then S rank the boss nodes of 1-2, 1-3, 2-1, and 2-3.",
     "tips": "Ryuuhou forms do not count as Taigei for this quest.",
     "requires": ["B17","B135"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
-      "S": ["Taigei","Jingei","Chougei"],
+      "S": [],
       "M": [
         ["1-2",1],
         ["1-3",1],
@@ -6266,7 +6408,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Yuugumo Kai Ni, Makigumo Kai Ni, Kazagumo Kai Ni, Akigumo Kai Ni, and up to 2 XX, then S rank the boss nodes of 1-4, 2-2, 3-2, 4-1, and 7-3 (Part 2).",
     "tips": "",
     "requires": ["A93","B155"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Yuugumo Kai Ni","Makigumo Kai Ni","Kazagumo Kai Ni","Akigumo Kai Ni"],
@@ -6288,7 +6430,7 @@ const ALL_QUESTS_LIST = {
       ["I","61cm Quadruple (Oxygen) Torpedo Mount Late Model★+5",1],
       ["C","Development Material",10,"Choose one: "],
       ["I","Action Report",1,"or "],
-      ["C","Improvement Material",1,"or "]
+      ["C","Improvement Material",5,"or "]
     ]
   },
   "B158": {
@@ -6297,7 +6439,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Shiratsuyu Kai Ni, Shigure Kai Ni+, and up to 4 XX, then S rank the boss nodes of 1-5, 2-5, 7-1, 5-5, and 6-3.",
     "tips": "",
     "requires": ["B121","Bd3"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Shiratsuyu Kai Ni","Shigure Kai Ni"],
@@ -6316,10 +6458,10 @@ const ALL_QUESTS_LIST = {
       "B": "270"
     },
     "reward": [
-      ["F","Time for Baked Potatoes and Reading Table",1],
+      ["F","\"Time for Baked Potatoes and Reading\" Table",1],
       ["I","Underway Replenishment",2,"Choose one: "],
       ["I","Emergency Repair Goddess",1,"or "],
-      ["I","Canned Saury",1,"or "]
+      ["I","Canned Saury",2,"or "]
     ]
   },
   "B159": {
@@ -6328,10 +6470,10 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Ooyodo/Tan Yang as flagship, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-3, 1-4, 2-1, and 2-2 twice each.",
     "tips": "Yukikaze Kai Ni does not count as Dan Yang for this quest.",
     "requires": ["D23"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
-      "S": ["Tan Yang","Ooyodo"],
+      "S": [],
       "M": [
         ["1-3",2],
         ["1-4",2],
@@ -6358,7 +6500,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Tan Yang/Yukikaze Kai Ni as flagship and up to 5 XX, then S rank the boss nodes of 2-3, 2-4, 2-5, 3-3, and 7-3 (Part 2).",
     "tips": "",
     "requires": ["B115","B123"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Tan Yang+"],
@@ -6390,7 +6532,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Shigure Kai Ni+, Yukikaze Kai Ni, and up to 4 XX, then S rank the boss nodes of 4-5, 5-3, 5-5, 6-4, and 6-5.",
     "tips": "",
     "requires": ["B159","B160"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Shigure Kai Ni", "Yukikaze Kai Ni"],
@@ -6452,7 +6594,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Kuma Kai Ni/D as flagship and up to 5XX, then S rank the boss nodes of 2-2, 3-2, 7-3 (Part 2), and reach node N on 1-6.",
     "tips": "",
     "requires": ["B124","B125"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Kuma Kai Ni"],
@@ -6483,7 +6625,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Noshiro Kai Ni, 3 DD, and up to 2 XX, then S rank the boss nodes of 2-4, 3-2, 5-3, 7-1, and 7-2 (Part 2).",
     "tips": "",
     "requires": ["B65"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Noshiro Kai Ni"],
@@ -6514,7 +6656,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Akebono Kai Ni, Ushio Kai Ni, and up to 4 XX, then S rank the boss nodes of 2-3, 3-2, 4-4, and 5-4.",
     "tips": "",
     "requires": ["B124","B135","Cy4"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Akebono Kai Ni","Ushio Kai Ni"],
@@ -6543,7 +6685,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Mogami Kai Ni/Toku as flagship and up to 5 XX, then S rank the boss nodes of 2-2, 2-4, 4-5, and 5-1.",
     "tips": "",
     "requires": ["B14","Bd2"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Mogami Kai Ni"],
@@ -6565,7 +6707,7 @@ const ALL_QUESTS_LIST = {
       ["C","Development Material",8,"or "],
       ["E","Zuiun Model 12",2,"or "],
       ["I","Furniture Fairy",1,"Choose one: "],
-      ["I","Food Supply Ship Mamiya",1,"or "],
+      ["I","Mamiya",1,"or "],
       ["I","Skilled Crew Member",1,"or "]
     ]
   },
@@ -6575,7 +6717,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Mogami Kai Ni/Toku as flagship, any 2 of: Michishio, Shigure, Asagumo, or Yamagumo; and up to 3 XX, then S rank the boss nodes of 2-3, 6-4, 7-2 (Part 2), and 7-3 (part 2).",
     "tips": "",
     "requires": ["B166"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Mogami Kai Ni"],
@@ -6607,7 +6749,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Yahagi Kai Ni/B as flagship, 2 DD, and up to 3 XX, then S rank the boss nodes of 1-4, 2-5, 5-3, and 5-5.",
     "tips": "",
     "requires": ["B75","B103"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Yahagi Kai Ni"],
@@ -6635,7 +6777,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Ryuuhou Kai Ni/E as Secretary, Shigure Kai Ni+, and up to 4 XX, then S rank the boss nodes of 2-2, 2-3, 2-4, 2-5, and 7-2 (Part 2).",
     "tips": "",
     "requires": ["B47","D19"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Ryuuhou Kai Ni","Shigure Kai Ni"],
@@ -6668,7 +6810,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Gambier Bay Mk.II as Secretary, 1 Fletcher-class, and up to 4 XX, then S rank the boss nodes of 2-4, 3-5 twice each, and A+ rank the boss node of 6-4 twice.",
     "tips": "",
     "requires": ["B151","B159"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Gambier Bay Mk.II"],
@@ -6698,7 +6840,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing 3 DD and up to 3 XX, then S rank the boss nodes of 1-3, 1-4, 2-1, and 2-2.",
     "tips": "",
     "requires": ["D42"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": [],
@@ -6730,7 +6872,7 @@ const ALL_QUESTS_LIST = {
     "content": "Assemble a fleet containing Yamakaze Kai Ni/D as flagship, 3 DD, up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 1-4, and 1-5.",
     "tips": "",
     "requires": ["B135"],
-    "unlocks": [],    
+    "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Yamakaze Kai Ni"],
@@ -6754,10 +6896,104 @@ const ALL_QUESTS_LIST = {
       ["I","Reinforcement Expansion",1,"or "]
     ]
   },
+  "B173": {
+    "Jp": "白露型駆逐艦「山風改二」、奮戦す！",
+    "En": "Shiratsuyu-class Destroyer \"Yamakaze Kai Ni\", Will Fight Hard!",
+    "content": "Assemble a fleet containing any 2 of: \"Yamakaze Kai Ni/D, Umikaze Kai Ni, or Kawakaze Kai Ni\"; and up to 4 XX, then S rank the boss nodes of 2-2, 7-2 (Part 2), 5-1, and 6-4.",
+    "tips": "",
+    "requires": ["B136","B172"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-2",1],
+        ["7-2 (Part 2)",1],
+        ["5-1",1],
+        ["6-4",1]
+      ]
+    },
+    "resources": {
+      "F": "880",
+      "A": "880",
+      "S": "0",
+      "B": "880"
+    },
+    "reward": [
+      ["C","Improvement Material",5,"Choose one: "],
+      ["E","Daihatsu Landing Craft",3,"or "],
+      ["I","New Model Armament Material",2,"or "],
+      ["I","Action Report",1,"Choose one: "],
+      ["E","12.7cm Twin Gun Mount Model C Kai 2",1,"or "],
+      ["E","61cm Quadruple (Oxygen) Torpedo Mount Late Model",1,"or "]
+    ]
+  },
+  "B174": {
+    "Jp": "奮戦！精鋭「第十五駆逐隊」第一小隊",
+    "En": "Fight Hard! Elite \"DesDiv 15\" 1st Platoon",
+    "content": "Assemble a fleet containing Oyashio Kai Ni, Kuroshio Kai Ni, and up to 4 XX, then S rank the boss nodes of 2-4, 5-4, and 7-2 (Part 2), twice each.",
+    "tips": "",
+    "requires": ["B117"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Oyashio Kai Ni","Kuroshio Kai Ni"],
+      "M": [
+        ["2-4",2],
+        ["5-4",2],
+        ["7-2 (Part 2)",2],
+      ]
+    },
+    "resources": {
+      "F": "550",
+      "A": "550",
+      "S": "0",
+      "B": "550"
+    },
+    "reward": [
+      ["I","Furniture Fairy",1,"Choose one: "],
+      ["I","New Model Gun Mount Improvement Material",2,"or "],
+      ["C","Improvement Material",5,"or "],
+      ["E","61cm Quadruple (Oxygen) Torpedo Mount Late Model",1,"Choose one: "],
+      ["I","New Model Armament Material",4,"or "],
+      ["I","Action Report",1,"or "]
+    ]
+  },
+  "B175": {
+    "Jp": "南西海域「基地航空隊」開設！",
+    "En": "Southwestern Waters \"Land Base Air Squadron\" Established!",
+    "content": "S rank the boss nodes of 2-1, 2-2, 2-3, and 7-3 (Part 2), and reach node O in 7-4. ; Prepare 1 Construction Corps.",
+    "tips": "Item is consumed upon completion.",
+    "requires": ["B113","B131"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-1",1],
+        ["2-2",1],
+        ["2-3",1],
+        ["7-3 (Part 2)",1],
+        ["7-4-O",1]
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "300",
+      "B": "300"
+    },
+    "reward": [
+      ["A","Unlocks the first LBAS in World 7",1]
+      ["E","Type 1 Land-based Attack Aircraft",1,"Choose one: "],
+      ["E","Type 3 Fighter Hien",2,"or "],
+      ["C","Improvement Material",5,"or "],
+    ]
+  },
 
 
 
-  //use this for template (Block all of it and then ctrl + /, to remove the comment, dont forget to ctrl +/ again)
+  // use this for template (Block all of it and then ctrl + /, to remove the comment, dont forget to ctrl +/ again)
   // "": {
   //   "Jp": "",
   //   "En": "",
@@ -6765,7 +7001,6 @@ const ALL_QUESTS_LIST = {
   //   "tips": "",
   //   "requires": [],
   //   "unlocks": [],
-
   //   "period": "once",
   //   "needs": {
   //     "S": [],
@@ -6783,12 +7018,12 @@ const ALL_QUESTS_LIST = {
   //     "B": "0"
   //   },
   //   "reward": [
-  //     ["I","Prototype Flight Deck Catapult","1","Choose one: "],
-  //     ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)","2","or "],
-  //     ["E","Type 1 Land-based Attack Aircraft Model 34★+2","1","or "],
-  //     ["I","Action Report","2","Choose one: "],
-  //     ["I","Remodel Blueprint","1","or "],
-  //     ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2","1","or "]
+  //     ["I","Prototype Flight Deck Catapult",1,"Choose one: "],
+  //     ["E","Tenzan Model 12A Kai (w/ Type 6 Airborne Radar Kai)",2,"or "],
+  //     ["E","Type 1 Land-based Attack Aircraft Model 34★+2",1,"or "],
+  //     ["I","Action Report",1,"Choose one: "],
+  //     ["I","Remodel Blueprint",1,"or "],
+  //     ["E","Ryuusei Kai (CarDiv 1/Skilled)★+2",1,"or "]
   //   ]
   // },
 
@@ -7409,7 +7644,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["Bq4"],
     "period": "quarterly",
     "needs": {
-      "M": ["1-6"]
+      "M": ["1-6-N"]
     },
     "reward": [
       ["C","Instant Repair",4],
@@ -7560,7 +7795,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","New Model Aerial Armament Materials","1","Choose one: "],
+      ["I","New Model Aerial Armament Material","1","Choose one: "],
       ["C","Development Material","4","or "],
       ["E","Saiun","1","Choose one: "],
       ["I","Skilled Crew Member","1","or "],
@@ -7971,7 +8206,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["E","Suisei Model 12A","1"],
-      ["I","New Model Aerial Armament Materials","1","Choose one: "],
+      ["I","New Model Aerial Armament Material","1","Choose one: "],
       ["E","Suisei","3","or "],
       ["C","Development Material","6","or "]
     ]
@@ -7996,7 +8231,7 @@ const ALL_QUESTS_LIST = {
       ["C","Instant Construction","3","or "],
       ["E","Type 97 Torpedo Bomber","3","Choose one: "],
       ["I","Underway Replenishment","2","or "],
-      ["I","New Model Aerial Armament Materials","1","or "]
+      ["I","New Model Aerial Armament Material","1","or "]
     ]
   },
   "C34": {
@@ -8040,7 +8275,7 @@ const ALL_QUESTS_LIST = {
       "B": "180"
     },
     "reward": [
-      ["I","New Model Aerial Armament Materials","1"],
+      ["I","New Model Aerial Armament Material","1"],
       ["C","Development Material","4","Choose one: "],
       ["E","25mm Triple Autocannon Mount","3","or "],
       ["E","12cm 30-tube Rocket Launcher","2","or "]
@@ -10152,7 +10387,7 @@ const ALL_QUESTS_LIST = {
   "F61": {
     "Jp": "夜戦型艦上戦闘機の開発",
     "En": "Nighttime Carrier-based Fighter Development",
-    "content": "Prepare 30 Development Material, 6 Improvement Materials, 5000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-3 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar",
+    "content": "Prepare 30 Development Material, 6 Improvement Materials, 5000 bauxite and one New Model Aerial Armament Material in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-3 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar",
     "tips": "※Equipment must be unlocked.※Consumes all the resources and equipment. ",
     "resources": {
       "F": "0",
@@ -10170,7 +10405,7 @@ const ALL_QUESTS_LIST = {
       "I": [
         ["Development Material",30],
         ["Improvement Material",6],
-        ["New Model Aerial Armament Materials",1]
+        ["New Model Aerial Armament Material",1]
       ],
       "E": [
         ["F6F-3",1],
@@ -10185,7 +10420,7 @@ const ALL_QUESTS_LIST = {
   "F62": {
     "Jp": "夜間作戦型艦上攻撃機の開発",
     "En": "Nighttime Carrier-based Torpedo Bomber Development",
-    "content": "Prepare 40 Development material, 10 Improvement Materials, 5000 ammo, 8000 bauxite, one Skilled Crew Member and one New Model Aerial Armament Materials in your inventory. Have a TBF equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
+    "content": "Prepare 40 Development material, 10 Improvement Materials, 5000 ammo, 8000 bauxite, one Skilled Crew Member and one New Model Aerial Armament Material in your inventory. Have a TBF equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
     "tips": "※Equipment must be unlocked.※Consumes all the resources and equipment. ",
     "resources": {
       "F": "100",
@@ -10204,7 +10439,7 @@ const ALL_QUESTS_LIST = {
       "I": [
         ["Development Material",40],
         ["Improvement Material",10],
-        ["New Model Aerial Armament Materials",1],
+        ["New Model Aerial Armament Material",1],
         ["Skilled Crew Member",1]
       ],
       "E": [
@@ -10220,7 +10455,7 @@ const ALL_QUESTS_LIST = {
   "F63": {
     "Jp": "夜戦型艦上戦闘機の性能強化",
     "En": "Performance Improvement of the Carrier-based Night Fighter",
-    "content": "Prepare 40 Development Material, 8 Improvement Materials, 6000 bauxite and one New Model Aerial Armament Materials in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-5 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
+    "content": "Prepare 40 Development Material, 8 Improvement Materials, 6000 bauxite and one New Model Aerial Armament Material in your inventory. Have a ★max and Aircraft Proficiency Gold Chevron F6F-5 equipped in the first slot of the secretary ship, scrap two Type 13 Air Radar and two Type 22 Surface Radar.",
     "tips": "※Equipment must be unlocked.※Consumes all the resources and equipment. ",
     "resources": {
       "F": "0",
@@ -10238,7 +10473,7 @@ const ALL_QUESTS_LIST = {
       "I": [
         ["Development Material",40],
         ["Improvement Material",8],
-        ["New Model Aerial Armament Materials",1]
+        ["New Model Aerial Armament Material",1]
       ],
       "E": [
         ["F6F-5",1],
@@ -10398,7 +10633,7 @@ const ALL_QUESTS_LIST = {
       ],
       "I": [
         ["Skilled Crew Member",1],
-        ["New Model Aerial Armament Materials",1]
+        ["New Model Aerial Armament Material",1]
       ],
       "E": [
         ["Suisei",3],
@@ -10625,7 +10860,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","New Model Aerial Armament Materials","2","Choose one: "],
+      ["I","New Model Aerial Armament Material","2","Choose one: "],
       ["E","O Type Observation Autogyro Kai","1","or "]
     ]
   },
@@ -10659,7 +10894,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["I","Prototype Flight Deck Catapult","1","Choose one: "],
-      ["I","New Model Aerial Armament Materials","3","or "]
+      ["I","New Model Aerial Armament Material","3","or "]
     ]
   },
   "F86": {
@@ -10682,7 +10917,7 @@ const ALL_QUESTS_LIST = {
         ["Bauxite",5000],
         ["Ammo",2500]
       ],
-      "I": ["New Model Aerial Armament Materials"]
+      "I": ["New Model Aerial Armament Material"]
     },
     "resources": {
       "F": "0",
@@ -10713,7 +10948,7 @@ const ALL_QUESTS_LIST = {
       "S": ["Hyuuga Kai Ni","Ise Kai Ni"],
       "I": [
         ["Skilled Crew Member",2],
-        ["New Model Aerial Armament Materials",1]
+        ["New Model Aerial Armament Material",1]
       ],
       "R": [
         ["Bauxite",8000],
@@ -11290,7 +11525,7 @@ const ALL_QUESTS_LIST = {
     "reward": [
       ["E","Shiden Kai 2",2],
       ["C","Development Material",8,"Choose one: "],
-      ["I","New Model Aerial Armament Materials",1,"or "]
+      ["I","New Model Aerial Armament Material",1,"or "]
     ]
   },
   "Fq6": {
