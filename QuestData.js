@@ -7195,7 +7195,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bd2"],
     "unlocks": ["Bw4","Bq8"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "300",
       "A": "300",
@@ -7215,7 +7218,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bd5"],
     "unlocks": ["Bw5","F32","Bq2"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "0",
       "A": "500",
@@ -7234,7 +7240,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bd2"],
     "unlocks": ["B12"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "500",
       "A": "0",
@@ -7253,7 +7262,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bw1"],
     "unlocks": ["Bw10","Bm3","Bm6"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "400",
       "A": "0",
@@ -7272,7 +7284,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bw2"],
     "unlocks": ["Bw6","Bw7","Fw1","B72","Fm3","B100"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "600",
       "A": "0",
@@ -7292,7 +7307,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bw5"],
     "unlocks": ["Bw8"],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "400",
       "A": "0",
@@ -7311,7 +7329,10 @@ const ALL_QUESTS_LIST = {
     "requires": ["Bw5"],
     "unlocks": [],
     "period": "weekly",
-    "needs": {},
+    "needs": {
+      "S": [],
+      "M": []
+    },
     "resources": {
       "F": "300",
       "A": "300",
@@ -7333,6 +7354,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["Bw9"],
     "period": "weekly",
     "needs": {
+      "S": [],
       "M": [
         ["4-4",1]
       ]
@@ -7357,6 +7379,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["B44","B62","Bq7"],
     "period": "weekly",
     "needs": {
+      "S": [],
       "M": [
         ["5-2",2]
       ]
@@ -7381,6 +7404,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": [],
     "period": "weekly",
     "needs": {
+      "S": [],
       "M": [
         ["1-5",3]
       ]
@@ -7399,43 +7423,48 @@ const ALL_QUESTS_LIST = {
 // Monthly Sortie Quests Bm00
   "Bm1": {
     "Jp": "「第五戦隊」出撃せよ！",
-    "En": "Sortie the 5th Squadron",
-    "content": "Sortie Myoukou, Nachi, Haguro and 3 additional ships to World 2-5 and obtain an S-Rank at the boss",
+    "En": "Deploy The \"5th Squadron\"!",
+    "content": "Assemble a fleet containing Haguro, Myoukou, Nachi, and up to 3 XX, then S rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["A35"],
+    "unlocks": ["B38","Bm5","B82"],
+    "period": "monthly",
+    "needs": {
+      "S": ["Haguro","Myoukou","Nachi"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "550",
       "S": "550",
       "B": "0"
     },
-    "requires": ["A35"],
-    "unlocks": ["B38","Bm5","B82"],
-    "period": "monthly",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Myoukou","Nachi","Haguro"]
-    },
     "reward": [
-      ["I","Furniture Box (Large)",1],
-      ["C","Development Material",5]
+      ["C","Development Material",5],
+      ["I","Furniture Box (Large)",1]      
     ]
   },
   "Bm2": {
     "Jp": "「潜水艦隊」出撃せよ！?",
-    "En": "Sortie the Submarine Fleet",
-    "content": "Sortie to World 6-1 and obtain an S-Rank at the boss three times",
+    "En": "Deploy The \"Submarine Fleet\"!",
+    "content": "S rank the boss node of 6-1 three times.",
     "tips": "",
+    "requires": ["B30"],
+    "unlocks": [],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["6-1",3]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "600",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B30"],
-    "unlocks": [],
-    "period": "monthly",
-    "needs": {
-      "M": ["6-1"]
     },
     "reward": [
       ["I","Furniture Box (Large)",1],
@@ -7444,20 +7473,23 @@ const ALL_QUESTS_LIST = {
   },
   "Bm3": {
     "Jp": "「水雷戦隊」南西へ！",
-    "En": "Torpedo Squadron, toward Southwest",
-    "content": "Sortie 1-3 CL, with one as flagship, and 3-5 DD to World 1-4 and obtain an S-Rank at the boss",
-    "tips": "",
+    "En": "\"Torpedo Squadron\" To Nansei!",
+    "content": "Assemble a fleet containing 1-3 CL with 1 as flagship, and 1-5 DD, and no other ships type, then S rank the boss node of 1-4.",
+    "tips": "Evacuating ships will prevent the completion of the quest, even if the requirements are met both at the start and the end of the sortie.",
+    "requires": ["Bw4"],
+    "unlocks": [],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["Bw4"],
-    "unlocks": [],
-    "period": "monthly",
-    "needs": {
-      "M": ["1-4"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -7466,20 +7498,23 @@ const ALL_QUESTS_LIST = {
   },
   "Bm4": {
     "Jp": "「水上打撃部隊」南方へ！",
-    "En": "Surface Task Force, toward South",
-    "content": "Sortie only 3 of the following classes: Yamato-class, Nagato-class, Ise-class and Fusou-class Slow BB, 1 CL and 2 additional ships to World 5-1 and obtain an S-Rank at the boss",
+    "En": "\"Surface Strike Fleet\" To The South!",
+    "content": "Assemble a fleet containing exactly any 3 from the: \"Yamato-class, Nagato-class, Ise-class, or Fusou-class\"; 1 CL, and up to 2 XX, then S rank the boss node of 5-1.",
     "tips": "",
+    "requires": ["A43"],
+    "unlocks": ["B32"],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["5-1",1]
+      ]
+    },
     "resources": {
       "F": "350",
       "A": "400",
       "S": "350",
       "B": "0"
-    },
-    "requires": ["A43"],
-    "unlocks": ["B32"],
-    "period": "monthly",
-    "needs": {
-      "M": ["5-1"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -7488,20 +7523,23 @@ const ALL_QUESTS_LIST = {
   },
   "Bm5": {
     "Jp": "海上護衛強化月間",
-    "En": "Month-long Strengthening of the Marine Escort",
-    "content": "Sortie to World 1-5 and obtain an A-Rank or higher at the boss 10 times",
+    "En": "Month Of Enhanced Maritime Escort",
+    "content": "A+ rank the boss node of 1-5 10 times.",
     "tips": "",
+    "requires": ["B21","Bm1"],
+    "unlocks": ["B57","Fm2","Bm8"],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-5",10]
+      ]
+    },
     "resources": {
       "F": "800",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B21","Bm1"],
-    "unlocks": ["B57","Fm2","Bm8"],
-    "period": "monthly",
-    "needs": {
-      "M": ["1-5"]
     },
     "reward": [
       ["C","Development Material",5],
@@ -7510,42 +7548,48 @@ const ALL_QUESTS_LIST = {
   },
   "Bm6": {
     "Jp": "「空母機動部隊」西へ！",
-    "En": "Carrier Task Force, toward West",
-    "content": "Sortie 2 CVL/CV/CVB, 2 DD and 2 additional ships to World 4-2 and obtain an S-Rank at the boss",
+    "En": "\"Mobile Carrier Fleet\", To The West!",
+    "content": "Assemble a fleet containing 2 CV(B/L), 2 DD, and up to 2 XX, then S rank the boss node of 4-2.",
     "tips": "",
+    "requires": ["B20","Bw4"],
+    "unlocks": ["Bm7","Bq1","A56","A59","Fm1"],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["4-2",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "600",
       "B": "800"
     },
-    "requires": ["B20","Bw4"],
-    "unlocks": ["Bm7","Bq1","A56","A59","Fm1"],
-    "period": "monthly",
-    "needs": {
-      "M": ["4-2"]
-    },
     "reward": [
-      ["I","Furniture Box (Large)",2],
-      ["C","Improvement Material",2]
+      ["C","Improvement Material",2],
+      ["I","Furniture Box (Large)",2]      
     ]
   },
   "Bm7": {
     "Jp": "「水上反撃部隊」突入せよ！",
-    "En": "Send in the Surface Counterattack Fleet",
-    "content": "Sortie a DD as flagship, 1 CA (CAVs don't count), 1 CL and 3 other DD to World 2-5 and obtain an S-Rank at the boss",
-    "tips": "",
+    "En": "\"Surface Counterattack Fleet\" Charge!",
+    "content": "Assemble a fleet containing 4 DD with 1 as flagship, 1 CL, and 1 CA, then S rank boss node of 2-5.",
+    "tips": "CAV do not count as CA here.",
+    "requires": ["A46","Bm6"],
+    "unlocks": ["A61"],
+    "period": "monthly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-5",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "600",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["A46","Bm6"],
-    "unlocks": ["A61"],
-    "period": "monthly",
-    "needs": {
-      "M": ["2-5"]
     },
     "reward": [
       ["C","Development Material",4],
@@ -7554,13 +7598,14 @@ const ALL_QUESTS_LIST = {
   },
   "Bm8": {
     "Jp": "兵站線確保！海上警備を強化実施せよ！",
-    "En": "Secure the Supply Lines! Strengthen the Marine Guards!",
-    "content": "Sortie a fleet with a CL/CVL, 3 DD/DE, and up to 2 additional ships to Worlds 1-2, 1-3, 1-4 and 2-1. Obtain a S-rank at each boss node.",
+    "En": "Secure The Supply Lines! Strengthen The Marine Guard!",
+    "content": "Assemble a fleet consisting of 1 CVL/CL, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-2, 1-3, 1-4, and 2-1.",
     "tips": "",
-    "unlocks": ["Bq11"],
     "requires": ["Cm1","Bm5"],
+    "unlocks": ["Bq11"],
     "period": "monthly",
     "needs": {
+      "S": [],
       "M": [
         ["1-2",1],
         ["1-3",1],
@@ -7575,12 +7620,12 @@ const ALL_QUESTS_LIST = {
       "B": "400"
     },
     "reward": [
-      ["C","Development Material","4","Choose one: "],
-      ["C","Instant Repair","4","or "],
-      ["C","Improvement Material","2","or "],
-      ["E","Type 95 Depth Charge","1","Choose one: "],
-      ["E","25mm Single Autocannon Mount","2","or "],
-      ["I","Irako","1","or "]
+      ["C","Development Material",4,"Choose one: "],
+      ["C","Instant Repair",4,"or "],
+      ["C","Improvement Material",2,"or "],
+      ["E","Type 95 Depth Charge",1,"Choose one: "],
+      ["E","25mm Single Autocannon Mount",2,"or "],
+      ["I","Irako",1,"or "]
     ]
   }, 
  // Quarterly Sortie Quests Bq00  
