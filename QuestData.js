@@ -3245,7 +3245,7 @@ const ALL_QUESTS_LIST = {
     "unlocks": ["B80","Bq7","B136"],
     "period": "once",
     "needs": {
-      "S": ["Choukai Kai Ni","Furutaka","Kako","Aoba","Kinugasa","Yuubari","Tenryuu"],
+      "S": ["Choukai Kai Ni"],
       "M": [
         ["5-1",1]
       ],      
@@ -3986,43 +3986,48 @@ const ALL_QUESTS_LIST = {
   },
   "B71": {
     "Jp": "鎮守府近海航路の安全確保を強化せよ！",
-    "En": "Ensure the Safety of the Naval Base's Nearby Routes",
-    "content": "Sortie a fleet with a CL flagship, 4 DD, and up to 1 additional ship to World 1-6 and complete the map.",
+    "En": "Strengthen The Safety Of The Local Naval Base Sea Route.",
+    "content": "Assemble a fleet containing 1 CL as flagship, 4 DD, and up to 1 XX, then reach node N on 1-6.",
     "tips": "",
+    "requires": ["B70"],
+    "unlocks": ["F36"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-6",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "900",
       "S": "900",
       "B": "900"
     },
-    "requires": ["B70"],
-    "unlocks": ["F36"],
-    "period": "once",
-    "needs": {
-      "M": ["1-6"]
-    },
     "reward": [
-      ["C","Development Material",4],
-      ["I","Furniture Fairy",1]
+      ["I","Furniture Fairy",1],
+      ["C","Development Material",4]      
     ]
   },
   "B72": {
     "Jp": "「第三十一戦隊」敵潜を制圧せよ！",
-    "En": "31st Cruiser Division, suppress the enemy submarines!",
-    "content": "Sortie a fleet with Isuzu Kai Ni as flagship, Satsuki Kai Ni, Uzuki Kai, and three wildcards to World 1-6 and reach the goal point twice.",
+    "En": "\"31st Squadron\", Eliminate The Enemy Submarines!",
+    "content": "Assemble a fleet containing Isuzu Kai Ni as flagship, Satsuki Kai Ni, Uzuki Kai, and 3 XX, then reach node N on 1-6 twice.",
     "tips": "",
+    "requires": ["A66","Bw5"],
+    "unlocks": ["A71"],
+    "period": "once",
+    "needs": {
+      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"],
+      "M": [
+        ["1-6",2]
+      ]      
+    },
     "resources": {
       "F": "310",
       "A": "310",
       "S": "0",
       "B": "310"
-    },
-    "requires": ["Bw5","A66"],
-    "unlocks": ["A71"],
-    "period": "once",
-    "needs": {
-      "M": ["1-6"],
-      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"]
     },
     "reward": [
       ["C","Improvement Material",2],
@@ -4031,21 +4036,23 @@ const ALL_QUESTS_LIST = {
   },
   "B73": {
     "Jp": "新編「第八駆逐隊」出撃せよ！",
-    "En": "New 8th Destroyer Division, sortie!",
-    "content": "Sortie a fleet with Asashio Kai Ni/Asashio Kai Ni D as flagship, Michishio, Ooshio, Arashio, and two wildcards to World 1-6 and reach the goal point.",
+    "En": "New Reformed \"8th Destroyer Division\", Sortie!",
+    "content": "Assemble a fleet containing Asashio Kai Ni/D as flagship, Ooshio, Arashio, Michishio, and 2 XX, then reach node N on 1-6.",
     "tips": "",
+    "requires": ["A70"],
+    "unlocks": ["B90"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni","Ooshio","Arashio","Michishio"],
+      "M": [
+        ["1-6",1]
+      ]      
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A70"],
-    "unlocks": ["B90"],
-    "period": "once",
-    "needs": {
-      "M": ["1-6"],
-      "S": ["Asashio Kai Ni","Michishio","Ooshio","Arashio"]
     },
     "reward": [
       ["E","Searchlight",1],
@@ -4054,21 +4061,23 @@ const ALL_QUESTS_LIST = {
   },
   "B74": {
     "Jp": "精鋭「八駆第一小隊」対潜哨戒！",
-    "En": "Elite 8th Destroyer Division on ASW patrol!",
-    "content": "Sortie a fleet that includes Asashio Kai Ni D and Ooshio Kai Ni to World 1-5 and score two S-Ranks at the boss node.",
-    "tips": "",
+    "En": "Elite Force! 8th Destroyer Division First Platoon!",
+    "content": "Assemble a fleet containing Asashio Kai Ni D as flagship, Ooshio Kai Ni, and 2 XX, then S rank the boss node of 1-5 twice.",
+    "tips": "Asashio Kai Ni cannot be used for this quest.",
+    "requires": ["A71"],
+    "unlocks": ["A81"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni D","Ooshio Kai Ni"],
+      "M": [
+        ["1-5",2]
+      ]      
+    },
     "resources": {
       "F": "0",
       "A": "800",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["A71"],
-    "unlocks": ["A81"],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"],
-      "S": ["Asashio Kai Ni D","Ooshio Kai Ni"]
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4077,20 +4086,23 @@ const ALL_QUESTS_LIST = {
   },
   "B75": {
     "Jp": "水雷戦隊,南西諸島防衛線に反復出撃せよ！",
-    "En": "Torpedo Squadron, repeatedly sortie to the Nansei Islands defence line!",
-    "content": "Sortie a fleet with CL type (i.e. CL/CLT/CT) as flagship, four DD and a wildcard to World 1-4 and score two S-Ranks at the boss node.",
+    "En": "Torpedo Squad, Repeatedly Engage The Nansei Island Defense Line!",
+    "content": "Assemble a fleet containing 1 CL(T)/CT as flagship, 4 DD, and 1 XX, then A+ rank the boss node of 1-4 twice.",
     "tips": "",
+    "requires": ["B70"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "350",
       "S": "0",
       "B": "350"
-    },
-    "requires": ["B70"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"]
     },
     "reward": [
       ["C","Instant Repair",4],
@@ -4099,20 +4111,23 @@ const ALL_QUESTS_LIST = {
   },
   "B76": {
     "Jp": "製油所地帯沿岸の哨戒を実施せよ！",
-    "En": "Patrol the Coastal Refinery Zone!",
-    "content": "Sortie a fleet with a CVL as flagship, three DD and two wildcards to World 1-3 and score an S-Rank at the boss node.",
+    "En": "Patrol The Oil Refinery Zone Coast!",
+    "content": "Assemble a fleet containing 1 CVL as flagship, 3DD, and 2 XX, then S rank the boss node of 1-3.",
     "tips": "",
+    "requires": ["A12","B9"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-3",1]
+      ]
+    },
     "resources": {
       "F": "600",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B9"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-3"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -4121,20 +4136,24 @@ const ALL_QUESTS_LIST = {
   },
   "B77": {
     "Jp": "水雷戦隊、南西諸島海域を哨戒せよ！",
-    "En": "Torpedo Squadron, patrol the Nansei Islands area!",
-    "content": "Sortie a fleet with a CL as flagship, four DD and one wildcard to both World 2-2 and World 2-3, and score an S-Rank at each boss node.",
+    "En": "Torpedo Squadron, Patrol The Southwestern Seas!",
+    "content": "Assemble a fleet containing 1 CL(T)/CT as flagship, 4 DD, and 1 XX, then S rank the boss nodes of 2-2 and 2-3.",
     "tips": "",
+    "requires": ["A14","Cd1"],
+    "unlocks": ["F38"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-2",1],
+        ["2-3",1]
+      ]
+    },
     "resources": {
       "F": "600",
       "A": "600",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Cd1"],
-    "unlocks": ["F38"],
-    "period": "once",
-    "needs": {
-      "M": ["2-2","2-3"]
     },
     "reward": [
       ["I","Furniture Fairy",1],
@@ -4143,20 +4162,23 @@ const ALL_QUESTS_LIST = {
   },
   "B78": {
     "Jp": "「第十九駆逐隊」出撃せよ！",
-    "En": "19th Destroyer Division, sortie!",
-    "content": "Sortie a fleet with Isonami, Uranami, Ayanami and Shikinami to World 1-5, and score at least an A-Rank at the boss node.",
-    "tips": "※Because of the branching rules you can have only these four in your fleet. Enjoy the pre-boss compass trolling.",
+    "En": "Sortie The \"19th Destroyer Division\"!",
+    "content": "Assemble a fleet containing Ayanami, Shikinami, Uranami, and Isonami, then A+ rank the boss node of 1-5.",
+    "tips": "",
+    "requires": ["A72"],
+    "unlocks": ["B79"],
+    "period": "once",
+    "needs": {
+      "S": ["Ayanami","Shikinami","Uranami","Isonami"],
+      "M": [
+        ["1-5",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["A72"],
-    "unlocks": ["B79"],
-    "period": "once",
-    "needs": {
-      "M": ["1-5"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -4165,21 +4187,23 @@ const ALL_QUESTS_LIST = {
   },
   "B79": {
     "Jp": "「第十九駆逐隊」敵主力に突入せよ！",
-    "En": "19th Destroyer Division, engage the enemy main forces!",
-    "content": "Sortie a fleet with Isonami, Uranami, Ayanami, Shikinami and up to two wildcards to World 2-5, and score at least an A-Rank at the boss node.",
+    "En": "\"19th Destroyer Division\", Engage The Enemy Flagship!",
+    "content": "Assemble a fleet containing Ayanami, Shikinami, Uranami, Isonami, and up to 2 XX, then A+ rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["B78","Dw3"],
+    "unlocks": ["B86"],
+    "period": "once",
+    "needs": {
+      "S": ["Ayanami","Shikinami","Uranami","Isonami"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "600",
       "A": "600",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["B78"],
-    "unlocks": ["B86"],
-    "period": "once",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Isonami","Uranami","Ayanami","Shikinami"]
     },
     "reward": [
       ["C","Improvement Material",4],
@@ -4188,20 +4212,23 @@ const ALL_QUESTS_LIST = {
   },
   "B80": {
     "Jp": "飛行場設営の準備を実施せよ！",
-    "En": "Prepare for the Construction of the Land-Base!",
-    "content": "Sortie to World 6-3 and obtain an S-rank at the boss node.",
+    "En": "Central Waters \"Land Air Base\" Deployment!",
+    "content": "S rank the boss node of 6-3.",
     "tips": "",
+    "requires": ["B41","B62","Bw9"],
+    "unlocks": ["B81","F49","B139"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["6-3",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B41","B62"],
-    "unlocks": ["B81","F49","B139"],
-    "period": "once",
-    "needs": {
-      "M": ["6-3"]
     },
     "reward": [
       ["I","Construction Corps",1]
@@ -4209,20 +4236,23 @@ const ALL_QUESTS_LIST = {
   },
   "B81": {
     "Jp": "夜間突入！敵上陸部隊を叩け！",
-    "En": "Rush into Night Battle! Attack the Enemy Landing Forces!",
-    "content": "Sortie to World 5-3 and obtain at least an A-rank at the boss node.",
+    "En": "Night Attack! Striking The Enemy Landing Force!",
+    "content": "A+ rank the boss node of 5-3.",
     "tips": "",
+    "requires": ["B80"],
+    "unlocks": ["B90"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["5-3",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B80"],
-    "unlocks": ["B90"],
-    "period": "once",
-    "needs": {
-      "M": ["5-3"]
     },
     "reward": [
       ["I","Construction Corps",1]
@@ -4230,20 +4260,23 @@ const ALL_QUESTS_LIST = {
   },
   "B82": {
     "Jp": "夜の海を照らす「灯り」を入手せよ！",
-    "En": "Obtain the Searchlight that brightens the Dark Sea!",
-    "content": "Sortie to World 2-1 and obtain an S-rank at the boss node.",
+    "En": "Obtain The \"Lantern\" To Light The Night Sea!",
+    "content": "S rank the boss node of 2-1.",
     "tips": "",
+    "requires": ["B6","Bd2"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-1",1]
+      ]
+    },
     "resources": {
       "F": "100",
       "A": "100",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bm1"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-1"]
     },
     "reward": [
       ["E","Searchlight",1],
@@ -4252,20 +4285,23 @@ const ALL_QUESTS_LIST = {
   },
   "B83": {
     "Jp": "南西諸島防衛線を増強せよ！",
-    "En": "Reinforce the Nansei Islands Defense Line!",
-    "content": "Sortie a fleet with an AV or CAV as flagship and up to five wildcards to World 1-4 and obtain an S-rank at the boss node.",
+    "En": "Reinforce The Nansei Island Defense Line!",
+    "content": "Assemble a fleet containing 1 AV/CAV as flagship and 4 XX, then S rank the boss node of 1-4.",
     "tips": "",
+    "requires": ["B6"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-4",1]
+      ]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B6"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["1-4"]
     },
     "reward": [
       ["I","Furniture Box (Medium)",1],
@@ -4274,44 +4310,48 @@ const ALL_QUESTS_LIST = {
   },
   "B84": {
     "Jp": "「第十六戦隊(第三次)」出撃せよ！",
-    "En": "16th Cruiser Division (3rd Generation), sortie!",
-    "content": "Sortie a fleet with Kinu, Aoba, Kitakami, Ooi and up to two wildcards to World 2-4 and obtain at least an A-Rank at the boss node.",
+    "En": "Deploy The \"16th Squadron (3rd Gen.)\"!",
+    "content": "Assemble a fleet containing Kinu, Aoba, Kitakami, Ooi, and up to 2 XX, then A+ rank the boss node of 2-4.",
     "tips": "",
+    "requires": ["A73"],
+    "unlocks": ["A74"],
+    "period": "once",
+    "needs": {
+      "S": ["Kinu","Aoba","Kitakami","Ooi"],
+      "M": [
+        ["2-4",1]
+      ]      
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "400"
     },
-    "requires": ["A73"],
-    "unlocks": ["A74"],
-    "period": "once",
-    "needs": {
-      "M": ["2-4"],
-      "S": ["Kinu","Aoba","Kitakami","Ooi"]
-    },
     "reward": [
       ["I","Irako",1],
-      ["F","Furniture: \"Ship Girl Cushion Floor\"",1]
+      ["F","Ship Girl Cushion Floor",1]
     ]
   },
   "B85": {
     "Jp": "精鋭「第十六戦隊」突入せよ！",
-    "En": "Elite 16th Cruiser Division, engage the enemy!",
-    "content": "Sortie a fleet with Kinu Kai Ni as flagship and any combination of Kitakami Kai Ni, Ooi Kai Ni, Kuma Kai, Aoba Kai, Uranami Kai or Shikinami Kai to World 2-5 and obtain an S-Rank at the boss node.",
+    "En": "Deploy The \"Elite 16th Squadron\"!",
+    "content": "Assemble a fleet containing Kinu Kai Ni as flagship, and any 5 of: \"Kitakami Kai Ni, Ooi Kai Ni, Aoba Kai, Kuma Kai+, Shikinami Kai+, or Uranami Kai+\"; then S rank the boss node of 2-5.",
     "tips": "",
+    "requires": ["A74"],
+    "unlocks": ["B86"],
+    "period": "once",
+    "needs": {
+      "S": ["Kinu Kai Ni"],
+      "M": [
+        ["2-5",1]
+      ]      
+    },
     "resources": {
       "F": "600",
       "A": "600",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A74"],
-    "unlocks": ["B86"],
-    "period": "once",
-    "needs": {
-      "M": ["2-5"],
-      "S": ["Kinu Kai Ni","Kitakami Kai Ni","Ooi Kai Ni","Kuma Kai","Aoba Kai","Uranami Kai","Shikinami Kai"]
     },
     "reward": [
       ["E","Toku Daihatsu Landing Craft",1]
@@ -4319,21 +4359,23 @@ const ALL_QUESTS_LIST = {
   },
   "B86": {
     "Jp": "輸送作戦を成功させ、帰還せよ！",
-    "En": "Complete a transport mission and return!",
-    "content": "Sortie a fleet with Kinu Kai Ni as flagship, Uranami Kai, exactly three other DD, and up to one wildcard (not a DD) to World 2-2 and obtain an S-Rank at the boss node.",
-    "tips": "",
+    "En": "Report The Success Of A Transport Operation!",
+    "content": "Assemble a fleet containing Kinu Kai Ni as flagship, Uranami Kai+, 3 DD, and 1 XX, then S rank the boss node of 2-2.",
+    "tips": "XX cannot be a DD.",
+    "requires": ["B79","B85"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Kinu Kai Ni","Uranami Kai"],
+      "M": [
+        ["2-2",1]
+      ]      
+    },
     "resources": {
       "F": "1000",
       "A": "0",
       "S": "1000",
       "B": "3000"
-    },
-    "requires": ["B79","B85"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-2"],
-      "S": ["Kinu Kai Ni","Uranami Kai"]
     },
     "reward": [
       ["C","Improvement Material",5],
@@ -4342,65 +4384,74 @@ const ALL_QUESTS_LIST = {
   },
   "B87": {
     "Jp": "重巡戦隊、抜錨せよ！",
-    "En": "Heavy Cruiser Division, Set Sail!",
-    "content": "Sortie a CA(V) as flagship, three other CA(V), and two additional ships to World 2-3 and obtain an S-Rank at the boss node.",
+    "En": "Heavy Cruiser Squadron, Weigh Anchor!",
+    "content": "Assemble a fleet containing 1 CA/CAV as flagship, 3 CA/CAV, and up to 2 XX, then S rank the boss node of 2-3.",
     "tips": "",
+    "requires": ["A9","B7"],
+    "unlocks": ["B88","B95","G5"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-3",1]
+      ]
+    },
     "resources": {
       "F": "400",
       "A": "400",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A9"],
-    "unlocks": ["B88","B95","G5"],
-    "period": "once",
-    "needs": {
-      "M": ["2-3"]
-    },
     "reward": [
       ["I","Irako",1],
-      ["F","Furniture: \"Knit and Flooring\"",1]
+      ["F","Hand-Knitting & Flooring",1]
     ]
   },
   "B88": {
     "Jp": "戦艦戦隊、出撃せよ！",
-    "En": "Sortie a Battleship Division!",
-    "content": "Sortie a (F)BB(V) as flagship, 1 other (F)BB(V) and up to 4 additional ships to World 3-3 and obtain an S-Rank at the boss node.",
-    "tips": "※Due to the branching rules you're required to bring at least 2 CV(L).※You will be prompted to choose between one of the two equipment rewards, so choose wisely.",
+    "En": "Battleship Squadron, Sortie!",
+    "content": "Assemble a fleet containing 1 (F)BB(V) as flagship, 1 (F)BB(V), and up to 4 XX, then S rank the boss node of 3-3.",
+    "tips": "",
+    "requires": ["B8","B87"],
+    "unlocks": ["F51","D21","B97"],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-3",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "800",
       "S": "0",
       "B": "200"
     },
-    "requires": ["B8","B87"],
-    "unlocks": ["F51","D21","B97"],
-    "period": "once",
-    "needs": {
-      "M": ["3-3"]
-    },
     "reward": [
       ["C","Improvement Material",2],
-      ["E","PBY-5A Catalina",1,"Choose one: "],
-      ["E","Type 2 Seaplane Fighter Kai",1,"or "]
+      ["E","Type 2 Seaplane Fighter Kai",1,"Choose one: "],
+      ["E","PBY-5A Catalina",1,"or "]
     ]
   },
   "B89": {
     "Jp": "主力戦艦戦隊、抜錨せよ！",
-    "En": "Main BB Fleet, Sortie out!",
-    "content": "Sortie a fleet which includes 2 or more slow BB/BBV Obtain S-Rank Victory at the Boss node of World 2-4",
+    "En": "Battleship Squadron, Weigh Anchor!",
+    "content": "Assemble a fleet containing 2 BB(V) and up to 4 XX, then S rank the boss node of 2-4.",
     "tips": "",
+    "requires": ["B19"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-4",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "800",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["B19"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["2-4"]
     },
     "reward": [
       ["I","Irako",1],
@@ -4410,25 +4461,27 @@ const ALL_QUESTS_LIST = {
   },
   "B90": {
     "Jp": "精鋭「第八駆逐隊」突入せよ！",
-    "En": "Elite 8th DD Division, Sortie!",
-    "content": "Sortie a Fleet with Arashio Kai Ni as Flagship, which includes at least one of either Asashio, Ooshio or Michishio as well.Sortie to World 5-5 and obtain 2 A-rank or higher victories!",
+    "En": "Elite \"8th Destroyer Division\", Sortie!",
+    "content": "Assemble a fleet containing Arashio Kai Ni as Secretary, any 1 of: \"Asashio, Ooshio, or Michishio\"; and up to 4 XX, then A+ rank the boss node of 5-5 twice.",
     "tips": "",
+    "requires": ["B73","B81"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Arashio Kai Ni"],
+      "M": [
+        ["5-5",2]
+      ]      
+    },
     "resources": {
       "F": "800",
       "A": "800",
       "S": "0",
       "B": "800"
     },
-    "requires": ["B73","B81"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "M": ["5-5"],
-      "S": ["Arashio Kai Ni","Asashio","Ooshio","Michishio"]
-    },
     "reward": [
-      ["I","Reinforcement Expansion",1],
-      ["C","Improvement Material",4]
+      ["C","Improvement Material",4],
+      ["I","Reinforcement Expansion",1]      
     ]
   },
   "B91": {
