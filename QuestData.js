@@ -7189,19 +7189,19 @@ const ALL_QUESTS_LIST = {
 // Weekly Sortie Quests Bw00  
   "Bw1": {
     "Jp": "あ号作戦",
-    "En": "OpeRation A-gou",
-    "content": "Launch your fleet 36 times, encounter 24 bosses, kill 12 bosses, and get 6 S-Rank victories",
-    "tips": "",
+    "En": "Operation A-Gou",
+    "content": "Fulfill all of the following: Sortie 36 times, Reach any boss nodes 24 times, B+ rank any boss node 12 times, S rank any node 6 times.",
+    "tips": "	Doing a Sortie on a map counts as 1 Sortie, even if there are several battles.",
+    "requires": ["Bd2"],
+    "unlocks": ["Bw4","Bq8"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "300",
       "A": "300",
       "S": "300",
       "B": "100"
     },
-    "requires": ["Bd2"],
-    "unlocks": ["Bw4","Bq8"],
-    "period": "weekly",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",2],
       ["C","Development Material",2]
@@ -7209,76 +7209,76 @@ const ALL_QUESTS_LIST = {
   },
   "Bw2": {
     "Jp": "い号作戦",
-    "En": "OpeRation I-gou",
-    "content": "Sink 20 ennemy CV. CVL are fine too",
-    "tips": "",
+    "En": "Operation I-Gou",
+    "content": "Sink 20 CV or CVL.",
+    "tips": "Even if the quest description states otherwise, carriers are not needed for this quest.",
+    "requires": ["Bd5"],
+    "unlocks": ["Bw5","F32","Bq2"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "0",
       "A": "500",
       "S": "0",
       "B": "500"
     },
-    "requires": ["Bd5"],
-    "unlocks": ["Bw5","F32","Bq2"],
-    "period": "weekly",
-    "needs": {},
     "reward": [
       ["C","Development Material",2]
     ]
   },
   "Bw3": {
     "Jp": "海上通商破壊作戦",
-    "En": "Maritime Trade Disrupt OpeRation",
-    "content": "Sink 20 ennemy Transport Ships",
+    "En": "Maritime Trading Disruption Operation",
+    "content": "Sink 20 Transport Ships (AP).",
     "tips": "",
+    "requires": ["Bd2"],
+    "unlocks": ["B12"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "500",
       "A": "0",
       "S": "400",
       "B": "0"
     },
-    "requires": ["Bd2"],
-    "unlocks": ["B12"],
-    "period": "weekly",
-    "needs": {},
     "reward": [
       ["C","Development Material",3]
     ]
   },
   "Bw4": {
     "Jp": "ろ号作戦",
-    "En": "OpeRation Ro-gou",
-    "content": "Sink 50 Transport Ships",
+    "En": "Operation Ro-Gou",
+    "content": "Sink 50 Transport Ships (AP).",
     "tips": "",
+    "requires": ["Bw1"],
+    "unlocks": ["Bw10","Bm3","Bm6"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "400",
       "A": "0",
       "S": "800",
       "B": "0"
     },
-    "requires": ["Bw1"],
-    "unlocks": ["Bw10","Bm3","Bm6"],
-    "period": "weekly",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",3]
     ]
   },
   "Bw5": {
     "Jp": "海上護衛戦",
-    "En": "Marine Escort Battle",
-    "content": "Sink 15 ennemy SS",
+    "En": "Maritime Escort Operation",
+    "content": "Sink 15 SS.",
     "tips": "",
+    "requires": ["Bw2"],
+    "unlocks": ["Bw6","Bw7","Fw1","B72","Fm3","B100"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "600",
       "A": "0",
       "S": "0",
       "B": "0"
     },
-    "requires": ["Bw2"],
-    "unlocks": ["Bw6","Bw7","Fw1","B72","Fm3","B100"],
-    "period": "weekly",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",2],
       ["C","Improvement Material",1]
@@ -7286,20 +7286,18 @@ const ALL_QUESTS_LIST = {
   },
   "Bw6": {
     "Jp": "敵東方艦隊を撃滅せよ！",
-    "En": "Destroy the Enemy's Eastern Fleet",
-    "content": "Defeat 12 bosses in the World 4: 西方海域",
+    "En": "Eliminate Enemy Eastern Fleet!",
+    "content": "B+ rank any boss nodes of World 4 12 times.",
     "tips": "",
+    "requires": ["Bw5"],
+    "unlocks": ["Bw8"],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "700"
-    },
-    "requires": ["Bw5"],
-    "unlocks": ["Bw8"],
-    "period": "weekly",
-    "needs": {
-      "M": ["4-1","4-2","4-3","4-4","4-5"]
     },
     "reward": [
       ["C","Development Material",2]
@@ -7307,43 +7305,43 @@ const ALL_QUESTS_LIST = {
   },
   "Bw7": {
     "Jp": "敵北方艦隊主力を撃滅せよ！",
-    "En": "Destroy the Main Force of the Enemy's Northern Fleet",
-    "content": "Defeat 5 bosses in the Northern Sea 3-3,  3-4, or 3-5",
+    "En": "Eliminate Enemy Northern Fleet Main Forces!",
+    "content": "B+ rank the boss node of either 3-3, 3-4, or/and 3-5, five times.",
     "tips": "",
+    "requires": ["Bw5"],
+    "unlocks": [],
+    "period": "weekly",
+    "needs": {},
     "resources": {
       "F": "300",
       "A": "300",
       "S": "400",
       "B": "300"
     },
-    "requires": ["Bw5"],
-    "unlocks": [],
-    "period": "weekly",
-    "needs": {
-      "M": ["3-3","3-4","3-5"]
-    },
     "reward": [
-      ["I","Furniture Box (Medium)",1],
       ["C","Development Material",3],
+      ["I","Furniture Box (Medium)",1],
       ["C","Improvement Material",3]
     ]
   },
   "Bw8": {
     "Jp": "敵東方中枢艦隊を撃破せよ！",
-    "En": "Crush the Core of the Enemy's Eastern Fleet",
-    "content": "Defeat the boss in 4-4",
+    "En": "Destroy Enemy Eastern Core Fleet!",
+    "content": "B+ rank the boss node of 4-4.",
     "tips": "",
+    "requires": ["Bw6"],
+    "unlocks": ["Bw9"],
+    "period": "weekly",
+    "needs": {
+      "M": [
+        ["4-4",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "0",
       "S": "500",
       "B": "0"
-    },
-    "requires": ["Bw6"],
-    "unlocks": ["Bw9"],
-    "period": "weekly",
-    "needs": {
-      "M": ["4-4"]
     },
     "reward": [
       ["C","Instant Repair",1],
@@ -7352,20 +7350,22 @@ const ALL_QUESTS_LIST = {
   },
   "Bw9": {
     "Jp": "南方海域珊瑚諸島沖の制空権を握れ！",
-    "En": "Seize Air Superiority on the Southern Sea Coral Islands",
-    "content": "Sortie to 5-2 and get an S-Rank at the boss node 2 times",
+    "En": "Gain Air Superiority At The Coral Islands In The Southern Sea Region!",
+    "content": "S rank the boss node of 5-2 twice.",
     "tips": "",
+    "requires": ["Bw8"],
+    "unlocks": ["B44","B62","Bq7"],
+    "period": "weekly",
+    "needs": {
+      "M": [
+        ["5-2",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "0",
       "B": "800"
-    },
-    "requires": ["Bw8"],
-    "unlocks": ["B44","B62","Bq7"],
-    "period": "weekly",
-    "needs": {
-      "M": ["5-2"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -7374,20 +7374,22 @@ const ALL_QUESTS_LIST = {
   },
   "Bw10": {
     "Jp": "海上輸送路の安全確保に努めよ！",
-    "En": "Strive to Ensure the Security of the Marine Transportation Route",
-    "content": "Sortie to 1-5 and get at least an A-rank at the boss node 3 times",
+    "En": "Work On Securing Maritime Transport Routes!",
+    "content": "A+ ranks the boss node of 1-5 three times.",
     "tips": "",
+    "requires": ["Bw4","F17"],
+    "unlocks": [],
+    "period": "weekly",
+    "needs": {
+      "M": [
+        ["1-5",3]
+      ]
+    },
     "resources": {
       "F": "100",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A45","Bw4"],
-    "unlocks": [],
-    "period": "weekly",
-    "needs": {
-      "M": ["1-5"]
     },
     "reward": [
       ["C","Improvement Material",3]
