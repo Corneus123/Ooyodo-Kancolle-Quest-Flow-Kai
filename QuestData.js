@@ -294,154 +294,168 @@ const ALL_QUESTS_LIST = {
 // COMPOSITION QUEST A00
   "A1": {
     "Jp": "はじめての「編成」！",
-    "En": "The First Organization",
-    "content": "Have 2 ships in your main fleet.",
+    "En": "Your First \"Composition\"!",
+    "content": "Assemble a fleet containing 2 or more ships.",
     "tips": "",
+    "requires": [],
+    "unlocks": ["A2"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "20",
       "A": "20",
       "S": "0",
       "B": "0"
     },
-    "requires": [],
-    "unlocks": ["A2"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["S","Shirayuki",1]
     ]
   },
   "A2": {
     "Jp": "「駆逐隊」を編成せよ！",
-    "En": "Organize a Destroyer Division",
-    "content": "Have 4 DD in your fleet",
+    "En": "Compose A \"Destroyer Division\"!",
+    "content": "Assemble a fleet containing 4 DD and up to 2 XX.",
     "tips": "",
+    "requires": ["A1"],
+    "unlocks": ["A3"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "30",
       "A": "30",
       "S": "30",
       "B": "0"
     },
-    "requires": ["A1"],
-    "unlocks": ["A3"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",1]
     ]
   },
   "A3": {
     "Jp": "「水雷戦隊」を編成せよ！",
-    "En": "Organize a Torpedo Squadron",
-    "content": "Consists of a CL as your flagship and 3 DD",
+    "En": "Compose A \"Torpedo Squadron\"!",
+    "content": "Assemble a fleet containing 1 CL as flagship and 5 DD.",
     "tips": "",
+    "requires": ["A2"],
+    "unlocks": ["A4","A5"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "40",
       "A": "40",
       "S": "0",
       "B": "40"
     },
-    "requires": ["A2"],
-    "unlocks": ["A4","A5"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["I","Repair Team",1]
     ]
   },
   "A4": {
     "Jp": "6隻編成の艦隊を編成せよ！",
-    "En": "Organize a Fleet of 6 Ships",
-    "content": "Have 6 ships in your fleet",
+    "En": "Compose A Fleet with 6 Ships!",
+    "content": "Assemble a fleet containing 6 ships.",
     "tips": "",
+    "requires": ["A3"],
+    "unlocks": ["A6","A9"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "50",
       "A": "0",
       "S": "50",
       "B": "0"
     },
-    "requires": ["A3"],
-    "unlocks": ["A6","A9"],
-    "period": "once",
-    "needs": {},
     "reward": [
-      ["A","Unlocks the second fleet",1],
-      ["A","Unlocks the expeditions tab",1]
+      ["A","Unlocks the Second Fleet",1],
+      ["A","Unlocks Expeditions",1]
     ]
   },
   "A5": {
     "Jp": "軽巡2隻を擁する隊を編成せよ！",
-    "En": "Organize a Fleet of 2 Light Cruisers",
-    "content": "Have 2 CL in your fleet",
+    "En": "Compose A Fleet with 2 Light Cruisers!",
+    "content": "Assemble a fleet containing 2 CL.",
     "tips": "",
+    "requires": ["A3"],
+    "unlocks": ["A7","A8","B29","D1","B67","F11"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "60",
       "A": "60",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A3"],
-    "unlocks": ["A7","A8","B29","D1","B67","F11"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "A6": {
     "Jp": "第2艦隊を編成せよ！",
-    "En": "Organize the Second Fleet",
-    "content": "Have a flagship in your second fleet",
+    "En": "Compose The Second Fleet!",
+    "content": "Assign the flagship for the second fleet and compose it! ; Have a ship in the Second Fleet.",
     "tips": "",
+    "requires": ["A4"],
+    "unlocks": ["B3"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "50",
       "A": "50",
       "S": "100",
       "B": "0"
     },
-    "requires": ["A4"],
-    "unlocks": ["B3"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",1]
     ]
   },
   "A7": {
     "Jp": "「重巡戦隊」を編成せよ！",
-    "En": "Organize a Heavy Cruiser Division",
-    "content": "Have 2 CA in your fleet (CAV don't count)",
-    "tips": "",
+    "En": "Compose A \"Heavy Cruiser Squadron\"!",
+    "content": "Assemble a fleet containing 2 CA in the First Fleet.",
+    "tips": "CAV do not count.",
+    "requires": ["A5"],
+    "unlocks": ["A14","A12"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "0",
       "A": "70",
       "S": "0",
       "B": "30"
     },
-    "requires": ["A5"],
-    "unlocks": ["A14","A12"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",1]
     ]
   },
   "A8": {
     "Jp": "「天龍」型軽巡姉妹の全2艦を編成せよ！",
-    "En": "Organize both Sisters of the Tenryuu-class Light Cruisers",
-    "content": "Have Tenryuu and Tatsuta in your main fleet",
+    "En": "Compose A Fleet With Both Tenryuu-class Light Cruiser Sisters!",
+    "content": "Assemble a fleet containing Tenryuu and Tatsuta.",
     "tips": "",
-    "resources": {
-      "F": "100",
-      "A": "100",
-      "S": "100",
-      "B": "50"
-    },
     "requires": ["A5"],
     "unlocks": ["A17"],
     "period": "once",
     "needs": {
       "S": ["Tenryuu","Tatsuta"]
+    },
+    "resources": {
+      "F": "100",
+      "A": "100",
+      "S": "100",
+      "B": "50"
     },
     "reward": [
       ["C","Instant Construction",2]
@@ -449,39 +463,41 @@ const ALL_QUESTS_LIST = {
   },
   "A9": {
     "Jp": "「水上機母艦」を配備せよ！",
-    "En": "Deploy a Seaplane Tender",
-    "content": "Have an AV in your fleet",
+    "En": "Assign A \"Seaplane Tender\"!",
+    "content": "Assemble a fleet containing 1 AV.",
     "tips": "",
+    "requires": ["A4"],
+    "unlocks": ["A10","A45","B87","A69"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "200"
     },
-    "requires": ["A4"],
-    "unlocks": ["A10","A45","B87","A69"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "A10": {
     "Jp": "「第六駆逐隊」を編成せよ！",
-    "En": "Organize the 6th Destroyer Division",
-    "content": "Have ONLY Akatsuki, Hibiki, Ikazuchi and Inazuma in your second fleet",
+    "En": "Compose The \"6th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Akatsuki, Hibiki, Ikazuchi, and Inazuma.",
     "tips": "",
-    "resources": {
-      "F": "150",
-      "A": "150",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["A9"],
     "unlocks": ["A28","B12","B42"],
     "period": "once",
     "needs": {
       "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"]
+    },
+    "resources": {
+      "F": "150",
+      "A": "150",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["I","Repair Team",1]
@@ -489,98 +505,104 @@ const ALL_QUESTS_LIST = {
   },
   "A11": {
     "Jp": "第2艦隊で空母機動部隊を編成せよ！",
-    "En": "Organize a Carrier Task Force in Your Second Fleet",
-    "content": "Have an CV / CVL and 3 DD in your SECOND fleet",
+    "En": "Compose A Mobile Carrier Fleet As The Second Fleet!",
+    "content": "Assemble a fleet containing 1 CV(B/L), and 2 DD, in the Second Fleet.",
     "tips": "",
+    "requires": ["B3"],
+    "unlocks": ["B10"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "100",
       "A": "0",
       "S": "0",
       "B": "100"
     },
-    "requires": ["B3"],
-    "unlocks": ["B10"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",2]
     ]
   },
   "A12": {
     "Jp": "「空母機動部隊」を編成せよ！",
-    "En": "Organize a Carrier Task Force",
-    "content": "Have an CV / CVL and 3 DD in your main fleet",
+    "En": "Compose A \"Mobile Carrier Fleet\"!",
+    "content": "Assemble a fleet containing 1 CV(B/L) as Secretary, and 3 DD.",
     "tips": "",
+    "requires": ["A7"],
+    "unlocks": ["A13"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "50",
       "A": "0",
       "S": "0",
       "B": "100"
     },
-    "requires": ["A7"],
-    "unlocks": ["A13"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "A13": {
     "Jp": "戦艦と重巡による主力艦隊を編成せよ！",
-    "En": "Organize the Main Fleet with a Battleship and Heavy Cruisers",
-    "content": "Have a BB and 2 CA in your main fleet(BBV don't count)",
-    "tips": "",
+    "En": "Compose A Main Force Fleet With Battleship And Heavy Cruisers!",
+    "content": "Assemble a fleet containing 1 (F)BB and 2 CA in the First Fleet.",
+    "tips": "BBV and CAV do not count.",
+    "requires": ["A12"],
+    "unlocks": ["A19","A20","F32"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "0",
       "A": "150",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A12"],
-    "unlocks": ["A19","A20","F32"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Construction",2]
     ]
   },
   "A14": {
     "Jp": "「川内」型軽巡姉妹の全3艦を編成せよ！",
-    "En": "Organize All 3 Sisters of the Sendai-class Light Cruisers",
-    "content": "Have Sendai, Jintsuu, and Naka in your main fleet",
+    "En": "Compose A Fleet with All Three Sendai-class Light Cruiser Sisters!",
+    "content": "Assemble a fleet containing Sendai, Jintsu, and Naka in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "100",
-      "A": "0",
-      "S": "100",
-      "B": "0"
-    },
     "requires": ["A7"],
     "unlocks": ["A15","G4","F64"],
     "period": "once",
     "needs": {
       "S": ["Sendai","Jintsuu","Naka"]
     },
+    "resources": {
+      "F": "100",
+      "A": "0",
+      "S": "100",
+      "B": "0"
+    },
     "reward": [
-      ["A","Unlocks the third fleet",1]
+      ["A","Unlocks the Third Fleet",1]
     ]
   },
   "A15": {
     "Jp": "「妙高」型重巡姉妹の全4隻を編成せよ！",
-    "En": "Organize All 4 Sisters of the Myoukou-class Heavy Cruisers",
-    "content": "Have Myoukou, Nachi, Ashigara and Haguro in your main fleet",
+    "En": "Compose A Fleet with All Four Myoukou-class Heavy Cruiser Sisters!",
+    "content": "Assemble a fleet containing Myoukou, Nachi, Ashigara, and Haguro in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "150",
-      "A": "100",
-      "S": "150",
-      "B": "100"
-    },
     "requires": ["A14"],
     "unlocks": ["A16","B138"],
     "period": "once",
     "needs": {
       "S": ["Myoukou","Nachi","Ashigara","Haguro"]
+    },
+    "resources": {
+      "F": "150",
+      "A": "100",
+      "S": "150",
+      "B": "100"
     },
     "reward": [
       ["C","Instant Repair",1],
@@ -589,63 +611,63 @@ const ALL_QUESTS_LIST = {
   },
   "A16": {
     "Jp": "「金剛」型による高速戦艦部隊を編成せよ！",
-    "En": "Organize a Fast Battleship Force with the Kongou-class",
-    "content": "Have Kongou, Hiei, Haruna and Kirishima in your main fleet",
+    "En": "Compose A Fast Battleship Fleet With The Kongou-class!",
+    "content": "Assemble a fleet containing Kongou, Hiei, Haruna, and Kirishima in the First Fleet.",
     "tips": "",
+    "requires": ["A15"],
+    "unlocks": ["WF01"],
+    "period": "once",
+    "needs": {
+      "S": ["Kongou","Hiei","Haruna","Kirishima"]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A15"],
-    "unlocks": ["WF01"],
-    "period": "once",
-    "needs": {
-      "S": ["Kongou","Haruna","Hiei","Kirishima"]
-    },
     "reward": [
-      ["A","Unlocks the fourth fleet",1]
+      ["A","Unlocks the Fourth Fleet",1]
     ]
   },
   "A17": {
     "Jp": "「扶桑」型戦艦姉妹の全2隻を編成せよ！",
-    "En": "Organize Both Sisters of the Fusou-class Battleships",
-    "content": "Have Fusou and Yamashiro in your main fleet",
+    "En": "Compose A Fleet With Both Fusou-class Battleship Sisters!",
+    "content": "Assemble a fleet containing Fusou and Yamashiro in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "200",
-      "S": "200",
-      "B": "200"
-    },
     "requires": ["A8"],
     "unlocks": ["A18"],
     "period": "once",
     "needs": {
       "S": ["Fusou","Yamashiro"]
     },
+    "resources": {
+      "F": "200",
+      "A": "200",
+      "S": "200",
+      "B": "200"
+    },
     "reward": [
-      ["C","Instant Repair",1],
+      ["C","Instant Repair",2],
       ["C","Development Material",1]
     ]
   },
   "A18": {
     "Jp": "「伊勢」型戦艦姉妹の全2隻を編成せよ！",
-    "En": "Organize Both Sisters of the Ise-class Battleships",
-    "content": "Have Ise and Hyuuga in your main fleet",
-    "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "200",
-      "S": "300",
-      "B": "200"
-    },
+    "En": "Compose A Fleet With Both Ise-class Battleship Sisters!",
+    "content": "Assemble a fleet containing Ise and Hyuuga in the First Fleet.",
+    "tips": "Both BB and BBV forms can be used.",
     "requires": ["A17"],
     "unlocks": ["B131"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"]
+    },
+    "resources": {
+      "F": "300",
+      "A": "200",
+      "S": "300",
+      "B": "200"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -654,20 +676,20 @@ const ALL_QUESTS_LIST = {
   },
   "A19": {
     "Jp": "「南雲機動部隊」を編成せよ！",
-    "En": "Organize the Nagumo Carrier Task Force",
-    "content": "Have ONLY Akagi, Kaga, Hiryuu and Souryuu in your main fleet",
+    "En": "Compose The \"Nagumo Mobile Fleet\"!",
+    "content": "Assemble a fleet containing only Akagi, Kaga, Hiryuu, and Souryuu in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "500",
-      "A": "500",
-      "S": "500",
-      "B": "500"
-    },
     "requires": ["A13"],
     "unlocks": ["Fm1"],
     "period": "once",
     "needs": {
       "S": ["Akagi","Kaga","Hiryuu","Souryuu"]
+    },
+    "resources": {
+      "F": "500",
+      "A": "500",
+      "S": "500",
+      "B": "500"
     },
     "reward": [
       ["C","Instant Construction",2],
@@ -676,20 +698,20 @@ const ALL_QUESTS_LIST = {
   },
   "A20": {
     "Jp": "「三川艦隊」を編成せよ！",
-    "En": "Organize the Mikawa Fleet",
-    "content": "Have Choukai, Aoba, Kako,Furutaka,and Tenryuu in your main fleet,with one additional FAST ship",
+    "En": "Compose The \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kako, Furutaka, Tenryuu, and 1 FAST ship in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "400",
-      "A": "0",
-      "S": "200",
-      "B": "0"
-    },
     "requires": ["A13"],
     "unlocks": ["A21","B11"],
     "period": "once",
     "needs": {
       "S": ["Choukai","Aoba","Kako","Furutaka","Tenryuu"]
+    },
+    "resources": {
+      "F": "400",
+      "A": "0",
+      "S": "200",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",3]
