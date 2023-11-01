@@ -24,8 +24,7 @@ const EQUIPMENT_TYPE = {
   "Late Model Bow Torpedo Mount (6 tubes)": "Torpedo",
   "Type 91 Anti-Aircraft Fire Director": "Anti-air fire director",
   "Special Type 2 Amphibious Tank": "Amphibious tank",
-  "Drum Canister (Transport Use)": "Drum Canister",
-  "Drum Canister": "Drum Canister",
+  "Drum Canister (Transport Use)": "Drum Canister (Transport Use)",
   "New Kanhon Design Anti-torpedo Bulge (Large)": "Armor bulge",
   "8cm High-angle Gun Kai + Additional Machine Guns": "High-angle gun",
   "New Kanhon Design Anti-torpedo Bulge (Medium)": "Armor bulge",
@@ -263,7 +262,7 @@ const ICONS_LINK = {
   "Torpedo": "files/webpage/game_icons/Torpedo.png",
   "Anti-air fire director": "files/webpage/game_icons/Aafd.png",
   "Amphibious tank": "files/webpage/game_icons/Special_Amphibious_Tank.png",
-  "Drum Canister": "files/webpage/game_icons/Drum.png",
+  "Drum Canister (Transport Use)": "files/webpage/game_icons/Drum.png",
   "Armor bulge": "files/webpage/game_icons/Armor_Bulge.png",
   "High-angle gun": "files/webpage/game_icons/GreenGun.png",
   "Engine": "files/webpage/game_icons/Engine.png",
@@ -5082,7 +5081,7 @@ const ALL_QUESTS_LIST = {
       ["E","Type 22 Surface Radar",2,"or "],
       ["E","12.7cm Twin Gun Mount Model B Kai 2",2,"or "],
       ["I","Underway Replenishment",2,"Choose one: "],
-      ["E","Drum Canister",3,"or "],
+      ["E","Drum Canister (Transport Use)",3,"or "],
       ["C","Improvement Material",4,"or "]
     ]
   },
@@ -6830,7 +6829,7 @@ const ALL_QUESTS_LIST = {
       ["E","TBF★+4",2,"Choose one: "],
       ["C","Improvement Material",7,"or "],
       ["I","Action Report",1,"or "],
-      ["I","Ranking Points",800,"Choose one: "],
+      ["A","Ranking Points",800,"Choose one: "],
       ["E","FR-1 Fireball",1,"or "]
     ]
   },
@@ -7631,20 +7630,23 @@ const ALL_QUESTS_LIST = {
  // Quarterly Sortie Quests Bq00  
   "Bq1": {
     "Jp": "沖ノ島海域迎撃戦",
-    "En": "Okinoshima Sea Counter Attack",
-    "content": "Sortie a fleet to World 2-4 and obtain two S-Ranks at the boss node.",
+    "En": "Encounter Battle At Okinoshima Island",
+    "content": "S rank the boss node of 2-4 twice.",
     "tips": "",
+    "requires": ["B19","Bm6"],
+    "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-4",2]
+      ]
+    },
     "resources": {
       "F": "800",
       "A": "800",
       "S": "800",
       "B": "0"
-    },
-    "requires": ["Bm6","B19"],
-    "unlocks": [],
-    "period": "quarterly",
-    "needs": {
-      "M": ["2-4"]
     },
     "reward": [
       ["C","Improvement Material",5],
@@ -7652,21 +7654,27 @@ const ALL_QUESTS_LIST = {
     ]
   },
   "Bq2": {
-    "Jp": "戦果拡張任務！「Ｚ作戦」前段作戦",
-    "En": "Ranking Expansion Mission: 'OpeRation Z' Frontal OpeRation!",
-    "content": "Sortie to World 2-4, 6-1, 6-3 and obtain A-rank or higher victories at the Boss nodes. Sortie to World 6-4 and obtain an S-rank victory at the Boss node.",
+    "Jp": "戦果拡張任務！「Z作戦」前段作戦　他",
+    "En": "Ranking Points Boost Mission! \"Operation Z\", First Part",
+    "content": "Assemble the First Fleet, then A+ rank the boss nodes of 2-4, 6-1, 6-3, and S rank the boss node of 6-4.",
     "tips": "",
+    "requires": ["B91","Bw2"],
+    "unlocks": ["Bq10"],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["2-4",1],
+        ["6-1",1],
+        ["6-3",1],
+        ["6-4",1]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "2000",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bw2","B91"],
-    "unlocks": ["Bq10"],
-    "period": "quarterly",
-    "needs": {
-      "M": ["2-4","6-1","6-3","6-4"]
     },
     "reward": [
       ["I","Irako",3],
@@ -7676,20 +7684,23 @@ const ALL_QUESTS_LIST = {
   },
   "Bq3": {
     "Jp": "強行輸送艦隊、抜錨！",
-    "En": "Transport Fleet Forces, Launch!",
-    "content": "Sortie a fleet with either 2 BBV and up to 4 additional ships or 2 AO along with up to 4 additional ships to world 1-6 and reach the goal point twice.",
+    "En": "Enforced Transport Fleet, Weigh Anchor!",
+    "content": "Assemble a fleet containing 2 BBV/AO and up to 4 XX, then reach node N on 1-6 twice.",
     "tips": "",
+    "requires": ["B10"],
+    "unlocks": ["Bq4"],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-6-N",2]
+      ]
+    },
     "resources": {
       "F": "1000",
       "A": "400",
       "S": "400",
       "B": "0"
-    },
-    "requires": ["B10"],
-    "unlocks": ["Bq4"],
-    "period": "quarterly",
-    "needs": {
-      "M": ["1-6-N"]
     },
     "reward": [
       ["C","Instant Repair",4],
@@ -7698,20 +7709,23 @@ const ALL_QUESTS_LIST = {
   },
   "Bq4": {
     "Jp": "前線の航空偵察を実施せよ！",
-    "En": "Perform aerial reconnaissance on the frontlines!",
-    "content": "Sortie a fleet with 1 AV, 2 CL + 3 additional ships to world 6-3 and score 2 A-rank or better victories at the boss node.",
+    "En": "Carry Out Air Reconnaissance In The Front Lines!",
+    "content": "Assemble a fleet containing 1 AV, 2 CL, and up to 3 XX, then A+ rank the boss node of 6-3 twice.",
     "tips": "",
+    "requires": ["Bq3"],
+    "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["6-3",2]
+      ]
+    },
     "resources": {
       "F": "0",
       "A": "800",
       "S": "0",
       "B": "1000"
-    },
-    "requires": ["B91","Bq3"],
-    "unlocks": [],
-    "period": "quarterly",
-    "needs": {
-      "M": ["6-3"]
     },
     "reward": [
       ["C","Development Material",8],
@@ -7720,111 +7734,129 @@ const ALL_QUESTS_LIST = {
   },
   "Bq5": {
     "Jp": "北方海域警備を実施せよ！",
-    "En": "Fulfill Security Patrol of the Northern Ocean Area!",
-    "content": "Sortie a fleet with 1 CL, up to 5 additional ships to world 3-1, 3-2, 3-3 and obtain A-rank or better victories at the boss nodes.",
+    "En": "Commence The Arctic Waters Defense!",
+    "content": "Assemble a fleet containing 1CL and up to 5 XX, then A+ rank the boss nodes of 3-1, 3-2 and 3-3.",
     "tips": "",
+    "requires": ["Dw3"],
+    "unlocks": ["B110","Bq6"],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["3-1",1],
+        ["3-2",1],
+        ["3-3",1]
+      ]
+    },
     "resources": {
       "F": "500",
       "A": "500",
       "S": "0",
       "B": "0"
     },
-    "requires": ["Dw3"],
-    "unlocks": ["B110","Bq6"],
-    "period": "quarterly",
-    "needs": {
-      "M": ["3-1","3-2","3-3"]
-    },
     "reward": [
       ["I","Combat Ration",1],
-      ["I","Medal",1,"Choose one: "],
+      ["E","12.7cm Twin Gun Mount Model C Kai 2 ★+3",1,"Choose one: "],
       ["I","Furniture Fairy",1,"or "],
-      ["E","12.7cm Twin Gun Mount Model C Kai 2 ★+3",1,"or "]
+      ["I","Medal",1,"or "]
     ]
   },
   "Bq6": {
     "Jp": "精鋭「三一駆」、鉄底海域に突入せよ！",
-    "En": "Elite「31st Destroyer Division」, Rush into the Iron Bottom Ocean Area!",
-    "content": "Sortie a Fleet with Naganami Kai Ni as Flagship, with at least one of either Takanami Kai, Okinami Kai or Asashimo Kai to World 5-4 and obtain 2 S-rank victories at the boss node.",
+    "En": "Elite \"31st Destroyer Division\", Storm Into The Iron Bottom Sound Area!",
+    "content": "Assemble a fleet containing Naganami Kai Ni, any 1 of \"Takanami Kai+, Asashimo Kai+, or Okinami Kai+\"; and up to 4 XX, then S rank the boss node of 5-4 twice.",
     "tips": "",
+    "requires": ["A83","Bq5"],
+    "unlocks": ["C23"],
+    "period": "quarterly",
+    "needs": {
+      "S": ["Naganami Kai Ni"],
+      "M": [
+        ["5-4",2]
+      ]
+    },
     "resources": {
       "F": "310",
       "A": "310",
       "S": "0",
       "B": "310"
     },
-    "requires": ["A83","Bq5"],
-    "unlocks": ["C23"],
-    "period": "quarterly",
-    "needs": {
-      "S": ["Naganami Kai Ni","Takanami Kai","Okinami Kai","Asashimo Kai"],
-      "M": ["5-4"]
-    },
     "reward": [
-      ["E","Type 13 Air Radar",2,"Choose one: "],
-      ["E","Type 22 Surface Radar",2,"or "],
-      ["I","Action Report",2,"or "],
+      ["E","Type 22 Surface Radar",2,"Choose one: "],
+      ["E","Type 13 Air Radar",2,"or "],
+      ["I","Action Report",1,"or "],
       ["I","New Model Gun Mount Improvement Material",1,"Choose one: "],
       ["I","Present box",1,"or "]
     ]
   },
   "Bq7": {
     "Jp": "新編成「三川艦隊」、鉄底海峡に突入せよ！",
-    "En": "New Mikawa Fleet, Rush into the Iron Bottom Ocean Area!",
-    "content": "Sortie a Fleet with four of Choukai, Aoba, Kinugasa, Kako, Furutaka, Tenryuu, Yuubari and 2 additional ships to world 5-1, 5-3, 5-4 and obtain S-rank victories at the boss nodes.",
+    "En": "New Mikawa Fleet, Rush Into The Iron Bottom Sound!",
+    "content": "Assemble a fleet containing any 4 of: \"Choukai, Aoba, Kinugasa, Kako, Furutaka, Tenryuu, or Yuubari\"; and up to 2 XX, then S rank the boss nodes of 5-1, 5-3, and 5-4.",
     "tips": "",
-    "period": "quarterly",
-    "requires": ["B41","Bw9"],
+    "requires": ["Bw9","B41"],
     "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["5-1",1],
+        ["5-3",1],
+        ["5-4",1]
+      ]
+    },
     "resources": {
       "F": "800",
       "A": "800",
       "S": "800",
       "B": "800"
     },
-    "needs": {
-      "S": ["Aoba","Choukai","Furutaka","Kako","Kinugasa","Tenryuu","Yuubari"],
-      "M": ["5-1","5-3","5-4"]
-    },
     "reward": [
+      ["A","Ranking points",200],
       ["I","Medal",1,"Choose one: "],
-      ["C","Improvement Material",5,"or "],
-      ["A","Ranking points",200]
+      ["C","Improvement Material",5,"or "]      
     ]
   },  
   "Bq8": {
     "Jp": "【戦果拡張任務】泊地周辺海域の安全確保を徹底せよ！",
-    "En": "Ranking Expansion Quest: Secure the Safety of the Anchorage Area!",
-    "content": "Sortie a fleet to Worlds 1-5, 7-1, 7-2. S-rank the boss node of 1-5 and 7-1 three times. S-rank both boss nodes of 7-2 three times.",
+    "En": "Thoroughly Secure The Sea Around The Anchorages!",
+    "content": "S rank the boss nodes of 1-5, 7-1, 7-2 (Part 1), and 7-2 (Part 2) three times each.",
     "tips": "",
-    "period": "quarterly",
-    "requires": ["Bw1","B125"],
+    "requires": ["B125","Dw3"],
     "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["1-5",3],
+        ["7-1",3],
+        ["7-2 (Part 1)",3],
+        ["7-2 (Part 2)",3]
+      ]
+    },
     "resources": {
       "F": "2000",
       "A": "500",
       "S": "0",
       "B": "500"
     },
-    "needs": {
-      "M": ["1-5","7-1","7-2"]
-    },
     "reward": [
+      ["A","Ranking points",300],
       ["E","Skilled Lookouts",1,"Choose one: "],
       ["I","Skilled Crew Member",1,"or "],
-      ["I","Underway Replenishment",4,"or "],
-      ["A","Ranking points",300]
+      ["I","Underway Replenishment",4,"or "] 
     ]
   },  
   "Bq9": {
     "Jp": "空母戦力の投入による兵站線戦闘哨戒",
-    "En": "Supply Line Combat Patrol for the release of the Aircraft Carrier Strength",
-    "content": "Sortie a fleet with at least 1 CV/CVL/CVB and up to 5 additional ships to Worlds 1-3, 1-4, 2-1, 2-2, and 2-3. Obtain a S-rank at each boss node.",
+    "En": "Utilize The Supply Line Logistics Of Your Carrier Force!",
+    "content": "Assemble a fleet containing 1 CV(B/L) and up to 5 XX, then S rank the boss nodes of 1-3, 1-4, 2-1, 2-2, and 2-3.",
     "tips": "",
+    "requires": ["Dw3"],
     "unlocks": ["B127"],
-    "requires": ["Cd1"],
     "period": "quarterly",
     "needs": {
+      "S": [],
       "M": [
         ["1-3",1],
         ["1-4",1],
@@ -7840,27 +7872,28 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","New Model Aerial Armament Material","1","Choose one: "],
-      ["C","Development Material","4","or "],
-      ["E","Saiun","1","Choose one: "],
-      ["I","Skilled Crew Member","1","or "],
-      ["I","Present box","1","or "]
+      ["C","Development Material",4,"Choose one: "],
+      ["I","New Model Aerial Armament Material",1,"or "],
+      ["E","Saiun",1,"Choose one: "],
+      ["I","Skilled Crew Member",1,"or "],
+      ["I","Present box",1,"or "]
     ]
   },  
   "Bq10": {
     "Jp": "戦果拡張任務！「Z作戦」後段作戦",
-    "En": "Military Gains Extra Operation: \"Operation Z\" Latter Operation",
-    "content": "Sortie a fleet to Worlds 7-2, 5-5, 6-2, and 6-5. Obtain a S-rank at each boss node (only second boss node required for 7-2).",
+    "En": "Military Gains Extra Operation! \"Operation Z\" Latter Part",
+    "content": "Assemble the First Fleet, then S rank the boss nodes of 7-2 (Part 2), 5-5, 6-2, and 6-5.",
     "tips": "",
-    "unlocks": [],
     "requires": ["Bq2"],
+    "unlocks": [],
     "period": "quarterly",
     "needs": {
+      "S": [],
       "M": [
+        ["7-2 (Part 2)",1],
         ["5-5",1],
         ["6-2",1],
-        ["6-5",1],
-        ["7-2",1]
+        ["6-5",1]        
       ]
     },
     "resources": {
@@ -7870,21 +7903,22 @@ const ALL_QUESTS_LIST = {
       "B": "2000"
     },
     "reward": [
-      ["A","Ranking points","400"],
-      ["C","Improvement Material","4","Choose one: "],
-      ["I","Irako","3","or "],
-      ["I","Underway Replenishment","4","or "]
+      ["A","Ranking points",400],
+      ["C","Improvement Material",4,"Choose one: "],
+      ["I","Irako",3,"or "],
+      ["I","Underway Replenishment",4,"or "]
     ]
   },
   "Bq11": {
-    "Jp": "南西諸島方面「海上警備行動」発令！",
-    "En": "\"Surface Security Actions\" around the Nansei Archipelago Annoucement",
-    "content": "Sortie a fleet with at least 1 CVL/CL, 3 or more DD/DE, and up to 2 additional ships to Worlds 1-4, 2-1, 2-2, and 2-3. Obtain a S-rank at each boss node.",
+    "Jp": "南西諸島方面「海上警備行動」発令",
+    "En": "\"Surface Security Actions\" Around The Nansei Archipelago Announcement",
+    "content": "Assemble a fleet containing 1 CVL/CL, 3 DD/DE, and up to 2 XX, then S rank the boss nodes of 1-4, 2-1, 2-2, and 2-3.",
     "tips": "",
-    "unlocks": [],
     "requires": ["Bm8","Cd1"],
+    "unlocks": [],
     "period": "quarterly",
     "needs": {
+      "S": [],
       "M": [
         ["1-4",1],
         ["2-1",1],
@@ -7899,16 +7933,75 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["A","Ranking points","80"],
-      ["I","Present box","1"],
-      ["C","Improvement Material","2","Choose one: "],
-      ["E","Type 94 Depth Charge Projector","2","or "],
-      ["E","Drum Canister (Transport Use)","2","or "]
+      ["A","Ranking points",80],
+      ["I","Present box",1],
+      ["C","Improvement Material",2,"Choose one: "],
+      ["E","Type 94 Depth Charge Projector",2,"or "],
+      ["E","Drum Canister (Transport Use)",2,"or "]
+    ]
+  },
+  "Bq12": {
+    "Jp": "発令！「西方海域作戦」",
+    "En": "Announcement! \"Western Waters Operation\"",
+    "content": "S rank the boss nodes of 4-1, 4-2, 4-3, 4-4, and 4-5.",
+    "tips": "",
+    "requires": ["Bq11"],
+    "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": [],
+      "M": [
+        ["4-1",1],
+        ["4-2",1],
+        ["4-3",1],
+        ["4-4",1],
+        ["4-5",1]
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "2400",
+      "B": "0"
+    },
+    "reward": [
+      ["A","Ranking points",330],
+      ["I","Medal",1,"Choose one: "],
+      ["E","Daihatsu Landing Craft",2,"or "],
+      ["I","New Model Rocket Development Material",1,"or "]
     ]
   },  
+  "Bq13": {
+    "Jp": "拡張「六水戦」、最前線へ！",
+    "En": "Expanded \"6th Torpedo Squadron\", To The Front Lines!",
+    "content": "Assemble a fleet containing Yuubari Kai Ni/Toku/D as flagship, either Yura Kai Ni or any 2 of: \"Mutsuki, Kisaragi, Yayoi, Uzuki, Kikuzuki, or Mochizuki\"; and up to 4 XX, then S rank the boss nodes of 5-1, 5-4, 6-4, and 6-5.",
+    "tips": "",
+    "requires": ["B141"],
+    "unlocks": [],
+    "period": "quarterly",
+    "needs": {
+      "S": ["Yuubari Kai Ni"],
+      "M": [
+        ["5-1",1],
+        ["5-4",1],
+        ["6-4",1],
+        ["6-5",1]
+      ]
+    },
+    "resources": {
+      "F": "0",
+      "A": "1000",
+      "S": "1000",
+      "B": "1000"
+    },
+    "reward": [
+      ["A","Ranking points",390],
+      ["C","Instant Repair",10,"Choose one: "],
+      ["I","Medal",1,"or "],
+      ["I","New Model Gun Mount Improvement Material",1,"or "]
+    ]
+  },
 
-// Placeholder bq 12-13 here
-   
 // Excercise Quests C00 
   "C1": {
     "Jp": "はじめての「演習」！",
@@ -9400,7 +9493,7 @@ const ALL_QUESTS_LIST = {
   },
   "F11": {
     "Jp": "輸送用ドラム缶の準備",
-    "En": "PrepaRation for Transport Use Drum Canister",
+    "En": "PrepaRation for Transport Use Drum Canister (Transport Use)",
     "content": "Scrap equipment 3 times",
     "tips": "",
     "resources": {
@@ -9858,7 +9951,7 @@ const ALL_QUESTS_LIST = {
   "F37": {
     "Jp": "「航空基地設営」事前準備",
     "En": "PrepaRations for the Construction of an Air Base",
-    "content": "Have two 7.7mm Machine Guns & two Type 96 Fighters in your inventory, and scrap two Drum Canisters.",
+    "content": "Have two 7.7mm Machine Guns & two Type 96 Fighters in your inventory, and scrap two Drum Canister (Transport Use)s.",
     "tips": "※Equipment must be unlocked.※Consumes the equipment. ※It doesn't matter whether you scrap the drums before or after procuring the other items.",
     "resources": {
       "F": "200",
@@ -9873,7 +9966,7 @@ const ALL_QUESTS_LIST = {
       "E": [
         ["7.7mm Machine Gun",2],
         ["Type 96 Fighter",2],
-        ["Drum Canister",2]
+        ["Drum Canister (Transport Use)",2]
       ]
     },
     "reward": [
@@ -9973,7 +10066,7 @@ const ALL_QUESTS_LIST = {
     "period": "once",
     "needs": {
       "E": [
-        ["Drum Canister",2]
+        ["Drum Canister (Transport Use)",2]
       ],
       "I": [
         ["Construction Corps",1]
@@ -10367,7 +10460,7 @@ const ALL_QUESTS_LIST = {
       "E": [
         ["Type 99 Dive Bomber",2],
         ["Zuiun",2],
-        ["Drum Canister",2]
+        ["Drum Canister (Transport Use)",2]
       ]
     },
     "reward": [
@@ -11055,7 +11148,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "E": [
         ["Drum Canister (Transport Use)",2],
-        ["Drum Canister",2],
+        ["Drum Canister (Transport Use)",2],
         ["7.7mm Machine Gun",1],
         ["25mm Single Autocannon Mount",2],
         ["12cm 30-tube Rocket Launcher",1]
@@ -11307,7 +11400,7 @@ const ALL_QUESTS_LIST = {
       "E": [
         ["Medium gun",3],
         ["Secondary gun",3],
-        ["Drum Canister",1]
+        ["Drum Canister (Transport Use)",1]
       ],
       "R": [
         ["Steel",2400]
@@ -11403,7 +11496,7 @@ const ALL_QUESTS_LIST = {
   "Fm3": {
     "Jp": "「洋上補給」物資の調達",
     "En": "Monthly Procurement of Maritime Supply Goods",
-    "content": "Have 750 fuel, 750 ammo, two Drum Canisters, one Type 91 AP Shell in your inventory, and scrap one Type 3 Shell.",
+    "content": "Have 750 fuel, 750 ammo, two Drum Canister (Transport Use)s, one Type 91 AP Shell in your inventory, and scrap one Type 3 Shell.",
     "tips": "※Equipment must be unlocked. ※Consumes all the resources and equipment. ※It doesn't matter whether you scrap the shell before or after procuring the other items.",
     "resources": {
       "F": "0",
@@ -11417,7 +11510,7 @@ const ALL_QUESTS_LIST = {
     "needs": {
       "E": [
         ["Type 91 AP Shell",1],
-        ["Drum Canister",2],
+        ["Drum Canister (Transport Use)",2],
         ["Type 3 Shell",1]
       ],
       "R": [
