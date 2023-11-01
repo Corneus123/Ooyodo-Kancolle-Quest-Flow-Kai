@@ -7032,38 +7032,38 @@ const ALL_QUESTS_LIST = {
  // Daily Sortie Quests Bd00
   "Bd1": {
     "Jp": "敵艦隊を撃破せよ！",
-    "En": "Crush the Enemy Fleet",
-    "content": "Defeat an enemy fleet",
+    "En": "Defeat An Enemy Fleet!",
+    "content": "Defeat an Abyssal fleet by obtaining a B+ rank.",
     "tips": "",
+    "requires": ["B4"],
+    "unlocks": ["Bd2","Bd4","Bd6","A54","A72","B60","A80","B126","Cq1","C37","B107"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "50",
       "A": "50",
       "S": "0",
       "B": "0"
     },
-    "requires": ["B4"],
-    "unlocks": ["Bd2","Bd4","Bd6","A54","A72","B60","A80","B126","Cq1","C37","B107"],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "Bd2": {
     "Jp": "敵艦隊主力を撃滅せよ！",
-    "En": "Destroy the Main Force of the Enemy Fleet",
-    "content": "Complete a battle.",
-    "tips": "",
+    "En": "Eliminate The Enemy Fleet Main Force!",
+    "content": "Participate in a sortie battle.",
+    "tips": "Any rank will work.",
+    "requires": ["Bd1"],
+    "unlocks": ["Bd3","Bd5","Bw1","Bw3","A66","A67","B48","B63","Cm1","C9","F31","B98","A58","B105","Fq5"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "50",
       "A": "50",
       "S": "50",
       "B": "50"
     },
-    "requires": ["Bd1"],
-    "unlocks": ["Bd3","Bd5","Bw1","Bw3","A66","A67","B48","B63","Cm1","C9","F31","B98","A58","B105","Fq5"],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1],
       ["C","Development Material",1]
@@ -7071,97 +7071,95 @@ const ALL_QUESTS_LIST = {
   },
   "Bd3": {
     "Jp": "敵艦隊を10回邀撃せよ！",
-    "En": "Ambush the Enemy Fleet 10 Times",
-    "content": "Defeat 10 enemy fleets.",
-    "tips": "",
+    "En": "Encounter Enemy Fleet 10 Times!",
+    "content": "Participate in 10 sortie battles.",
+    "tips": "Any rank will work.",
+    "requires": ["Bd2"],
+    "unlocks": ["C25"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "150",
       "A": "150",
       "S": "200",
       "B": "100"
     },
-    "requires": ["Bd2"],
-    "unlocks": ["C25"],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Development Material",1]
     ]
   },
   "Bd4": {
     "Jp": "敵空母を3隻撃沈せよ！",
-    "En": "Sink 3 Enemy Carriers",
-    "content": "Sink 3 enemy CV. CVL are fine too.",
-    "tips": "Armored Carrier Princess does not work (Only available on days of the month ending -3, -7, or -0).",
+    "En": "Sink 3 Enemy Carriers!",
+    "content": "Sink 3 enemy CV or CVL.",
+    "tips": "Available only on days of the month ending in -3, -7, or -0",
+    "requires": ["Bd1"],
+    "unlocks": [],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "150",
       "A": "150",
       "S": "150",
       "B": "300"
     },
-    "requires": ["Bd1"],
-    "unlocks": [],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",2]
     ]
   },
   "Bd5": {
     "Jp": "敵補給艦を3隻撃沈せよ！",
-    "En": "Sink 3 Enemy Transport Ships",
-    "content": "Sink 3 enemy Transport Ships",
-    "tips": "",
+    "En": "Sink 3 Enemy Resupply Ships!",
+    "content": "Sink 3 enemy Transport Ships (AP).",
+    "tips": "Resupply ships are transport ships.",
+    "requires": ["Bd2"],
+    "unlocks": ["Bd7","Bw2","B91","C12","F83","B145"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "100",
       "A": "50",
       "S": "200",
       "B": "50"
     },
-    "requires": ["Bd2"],
-    "unlocks": ["Bd7","Bw2","B91","C12","F83","B145"],
-    "period": "daily",
-    "needs": {},
     "reward": [
-      ["C","Instant Repair",1],
-      ["C","Development Material",1]
+      ["C","Development Material",1],
+      ["C","Instant Repair",1]      
     ]
   },
   "Bd6": {
     "Jp": "敵輸送船団を叩け！",
-    "En": "Strike the Enemy Transport Group",
-    "content": "Sink 5 enemy Transport Ships",
-    "tips": "",
+    "En": "Strike At The Enemy Transport Fleet!",
+    "content": "Sink 5 enemy Transport Ships (AP).",
+    "tips": "Available only on days of the month ending in -2 or -8",
+    "requires": ["Bd1"],
+    "unlocks": [],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "0",
       "A": "200",
       "S": "0",
       "B": "0"
     },
-    "requires": ["Bd1"],
-    "unlocks": [],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Development Material",2]
     ]
   },
   "Bd7": {
     "Jp": "南西諸島海域の制海権を握れ！",
-    "En": "Seize Control of the Southwestern Archipelago Sea",
-    "content": "Defeat 5 boss nodes in World 2: 南西諸島海域",
+    "En": "Gain Control Of The Nansei Island Sea Region!",
+    "content": "Obtain 5 B+ ranks at boss nodes in World 2.",
     "tips": "",
+    "requires": ["Bd5"],
+    "unlocks": ["Bd8"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "300",
       "A": "0",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["Bd5"],
-    "unlocks": ["Bd8"],
-    "period": "daily",
-    "needs": {
-      "M": ["2-1","2-2","2-3","2-4","2-5"]
     },
     "reward": [
       ["C","Instant Repair",1],
@@ -7170,19 +7168,19 @@ const ALL_QUESTS_LIST = {
   },
   "Bd8": {
     "Jp": "敵潜水艦を制圧せよ！",
-    "En": "Suppress the Enemy Submarines",
-    "content": "Sink 6 enemy SS",
+    "En": "Suppress The Enemy Submarines!",
+    "content": "Sink 6 enemy SS.",
     "tips": "",
+    "requires": ["Bd7"],
+    "unlocks": ["B49","B116"],
+    "period": "daily",
+    "needs": {},
     "resources": {
       "F": "300",
       "A": "30",
       "S": "300",
       "B": "30"
     },
-    "requires": ["Bd7"],
-    "unlocks": ["B49","B116"],
-    "period": "daily",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",1]
     ]
