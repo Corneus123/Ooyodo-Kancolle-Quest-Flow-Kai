@@ -3,7 +3,7 @@ const EQUIPMENT_TYPE = {
   "Type 13 Air Radar": "Radar",
   "Type 13 Air Radar Kai": "Radar",
   "Type 22 Surface Radar": "Radar",
-  "Type 22 Surface RADAR Kai 4": "Radar",
+  "Type 22 Surface Radar Kai 4": "Radar",
   "Prototype 35.6cm Triple Gun Mount": "Heavy gun",
   "Searchlight": "Searchlight",
   "Skilled Carrier-based Aircraft Maintenance Personnel": "SCAMP",
@@ -719,20 +719,20 @@ const ALL_QUESTS_LIST = {
   },
   "A21": {
     "Jp": "「第四戦隊」を編成せよ！",
-    "En": "Organize the 4th Cruiser Division",
-    "content": "Have Takao, Atago, Choukai, and Maya in your main fleet",
+    "En": "Compose The \"4th Squadron\"!",
+    "content": "Assemble a fleet containing Atago, Takao, Choukai, and Maya in the First Fleet.",
     "tips": "",
+    "requires": ["A20"],
+    "unlocks": ["A22","A24","A25","A27","A29","B13"],
+    "period": "once",
+    "needs": {
+      "S": ["Atago","Takao","Choukai","Maya"]
+    },
     "resources": {
       "F": "300",
       "A": "150",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A20"],
-    "unlocks": ["A22","A24","A25","A27","A29","B13"],
-    "period": "once",
-    "needs": {
-      "S": ["Takao","Atago","Choukai","Maya"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -741,20 +741,20 @@ const ALL_QUESTS_LIST = {
   },
   "A22": {
     "Jp": "「西村艦隊」を編成せよ！",
-    "En": "Organize the Nishimura Fleet",
-    "content": "Have Fusou, Yamashiro, Mogami, and Shigure in your main fleet",
+    "En": "Compose The \"Nishimura Fleet\"!",
+    "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, and Shigure in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "200",
-      "S": "200",
-      "B": "0"
-    },
     "requires": ["A21"],
     "unlocks": ["A23","A26","B14"],
     "period": "once",
     "needs": {
       "S": ["Fusou","Yamashiro","Mogami","Shigure"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "200",
+      "S": "200",
+      "B": "0"
     },
     "reward": [
       ["I","Mamiya",1]
@@ -762,20 +762,20 @@ const ALL_QUESTS_LIST = {
   },
   "A23": {
     "Jp": "「第五航空戦隊」を編成せよ！",
-    "En": "Organize the 5th Carrier Division",
-    "content": "Have both Shoukaku, Zuikaku, and 2 DD in your main fleet",
+    "En": "Compose The \"5th Carrier Division\"!",
+    "content": "Assemble a fleet containing Shoukaku, Zuikaku, and 2 DD in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "0",
-      "S": "0",
-      "B": "300"
-    },
     "requires": ["A22"],
     "unlocks": ["A41","A46","A56","B15"],
     "period": "once",
     "needs": {
       "S": ["Shoukaku","Zuikaku"]
+    },
+    "resources": {
+      "F": "300",
+      "A": "0",
+      "S": "0",
+      "B": "300"
     },
     "reward": [
       ["I","Repair Team",1]
@@ -783,20 +783,20 @@ const ALL_QUESTS_LIST = {
   },
   "A24": {
     "Jp": "新「三川艦隊」を編成せよ！",
-    "En": "Organize the New Mikawa Fleet",
-    "content": "Have Choukai, Aoba, Kinugasa, Kako, Furutaka, and Tenryuu in your main fleet",
+    "En": "Compose The New \"Mikawa Fleet\"!",
+    "content": "Assemble a fleet containing Choukai, Aoba, Kinugasa, Kako, Furutaka, and Tenryuu in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "0",
-      "S": "300",
-      "B": "0"
-    },
     "requires": ["A21"],
     "unlocks": ["B16"],
     "period": "once",
     "needs": {
       "S": ["Choukai","Aoba","Kinugasa","Kako","Furutaka","Tenryuu"]
+    },
+    "resources": {
+      "F": "300",
+      "A": "0",
+      "S": "300",
+      "B": "0"
     },
     "reward": [
       ["I","Mamiya",1]
@@ -804,77 +804,83 @@ const ALL_QUESTS_LIST = {
   },
   "A25": {
     "Jp": "潜水艦隊を編成せよ！",
-    "En": "Organize a Submarine Fleet",
-    "content": "Have 2 SS in any one of your fleets",
-    "tips": "",
+    "En": "Compose A Submarine Fleet!",
+    "content": "Assemble a fleet containing 2 SS(V).",
+    "tips": "Despite the quest description, other SS(V) like Maruyu and foreign SS(V) can be used.",
+    "requires": ["A21"],
+    "unlocks": ["A31","B17"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "150",
       "A": "150",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A21"],
-    "unlocks": ["A31","B17"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["I","Repair Team",1]
     ]
   },
   "A26": {
     "Jp": "航空水上打撃艦隊を編成せよ！",
-    "En": "Organize an Aviation Surface Attack Fleet",
-    "content": "Have ONLY 2 BBV and 2 CAV in your main fleet",
+    "En": "Compose The Aviation Surface Strike Fleet!",
+    "content": "Assemble a fleet containing 2 BBV and 2 CAV in the First Fleet.",
     "tips": "",
+    "requires": ["A22"],
+    "unlocks": ["B18"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "200",
       "B": "200"
     },
-    "requires": ["A22"],
-    "unlocks": ["B18"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",2]
     ]
   },
   "A27": {
     "Jp": "中規模潜水艦隊を編成せよ！",
-    "En": "Organize a Medium-sized Submarine Fleet",
-    "content": "Have 3 SS in any one of your fleets",
-    "tips": "",
+    "En": "Compose A Medium-sized Submarine Fleet!",
+    "content": "Assemble a fleet containing 3 SS(V).",
+    "tips": "Despite the quest description, other SS(V) like Maruyu and foreign SS(V) can be used.",
+    "requires": ["A21"],
+    "unlocks": ["A37","D5"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "150",
       "A": "150",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A21"],
-    "unlocks": ["A37","D5"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["I","Mamiya",1]
     ]
   },
   "A28": {
     "Jp": "「第六戦隊」を編成せよ！",
-    "En": "Organize the 6th Cruiser Division",
-    "content": "Have Furutaka, Kako, Kinugasa, and Aoba in your main fleet",
+    "En": "Compose The \"6th Squadron\"!",
+    "content": "Assemble a fleet containing Furutaka, Kako, Kinugasa, and Aoba in the First Fleet.",
     "tips": "",
+    "requires": ["A10"],
+    "unlocks": ["A36","B19"],
+    "period": "once",
+    "needs": {
+      "S": ["Furutaka","Kako","Kinugasa","Aoba"]
+    },
     "resources": {
       "F": "250",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A10"],
-    "unlocks": ["A36","B19"],
-    "period": "once",
-    "needs": {
-      "S": ["Kinugasa","Aoba","Kako","Furutaka"]
     },
     "reward": [
       ["I","Mamiya",1]
@@ -882,20 +888,20 @@ const ALL_QUESTS_LIST = {
   },
   "A29": {
     "Jp": "「第五艦隊」を編成せよ！",
-    "En": "Organize the 5th Fleet",
-    "content": "Have Nachi, Ashigara, Tama, and Kiso in your main fleet",
+    "En": "Compose The \"5th Fleet\"!",
+    "content": "Assemble a fleet containing Nachi, Ashigara, Tama, and Kiso.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "0",
-      "S": "300",
-      "B": "0"
-    },
     "requires": ["A21"],
     "unlocks": ["A30"],
     "period": "once",
     "needs": {
       "S": ["Nachi","Ashigara","Tama","Kiso"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "0",
+      "S": "300",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",3]
@@ -903,20 +909,20 @@ const ALL_QUESTS_LIST = {
   },
   "A30": {
     "Jp": "「第一水雷戦隊」を編成せよ！",
-    "En": "Organize the 1st Torpedo Squadron",
-    "content": "Have Abukuma, Akebono, Ushio, Kasumi, and Shiranui in your main fleet",
+    "En": "Compose The \"1st Torpedo Squadron\"!",
+    "content": "Assemble a fleet containing Abukuma, Akebono, Ushio, Kasumi, and Shiranui.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "300",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["A29"],
     "unlocks": ["Dw2"],
     "period": "once",
     "needs": {
       "S": ["Abukuma","Akebono","Ushio","Kasumi","Shiranui"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "300",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["I","Repair Team",1]
@@ -924,20 +930,20 @@ const ALL_QUESTS_LIST = {
   },
   "A31": {
     "Jp": "「第八駆逐隊」を編成せよ！",
-    "En": "Organize the 8th Destroyer Division",
-    "content": "Have ONLY Asashio, Michishio, Ooshio, and Arashio in your main fleet",
+    "En": "Compose The \"8th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Asashio, Michishio, Ooshio, and Arashio.",
     "tips": "",
-    "resources": {
-      "F": "150",
-      "A": "150",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["A25"],
     "unlocks": ["A33","B20","A67"],
     "period": "once",
     "needs": {
       "S": ["Asashio","Michishio","Ooshio","Arashio"]
+    },
+    "resources": {
+      "F": "150",
+      "A": "150",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",3]
@@ -945,20 +951,20 @@ const ALL_QUESTS_LIST = {
   },
   "A32": {
     "Jp": "「第十八駆逐隊」を編成せよ！",
-    "En": "Organize the 18th Destroyer Division",
-    "content": "Have ONLY Kasumi, Arare, Kagerou, and Shiranui in your main fleet",
+    "En": "Compose The \"18th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Kasumi, Arare, Kagerou, and Shiranui.",
     "tips": "",
-    "resources": {
-      "F": "180",
-      "A": "180",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["B20"],
     "unlocks": ["A42","A47","B21","B58"],
     "period": "once",
     "needs": {
       "S": ["Kasumi","Arare","Kagerou","Shiranui"]
+    },
+    "resources": {
+      "F": "180",
+      "A": "180",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",1],
@@ -967,20 +973,20 @@ const ALL_QUESTS_LIST = {
   },
   "A33": {
     "Jp": "「第三十駆逐隊（第一次）」を編成せよ！",
-    "En": "Organize the 30th Destroyer Division (First Generation)",
-    "content": "Have ONLY Mutsuki, Kisaragi, Yayoi, and Mochizuki in your main fleet",
+    "En": "Compose The \"30th Destroyer Division (1st Gen.)\"!",
+    "content": "Assemble a fleet containing only Mutsuki, Kisaragi, Yayoi, and Mochizuki.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "200",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["A31"],
     "unlocks": ["A34","B22"],
     "period": "once",
     "needs": {
       "S": ["Mutsuki","Kisaragi","Yayoi","Mochizuki"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "200",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -989,20 +995,20 @@ const ALL_QUESTS_LIST = {
   },
   "A34": {
     "Jp": "「第三十駆逐隊(第二次)」を編成せよ！",
-    "En": "Organize the 30th Destroyer Division (Second Generation)",
-    "content": "Have ONLY Mutsuki, Yayoi, Uzuki, and Mochizuki in your main fleet",
+    "En": "Compose The \"30th Destroyer Division (2nd Gen.)\"!",
+    "content": "Assemble a fleet containing only Mutsuki, Uzuki, Yayoi, and Mochizuki.",
     "tips": "",
+    "requires": ["A33"],
+    "unlocks": ["A50","B24"],
+    "period": "once",
+    "needs": {
+      "S": ["Mutsuki","Uzuki","Yayoi","Mochizuki"]
+    },
     "resources": {
       "F": "220",
       "A": "220",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A33"],
-    "unlocks": ["A50","B24"],
-    "period": "once",
-    "needs": {
-      "S": ["Mutsuki","Kisaragi","Yayoi","Uzuki","Mochizuki"]
     },
     "reward": [
       ["C","Development Material",3]
@@ -1010,20 +1016,20 @@ const ALL_QUESTS_LIST = {
   },
   "A35": {
     "Jp": "「第五戦隊」を編成せよ！",
-    "En": "Organize the 5th Cruiser Division",
-    "content": "Have Myoukou, Nachi, and Haguro in your main fleet",
+    "En": "Compose The \"5th Squadron\"!",
+    "content": "Assemble a fleet containing Myoukou, Nachi, and Haguro.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "0",
-      "S": "300",
-      "B": "0"
-    },
     "requires": ["B24"],
     "unlocks": ["A38","A44","Bm1","D17"],
     "period": "once",
     "needs": {
       "S": ["Myoukou","Nachi","Haguro"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "300",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",5]
@@ -1031,20 +1037,20 @@ const ALL_QUESTS_LIST = {
   },
   "A36": {
     "Jp": "新編「第二航空戦隊」を編成せよ！",
-    "En": "Organize the New 2nd Carrier Division",
-    "content": "Have Hiryuu Kai Ni as flagship, Souryuu and 2 DD in your main fleet",
+    "En": "Compose The New \"2nd Carrier Division\"!",
+    "content": "Assemble a fleet containing Hiryuu Kai Ni as flagship, Souryuu, and 2 DD.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "0",
-      "S": "0",
-      "B": "400"
-    },
     "requires": ["A28"],
     "unlocks": ["B25"],
     "period": "once",
     "needs": {
       "S": ["Hiryuu Kai Ni","Souryuu"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "400"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1053,20 +1059,20 @@ const ALL_QUESTS_LIST = {
   },
   "A37": {
     "Jp": "潜水艦隊「第六艦隊」を編成せよ！",
-    "En": "Organize the Submarine Fleet: \"6th Fleet\"",
-    "content": "Have 1 AS as flagship and 4 SS or more in your main fleet",
+    "En": "Compose The Submarine Fleet \"6th Fleet\"!",
+    "content": "Assemble a fleet containing 1 AS as flagship, and 4 SS(V).",
     "tips": "",
+    "requires": ["A27"],
+    "unlocks": ["D13"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "250",
       "A": "250",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A27"],
-    "unlocks": ["D13"],
-    "period": "once",
-    "needs": {
-      "S": ["Taigei"]
     },
     "reward": [
       ["C","Development Material",3]
@@ -1074,41 +1080,41 @@ const ALL_QUESTS_LIST = {
   },
   "A38": {
     "Jp": "新型電探を配備せよ！",
-    "En": "Deploy the New Radar Type",
-    "content": "Have Myoukou Kai Ni as flagship",
+    "En": "Equip The New Radar!",
+    "content": "Set Myoukou Kai Ni as Secretary.",
     "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "0",
-      "S": "0",
-      "B": "300"
-    },
     "requires": ["A35"],
     "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Myoukou Kai Ni"]
     },
+    "resources": {
+      "F": "300",
+      "A": "0",
+      "S": "0",
+      "B": "300"
+    },
     "reward": [
-      ["E","Type 22 Surface RADAR Kai 4",1]
+      ["E","Type 22 Surface Radar Kai 4",1]
     ]
   },
   "A39": {
     "Jp": "再編成「第二航空戦隊」を強化せよ！",
-    "En": "Strengthen the Reorganized 2nd Carrier Division",
-    "content": "Have Souryuu Kai Ni as flagship with Hiryuu Kai Ni and 2 DD in your main fleet",
+    "En": "Strengthen The Recomposed \"2nd Carrier Division\"!",
+    "content": "Assemble a fleet containing Souryuu Kai Ni as flagship, Hiryuu Kai Ni, and 2 DD.",
     "tips": "",
+    "requires": ["B25"],
+    "unlocks": ["B26"],
+    "period": "once",
+    "needs": {
+      "S": ["Souryuu Kai Ni","Hiryuu Kai Ni"]
+    },
     "resources": {
       "F": "0",
       "A": "0",
       "S": "0",
       "B": "450"
-    },
-    "requires": ["B25"],
-    "unlocks": ["B26"],
-    "period": "once",
-    "needs": {
-      "S": ["Souryuu Kai Ni"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -1117,20 +1123,20 @@ const ALL_QUESTS_LIST = {
   },
   "A40": {
     "Jp": "精鋭「第三戦隊」全艦集結せよ！",
-    "En": "Gather All of the Elite 3rd Battleship Division",
-    "content": "Have Kongou Kai Ni, Hiei Kai Ni, Haruna Kai Ni, and Kirishima Kai Ni in your main fleet",
+    "En": "Gather The Elite \"3rd Squadron\"!",
+    "content": "Assemble a fleet containing Kongou Kai Ni, Hiei Kai Ni, Haruna Kai Ni, and Kirishima Kai Ni in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "100",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["WB02"],
     "unlocks": [],
     "period": "once",
     "needs": {
       "S": ["Kongou Kai Ni","Hiei Kai Ni","Haruna Kai Ni","Kirishima Kai Ni"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "100",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["E","Prototype 35.6cm Triple Gun Mount",1]
@@ -1138,20 +1144,20 @@ const ALL_QUESTS_LIST = {
   },
   "A41": {
     "Jp": "「新型正規空母」を配備せよ！",
-    "En": "Deploy the New Standard Aircraft Carrier Class",
-    "content": "Have Unryuu in your fleet as flagship",
+    "En": "Assign The \"New-Class Standard Carrier\"!",
+    "content": "Set Unryuu as Secretary.",
     "tips": "",
-    "resources": {
-      "F": "100",
-      "A": "100",
-      "S": "100",
-      "B": "300"
-    },
     "requires": ["A23"],
     "unlocks": ["B28"],
     "period": "once",
     "needs": {
       "S": ["Unryuu"]
+    },
+    "resources": {
+      "F": "100",
+      "A": "100",
+      "S": "100",
+      "B": "300"
     },
     "reward": [
       ["C","Development Material",2]
@@ -1159,20 +1165,20 @@ const ALL_QUESTS_LIST = {
   },
   "A42": {
     "Jp": "主力戦艦部隊「第二戦隊」を編成せよ！",
-    "En": "Organize the Main Battleship Force: \"The 2nd Squadron\"",
-    "content": "Have Nagato, Mutsu, Fusou, and Yamashiro in your main fleet",
+    "En": "Compose The Main Battleship Fleet \"2nd Squadron\"!",
+    "content": "Assemble a fleet containing Nagato, Mutsu, Fusou, and Yamashiro in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "250",
-      "S": "250",
-      "B": "0"
-    },
     "requires": ["A32"],
     "unlocks": ["B31"],
     "period": "once",
     "needs": {
       "S": ["Nagato","Mutsu","Fusou","Yamashiro"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "250",
+      "S": "250",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2]
@@ -1180,39 +1186,41 @@ const ALL_QUESTS_LIST = {
   },
   "A43": {
     "Jp": "戦艦を主力とした水上打撃部隊を編成せよ！",
-    "En": "Organize a Surface Task Force with Battleships Comprising the Main Force",
-    "content": "Have 3 of any ship from either the Nagato,Ise,Fusou, or Yamato classes and 1 CL in your main fleet",
+    "En": "Compose The Surface Strike Fleet With Battleships As Main Force!",
+    "content": "Assemble a fleet containing exactly any 3 from the: \"Yamato-class, Nagato-class, Ise-class, or Fusou-class\"; 1 CL, and up to 2 XX.",
     "tips": "",
+    "requires": ["B23","B31"],
+    "unlocks": ["Bm4"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
     },
-    "requires": ["B31"],
-    "unlocks": ["Bm4"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Development Material",3]
     ]
   },
   "A44": {
     "Jp": "「西村艦隊」を再編成せよ！",
-    "En": "Reorganize the Nishimura Fleet",
-    "content": "Have Fusou, Yamashiro, Mogami, Shigure, and Michishio in your main fleet",
+    "En": "Recompose The \"Nishimura Fleet\"!",
+    "content": "Assemble a fleet containing Fusou, Yamashiro, Mogami, Shigure, and Michishio in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "300",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["A35","B14"],
     "unlocks": ["B33"],
     "period": "once",
     "needs": {
       "S": ["Fusou","Yamashiro","Mogami","Shigure","Michishio"]
+    },
+    "resources": {
+      "F": "300",
+      "A": "300",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",3],
@@ -1221,20 +1229,20 @@ const ALL_QUESTS_LIST = {
   },
   "A45": {
     "Jp": "改修工廠を準備せよ！",
-    "En": "Prepare the Improvement Arsenal",
-    "content": "Have Akashi as flagship in your main fleet",
+    "En": "Prepare The Improvement Arsenal!",
+    "content": "Set Akashi as Secretary.",
     "tips": "",
-    "resources": {
-      "F": "100",
-      "A": "0",
-      "S": "100",
-      "B": "0"
-    },
     "requires": ["A9"],
     "unlocks": ["Bw10","F17","F54"],
     "period": "once",
     "needs": {
       "S": ["Akashi"]
+    },
+    "resources": {
+      "F": "100",
+      "A": "0",
+      "S": "100",
+      "B": "0"
     },
     "reward": [
       ["C","Improvement Material",5]
@@ -1242,20 +1250,20 @@ const ALL_QUESTS_LIST = {
   },
   "A46": {
     "Jp": "軽快な「水上反撃部隊」を編成せよ！",
-    "En": "Organize a Light Surface Counterattack Fleet",
-    "content": "Have Kasumi as flagship, Ashigara, 1 CL, and 3 DD in your main fleet",
+    "En": "Compose A Light And Speedy \"Surface Counterattack Fleet\"!",
+    "content": "Assemble a fleet containing Kasumi as Secretary, Ashigara, 1 CL, and 3 DD.",
     "tips": "",
-    "resources": {
-      "F": "250",
-      "A": "250",
-      "S": "0",
-      "B": "50"
-    },
     "requires": ["A23"],
     "unlocks": ["Bm7","A65"],
     "period": "once",
     "needs": {
       "S": ["Kasumi","Ashigara"]
+    },
+    "resources": {
+      "F": "250",
+      "A": "250",
+      "S": "0",
+      "B": "50"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1264,20 +1272,20 @@ const ALL_QUESTS_LIST = {
   },
   "A47": {
     "Jp": "「第十一駆逐隊」を編成せよ！",
-    "En": "Organize the 11th Destroyer Division",
-    "content": "Have ONLY Fubuki, Shirayuki, Hatsuyuki, and Murakumo in your main fleet",
+    "En": "Compose The \"11th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Fubuki, Shirayuki, Hatsuyuki, and Murakumo in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "110",
-      "A": "110",
-      "S": "110",
-      "B": "0"
-    },
     "requires": ["A32"],
     "unlocks": ["B35","B36"],
     "period": "once",
     "needs": {
       "S": ["Fubuki","Shirayuki","Hatsuyuki","Murakumo"]
+    },
+    "resources": {
+      "F": "110",
+      "A": "110",
+      "S": "110",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",3]
@@ -1285,20 +1293,20 @@ const ALL_QUESTS_LIST = {
   },
   "A48": {
     "Jp": "「第二一駆逐隊」を編成せよ！",
-    "En": "Organize the 21st Destroyer Division",
-    "content": "Have ONLY Hatsuharu, Hatsushimo, Nenohi, and Wakaba in your main fleet",
+    "En": "Compose The \"21st Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Hatsuharu, Nenohi, Wakaba, and Hatsushimo in the First Fleet.",
     "tips": "",
+    "requires": ["B35"],
+    "unlocks": ["B37"],
+    "period": "once",
+    "needs": {
+      "S": ["Hatsuharu","Nenohi","Wakaba","Hatsushimo"]
+    },
     "resources": {
       "F": "210",
       "A": "210",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B35"],
-    "unlocks": ["B37"],
-    "period": "once",
-    "needs": {
-      "S": ["Hatsuharu","Hatsushimo","Nenohi","Wakaba"]
     },
     "reward": [
       ["C","Instant Repair",3]
@@ -1306,20 +1314,20 @@ const ALL_QUESTS_LIST = {
   },
   "A49": {
     "Jp": "「第二二駆逐隊」を編成せよ！",
-    "En": "Organize the 22nd Destroyer Division",
-    "content": "Have ONLY Satsuki, Fumizuki, Nagatsuki, and 1 more DD in your main fleet",
+    "En": "Compose The \"22nd Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Satsuki, Fumizuki, Nagatsuki, and 1 DD in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "220",
-      "A": "220",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["B38"],
     "unlocks": ["B39"],
     "period": "once",
     "needs": {
       "S": ["Satsuki","Fumizuki","Nagatsuki"]
+    },
+    "resources": {
+      "F": "220",
+      "A": "220",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1328,20 +1336,20 @@ const ALL_QUESTS_LIST = {
   },
   "A50": {
     "Jp": "「三川艦隊」を新編、突入準備せよ！",
-    "En": "Reorganize the Mikawa Fleet and Prepare to Rush in",
-    "content": "Have Choukai Kai Ni as flagship and fill the rest of the fleet with any combination of Furutaka, Kako, Aoba, Kinugasa, Yuubari, or Tenryuu for a total of 6 ships.",
+    "En": "Newly Compose The \"Mikawa Fleet\" and Prepare for Assault!",
+    "content": "Assemble a fleet containing Choukai Kai Ni as Secretary, and any 5 of: \"Furutaka, Kako, Aoba, Kinugasa, Yuubari, or Tenryuu\".",
     "tips": "",
+    "requires": ["A34","B16"],
+    "unlocks": ["A57","C5"],
+    "period": "once",
+    "needs": {
+      "S": ["Choukai Kai Ni"]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A34","B16"],
-    "unlocks": ["A57","C5"],
-    "period": "once",
-    "needs": {
-      "S": ["Choukai Kai Ni","Aoba","Kako","Furutaka","Kinugasa","Yuubari","Tenryuu"]
     },
     "reward": [
       ["C","Instant Repair",2]
