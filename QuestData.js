@@ -1357,63 +1357,63 @@ const ALL_QUESTS_LIST = {
   },
   "A51": {
     "Jp": "「第十八戦隊」を新編成せよ！",
-    "En": "Reorganize the 18th Squadron",
-    "content": "Have Tenryuu, Tatsuta, and at least two other ships in your fleet",
+    "En": "Recompose The \"18th Squadron\"!",
+    "content": "Assemble a fleet containing Tenryuu, Tatsuta, and 2 XX.",
     "tips": "",
+    "requires": ["A18","B42"],
+    "unlocks": ["B43"],
+    "period": "once",
+    "needs": {
+      "S": ["Tenryuu","Tatsuta"]
+    },
     "resources": {
       "F": "180",
       "A": "180",
       "S": "0",
       "B": "180"
     },
-    "requires": ["B42"],
-    "unlocks": ["B43"],
-    "period": "once",
-    "needs": {
-      "S": ["Tenryuu","Tatsuta"]
-    },
     "reward": [
       ["C","Development Material",2]
     ]
   },
   "A52": {
-    "Jp": "海上突入部隊を編成せよ！",
-    "En": "Organize the Marine Rush Fleet",
-    "content": "Have Hiei, Kirishima, Nagara, Akatsuki, Ikazuchi, and Inazuma in your main fleet",
+    "Jp": "「海上突入部隊」を編成せよ！",
+    "En": "Form The Maritime Assault Fleet!",
+    "content": "Assemble a fleet containing Hiei, Kirishima, Nagara, Akatsuki, Ikazuchi, and Inazuma.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "300",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["B16"],
     "unlocks": ["B44"],
     "period": "once",
     "needs": {
       "S": ["Hiei","Kirishima","Nagara","Akatsuki","Ikazuchi","Inazuma"]
     },
+    "resources": {
+      "F": "0",
+      "A": "300",
+      "S": "0",
+      "B": "0"
+    },
     "reward": [
-      ["C","Instant Repair",2],
-      ["C","Development Material",2]
+      ["C","Development Material",2],
+      ["C","Instant Repair",2]
     ]
   },
   "A53": {
     "Jp": "新編「第六駆逐隊」を編成せよ！",
-    "En": "Organize the New 6th Destroyer Division",
-    "content": "Have only Akatsuki Kai Ni as flagship with Hibiki (Верный is ok), Ikazuchi, and Inazuma in your main fleet",
+    "En": "Recompose The \"6th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Akatsuki Kai Ni as flagship, Hibiki, Ikazuchi, and Inazuma.",
     "tips": "",
+    "requires": ["B14"],
+    "unlocks": ["B45"],
+    "period": "once",
+    "needs": {
+      "S": ["Akatsuki Kai Ni","Hibiki","Ikazuchi","Inazuma"]
+    },
     "resources": {
       "F": "150",
       "A": "150",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B14"],
-    "unlocks": ["B45"],
-    "period": "once",
-    "needs": {
-      "S": ["Akatsuki","Hibiki","Ikazuchi","Inazuma"]
     },
     "reward": [
       ["E","Searchlight",1]
@@ -1421,20 +1421,20 @@ const ALL_QUESTS_LIST = {
   },
   "A54": {
     "Jp": "「第一水雷戦隊」北方突入準備！",
-    "En": "1st Torpedo Squadron, Prepare for a Rush to the Northern Sea",
-    "content": "Have Abukuma as flagship with Hibiki (Верный is ok), Hatsushimo, Wakaba, Samidare and Shimakaze in your main fleet",
+    "En": "Prepare \"1st Torpedo Squadron\" For Deployment To The Northern Sea!",
+    "content": "Assemble a fleet containing Abukuma as Secretary, Hibiki, Hatsushimo, Wakaba, Samidare, and Shimakaze.",
     "tips": "",
-    "resources": {
-      "F": "150",
-      "A": "150",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["B21","Bd1"],
     "unlocks": ["B46","A78"],
     "period": "once",
     "needs": {
       "S": ["Abukuma","Hibiki","Hatsushimo","Wakaba","Samidare","Shimakaze"]
+    },
+    "resources": {
+      "F": "150",
+      "A": "150",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1443,20 +1443,20 @@ const ALL_QUESTS_LIST = {
   },
   "A55": {
     "Jp": "「第一水雷戦隊」北方再突入準備！",
-    "En": "1st Torpedo Squadron, Prepare for Another Rush to the Northern Sea",
-    "content": "Have Abukuma Kai Ni as flagship with Hibiki (Верный is ok), Yuugumo, Naganami, Akigumo and Shimakaze in your main fleet",
+    "En": "Redeploy The \"1st Torpedo Squadron\" For The Northern Sea!",
+    "content": "Assemble a fleet containing Abukuma Kai Ni as Secretary, Hibiki, Yuugumo , Naganami, Akigumo, and Shimakaze.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "200",
-      "S": "0",
-      "B": "0"
-    },
     "requires": ["C7"],
     "unlocks": ["B47"],
     "period": "once",
     "needs": {
       "S": ["Abukuma Kai Ni","Hibiki","Yuugumo","Naganami","Akigumo","Shimakaze"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "200",
+      "S": "0",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -1465,20 +1465,20 @@ const ALL_QUESTS_LIST = {
   },
   "A56": {
     "Jp": "「第五航空戦隊」を再編成せよ！",
-    "En": "Reorganize the 5th Carrier Division",
-    "content": "Have Shoukaku, Zuikaku, Oboro and Akigumo in your main fleet",
+    "En": "Recompose The \"5th Carrier Division\"!",
+    "content": "Assemble a fleet containing Shoukaku, Zuikaku, Oboro, and Akigumo in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "300",
-      "A": "0",
-      "S": "0",
-      "B": "300"
-    },
     "requires": ["A23","Bm6"],
     "unlocks": ["B50"],
     "period": "once",
     "needs": {
       "S": ["Shoukaku","Zuikaku","Oboro","Akigumo"]
+    },
+    "resources": {
+      "F": "300",
+      "A": "0",
+      "S": "0",
+      "B": "300"
     },
     "reward": [
       ["C","Development Material",3]
@@ -1486,20 +1486,20 @@ const ALL_QUESTS_LIST = {
   },
   "A57": {
     "Jp": "新編「第二一戦隊」出撃準備！",
-    "En": "Prepare the New 21st Squadron for Sortie",
-    "content": "Have Nachi Kai Ni, Ashigara Kai Ni, Tama and Kiso in your main fleet",
+    "En": "Prepare The New \"21st Squadron\" For Sortie!",
+    "content": "Assemble a fleet containing Nachi Kai Ni, Ashigara Kai Ni, Tama, and Kiso in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "150",
-      "A": "150",
-      "S": "150",
-      "B": "0"
-    },
     "requires": ["A50","B34"],
     "unlocks": ["B51"],
     "period": "once",
     "needs": {
       "S": ["Nachi Kai Ni","Ashigara Kai Ni","Tama","Kiso"]
+    },
+    "resources": {
+      "F": "150",
+      "A": "150",
+      "S": "150",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",2],
@@ -1508,20 +1508,20 @@ const ALL_QUESTS_LIST = {
   },
   "A58": {
     "Jp": "「第十六戦隊(第一次)」を編成せよ！",
-    "En": "Organize the 16th Squadron (First Generation)",
-    "content": "Have Ashigara as flagship with Kuma and Nagara in your main fleet",
+    "En": "Compose The \"16th Squadron (1st Gen.)\"!",
+    "content": "Assemble a fleet containing Ashigara as Secretary, Kuma, and Nagara.",
     "tips": "",
+    "requires": ["A14","A20","Bd2"],
+    "unlocks": ["B52"],
+    "period": "once",
+    "needs": {
+      "S": ["Ashigara","Kuma","Nagara"]
+    },
     "resources": {
       "F": "150",
       "A": "150",
       "S": "150",
       "B": "0"
-    },
-    "requires": ["Bd2"],
-    "unlocks": ["B52"],
-    "period": "once",
-    "needs": {
-      "S": ["Ashigara","Kuma","Nagara"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -1530,20 +1530,20 @@ const ALL_QUESTS_LIST = {
   },
   "A59": {
     "Jp": "「第三航空戦隊」を編成せよ！",
-    "En": "Organize the 3rd Carrier Division",
-    "content": "Have Zuikaku Kai as flagship, Zuihou, Chitose Carrier and Chiyoda Carrier (both as CVL, not AV) in your main fleet",
+    "En": "Organise The 3rd Carrier Division!",
+    "content": "Assemble a fleet containing Zuikaku Kai+ as Secretary, Zuihou, Chitose Kou+, and Chiyoda Kou+.",
     "tips": "",
+    "requires": ["Bm6","F21"],
+    "unlocks": ["B53","F24","F23"],
+    "period": "once",
+    "needs": {
+      "S": ["Zuikaku Kai","Zuihou","Chitose Kou","Chiyoda Kou"]
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "0",
       "B": "200"
-    },
-    "requires": ["Bm6","F21"],
-    "unlocks": ["B53","F24","F23"],
-    "period": "once",
-    "needs": {
-      "S": ["Zuikaku","Zuihou","Chitose Carrier","Chiyoda Carrier"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -1552,20 +1552,20 @@ const ALL_QUESTS_LIST = {
   },
   "A60": {
     "Jp": "「第四航空戦隊」を編成せよ！",
-    "En": "Organize the 4th Carrier Division",
-    "content": "Have Ise Kai and Hyuuga Kai in your main fleet",
+    "En": "Organise The 4th Carrier Division!",
+    "content": "Assemble a fleet containing Ise Kai+ and Hyuuga Kai+ in the First Fleet.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "200",
-      "S": "0",
-      "B": "200"
-    },
     "requires": ["B53"],
     "unlocks": ["A61","A77"],
     "period": "once",
     "needs": {
       "S": ["Ise Kai","Hyuuga Kai"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "200",
+      "S": "0",
+      "B": "200"
     },
     "reward": [
       ["C","Improvement Material",2],
@@ -1574,20 +1574,20 @@ const ALL_QUESTS_LIST = {
   },
   "A61": {
     "Jp": "「小沢艦隊」を編成せよ！",
-    "En": "Organize Ozawa's Fleet",
-    "content": "Have Zuikaku Kai as flagship, Zuihou Kai, Chitose Carrier, Chiyoda Carrier, Ise Kai and Hyuuga Kai in your main fleet",
+    "En": "Organise The \"Ozawa Fleet\"!",
+    "content": "Assemble a fleet containing Zuikaku Kai+ as Secretary, Zuihou Kai+, Chitose Kou+, Chiyoda Kou+, Ise Kai+, and Hyuuga Kai+.",
     "tips": "",
+    "requires": ["A60","Bm7"],
+    "unlocks": ["B54","F28"],
+    "period": "once",
+    "needs": {
+      "S": ["Zuikaku Kai","Zuihou Kai","Chitose Kou","Chiyoda Kou","Ise Kai","Hyuuga Kai"]
+    },
     "resources": {
       "F": "300",
       "A": "0",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["Bm7","A60"],
-    "unlocks": ["B54","F28"],
-    "period": "once",
-    "needs": {
-      "S": ["Zuikaku Kai","Zuihou","Chitose Carrier","Chiyoda Carrier","Ise Kai","Hyuuga Kai"]
     },
     "reward": [
       ["C","Development Material",2],
@@ -1596,42 +1596,42 @@ const ALL_QUESTS_LIST = {
   },
   "A62": {
     "Jp": "新航空戦隊を編成せよ！",
-    "En": "Organize the New Carrier Division",
-    "content": "Have Zuikaku Kai Ni, Shoukaku Kai Ni and two DD in your fleet",
+    "En": "Organise The New Carrier Division!",
+    "content": "Assemble a fleet containing Shoukaku Kai Ni, Zuikaku Kai Ni, and 2 DD.",
     "tips": "",
+    "requires": ["F29"],
+    "unlocks": ["F30","F45"],
+    "period": "once",
+    "needs": {
+      "S": ["Shoukaku Kai Ni","Zuikaku Kai Ni"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "300",
       "B": "300"
     },
-    "requires": ["F29","F23"],
-    "unlocks": ["F30","F45"],
-    "period": "once",
-    "needs": {
-      "S": ["Zuikaku Kai Ni","Shoukaku Kai Ni"]
-    },
     "reward": [
-      ["I","Skilled Crew Member",1],
-      ["I","Irako",1]
+      ["I","Irako",1],
+      ["I","Skilled Crew Member",1]      
     ]
   },
   "A63": {
     "Jp": "「第十六戦隊(第二次)」を編成せよ！",
-    "En": "Organize the 16th Squadron (Second Generation)",
-    "content": "Have Natori as flagship, Isuzu and Kinu in your fleet",
+    "En": "Organize The \"16th Squadron (2nd Gen.)\"!",
+    "content": "Assemble a fleet containing Natori as flagship, Isuzu, and Kinu.",
     "tips": "",
-    "resources": {
-      "F": "160",
-      "A": "160",
-      "S": "160",
-      "B": "0"
-    },
     "requires": ["B52"],
     "unlocks": ["B55"],
     "period": "once",
     "needs": {
       "S": ["Natori","Isuzu","Kinu"]
+    },
+    "resources": {
+      "F": "160",
+      "A": "160",
+      "S": "160",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",2],
@@ -1640,40 +1640,42 @@ const ALL_QUESTS_LIST = {
   },
   "A64": {
     "Jp": "「新編成航空戦隊」を編成せよ！",
-    "En": "Organize the New Carrier Division",
-    "content": "Have 2 CV / CVL, 2 BBV / CAV and 2 DD in your fleet",
+    "En": "Organize A \"New Carrier Division\"!",
+    "content": "Assemble a fleet containing 2 CV(B/L), 2 BBV/CAV, and 2 DD.",
     "tips": "",
+    "requires": ["B50","B55"],
+    "unlocks": ["B56"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "0",
       "A": "200",
       "S": "0",
       "B": "200"
     },
-    "requires": ["B50","B55"],
-    "unlocks": ["B56"],
-    "period": "once",
-    "needs": {},
     "reward": [
-      ["C","Improvement Material",2],
-      ["C","Development Material",2]
+      ["C","Development Material",2],
+      ["C","Improvement Material",2]      
     ]
   },
   "A65": {
     "Jp": "精強な「水上反撃部隊」を再編成せよ！",
-    "En": "Reorganize the Strengthened Surface Counterattack Fleet",
-    "content": "Have Kasumi as flagship, Ashigara, Ooyodo, Asashimo and Kiyoshimo in your fleet",
+    "En": "Reorganize The Powerful \"Surface Counterattack Fleet\"!",
+    "content": "Assemble a fleet containing Kasumi as flagship, Ashigara, Asashimo, Ooyodo, and Kiyoshimo.",
     "tips": "",
+    "requires": ["A46","B56"],
+    "unlocks": ["B57"],
+    "period": "once",
+    "needs": {
+      "S": ["Kasumi","Ashigara","Asashimo","Ooyodo","Kiyoshimo"]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B56","A46"],
-    "unlocks": ["B57"],
-    "period": "once",
-    "needs": {
-      "S": ["Kasumi","Ashigara","Ooyodo","Asashimo","Kiyoshimo"]
     },
     "reward": [
       ["C","Instant Repair",3]
@@ -1681,20 +1683,20 @@ const ALL_QUESTS_LIST = {
   },
   "A66": {
     "Jp": "「第三十一戦隊(第一次)」を編成せよ！",
-    "En": "Organize the 31st Division (First Generation)",
-    "content": "Have Isuzu Kai Ni as flagship, Satsuki Kai Ni and Uzuki Kai in your fleet",
+    "En": "Organize The \"31st Squadron (1st Gen.)\"!",
+    "content": "Assemble a fleet containing Isuzu Kai Ni as flagship, Satsuki Kai Ni, and Uzuki Kai.",
     "tips": "",
+    "requires": ["B55","Bd2"],
+    "unlocks": ["B60","B72"],
+    "period": "once",
+    "needs": {
+      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"]
+    },
     "resources": {
       "F": "310",
       "A": "310",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Bd2","B55"],
-    "unlocks": ["B60","B72"],
-    "period": "once",
-    "needs": {
-      "S": ["Isuzu Kai Ni","Satsuki Kai Ni","Uzuki Kai"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1703,20 +1705,20 @@ const ALL_QUESTS_LIST = {
   },
   "A67": {
     "Jp": "「第二七駆逐隊」を編成せよ！",
-    "En": "Organize the 27th Destroyer Division",
-    "content": "Have ONLY Shiratsuyu Kai, Shigure, Harusame and Samidare in your fleet, with Shiratsuyu set as the flagship.",
+    "En": "Organize The \"27th Destroyer Division\"!",
+    "content": "Assemble a fleet containing only Shiratsuyu Kai+ as flagship, Shigure, Harusame, and Samidare.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "270",
-      "S": "270",
-      "B": "0"
-    },
     "requires": ["A31","Bd2"],
     "unlocks": ["B61"],
     "period": "once",
     "needs": {
       "S": ["Shiratsuyu Kai","Shigure","Harusame","Samidare"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "270",
+      "S": "270",
+      "B": "0"
     },
     "reward": [
       ["C","Development Material",2],
@@ -1725,60 +1727,63 @@ const ALL_QUESTS_LIST = {
   },
   "A68": {
     "Jp": "強行高速輸送部隊を編成せよ！",
-    "En": "Organise a Forced High-speed Transport Fleet!",
-    "content": "Have Sendai Kai Ni as flagship, Kawakaze Kai Ni, Shigure Kai Ni and two other DD in your fleet.",
+    "En": "Organize The High-speed Transport Fleet.",
+    "content": "Assemble a fleet containing Sendai Kai Ni, Shigure Kai Ni+, Kawakaze Kai Ni, and 2 DD.",
     "tips": "",
+    "requires": ["B53","Bd1"],
+    "unlocks": ["B68"],
+    "period": "once",
+    "needs": {
+      "S": ["Sendai Kai Ni","Shigure Kai Ni","Kawakaze Kai Ni"]
+    },
     "resources": {
       "F": "100",
       "A": "100",
       "S": "100",
       "B": "0"
     },
-    "requires": ["B53"],
-    "unlocks": ["B68"],
-    "period": "once",
-    "needs": {
-      "S": ["Sendai Kai Ni","Kawakaze Kai Ni","Shigure Kai Ni"]
-    },
     "reward": [
+      ["C","Development Material",2],
       ["C","Instant Repair",2]
     ]
   },
   "A69": {
-    "Jp": "新編「水雷戦隊」を含む艦隊を再編成せよ！",
-    "En": "Organise a New Torpedo Squadron!",
-    "content": "Have a CL/CLT/CT as the flagship and 4 DD in any of your fleets.",
+    "Jp": "編「水雷戦隊」を含む艦隊を再編成せよ！",
+    "En": "Organize The New reformed Torpedo Squadron Fleet!",
+    "content": "Assemble a fleet containing 1 CL(T)/CT as flagship and 4 DD.",
     "tips": "",
+    "requires": ["A5"],
+    "unlocks": ["B70"],
+    "period": "once",
+    "needs": {
+      "S": []
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "0",
       "B": "0"
     },
-    "requires": ["A9"],
-    "unlocks": ["B70"],
-    "period": "once",
-    "needs": {},
     "reward": [
       ["C","Instant Repair",2]
     ]
   },
   "A70": {
     "Jp": "新編「第八駆逐隊」を再編成せよ！",
-    "En": "Reorganise the New 8th Destroyer Division!",
-    "content": "Have ONLY Asashio Kai Ni/Asashio Kai Ni D as flagship, Michishio, Ooshio and Arashio in your fleet.",
-    "tips": " If you put Asashio into your fleet, remodel her and then activate the quest you can't clear it for some reason. Either remove her from the fleet and put her back in, or turn the quest off and on again.",
+    "En": "Organize The New Reformed 8th Destroyer Division!",
+    "content": "Assemble a fleet containing only Asashio Kai Ni as flagship, Ooshio, Arashio, and Michishio.",
+    "tips": "",
+    "requires": ["B20"],
+    "unlocks": ["B73"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni","Ooshio","Arashio","Michishio"]
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B20"],
-    "unlocks": ["B73"],
-    "period": "once",
-    "needs": {
-      "S": ["Asashio Kai Ni","Michishio","Ooshio","Arashio"]
     },
     "reward": [
       ["C","Development Material",3]
