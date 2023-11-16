@@ -230,7 +230,7 @@ const ICONS_LINK = {
   "Furniture Fairy": "files/webpage/game_icons/Furniture_fairy.png",
   "Medal": "files/webpage/game_icons/Medal.png",
   "Present box": "files/webpage/game_icons/Present_box.png",
-  "Combat provision": "files/webpage/game_icons/Combat_Provisions.png",
+  "Combat Ration": "files/webpage/game_icons/Combat_Provisions.png",
   "New Model Gun Mount Improvement Material": "files/webpage/game_icons/New_Model_Gun_Mount_Improvement_Material.png",
   "Underway Replenishment": "files/webpage/game_icons/Underway_Replenishment.png",
   "Construction Corps": "files/webpage/game_icons/Construction_Corps.png",
@@ -1791,20 +1791,20 @@ const ALL_QUESTS_LIST = {
   },
   "A71": {
     "Jp": "精鋭！八駆第一小隊！",
-    "En": "Elite! DesDiv 8, 1st platoon!",
-    "content": "Have Asashio Kai Ni D and Ooshio Kai Ni in your fleet.",
-    "tips": "",
+    "En": "Elite Force! 8th Destroyer Division First Platoon!",
+    "content": "Assemble a fleet containing Asashio Kai Ni D as flagship and Ooshio Kai Ni.",
+    "tips": "Asashio Kai Ni cannot be used for this quest.",
+    "requires": ["B72","Bw5"],
+    "unlocks": ["B74"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni D","Ooshio Kai Ni"]
+    },
     "resources": {
       "F": "250",
       "A": "250",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B72"],
-    "unlocks": ["B74"],
-    "period": "once",
-    "needs": {
-      "S": ["Asashio Kai Ni D","Ooshio Kai Ni"]
     },
     "reward": [
       ["C","Improvement Material",3],
@@ -1813,20 +1813,20 @@ const ALL_QUESTS_LIST = {
   },
   "A72": {
     "Jp": "「第十九駆逐隊」を編成せよ！",
-    "En": "Organise the 19th Destroyer Division!",
-    "content": "Have Isonami, Uranami, Ayanami and Shikinami in your fleet.",
+    "En": "Organize The 19th Destroyer Division!",
+    "content": "Assemble a fleet containing Ayanami, Shikinami, Uranami, and Isonami.",
     "tips": "",
+    "requires": ["B21","Bd1"],
+    "unlocks": ["B78"],
+    "period": "once",
+    "needs": {
+      "S": ["Ayanami","Shikinami","Uranami","Isonami"]
+    },
     "resources": {
       "F": "190",
       "A": "190",
       "S": "190",
       "B": "0"
-    },
-    "requires": ["B21","Bd1"],
-    "unlocks": ["B78"],
-    "period": "once",
-    "needs": {
-      "S": ["Isonami","Uranami","Ayanami","Shikinami"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1835,20 +1835,20 @@ const ALL_QUESTS_LIST = {
   },
   "A73": {
     "Jp": "「第十六戦隊(第三次)」を編成せよ！",
-    "En": "Form the 16th Cruiser Division (Third Generation)!",
-    "content": "Have Kinu, Aoba, Kitakami and Ooi in your fleet.",
+    "En": "Organize The 16th Squadron (3rd Gen.)",
+    "content": "Assemble a fleet containing Kinu, Aoba, Kitakami, and Ooi.",
     "tips": "",
-    "resources": {
-      "F": "200",
-      "A": "200",
-      "S": "200",
-      "B": "0"
-    },
     "requires": ["B55"],
     "unlocks": ["B84"],
     "period": "once",
     "needs": {
       "S": ["Kinu","Aoba","Kitakami","Ooi"]
+    },
+    "resources": {
+      "F": "200",
+      "A": "200",
+      "S": "200",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1857,20 +1857,20 @@ const ALL_QUESTS_LIST = {
   },
   "A74": {
     "Jp": "精鋭「第十六戦隊」を再編成せよ！",
-    "En": "Reorganise the Elite 16th Cruiser Division!",
-    "content": "Have Kinu Kai Ni as flagship, Kitakami Kai Ni, Ooi Kai Ni, Kuma Kai, Aoba Kai, Uranami Kai, Shikinami Kai.",
+    "En": "Organize The \"Elite 16th Squadron\"!",
+    "content": "Assemble a fleet containing Kinu Kai Ni as flagship, and any 5 of: \"Kitakami Kai Ni, Ooi Kai Ni, Aoba Kai, Kuma Kai, Shikinami Kai+, or Uranami Kai+\".",
     "tips": "",
+    "requires": ["B84"],
+    "unlocks": ["B85"],
+    "period": "once",
+    "needs": {
+      "S": ["Kinu Kai Ni"]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B84"],
-    "unlocks": ["B85"],
-    "period": "once",
-    "needs": {
-      "S": ["Kinu Kai Ni","Kitakami Kai Ni","Ooi Kai Ni","Kuma Kai","Aoba Kai","Uranami Kai","Shikinami Kai"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -1879,20 +1879,20 @@ const ALL_QUESTS_LIST = {
   },
   "A75": {
     "Jp": "新編「第一戦隊」を編成せよ！",
-    "En": "Organize the New First Squadron!",
-    "content": "Have Nagato Kai Ni as flagship and Mutsu Kai as second ship in your main fleet.",
+    "En": "Organise The New \"First Squadron\"!",
+    "content": "Assemble a fleet containing Nagato Kai Ni as Secretary and Mutsu Kai+ as second ship.",
     "tips": "",
+    "requires": ["B31"],
+    "unlocks": ["B99"],
+    "period": "once",
+    "needs": {
+      "S": ["Nagato Kai Ni","Mutsu Kai"]
+    },
     "resources": {
       "F": "0",
       "A": "880",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B31","B52"],
-    "unlocks": ["B99"],
-    "period": "once",
-    "needs": {
-      "S": ["Nagato Kai Ni","Mutsu Kai"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1901,20 +1901,20 @@ const ALL_QUESTS_LIST = {
   },
   "A76": {
     "Jp": "新編「第七戦隊」を編成せよ！",
-    "En": "Organize the New Seventh Squadron!",
-    "content": "Have Kumano Kai Ni as flagship, Suzuya Kai Ni as second ship, Mogami Kai and Mikuma Kai in your main fleet.",
+    "En": "Organize The New \"Seventh Squadron\"!",
+    "content": "Assemble a fleet containing Kumano Kai Ni/Kou Kai Ni as Secretary, Suzuya Kai Ni/Kou Kai Ni as second ship, Mogami Kai+, and Mikuma Kai+.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "0",
-      "S": "0",
-      "B": "700"
-    },
     "requires": ["B95","Cd1"],
     "unlocks": ["B101"],
     "period": "once",
     "needs": {
       "S": ["Kumano Kai Ni","Suzuya Kai Ni","Mogami Kai","Mikuma Kai"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "700"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1923,20 +1923,20 @@ const ALL_QUESTS_LIST = {
   },
   "A77": {
     "Jp": "精鋭「第四航空戦隊」を再編成せよ！",
-    "En": "Reorganize the Elite \"Fourth Carrier Division\"!",
-    "content": "Have Ise and Hyuuga both above level 50 as flagship and 2nd ship along with 1CL + 2 DD and 1 additional ship in your main fleet.",
+    "En": "Reorganize The Elite \"Fourth Carrier Division\"!",
+    "content": "Assemble a fleet containing both Lv50+ Ise and Hyuuga, with either as Secretary and second ship, 1 CL, 2 DD, and 1XX.",
     "tips": "",
-    "resources": {
-      "F": "0",
-      "A": "0",
-      "S": "0",
-      "B": "400"
-    },
     "requires": ["A60","B14"],
     "unlocks": ["B102","B152"],
     "period": "once",
     "needs": {
       "S": ["Ise","Hyuuga"]
+    },
+    "resources": {
+      "F": "0",
+      "A": "0",
+      "S": "0",
+      "B": "400"
     },
     "reward": [
       ["C","Development Material",4],
@@ -1945,20 +1945,20 @@ const ALL_QUESTS_LIST = {
   },
   "A78": {
     "Jp": "新編「第四水雷戦隊」を編成せよ！",
-    "En": "Organize the New 4th Torpedo Squadron!",
-    "content": "Have Yura Kai Ni as flagship, Murasame, Yuudachi, Harusame, Samidare and 1 DD in your main fleet.",
+    "En": "Organize The New 4th Torpedo Squadron!",
+    "content": "Assemble a fleet containing Yura Kai Ni as Secretary, Yuudachi, Murasame, Harusame, and Samidare, and 1 DD.",
     "tips": "",
+    "requires": ["A54","B15"],
+    "unlocks": ["B103"],
+    "period": "once",
+    "needs": {
+      "S": ["Yura Kai Ni","Yuudachi","Murasame","Harusame","Samidare"]
+    },
     "resources": {
       "F": "400",
       "A": "0",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["A54","B15"],
-    "unlocks": ["B103"],
-    "period": "once",
-    "needs": {
-      "S": ["Yura Kai Ni","Murasame","Yuudachi","Harusame","Samidare"]
     },
     "reward": [
       ["C","Instant Repair",4],
@@ -1967,20 +1967,20 @@ const ALL_QUESTS_LIST = {
   },
   "A79": {
     "Jp": "精鋭「第二二駆逐隊」を再編成せよ！",
-    "En": "Reorganize the Elite 22th Destroyer Squadron!",
-    "content": "Have Fumizuki Kai Ni, Satsuki Kai Ni, Minazuki Kai and Nagatsuki Kai in your first fleet.",
+    "En": "Reorganize The Elite 22th Destroyer Squadron!",
+    "content": "Assemble a fleet containing Fumizuki Kai Ni, Satsuki Kai Ni, Nagatsuki Kai, and Minazuki Kai.",
     "tips": "",
-    "resources": {
-      "F": "220",
-      "A": "0",
-      "S": "220",
-      "B": "0"
-    },
     "requires": ["B39"],
     "unlocks": ["B104","A91"],
     "period": "once",
     "needs": {
       "S": ["Fumizuki Kai Ni","Satsuki Kai Ni","Nagatsuki Kai","Minazuki Kai"]
+    },
+    "resources": {
+      "F": "220",
+      "A": "0",
+      "S": "220",
+      "B": "0"
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -1989,20 +1989,20 @@ const ALL_QUESTS_LIST = {
   },
   "A80": {
     "Jp": "精強「任務部隊」を編成せよ！",
-    "En": "Organize a Powerful Task Force!",
-    "content": "Have Saratoga Mk.II or Saratoga Mk.II Mod.2 as flagship with 1 CL and 2 DD in your main fleet.",
+    "En": "Organize The Reinforced \"Task Force\"!",
+    "content": "Assemble a fleet containing Saratoga Mk.II/Mod.2 as Secretary, 1 CL, and 2 DD.",
     "tips": "",
+    "requires": ["A19","Bd1"],
+    "unlocks": ["B105","F61"],
+    "period": "once",
+    "needs": {
+      "S": ["Saratoga Mk.II"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "0",
       "B": "300"
-    },
-    "requires": ["Bd1"],
-    "unlocks": ["B105","F61"],
-    "period": "once",
-    "needs": {
-      "S": ["Saratoga Mk.II"]
     },
     "reward": [
       ["E","F6F-3",1,"Choose one: "],
@@ -2013,20 +2013,20 @@ const ALL_QUESTS_LIST = {
   },
   "A81": {
     "Jp": "最精鋭「第八駆逐隊」を編成せよ！",
-    "En": "Form the New Elite 8th Destroyer Division!",
-    "content": "Have Michishio Kai Ni, Asashio Kai Ni/Asashio Kai Ni D, Ooshio Kai Ni and Arashio Kai Ni in the fleet.",
-    "tips": "Play line on completion.",
+    "En": "Organize The Most Elite 8th Destroyer Division!",
+    "content": "Assemble a fleet containing only Asashio Kai Ni, Arashio Kai Ni, Ooshio Kai Ni, and Michishio Kai Ni.",
+    "tips": "Special lines play upon completion.",
+    "requires": ["B74","B108"],
+    "unlocks": ["B109"],
+    "period": "once",
+    "needs": {
+      "S": ["Asashio Kai Ni","Arashio Kai Ni","Ooshio Kai Ni","Michishio Kai Ni"]
+    },
     "resources": {
       "F": "300",
       "A": "300",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B108","B74"],
-    "unlocks": ["B109"],
-    "period": "once",
-    "needs": {
-      "S": ["Michishio Kai Ni","Asashio Kai Ni","Ooshio Kai Ni","Arashio Kai Ni"]
     },
     "reward": [
       ["I","Combat Ration",1],
@@ -2035,20 +2035,20 @@ const ALL_QUESTS_LIST = {
   },
   "A82": {
     "Jp": "「西村艦隊」第二戦隊随伴部隊、集結せよ！",
-    "En": "2nd Naval Assault Squadron Nishimura Fleet, Gather!",
-    "content": "Have Mogami, Michishio, Shigure, Asagumo and Yamagumo in the third fleet.",
-    "tips": "Play line on completion.",
+    "En": "\"Nishimura Fleet\" Second Squadron Accompanying Unit, Assemble!",
+    "content": "Assemble a fleet containing Mogami, Shigure, Michishio, Asagumo, and Yamagumo in the Third Fleet.",
+    "tips": "Special lines play upon completion.",
+    "requires": ["Dd1","D27"],
+    "unlocks": [],
+    "period": "once",
+    "needs": {
+      "S": ["Mogami","Shigure","Michishio","Asagumo","Yamagumo"]
+    },
     "resources": {
       "F": "0",
       "A": "300",
       "S": "300",
       "B": "0"
-    },
-    "requires": ["D27"],
-    "unlocks": [],
-    "period": "once",
-    "needs": {
-      "S": ["Mogami","Michishio","Shigure","Asagumo","Yamagumo"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -2059,20 +2059,20 @@ const ALL_QUESTS_LIST = {
   },
   "A83": {
     "Jp": "精銳「三一駆」第一小隊、抜錨準備!",
-    "En": "Elite 31st Destroyer Division 1st Squadron, Prepare for Launch！",
-    "content": "Have Naganami Kai Ni as flagship, then put only one of the following ships into your fleet as escort: Takanami Kai, Okinami Kai, Asashimo Kai.",
+    "En": "Elite \"31st Destroyer Division\" First Platoon, Prepare To Weigh Anchor!",
+    "content": "Assemble a fleet containing Naganami Kai Ni as flagship, and any 1 of: \"Takanami Kai+, Asashimo Kai+, or Okinami Kai+\".",
     "tips": "",
+    "requires": ["A33","B20","Fd7"],
+    "unlocks": ["Bq6"],
+    "period": "once",
+    "needs": {
+      "S": ["Naganami Kai Ni"]
+    },
     "resources": {
       "F": "200",
       "A": "200",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["Fd7","B20"],
-    "unlocks": ["Bq6"],
-    "period": "once",
-    "needs": {
-      "S": ["Naganami Kai Ni","Takanami Kai","Okinami Kai","Asashimo Kai"]
     },
     "reward": [
       ["C","Instant Repair",2],
@@ -2082,20 +2082,20 @@ const ALL_QUESTS_LIST = {
   },
   "A84": {
     "Jp": "精鋭「四水戦」抜錨準備！",
-    "En": "Elite 4th Torpedo Squadron, Prepare for Sortie!",
-    "content": "Form a Fleet with Murasame Kai Ni as Flagship along with at least 3 of the following ships: Yura Kai Ni, Yuudachi Kai Ni, Harusame Kai, Samidare Kai, Akizuki Kai, and two additional ships of your choice.",
-    "tips": "Play line on completion.",
+    "En": "Elite \"4th Torpedo Squadron\", Prepare To Weigh Anchor!",
+    "content": "Assemble a fleet containing Murasame Kai Ni as flagship, any 3 of: \"Yura Kai Ni, Yuudachi Kai Ni, Harusame Kai, Samidare Kai, or Akizuki Kai\"; and 2 XX.",
+    "tips": "",
+    "requires": ["A78","B34"],
+    "unlocks": ["B112"],
+    "period": "once",
+    "needs": {
+      "S": ["Murasame Kai Ni"]
+    },
     "resources": {
       "F": "0",
       "A": "400",
       "S": "0",
       "B": "0"
-    },
-    "requires": ["B34"],
-    "unlocks": ["B112"],
-    "period": "once",
-    "needs": {
-      "S": ["Murasame Kai Ni","Yura Kai Ni","Yuudachi Kai Ni","Harusame Kai","Samidare Kai","Akizuki Kai"]
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -2104,20 +2104,20 @@ const ALL_QUESTS_LIST = {
   },
   "A85": {
     "Jp": "精鋭「第二一駆逐隊」、抜錨準備！",
-    "En": "Elite 21st Destroyer Division, Prepare for Sortie!",
-    "content": "Form a Fleet including Wakaba Kai, Hatsuharu Kai Ni, Hatsushimo Kai Ni and up to one additional ship.",
-    "tips": "",
-    "resources": {
-      "F": "100",
-      "A": "0",
-      "S": "300",
-      "B": "0"
-    },
+    "En": "Elite \"21st Destroyer Division\", Prepare To Weigh Anchor!",
+    "content": "Assemble a fleet containing Wakaba Kai, Hatsuharu Kai Ni, Hatsushimo Kai Ni, and 1 DD",
+    "tips": "	Special lines play upon completion.",
     "requires": ["B37"],
     "unlocks": ["C16","C17"],
     "period": "once",
     "needs": {
       "S": ["Wakaba Kai","Hatsuharu Kai Ni","Hatsushimo Kai Ni"]
+    },
+    "resources": {
+      "F": "100",
+      "A": "0",
+      "S": "0",
+      "B": "300"
     },
     "reward": [
       ["C","Instant Repair",3],
@@ -2126,86 +2126,86 @@ const ALL_QUESTS_LIST = {
   },
   "A86": {
     "Jp": "改装「第十七駆逐隊」、再編始め！",
-    "En": "Reorganize the Remodeled 17th Destroyer Division!",
-    "content": "Form a Fleet including Isokaze B Kai, Hamakaze B Kai, Urakaze Kai and Tanikaze Kai .",
-    "tips": "",
-    "period": "once",
-    "requires": ["Fq6","B61"],
+    "En": "Remodelled 17th Destroyer Division, Realign!",
+    "content": "Assemble a fleet containing only Urakaze Kai+, Tanikaze Kai+, Isokaze B Kai+, and Hamakaze B Kai+.",
+    "tips": "	Special lines play upon completion.",
+    "requires": ["B61","Fq6"],
     "unlocks": ["A90"],
+    "period": "once",
+    "needs": {
+      "S": ["Urakaze Kai","Tanikaze Kai","Isokaze B Kai","Hamakaze B Kai"]
+    },
     "resources": {
       "F": "170",
       "A": "170",
       "S": "170",
       "B": "0"
     },
-    "needs": {
-      "S": ["Isokaze B Kai","Hamakaze B Kai","Urakaze Kai","Tanikaze Kai"]
-    },
     "reward": [
-      ["I","Reinforcement Expansion",1],
-      ["I","Irako",1]
+      ["I","Irako",1],
+      ["I","Reinforcement Expansion",1]      
     ]
   },
   "A87": {
     "Jp": "精鋭「第十八駆逐隊」を編成せよ！",
-    "En": "Organise the Elite \"18th Destroyer Division\"!",
-    "content": "Form a Fleet including Arare Kai Ni, Kasumi Kai Ni/Kasumi Kai Ni B, Kagerou Kai and Shiranui Kai .",
-    "tips": "",
-    "period": "once",
-    "requires": ["B58"],
+    "En": "Form The Elite 18th Destroyer Division!",
+    "content": "Assemble a fleet containing only Arare Kai Ni, Kasumi Kai Ni/B, Kagerou Kai+, and Shiranui Kai+.",
+    "tips": "Special lines play upon completion.",
+    "requires": ["B59"],
     "unlocks": ["B116"],
+    "period": "once",
+    "needs": {
+      "S": ["Arare Kai Ni","Kasumi Kai Ni","Kagerou Kai","Shiranui Kai"]
+    },
     "resources": {
       "F": "180",
       "A": "0",
       "S": "180",
       "B": "0"
     },
-    "needs": {
-      "S": ["Arare Kai Ni","Kagerou Kai","Kasumi Kai Ni","Shiranui Kai"]
-    },
     "reward": [
-      ["I","Reinforcement Expansion",1,"Choose one: "],
-      ["I","Furniture Fairy",1,"or "]
+      ["I","Furniture Fairy",1,"Choose one: "],
+      ["I","Reinforcement Expansion",1,"or "]      
     ]
   },
   "A88": {
     "Jp": "最精銳甲型駆逐艦、集結せよ！",
     "En": "Elite Type-A Destroyers, Assemble!",
-    "content": "Form a Fleet including Kagerou Kai Ni, Shiranui Kai Ni, Kuroshio Kai Ni and three level 70 or above Kagerou/Yuugumo class destroyers",
-    "tips": "※ On completion plays ",
-    "period": "once",
-    "requires": ["B109"],
+    "content": "Assemble a fleet containing Kagerou Kai Ni, Shiranui Kai Ni, Kuroshio Kai Ni, and 3 Lv70+ from the: \"Kagerou-class or Yuugumo-class\".",
+    "tips": "Special lines play upon completion.",
+    "requires": ["B109","F3"],
     "unlocks": ["C18","C18"],
+    "period": "once",
+    "needs": {
+      "S": ["Kagerou Kai Ni","Shiranui Kai Ni","Kuroshio Kai Ni"]
+    },
     "resources": {
       "F": "150",
       "A": "150",
       "S": "150",
       "B": "0"
     },
-    "needs": {
-      "S": ["Kagerou Kai Ni","Shiranui Kai Ni","Kuroshio Kai Ni"]
-    },
     "reward": [
-      ["I","Medal",1,"Choose one: "],
-      ["E","12.7cm Twin Gun Mount Model C Kai 2",1,"or "]
+      ["E","12.7cm Twin Gun Mount Model C Kai 2",1,"Choose one: "],
+      ["I","Medal",1,"or"]      
     ]
   },
   "A89": {
     "Jp": "精鋭「第十八戦隊」を再編せよ！",
-    "En": "Organize the Elite 18th Cruiser Division!",
-    "content": "Form a Fleet including ONLY Tenryuu Kai Ni and Tatsuta Kai Ni",
+    "En": "Reform The Elite 18th Cruiser Division!",
+    "content": "Assemble a fleet containing Tenryuu Kai Ni and Tatsuta Kai Ni.",
     "tips": "",
-    "period": "once",
     "requires": ["B43"],
     "unlocks": ["B120"],
+    "period": "once",
+    "needs": {
+      "S": ["Tenryuu Kai Ni","Tatsuta Kai Ni"]
+    },
     "resources": {
       "F": "180",
       "A": "0",
       "S": "180",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Tatsuta Kai Ni","Tenryuu Kai Ni"]
     },
     "reward": [
       ["C","Development Material",5,"Choose one: "],
@@ -2214,43 +2214,43 @@ const ALL_QUESTS_LIST = {
   },
   "A90": {
     "Jp": "精強「第十七駆逐隊」を編成せよ！",
-    "En": "Organize the Elite 17th Destroyer Division!",
-    "content": "Have Isokaze B Kai, Hamakaze B Kai, Urakaze D Kai, and Tanikaze D Kai in your fleet.",
-    "tips": "",
-    "period": "once",
+    "En": "Organise The Powerful DesDiv 17!",
+    "content": "Assemble a fleet containing only Isokaze B Kai+, Hamakaze B Kai+, Urakaze D Kai+, and Tanikaze D Kai+.",
+    "tips": "Special lines play upon completion.",
     "requires": ["A86","F3"],
     "unlocks": ["B123","C27"],
+    "period": "once",
+    "needs": {
+      "S": ["Isokaze B Kai","Hamakaze B Kai","Urakaze D Kai","Tanikaze D Kai"]
+    },
     "resources": {
       "F": "170",
       "A": "170",
       "S": "0",
       "B": "170"
     },
-    "needs": {
-      "S": ["Isokaze B Kai","Hamakaze B Kai","Urakaze D Kai","Tanikaze D Kai"]
-    },
     "reward": [
       ["I","Irako",1],
-      ["I","Combat provision",2,"Choose one: "],
+      ["I","Combat Ration",2,"Choose one: "],
       ["C","Instant Repair",3,"or "]
     ]
   },  
   "A91": {
     "Jp": "精銳「第十駆逐隊」、拔錨準備！",
-    "En": "Elite '10th Destroyer Division', prepare for sortie!",
-    "content": "Have Yuugumo Kai Ni & Makigumo Kai Ni in your fleet.",
+    "En": "Elite DesDiv 10, Get Ready To Set Sail!",
+    "content": "Assemble a fleet containing only Makigumo Kai Ni and Yuugumo Kai Ni.",
     "tips": "",
-    "period": "once",
     "requires": ["A79"],
     "unlocks": ["B126"],
+    "period": "once",
+    "needs": {
+      "S": ["Yuugumo Kai Ni","Makigumo Kai Ni"]
+    },
     "resources": {
       "F": "200",
       "A": "0",
       "S": "200",
       "B": "0"
-    },
-    "needs": {
-      "S": ["Yuugumo Kai Ni","Makigumo Kai Ni"]
     },
     "reward": [
       ["I","Combat Ration",1],
@@ -2260,14 +2260,14 @@ const ALL_QUESTS_LIST = {
   },
   "A92": {
     "Jp": "精鋭無比「第一戦隊」抜錨準備！",
-    "En": "Unrivaled \"1st Squadron\", Ready to Set Sail!",
-    "content": "Have Nagato Kai Ni as flagship and Mutsu Kai Ni as second ship in your fleet.",
-    "tips": "※ On completion plays",
+    "En": "Unrivaled \"First Squadron\" PrepareTo Weigh Anchor!",
+    "content": "Assemble a fleet containing Nagato Kai Ni as Secretary and Mutsu Kai Ni as second ship.",
+    "tips": "",
     "unlocks": ["B129"],
     "requires": ["B99"],
     "period": "once",
     "needs": {
-      "S": ["Mutsu Kai Ni","Nagato Kai Ni"]
+      "S": ["Nagato Kai Ni","Mutsu Kai Ni"]
     },
     "resources": {
       "F": "0",
@@ -2276,10 +2276,10 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["E","Type 3 Shell Kai","1"],
-      ["E","41cm Twin Gun Mount","2","Choose one: "],
-      ["I","New Model Gun Mount Improvement Material","1","or "],
-      ["C","Development Material","8","or "]
+      ["E","Type 3 Shell Kai",1],
+      ["E","41cm Twin Gun Mount",2,"Choose one: "],
+      ["I","New Model Gun Mount Improvement Material",1,"or "],
+      ["C","Development Material",8,"or "]
     ]
   },
   "A93": {
@@ -2287,23 +2287,22 @@ const ALL_QUESTS_LIST = {
     "En": "Main Force Of The Main Force, Powerful \"DesDiv 10\", Ready To Sortie!",
     "content": "Assemble a fleet containing only Yuugumo Kai Ni, Makigumo Kai Ni, Kazagumo Kai Ni, and Akigumo Kai Ni.",
     "tips": "",
-    "unlocks": ["B157","Cy2"],
     "requires": ["B126"],
+    "unlocks": ["B157","Cy2"],
     "period": "once",
     "needs": {
       "S": ["Yuugumo Kai Ni","Makigumo Kai Ni","Kazagumo Kai Ni","Akigumo Kai Ni"]
     },
     "resources": {
-      "F": "0",
-      "A": "800",
-      "S": "800",
-      "B": "0"
+      "F": "100",
+      "A": "100",
+      "S": "100",
+      "B": "100"
     },
     "reward": [
-      ["E","Type 3 Shell Kai","1"],
-      ["E","41cm Twin Gun Mount","2","Choose one: "],
-      ["I","New Model Gun Mount Improvement Material","1","or "],
-      ["C","Development Material","8","or "]
+      ["E","12.7cm Twin Gun Mount Model D Kai 2★+2",1],
+      ["C","Instant Repair",6,"Choose one: "],
+      ["I","Furniture Fairy",1,"or "]
     ]
   },
 
@@ -3490,7 +3489,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["C","Improvement Material",3],
-      ["I","Combat provision",2]
+      ["I","Combat Ration",2]
     ]
   },
   "B50": {
@@ -3539,7 +3538,7 @@ const ALL_QUESTS_LIST = {
       "B": "0"
     },
     "reward": [
-      ["I","Combat provision",1],
+      ["I","Combat Ration",1],
       ["I","Present box",1]
     ]
   },
@@ -3715,7 +3714,7 @@ const ALL_QUESTS_LIST = {
     },
     "reward": [
       ["E","Type 13 Air Radar Kai",1],
-      ["I","Combat provision",1]
+      ["I","Combat Ration",1]
     ]
   },
   "B59": {
@@ -8202,7 +8201,7 @@ const ALL_QUESTS_LIST = {
     "needs": {},
     "reward": [
       ["C","Development Material",2],
-      ["I","Combat provision",1]
+      ["I","Combat Ration",1]
     ]
   },
   "C11": {
@@ -8626,7 +8625,7 @@ const ALL_QUESTS_LIST = {
     "needs": {},
     "reward": [
       ["C","Instant Repair",2],
-      ["I","Combat provision",1]
+      ["I","Combat Ration",1]
     ]
   },
   "Cm2": {
